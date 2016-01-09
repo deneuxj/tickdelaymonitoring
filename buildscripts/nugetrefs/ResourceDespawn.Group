@@ -1,0 +1,425 @@
+MCU_Timer
+{
+  Index = 2;
+  Name = "SetHighPrio";
+  Desc = "Set this group to high prio";
+  Targets = [10,13];
+  Objects = [];
+  XPos = 27082.518;
+  YPos = 143.559;
+  ZPos = 27597.159;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 0;
+  Random = 100;
+}
+
+MCU_Timer
+{
+  Index = 3;
+  Name = "SetMedPrio";
+  Desc = "Set this group to med prio";
+  Targets = [14,16];
+  Objects = [];
+  XPos = 27080.581;
+  YPos = 143.559;
+  ZPos = 27597.009;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 0;
+  Random = 100;
+}
+
+MCU_Timer
+{
+  Index = 4;
+  Name = "SetLowPrio";
+  Desc = "Set this group as low prio";
+  Targets = [19,21];
+  Objects = [];
+  XPos = 27078.337;
+  YPos = 143.559;
+  ZPos = 27597.085;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 0;
+  Random = 100;
+}
+
+MCU_Timer
+{
+  Index = 5;
+  Name = "ReqKillLow";
+  Desc = "Request low prio kill";
+  Targets = [7,26];
+  Objects = [];
+  XPos = 27078.816;
+  YPos = 143.664;
+  ZPos = 27596.320;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 0;
+  Random = 100;
+}
+
+MCU_Timer
+{
+  Index = 6;
+  Name = "OnKilled";
+  Desc = "Out link to disable entities";
+  Targets = [31];
+  Objects = [];
+  XPos = 27080.486;
+  YPos = 143.673;
+  ZPos = 27605.921;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 0;
+  Random = 100;
+}
+
+MCU_Timer
+{
+  Index = 7;
+  Name = "";
+  Desc = "";
+  Targets = [6];
+  Objects = [];
+  XPos = 27078.230;
+  YPos = 143.693;
+  ZPos = 27603.608;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 0;
+  Random = 100;
+}
+
+MCU_Timer
+{
+  Index = 8;
+  Name = "ReqKillMed";
+  Desc = "Request med prio kill";
+  Targets = [11,25];
+  Objects = [];
+  XPos = 27081.141;
+  YPos = 143.664;
+  ZPos = 27596.293;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 0;
+  Random = 100;
+}
+
+MCU_Timer
+{
+  Index = 9;
+  Name = "ReqKillHigh";
+  Desc = "Request high prio kill";
+  Targets = [12,24];
+  Objects = [];
+  XPos = 27083.412;
+  YPos = 143.664;
+  ZPos = 27596.530;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 0;
+  Random = 100;
+}
+
+MCU_Activate
+{
+  Index = 10;
+  Name = "";
+  Desc = "";
+  Targets = [12,25,26];
+  Objects = [];
+  XPos = 27082.449;
+  YPos = 143.683;
+  ZPos = 27600.203;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+}
+
+MCU_Timer
+{
+  Index = 11;
+  Name = "";
+  Desc = "";
+  Targets = [6];
+  Objects = [];
+  XPos = 27080.499;
+  YPos = 143.693;
+  ZPos = 27603.544;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 0;
+  Random = 100;
+}
+
+MCU_Timer
+{
+  Index = 12;
+  Name = "";
+  Desc = "";
+  Targets = [6];
+  Objects = [];
+  XPos = 27082.452;
+  YPos = 143.693;
+  ZPos = 27603.672;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 0;
+  Random = 100;
+}
+
+MCU_Deactivate
+{
+  Index = 13;
+  Name = "";
+  Desc = "";
+  Targets = [11,7,24];
+  Objects = [];
+  XPos = 27082.096;
+  YPos = 143.626;
+  ZPos = 27600.197;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+}
+
+MCU_Activate
+{
+  Index = 14;
+  Name = "";
+  Desc = "";
+  Targets = [11,24,26];
+  Objects = [];
+  XPos = 27080.671;
+  YPos = 143.683;
+  ZPos = 27600.029;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+}
+
+MCU_Deactivate
+{
+  Index = 16;
+  Name = "";
+  Desc = "";
+  Targets = [12,7,25];
+  Objects = [];
+  XPos = 27080.318;
+  YPos = 143.626;
+  ZPos = 27600.023;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+}
+
+MCU_Activate
+{
+  Index = 19;
+  Name = "";
+  Desc = "";
+  Targets = [7,25,24];
+  Objects = [];
+  XPos = 27078.450;
+  YPos = 143.683;
+  ZPos = 27600.052;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+}
+
+MCU_Deactivate
+{
+  Index = 21;
+  Name = "";
+  Desc = "";
+  Targets = [11,12,26];
+  Objects = [];
+  XPos = 27078.097;
+  YPos = 143.626;
+  ZPos = 27600.046;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+}
+
+MCU_Timer
+{
+  Index = 24;
+  Name = "";
+  Desc = "";
+  Targets = [27];
+  Objects = [];
+  XPos = 27083.348;
+  YPos = 143.604;
+  ZPos = 27603.345;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 0;
+  Random = 100;
+}
+
+MCU_Timer
+{
+  Index = 25;
+  Name = "";
+  Desc = "";
+  Targets = [28];
+  Objects = [];
+  XPos = 27081.068;
+  YPos = 143.604;
+  ZPos = 27603.063;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 0;
+  Random = 100;
+}
+
+MCU_Timer
+{
+  Index = 26;
+  Name = "";
+  Desc = "";
+  Targets = [29];
+  Objects = [];
+  XPos = 27078.744;
+  YPos = 143.604;
+  ZPos = 27603.120;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 0;
+  Random = 100;
+}
+
+MCU_Timer
+{
+  Index = 27;
+  Name = "OnNextHigh";
+  Desc = "Out link to Kill High of next g";
+  Targets = [59];
+  Objects = [];
+  XPos = 27083.347;
+  YPos = 143.604;
+  ZPos = 27605.672;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 0;
+  Random = 100;
+}
+
+MCU_Timer
+{
+  Index = 28;
+  Name = "OnNextMed";
+  Desc = "Out link to Kill Med of next gr";
+  Targets = [56];
+  Objects = [];
+  XPos = 27081.125;
+  YPos = 143.604;
+  ZPos = 27605.489;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 0;
+  Random = 100;
+}
+
+MCU_Timer
+{
+  Index = 29;
+  Name = "OnNextLow";
+  Desc = "Out link to Kill Low of next gr";
+  Targets = [51];
+  Objects = [];
+  XPos = 27078.722;
+  YPos = 143.604;
+  ZPos = 27605.489;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 0;
+  Random = 100;
+}
+
+MCU_TR_MissionBegin
+{
+  Index = 30;
+  Name = "";
+  Desc = "";
+  Targets = [31];
+  Objects = [];
+  XPos = 27075.741;
+  YPos = 143.610;
+  ZPos = 27596.984;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+}
+
+MCU_Timer
+{
+  Index = 31;
+  Name = "SetNoPrio";
+  Desc = "Set group as inactive";
+  Targets = [32,36];
+  Objects = [];
+  XPos = 27076.983;
+  YPos = 143.583;
+  ZPos = 27597.018;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Time = 0;
+  Random = 100;
+}
+
+MCU_Activate
+{
+  Index = 32;
+  Name = "";
+  Desc = "";
+  Targets = [26,25,24];
+  Objects = [];
+  XPos = 27077.091;
+  YPos = 143.683;
+  ZPos = 27600.006;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+}
+
+MCU_Deactivate
+{
+  Index = 36;
+  Name = "";
+  Desc = "";
+  Targets = [7,11,12];
+  Objects = [];
+  XPos = 27076.738;
+  YPos = 143.626;
+  ZPos = 27600.000;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+}
+
