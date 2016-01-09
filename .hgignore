@@ -1,0 +1,13 @@
+syntax: glob
+aieverywhere.fra
+aieverywhere.ger
+aieverywhere.list
+aieverywhere.msnbin
+aieverywhere.pol
+aieverywhere.rus
+aieverywhere.spa
+buildscripts/packages/
+syntax: regexp
+/bin/
+/obj/
+output..*
