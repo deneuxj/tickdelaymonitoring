@@ -561,9 +561,9 @@ MCU_TR_MissionObjective
   LCName = 7;
   LCDesc = 8;
   TaskType = 0;
-  Coalition = 0;
+  Coalition = 2;
   Success = 1;
-  IconType = 0;
+  IconType = 901;
 }
 
 
@@ -2141,6 +2141,28 @@ MCU_TR_Entity
   ZOri = 0.00;
   Enabled = 1;
   MisObjID = 104;
+}
+
+
+
+MCU_TR_MissionObjective
+{
+  Index = 107;
+  Targets = [];
+  Objects = [];
+  XPos = 26744.505;
+  YPos = 117.837;
+  ZPos = 25277.391;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  LCName = 12;
+  LCDesc = 13;
+  TaskType = 9;
+  Coalition = 2;
+  Success = 0;
+  IconType = 901;
 }
 
 
