@@ -53,21 +53,28 @@ let build() =
     // MCUs that control starting and stopping vehicle groups
     let instances =
         [
+            yield "StartPe2-1", "KillPe2-1", Some "SetLowPrioPe2-1"
+            yield "StartJu87-1", "KillJu87-1", Some "SetLowPrioJu87-1"
             for i in 1..18 do
-                yield (sprintf "Start%d" i, sprintf "Kill%d" i)
+                yield (sprintf "Start%d" i, sprintf "Kill%d" i, None)
         ]
     // Create blocks, connect to each vehicle group
     let blocks =
         [
-            for start, kill in instances do
+            for start, kill, setLowPrio in instances do
                 let block = T.ResourceDespawn.CreateMcuList()
                 subst block |> ignore
                 let mcuStart = getCommandByName start mission
                 let mcuKill = getCommandByName kill mission
+                let mcuLowPrio =
+                    setLowPrio
+                    |> Option.map (fun name -> getCommandByName name mission)
                 let onKilled = getCommandByName "OnKilled" block
                 let setHighPrio = getCommandByName "SetHighPrio" block
+                let setLowPrio = getCommandByName "SetLowPrio" block
                 addTargetLink onKilled mcuKill.Index
                 addTargetLink mcuStart setHighPrio.Index
+                mcuLowPrio |> Option.iter (fun mcu -> addTargetLink mcu setLowPrio.Index)
                 yield block
         ]
     // Connect blocks to form a queue
