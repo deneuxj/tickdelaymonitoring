@@ -50,32 +50,47 @@ let build() =
     let missionLcStrings =
         Localization.transfer true getLcId (Path.Combine(__SOURCE_DIRECTORY__, "..", "..", "aieverywhere.eng"))
 
-    // MCUs that control starting and stopping vehicle groups
+    // Names of MCUs that control starting and stopping vehicle groups
     let instances =
         [
-            yield "StartPe2-1", "KillPe2-1", Some "SetLowPrioPe2-1"
-            yield "StartJu87-1", "KillJu87-1", Some "SetLowPrioJu87-1"
-            for i in 1..18 do
+            for i in 1..2 do
+                yield sprintf "StartPe2-%d" i, sprintf "KillPe2-%d" i, Some <| sprintf "SetLowPrioPe2-%d" i
+            for i in 1..5 do
+                yield sprintf "StartJu87-%d" i, sprintf "KillJu87-%d" i, Some <| sprintf "SetLowPrioJu87-%d" i
+            for i in 1..6 do
+                yield (sprintf "StartF4-%d" i, sprintf "KillF4-%d" i, None)
+            for i in 1..7 do
+                yield (sprintf "StartLagg3-%d" i, sprintf "KillLagg3-%d" i, None)
+            for i in 1..12 do
                 yield (sprintf "Start%d" i, sprintf "Kill%d" i, None)
+                yield (sprintf "Start%db" i, sprintf "Kill%db" i, None)
+                yield (sprintf "Start%dc" i, sprintf "Kill%dc" i, None)
         ]
     // Create blocks, connect to each vehicle group
     let blocks =
         [
             for start, kill, setLowPrio in instances do
-                let block = T.ResourceDespawn.CreateMcuList()
-                subst block |> ignore
-                let mcuStart = getCommandByName start mission
-                let mcuKill = getCommandByName kill mission
-                let mcuLowPrio =
-                    setLowPrio
-                    |> Option.map (fun name -> getCommandByName name mission)
-                let onKilled = getCommandByName "OnKilled" block
-                let setHighPrio = getCommandByName "SetHighPrio" block
-                let setLowPrio = getCommandByName "SetLowPrio" block
-                addTargetLink onKilled mcuKill.Index
-                addTargetLink mcuStart setHighPrio.Index
-                mcuLowPrio |> Option.iter (fun mcu -> addTargetLink mcu setLowPrio.Index)
-                yield block
+                let exists =
+                    try
+                        getCommandByName start mission |> ignore
+                        true
+                    with
+                    | _ -> false
+                if exists then
+                    let mcuStart = getCommandByName start mission
+                    let mcuKill = getCommandByName kill mission
+                    let mcuLowPrio =
+                        setLowPrio
+                        |> Option.map (fun name -> getCommandByName name mission)
+                    let block = T.ResourceDespawn.CreateMcuList()
+                    subst block |> ignore
+                    let onKilled = getCommandByName "OnKilled" block
+                    let setHighPrio = getCommandByName "SetHighPrio" block
+                    let setLowPrio = getCommandByName "SetLowPrio" block
+                    addTargetLink onKilled mcuKill.Index
+                    addTargetLink mcuStart setHighPrio.Index
+                    mcuLowPrio |> Option.iter (fun mcu -> addTargetLink mcu setLowPrio.Index)
+                    yield block
         ]
     // Connect blocks to form a queue
     for curr, next in Seq.pairwise blocks do
