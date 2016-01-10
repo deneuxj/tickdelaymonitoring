@@ -16901,7 +16901,7 @@ Group
     MCU_Delete
     {
       Index = 1293;
-      Name = "KillF4-1";
+      Name = "KillF4-6";
       Desc = "";
       Targets = [];
       Objects = [1286];
@@ -16933,7 +16933,7 @@ Group
     MCU_Timer
     {
       Index = 1299;
-      Name = "StartF4-1";
+      Name = "StartF4-6";
       Desc = "";
       Targets = [1288,1300];
       Objects = [];
@@ -44431,6 +44431,1195 @@ Group
   }
   
 
+  Group
+  {
+    Name = "Nov.Roganchik";
+    Index = 17304;
+    Desc = "";
+    Block
+    {
+      Name = "Block";
+      Index = 17293;
+      LinkTrId = 17296;
+      XPos = 128311.695;
+      YPos = 61.533;
+      ZPos = 220556.545;
+      XOri = 0.00;
+      YOri = 202.94;
+      ZOri = 0.00;
+      Model = "graphics\blocks\sklad_01.mgm";
+      Script = "LuaScripts\WorldObjects\Blocks\sklad_01.txt";
+      Country = 101;
+      Desc = "";
+      Durability = 5000;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 17296;
+      Name = "Block entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 128311.695;
+      YPos = 61.733;
+      ZPos = 220556.545;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      MisObjID = 17293;
+    }
+    
+
+    Block
+    {
+      Name = "Block";
+      Index = 17294;
+      LinkTrId = 17295;
+      XPos = 127890.411;
+      YPos = 61.533;
+      ZPos = 221387.472;
+      XOri = 0.00;
+      YOri = 17.68;
+      ZOri = 0.00;
+      Model = "graphics\blocks\sklad_01.mgm";
+      Script = "LuaScripts\WorldObjects\Blocks\sklad_01.txt";
+      Country = 101;
+      Desc = "";
+      Durability = 5000;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 17295;
+      Name = "Block entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 127890.411;
+      YPos = 61.733;
+      ZPos = 221387.472;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      MisObjID = 17294;
+    }
+    
+
+    Block
+    {
+      Name = "misc_1";
+      Index = 17286;
+      LinkTrId = 17297;
+      XPos = 127922.910;
+      YPos = 61.533;
+      ZPos = 220639.204;
+      XOri = 0.00;
+      YOri = 250.84;
+      ZOri = 0.00;
+      Model = "graphics\blocks\scot_01.mgm";
+      Script = "LuaScripts\WorldObjects\Blocks\scot_01.txt";
+      Country = 101;
+      Desc = "";
+      Durability = 5000;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 17297;
+      Name = "misc_1 entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 127922.910;
+      YPos = 61.733;
+      ZPos = 220639.204;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      MisObjID = 17286;
+    }
+    
+
+    Block
+    {
+      Name = "misc_3";
+      Index = 17287;
+      LinkTrId = 17298;
+      XPos = 127646.074;
+      YPos = 61.540;
+      ZPos = 220500.865;
+      XOri = 0.00;
+      YOri = 23.68;
+      ZOri = 0.00;
+      Model = "graphics\blocks\meh_01.mgm";
+      Script = "LuaScripts\WorldObjects\Blocks\meh_01.txt";
+      Country = 101;
+      Desc = "";
+      Durability = 5000;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 17298;
+      Name = "misc_3 entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 127646.074;
+      YPos = 61.740;
+      ZPos = 220500.865;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      MisObjID = 17287;
+    }
+    
+
+    Block
+    {
+      Name = "misc_2";
+      Index = 17288;
+      LinkTrId = 17299;
+      XPos = 128041.531;
+      YPos = 61.533;
+      ZPos = 220344.948;
+      XOri = 0.00;
+      YOri = 112.39;
+      ZOri = 0.00;
+      Model = "graphics\blocks\sklad_01.mgm";
+      Script = "LuaScripts\WorldObjects\Blocks\sklad_01.txt";
+      Country = 101;
+      Desc = "";
+      Durability = 5000;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 17299;
+      Name = "misc_2 entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 128041.531;
+      YPos = 61.733;
+      ZPos = 220344.948;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      MisObjID = 17288;
+    }
+    
+
+    Block
+    {
+      Name = "Block";
+      Index = 17289;
+      LinkTrId = 17300;
+      XPos = 127727.891;
+      YPos = 61.533;
+      ZPos = 220578.537;
+      XOri = 0.00;
+      YOri = 295.57;
+      ZOri = 0.00;
+      Model = "graphics\blocks\country_m_corner_block2.mgm";
+      Script = "LuaScripts\WorldObjects\Blocks\country_m_corner_block2.txt";
+      Country = 101;
+      Desc = "";
+      Durability = 5000;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 17300;
+      Name = "Block entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 127727.891;
+      YPos = 61.733;
+      ZPos = 220578.537;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      MisObjID = 17289;
+    }
+    
+
+    Block
+    {
+      Name = "Block";
+      Index = 17290;
+      LinkTrId = 17301;
+      XPos = 127886.049;
+      YPos = 61.533;
+      ZPos = 220280.680;
+      XOri = 0.00;
+      YOri = 114.07;
+      ZOri = 0.00;
+      Model = "graphics\blocks\country_m_corner_block2.mgm";
+      Script = "LuaScripts\WorldObjects\Blocks\country_m_corner_block2.txt";
+      Country = 101;
+      Desc = "";
+      Durability = 5000;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 17301;
+      Name = "Block entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 127886.049;
+      YPos = 61.733;
+      ZPos = 220280.680;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      MisObjID = 17290;
+    }
+    
+
+    Block
+    {
+      Name = "Block";
+      Index = 17291;
+      LinkTrId = 17302;
+      XPos = 127740.628;
+      YPos = 61.533;
+      ZPos = 220288.338;
+      XOri = 0.00;
+      YOri = 23.68;
+      ZOri = 0.00;
+      Model = "graphics\blocks\country_200x100_2.mgm";
+      Script = "LuaScripts\WorldObjects\Blocks\country_200x100_2.txt";
+      Country = 101;
+      Desc = "";
+      Durability = 5000;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 17302;
+      Name = "Block entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 127740.628;
+      YPos = 61.733;
+      ZPos = 220288.338;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      MisObjID = 17291;
+    }
+    
+
+    Block
+    {
+      Name = "Block";
+      Index = 17292;
+      LinkTrId = 17303;
+      XPos = 128056.496;
+      YPos = 61.533;
+      ZPos = 220471.410;
+      XOri = 0.00;
+      YOri = 203.86;
+      ZOri = 0.00;
+      Model = "graphics\blocks\country_m_corner_block7.mgm";
+      Script = "LuaScripts\WorldObjects\Blocks\country_m_corner_block7.txt";
+      Country = 101;
+      Desc = "";
+      Durability = 5000;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 17303;
+      Name = "Block entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 128056.496;
+      YPos = 61.733;
+      ZPos = 220471.410;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      MisObjID = 17292;
+    }
+    
+
+  }
+  
+
+  Group
+  {
+    Name = "Karpovka bridges";
+    Index = 17329;
+    Desc = "";
+    Bridge
+    {
+      Name = "Bridge";
+      Index = 17305;
+      LinkTrId = 17306;
+      XPos = 128543.617;
+      YPos = 60.955;
+      ZPos = 218769.523;
+      XOri = 0.00;
+      YOri = 99.24;
+      ZOri = 0.00;
+      Model = "graphics\bridges\bridge_road_150.mgm";
+      Script = "LuaScripts\WorldObjects\Bridges\bridge_road_150.txt";
+      Country = 101;
+      Desc = "";
+      Durability = 5000;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 17306;
+      Name = "Bridge entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 128543.617;
+      YPos = 61.155;
+      ZPos = 218769.523;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      MisObjID = 17305;
+    }
+    
+
+    Bridge
+    {
+      Name = "Bridge";
+      Index = 17308;
+      LinkTrId = 17309;
+      XPos = 131429.080;
+      YPos = 60.955;
+      ZPos = 214699.985;
+      XOri = 0.00;
+      YOri = 355.59;
+      ZOri = 0.00;
+      Model = "graphics\bridges\bridge_road_200.mgm";
+      Script = "LuaScripts\WorldObjects\Bridges\bridge_road_200.txt";
+      Country = 101;
+      Desc = "";
+      Durability = 5000;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 17309;
+      Name = "Bridge entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 131429.080;
+      YPos = 61.155;
+      ZPos = 214699.985;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      MisObjID = 17308;
+    }
+    
+
+    Bridge
+    {
+      Name = "Bridge";
+      Index = 17311;
+      LinkTrId = 17312;
+      XPos = 133137.105;
+      YPos = 60.955;
+      ZPos = 216898.417;
+      XOri = 0.00;
+      YOri = 70.96;
+      ZOri = 0.00;
+      Model = "graphics\bridges\bridge_road_150.mgm";
+      Script = "LuaScripts\WorldObjects\Bridges\bridge_road_150.txt";
+      Country = 101;
+      Desc = "";
+      Durability = 5000;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 17312;
+      Name = "Bridge entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 133137.105;
+      YPos = 61.155;
+      ZPos = 216898.417;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      MisObjID = 17311;
+    }
+    
+
+    Bridge
+    {
+      Name = "Bridge";
+      Index = 17314;
+      LinkTrId = 17315;
+      XPos = 134474.777;
+      YPos = 60.955;
+      ZPos = 217859.082;
+      XOri = 0.00;
+      YOri = 331.52;
+      ZOri = 0.00;
+      Model = "graphics\bridges\bridge_pontoon_100.mgm";
+      Script = "LuaScripts\WorldObjects\Bridges\bridge_pontoon_100.txt";
+      Country = 101;
+      Desc = "";
+      Durability = 5000;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 17315;
+      Name = "Bridge entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 134474.777;
+      YPos = 61.155;
+      ZPos = 217859.082;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      MisObjID = 17314;
+    }
+    
+
+    Bridge
+    {
+      Name = "Bridge";
+      Index = 17317;
+      LinkTrId = 17318;
+      XPos = 129025.799;
+      YPos = 60.955;
+      ZPos = 219376.856;
+      XOri = 0.00;
+      YOri = 301.19;
+      ZOri = 0.00;
+      Model = "graphics\bridges\bridge_railroad_200.mgm";
+      Script = "LuaScripts\WorldObjects\Bridges\bridge_railroad_200.txt";
+      Country = 101;
+      Desc = "";
+      Durability = 7000;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 17318;
+      Name = "Bridge entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 129025.799;
+      YPos = 61.155;
+      ZPos = 219376.856;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      MisObjID = 17317;
+    }
+    
+
+    Bridge
+    {
+      Name = "Bridge";
+      Index = 17320;
+      LinkTrId = 17321;
+      XPos = 134646.482;
+      YPos = 60.955;
+      ZPos = 222846.793;
+      XOri = 0.00;
+      YOri = 58.57;
+      ZOri = 0.00;
+      Model = "graphics\bridges\bridge_road_100.mgm";
+      Script = "LuaScripts\WorldObjects\Bridges\bridge_road_100.txt";
+      Country = 101;
+      Desc = "";
+      Durability = 5000;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 17321;
+      Name = "Bridge entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 134646.482;
+      YPos = 61.155;
+      ZPos = 222846.793;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      MisObjID = 17320;
+    }
+    
+
+    Bridge
+    {
+      Name = "Bridge";
+      Index = 17323;
+      LinkTrId = 17324;
+      XPos = 129865.926;
+      YPos = 60.955;
+      ZPos = 221130.178;
+      XOri = 0.00;
+      YOri = 26.61;
+      ZOri = 0.00;
+      Model = "graphics\bridges\bridge_road_150.mgm";
+      Script = "LuaScripts\WorldObjects\Bridges\bridge_road_150.txt";
+      Country = 101;
+      Desc = "";
+      Durability = 5000;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 17324;
+      Name = "Bridge entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 129865.926;
+      YPos = 61.155;
+      ZPos = 221130.178;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      MisObjID = 17323;
+    }
+    
+
+    Bridge
+    {
+      Name = "Bridge";
+      Index = 17326;
+      LinkTrId = 17327;
+      XPos = 129654.819;
+      YPos = 60.955;
+      ZPos = 220182.756;
+      XOri = 0.00;
+      YOri = 345.53;
+      ZOri = 0.00;
+      Model = "graphics\bridges\bridge_road_150.mgm";
+      Script = "LuaScripts\WorldObjects\Bridges\bridge_road_150.txt";
+      Country = 101;
+      Desc = "";
+      Durability = 5000;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 17327;
+      Name = "Bridge entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 129654.819;
+      YPos = 61.155;
+      ZPos = 220182.756;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      MisObjID = 17326;
+    }
+    
+
+  }
+  
+
+  Group
+  {
+    Name = "Karpovka supplies";
+    Index = 17335;
+    Desc = "";
+    Block
+    {
+      Name = "Block";
+      Index = 17331;
+      LinkTrId = 17333;
+      XPos = 130251.329;
+      YPos = 59.953;
+      ZPos = 214446.381;
+      XOri = 0.00;
+      YOri = 343.06;
+      ZOri = 0.00;
+      Model = "graphics\blocks\sklad_01.mgm";
+      Script = "LuaScripts\WorldObjects\Blocks\sklad_01.txt";
+      Country = 101;
+      Desc = "";
+      Durability = 5000;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 17333;
+      Name = "Block entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 130251.329;
+      YPos = 60.153;
+      ZPos = 214446.381;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      MisObjID = 17331;
+    }
+    
+
+    Block
+    {
+      Name = "Block";
+      Index = 17332;
+      LinkTrId = 17334;
+      XPos = 130194.390;
+      YPos = 59.953;
+      ZPos = 214232.718;
+      XOri = 0.00;
+      YOri = 165.19;
+      ZOri = 0.00;
+      Model = "graphics\blocks\meh_01.mgm";
+      Script = "LuaScripts\WorldObjects\Blocks\meh_01.txt";
+      Country = 101;
+      Desc = "";
+      Durability = 5000;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 17334;
+      Name = "Block entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 130194.390;
+      YPos = 60.153;
+      ZPos = 214232.718;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      MisObjID = 17332;
+    }
+    
+
+  }
+  
+
+  Group
+  {
+    Name = "Pe2-2";
+    Index = 17350;
+    Desc = "";
+    Plane
+    {
+      Name = "Pe2";
+      Index = 17351;
+      LinkTrId = 17352;
+      XPos = 141967.515;
+      YPos = 1000.000;
+      ZPos = 228569.091;
+      XOri = 0.00;
+      YOri = 306.22;
+      ZOri = 0.00;
+      Script = "LuaScripts\WorldObjects\Planes\pe2s87.txt";
+      Model = "graphics\planes\pe2s87\pe2s87.mgm";
+      Country = 101;
+      Desc = "";
+      Skin = "";
+      AILevel = 2;
+      CoopStart = 0;
+      NumberInFormation = 0;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      StartInAir = 0;
+      Callsign = 6;
+      Callnum = 0;
+      Time = 60;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      PayloadId = 4;
+      WMMask = 100011;
+      AiRTBDecision = 0;
+      DeleteAfterDeath = 1;
+      Fuel = 0.5;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 17352;
+      Name = "Pe2 entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 141967.515;
+      YPos = 1000.200;
+      ZPos = 228569.091;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 17351;
+    }
+    
+
+    Plane
+    {
+      Name = "Pe2";
+      Index = 17354;
+      LinkTrId = 17355;
+      XPos = 141837.068;
+      YPos = 1000.000;
+      ZPos = 228581.797;
+      XOri = 0.00;
+      YOri = 306.22;
+      ZOri = 0.00;
+      Script = "LuaScripts\WorldObjects\Planes\pe2s87.txt";
+      Model = "graphics\planes\pe2s87\pe2s87.mgm";
+      Country = 101;
+      Desc = "";
+      Skin = "";
+      AILevel = 2;
+      CoopStart = 0;
+      NumberInFormation = 1;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      StartInAir = 0;
+      Callsign = 6;
+      Callnum = 1;
+      Time = 60;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      PayloadId = 4;
+      WMMask = 100011;
+      AiRTBDecision = 0;
+      DeleteAfterDeath = 1;
+      Fuel = 0.75;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 17355;
+      Name = "Pe2 entity";
+      Desc = "";
+      Targets = [17352];
+      Objects = [];
+      XPos = 141837.068;
+      YPos = 1000.200;
+      ZPos = 228581.797;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 17354;
+    }
+    
+
+    Plane
+    {
+      Name = "Pe2";
+      Index = 17357;
+      LinkTrId = 17358;
+      XPos = 141946.223;
+      YPos = 1000.000;
+      ZPos = 228743.200;
+      XOri = 0.00;
+      YOri = 306.22;
+      ZOri = 0.00;
+      Script = "LuaScripts\WorldObjects\Planes\pe2s87.txt";
+      Model = "graphics\planes\pe2s87\pe2s87.mgm";
+      Country = 101;
+      Desc = "";
+      Skin = "";
+      AILevel = 2;
+      CoopStart = 0;
+      NumberInFormation = 2;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      StartInAir = 0;
+      Callsign = 6;
+      Callnum = 2;
+      Time = 60;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      PayloadId = 4;
+      WMMask = 100011;
+      AiRTBDecision = 0;
+      DeleteAfterDeath = 1;
+      Fuel = 0.75;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 17358;
+      Name = "Pe2 entity";
+      Desc = "";
+      Targets = [17352];
+      Objects = [];
+      XPos = 141946.223;
+      YPos = 1000.200;
+      ZPos = 228743.200;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 17357;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 17360;
+      Name = "StartPe2-2";
+      Desc = "";
+      Targets = [17361,17362];
+      Objects = [];
+      XPos = 142023.643;
+      YPos = 100.825;
+      ZPos = 228572.728;
+      XOri = 0.00;
+      YOri = 202.20;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 17361;
+      Name = "5s";
+      Desc = "";
+      Targets = [17364];
+      Objects = [];
+      XPos = 142059.691;
+      YPos = 100.825;
+      ZPos = 228511.966;
+      XOri = 0.00;
+      YOri = 202.20;
+      ZOri = 0.00;
+      Time = 5;
+      Random = 100;
+    }
+    
+
+    MCU_Activate
+    {
+      Index = 17362;
+      Name = "Trigger Activate";
+      Desc = "";
+      Targets = [];
+      Objects = [17352];
+      XPos = 141996.452;
+      YPos = 100.825;
+      ZPos = 228567.950;
+      XOri = 0.00;
+      YOri = 202.20;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_TR_MissionBegin
+    {
+      Index = 17366;
+      Name = "";
+      Desc = "";
+      Targets = [17367];
+      Objects = [];
+      XPos = 141995.022;
+      YPos = 100.825;
+      ZPos = 228635.374;
+      XOri = 0.00;
+      YOri = 202.20;
+      ZOri = 0.00;
+      Enabled = 1;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 17367;
+      Name = "";
+      Desc = "";
+      Targets = [17360];
+      Objects = [];
+      XPos = 142013.746;
+      YPos = 100.825;
+      ZPos = 228608.632;
+      XOri = 0.00;
+      YOri = 202.20;
+      ZOri = 0.00;
+      Time = 30;
+      Random = 100;
+    }
+    
+
+    MCU_Deactivate
+    {
+      Index = 17369;
+      Name = "KillPe2-2";
+      Desc = "";
+      Targets = [];
+      Objects = [17352];
+      XPos = 141958.503;
+      YPos = 100.825;
+      ZPos = 228533.015;
+      XOri = 0.00;
+      YOri = 202.20;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_CMD_Land
+    {
+      Index = 17370;
+      Name = "command Land";
+      Desc = "";
+      Targets = [];
+      Objects = [17352];
+      XPos = 142124.921;
+      YPos = 100.825;
+      ZPos = 228877.543;
+      XOri = 0.00;
+      YOri = 294.53;
+      ZOri = 0.00;
+      Priority = 1;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 17371;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [17370];
+      Objects = [17352];
+      XPos = 142558.688;
+      YPos = 1000.000;
+      ZPos = 224877.920;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 200;
+      Speed = 400;
+      Priority = 1;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 17364;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [17373];
+      Objects = [17352];
+      XPos = 112512.739;
+      YPos = 3000.000;
+      ZPos = 186207.589;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 200;
+      Speed = 400;
+      Priority = 1;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 17373;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [17375,17376];
+      Objects = [17352];
+      XPos = 123240.386;
+      YPos = 3000.000;
+      ZPos = 160882.223;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 200;
+      Speed = 400;
+      Priority = 1;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 17376;
+      Name = "Attack duration";
+      Desc = "";
+      Targets = [17371,17378];
+      Objects = [];
+      XPos = 122308.263;
+      YPos = 50.834;
+      ZPos = 160625.082;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 1200;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 17378;
+      Name = "SetLowPrioPe2-2";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 121418.078;
+      YPos = 52.140;
+      ZPos = 160420.120;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_CMD_AttackArea
+    {
+      Index = 17375;
+      Name = "command AttackArea";
+      Desc = "";
+      Targets = [];
+      Objects = [17352];
+      XPos = 125595.731;
+      YPos = 2500.000;
+      ZPos = 154476.752;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      AttackGround = 1;
+      AttackAir = 0;
+      AttackGTargets = 1;
+      AttackArea = 1000;
+      Time = 1200;
+      Priority = 2;
+    }
+    
+
+  }
+  
+
 }
 
 
@@ -44444,9 +45633,9 @@ Group
   {
     Name = "Bridge";
     Index = 1789;
-    LinkTrId = 0;
+    LinkTrId = 17269;
     XPos = 125640.231;
-    YPos = 53.521;
+    YPos = 46.895;
     ZPos = 193624.695;
     XOri = 0.00;
     YOri = 77.63;
@@ -44487,105 +45676,17 @@ Group
   Bridge
   {
     Name = "Bridge";
-    Index = 1791;
-    LinkTrId = 0;
-    XPos = 128543.617;
-    YPos = 53.521;
-    ZPos = 218769.523;
-    XOri = 0.00;
-    YOri = 99.24;
-    ZOri = 0.00;
-    Model = "graphics\bridges\bridge_road_150.mgm";
-    Script = "LuaScripts\WorldObjects\Bridges\bridge_road_150.txt";
-    Country = 0;
-    Desc = "";
-    Durability = 5000;
-    DamageReport = 50;
-    DamageThreshold = 1;
-    DeleteAfterDeath = 1;
-  }
-  
-
-  Bridge
-  {
-    Name = "Bridge";
     Index = 1792;
-    LinkTrId = 0;
+    LinkTrId = 17271;
     XPos = 110530.579;
-    YPos = 53.521;
+    YPos = 42.628;
     ZPos = 179781.093;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
     Model = "graphics\bridges\bridge_road_150.mgm";
     Script = "LuaScripts\WorldObjects\Bridges\bridge_road_150.txt";
-    Country = 0;
-    Desc = "";
-    Durability = 5000;
-    DamageReport = 50;
-    DamageThreshold = 1;
-    DeleteAfterDeath = 1;
-  }
-  
-
-  Bridge
-  {
-    Name = "Bridge";
-    Index = 1793;
-    LinkTrId = 0;
-    XPos = 131429.080;
-    YPos = 53.521;
-    ZPos = 214699.985;
-    XOri = 0.00;
-    YOri = 355.59;
-    ZOri = 0.00;
-    Model = "graphics\bridges\bridge_road_200.mgm";
-    Script = "LuaScripts\WorldObjects\Bridges\bridge_road_200.txt";
-    Country = 0;
-    Desc = "";
-    Durability = 5000;
-    DamageReport = 50;
-    DamageThreshold = 1;
-    DeleteAfterDeath = 1;
-  }
-  
-
-  Bridge
-  {
-    Name = "Bridge";
-    Index = 1794;
-    LinkTrId = 0;
-    XPos = 133137.105;
-    YPos = 53.521;
-    ZPos = 216898.417;
-    XOri = 0.00;
-    YOri = 70.96;
-    ZOri = 0.00;
-    Model = "graphics\bridges\bridge_road_150.mgm";
-    Script = "LuaScripts\WorldObjects\Bridges\bridge_road_150.txt";
-    Country = 0;
-    Desc = "";
-    Durability = 5000;
-    DamageReport = 50;
-    DamageThreshold = 1;
-    DeleteAfterDeath = 1;
-  }
-  
-
-  Bridge
-  {
-    Name = "Bridge";
-    Index = 1795;
-    LinkTrId = 0;
-    XPos = 134474.777;
-    YPos = 53.521;
-    ZPos = 217859.082;
-    XOri = 0.00;
-    YOri = 331.52;
-    ZOri = 0.00;
-    Model = "graphics\bridges\bridge_pontoon_100.mgm";
-    Script = "LuaScripts\WorldObjects\Bridges\bridge_pontoon_100.txt";
-    Country = 0;
+    Country = 201;
     Desc = "";
     Durability = 5000;
     DamageReport = 50;
@@ -44818,16 +45919,16 @@ Group
   {
     Name = "Bridge";
     Index = 1806;
-    LinkTrId = 0;
+    LinkTrId = 17273;
     XPos = 103384.824;
-    YPos = 53.521;
+    YPos = 45.992;
     ZPos = 167815.933;
     XOri = 0.00;
     YOri = 135.00;
     ZOri = 0.00;
     Model = "graphics\bridges\bridge_big_1.mgm";
     Script = "LuaScripts\WorldObjects\Bridges\bridge_big_1.txt";
-    Country = 0;
+    Country = 201;
     Desc = "";
     Durability = 15000;
     DamageReport = 50;
@@ -44840,16 +45941,16 @@ Group
   {
     Name = "Bridge";
     Index = 1807;
-    LinkTrId = 0;
+    LinkTrId = 17274;
     XPos = 103685.003;
-    YPos = 53.521;
+    YPos = 45.992;
     ZPos = 167515.331;
     XOri = 0.00;
     YOri = 134.93;
     ZOri = 0.00;
     Model = "graphics\bridges\bridge_big_2.mgm";
     Script = "LuaScripts\WorldObjects\Bridges\bridge_big_2.txt";
-    Country = 0;
+    Country = 201;
     Desc = "";
     Durability = 15000;
     DamageReport = 50;
@@ -44868,28 +45969,6 @@ Group
     ZPos = 221258.693;
     XOri = 0.00;
     YOri = 323.62;
-    ZOri = 0.00;
-    Model = "graphics\bridges\bridge_railroad_200.mgm";
-    Script = "LuaScripts\WorldObjects\Bridges\bridge_railroad_200.txt";
-    Country = 0;
-    Desc = "";
-    Durability = 7000;
-    DamageReport = 50;
-    DamageThreshold = 1;
-    DeleteAfterDeath = 1;
-  }
-  
-
-  Bridge
-  {
-    Name = "Bridge";
-    Index = 1809;
-    LinkTrId = 0;
-    XPos = 129025.799;
-    YPos = 53.521;
-    ZPos = 219376.856;
-    XOri = 0.00;
-    YOri = 301.19;
     ZOri = 0.00;
     Model = "graphics\bridges\bridge_railroad_200.mgm";
     Script = "LuaScripts\WorldObjects\Bridges\bridge_railroad_200.txt";
@@ -44928,16 +46007,16 @@ Group
   {
     Name = "Bridge";
     Index = 1811;
-    LinkTrId = 0;
+    LinkTrId = 17272;
     XPos = 110540.222;
-    YPos = 53.521;
+    YPos = 42.806;
     ZPos = 179666.742;
     XOri = 0.00;
     YOri = 359.63;
     ZOri = 0.00;
     Model = "graphics\bridges\bridge_railroad_200.mgm";
     Script = "LuaScripts\WorldObjects\Bridges\bridge_railroad_200.txt";
-    Country = 0;
+    Country = 201;
     Desc = "";
     Durability = 7000;
     DamageReport = 50;
@@ -44972,7 +46051,7 @@ Group
   {
     Name = "Bridge";
     Index = 1813;
-    LinkTrId = 0;
+    LinkTrId = 17270;
     XPos = 125685.866;
     YPos = 53.521;
     ZPos = 193604.690;
@@ -46071,28 +47150,6 @@ Group
   Bridge
   {
     Name = "Bridge";
-    Index = 1863;
-    LinkTrId = 0;
-    XPos = 134646.482;
-    YPos = 53.521;
-    ZPos = 222846.793;
-    XOri = 0.00;
-    YOri = 58.57;
-    ZOri = 0.00;
-    Model = "graphics\bridges\bridge_road_100.mgm";
-    Script = "LuaScripts\WorldObjects\Bridges\bridge_road_100.txt";
-    Country = 0;
-    Desc = "";
-    Durability = 5000;
-    DamageReport = 50;
-    DamageThreshold = 1;
-    DeleteAfterDeath = 1;
-  }
-  
-
-  Bridge
-  {
-    Name = "Bridge";
     Index = 1864;
     LinkTrId = 0;
     XPos = 122429.001;
@@ -46754,16 +47811,16 @@ Group
   {
     Name = "Bridge";
     Index = 1894;
-    LinkTrId = 0;
+    LinkTrId = 17275;
     XPos = 109732.706;
-    YPos = 53.521;
+    YPos = 43.637;
     ZPos = 149856.082;
     XOri = 0.00;
     YOri = 292.38;
     ZOri = 0.00;
     Model = "graphics\bridges\bridge_railroad_200.mgm";
     Script = "LuaScripts\WorldObjects\Bridges\bridge_railroad_200.txt";
-    Country = 0;
+    Country = 201;
     Desc = "";
     Durability = 7000;
     DamageReport = 50;
@@ -47920,16 +48977,16 @@ Group
   {
     Name = "Bridge";
     Index = 1947;
-    LinkTrId = 0;
+    LinkTrId = 17276;
     XPos = 121502.271;
-    YPos = 53.521;
+    YPos = 48.519;
     ZPos = 134474.164;
     XOri = 0.00;
     YOri = 307.96;
     ZOri = 0.00;
     Model = "graphics\bridges\bridge_railroad_200.mgm";
     Script = "LuaScripts\WorldObjects\Bridges\bridge_railroad_200.txt";
-    Country = 0;
+    Country = 201;
     Desc = "";
     Durability = 7000;
     DamageReport = 50;
@@ -51439,50 +52496,6 @@ Group
   Bridge
   {
     Name = "Bridge";
-    Index = 2107;
-    LinkTrId = 0;
-    XPos = 129865.926;
-    YPos = 53.521;
-    ZPos = 221130.178;
-    XOri = 0.00;
-    YOri = 26.61;
-    ZOri = 0.00;
-    Model = "graphics\bridges\bridge_road_150.mgm";
-    Script = "LuaScripts\WorldObjects\Bridges\bridge_road_150.txt";
-    Country = 0;
-    Desc = "";
-    Durability = 5000;
-    DamageReport = 50;
-    DamageThreshold = 1;
-    DeleteAfterDeath = 1;
-  }
-  
-
-  Bridge
-  {
-    Name = "Bridge";
-    Index = 2108;
-    LinkTrId = 0;
-    XPos = 129654.819;
-    YPos = 53.521;
-    ZPos = 220182.756;
-    XOri = 0.00;
-    YOri = 345.53;
-    ZOri = 0.00;
-    Model = "graphics\bridges\bridge_road_150.mgm";
-    Script = "LuaScripts\WorldObjects\Bridges\bridge_road_150.txt";
-    Country = 0;
-    Desc = "";
-    Durability = 5000;
-    DamageReport = 50;
-    DamageThreshold = 1;
-    DeleteAfterDeath = 1;
-  }
-  
-
-  Bridge
-  {
-    Name = "Bridge";
     Index = 2109;
     LinkTrId = 0;
     XPos = 114832.634;
@@ -51851,6 +52864,150 @@ Group
     DamageReport = 50;
     DamageThreshold = 1;
     DeleteAfterDeath = 1;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 17269;
+    Name = "Bridge entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 125640.231;
+    YPos = 47.095;
+    ZPos = 193624.695;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 1789;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 17270;
+    Name = "Bridge entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 125685.866;
+    YPos = 53.721;
+    ZPos = 193604.690;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 1813;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 17271;
+    Name = "Bridge entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 110530.579;
+    YPos = 42.828;
+    ZPos = 179781.093;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 1792;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 17272;
+    Name = "Bridge entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 110540.222;
+    YPos = 43.006;
+    ZPos = 179666.742;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 1811;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 17273;
+    Name = "Bridge entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 103384.824;
+    YPos = 46.192;
+    ZPos = 167815.933;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 1806;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 17274;
+    Name = "Bridge entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 103685.003;
+    YPos = 46.192;
+    ZPos = 167515.331;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 1807;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 17275;
+    Name = "Bridge entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 109732.706;
+    YPos = 43.837;
+    ZPos = 149856.082;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 1894;
+  }
+  
+
+  MCU_TR_Entity
+  {
+    Index = 17276;
+    Name = "Bridge entity";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 121502.271;
+    YPos = 48.719;
+    ZPos = 134474.164;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    MisObjID = 1947;
   }
   
 
@@ -64934,7 +66091,7 @@ Group
           Index = 13858;
           LinkTrId = 0;
           XPos = 130780.979;
-          YPos = 181.378;
+          YPos = 59.952;
           ZPos = 214272.097;
           XOri = 0.00;
           YOri = 24.08;
@@ -64956,7 +66113,7 @@ Group
           Index = 13859;
           LinkTrId = 0;
           XPos = 130898.109;
-          YPos = 181.378;
+          YPos = 59.952;
           ZPos = 214324.820;
           XOri = 0.00;
           YOri = 206.03;
@@ -64978,7 +66135,7 @@ Group
           Index = 13860;
           LinkTrId = 0;
           XPos = 130976.988;
-          YPos = 181.378;
+          YPos = 59.952;
           ZPos = 214550.583;
           XOri = 0.00;
           YOri = 295.25;
@@ -65000,7 +66157,7 @@ Group
           Index = 13861;
           LinkTrId = 0;
           XPos = 130804.120;
-          YPos = 181.378;
+          YPos = 59.952;
           ZPos = 214533.634;
           XOri = 0.00;
           YOri = 205.82;
@@ -65022,7 +66179,7 @@ Group
           Index = 13862;
           LinkTrId = 0;
           XPos = 130683.705;
-          YPos = 181.378;
+          YPos = 59.952;
           ZPos = 214474.143;
           XOri = 0.00;
           YOri = 26.27;
@@ -65044,7 +66201,7 @@ Group
           Index = 13863;
           LinkTrId = 0;
           XPos = 131010.159;
-          YPos = 181.378;
+          YPos = 59.952;
           ZPos = 214426.565;
           XOri = 0.00;
           YOri = 294.92;
@@ -65066,7 +66223,7 @@ Group
           Index = 13864;
           LinkTrId = 0;
           XPos = 130568.262;
-          YPos = 181.378;
+          YPos = 59.952;
           ZPos = 214365.297;
           XOri = 0.00;
           YOri = 293.90;
@@ -65088,7 +66245,7 @@ Group
           Index = 13865;
           LinkTrId = 0;
           XPos = 130640.184;
-          YPos = 181.378;
+          YPos = 59.952;
           ZPos = 214258.503;
           XOri = 0.00;
           YOri = 295.10;
@@ -65110,7 +66267,7 @@ Group
           Index = 13866;
           LinkTrId = 0;
           XPos = 130735.713;
-          YPos = 181.378;
+          YPos = 59.952;
           ZPos = 214665.363;
           XOri = 0.00;
           YOri = 296.24;
@@ -65132,7 +66289,7 @@ Group
           Index = 13867;
           LinkTrId = 0;
           XPos = 130832.429;
-          YPos = 181.378;
+          YPos = 59.952;
           ZPos = 214140.615;
           XOri = 0.00;
           YOri = 294.32;
@@ -65154,7 +66311,7 @@ Group
           Index = 13868;
           LinkTrId = 0;
           XPos = 130626.080;
-          YPos = 181.378;
+          YPos = 59.952;
           ZPos = 214607.213;
           XOri = 0.00;
           YOri = 295.28;
@@ -65176,7 +66333,7 @@ Group
           Index = 13869;
           LinkTrId = 0;
           XPos = 130949.403;
-          YPos = 181.378;
+          YPos = 59.952;
           ZPos = 214203.561;
           XOri = 0.00;
           YOri = 114.95;
@@ -65206,7 +66363,7 @@ Group
           Index = 13871;
           LinkTrId = 0;
           XPos = 131903.209;
-          YPos = 181.378;
+          YPos = 59.952;
           ZPos = 214222.740;
           XOri = 0.00;
           YOri = 204.60;
@@ -65228,7 +66385,7 @@ Group
           Index = 13872;
           LinkTrId = 0;
           XPos = 131709.744;
-          YPos = 181.378;
+          YPos = 59.952;
           ZPos = 214628.490;
           XOri = 0.00;
           YOri = 204.60;
@@ -65250,7 +66407,7 @@ Group
           Index = 13873;
           LinkTrId = 0;
           XPos = 131809.714;
-          YPos = 181.378;
+          YPos = 59.952;
           ZPos = 214416.502;
           XOri = 0.00;
           YOri = 24.67;
@@ -65280,7 +66437,7 @@ Group
           Index = 13875;
           LinkTrId = 0;
           XPos = 131605.408;
-          YPos = 181.378;
+          YPos = 59.952;
           ZPos = 214889.279;
           XOri = 0.00;
           YOri = 24.98;
@@ -65302,7 +66459,7 @@ Group
           Index = 13876;
           LinkTrId = 0;
           XPos = 131495.378;
-          YPos = 181.378;
+          YPos = 59.952;
           ZPos = 215125.821;
           XOri = 0.00;
           YOri = 293.38;
@@ -65326,58 +66483,6 @@ Group
 
     Group
     {
-      Name = "Group";
-      Index = 13877;
-      Desc = "";
-      Block
-      {
-        Name = "Block";
-        Index = 13878;
-        LinkTrId = 0;
-        XPos = 130251.329;
-        YPos = 181.378;
-        ZPos = 214446.381;
-        XOri = 0.00;
-        YOri = 343.06;
-        ZOri = 0.00;
-        Model = "graphics\blocks\sklad_01.mgm";
-        Script = "LuaScripts\WorldObjects\Blocks\sklad_01.txt";
-        Country = 0;
-        Desc = "";
-        Durability = 25000;
-        DamageReport = 50;
-        DamageThreshold = 1;
-        DeleteAfterDeath = 1;
-      }
-      
-
-      Block
-      {
-        Name = "Block";
-        Index = 13879;
-        LinkTrId = 0;
-        XPos = 130194.390;
-        YPos = 181.378;
-        ZPos = 214232.718;
-        XOri = 0.00;
-        YOri = 165.19;
-        ZOri = 0.00;
-        Model = "graphics\blocks\meh_01.mgm";
-        Script = "LuaScripts\WorldObjects\Blocks\meh_01.txt";
-        Country = 0;
-        Desc = "";
-        Durability = 25000;
-        DamageReport = 50;
-        DamageThreshold = 1;
-        DeleteAfterDeath = 1;
-      }
-      
-
-    }
-    
-
-    Group
-    {
       Name = "lay_cnt_tcr_03";
       Index = 13880;
       Desc = "";
@@ -65387,7 +66492,7 @@ Group
         Index = 13881;
         LinkTrId = 0;
         XPos = 131103.164;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 215767.006;
         XOri = 0.00;
         YOri = 203.67;
@@ -65409,7 +66514,7 @@ Group
         Index = 13882;
         LinkTrId = 0;
         XPos = 131022.243;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 215953.469;
         XOri = 0.00;
         YOri = 23.57;
@@ -65431,7 +66536,7 @@ Group
         Index = 13883;
         LinkTrId = 0;
         XPos = 131012.082;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 215640.227;
         XOri = 0.00;
         YOri = 204.05;
@@ -65453,7 +66558,7 @@ Group
         Index = 13884;
         LinkTrId = 0;
         XPos = 130942.300;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 216128.965;
         XOri = 0.00;
         YOri = 203.72;
@@ -65475,7 +66580,7 @@ Group
         Index = 13885;
         LinkTrId = 0;
         XPos = 130873.087;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 216303.415;
         XOri = 0.00;
         YOri = 202.70;
@@ -65497,7 +66602,7 @@ Group
         Index = 13886;
         LinkTrId = 0;
         XPos = 130716.716;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 216346.673;
         XOri = 0.00;
         YOri = 203.67;
@@ -65519,7 +66624,7 @@ Group
         Index = 13887;
         LinkTrId = 0;
         XPos = 130785.184;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 216180.548;
         XOri = 0.00;
         YOri = 203.48;
@@ -65541,7 +66646,7 @@ Group
         Index = 13888;
         LinkTrId = 0;
         XPos = 130942.903;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 215805.962;
         XOri = 0.00;
         YOri = 203.66;
@@ -65563,7 +66668,7 @@ Group
         Index = 13889;
         LinkTrId = 0;
         XPos = 130797.536;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 216044.913;
         XOri = 0.00;
         YOri = 292.97;
@@ -65585,7 +66690,7 @@ Group
         Index = 13890;
         LinkTrId = 0;
         XPos = 130844.134;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 215919.406;
         XOri = 0.00;
         YOri = 293.78;
@@ -65607,7 +66712,7 @@ Group
         Index = 13891;
         LinkTrId = 0;
         XPos = 130628.307;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 215972.520;
         XOri = 0.00;
         YOri = 113.27;
@@ -65629,7 +66734,7 @@ Group
         Index = 13892;
         LinkTrId = 0;
         XPos = 130669.436;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 215840.905;
         XOri = 0.00;
         YOri = 292.94;
@@ -65651,7 +66756,7 @@ Group
         Index = 13893;
         LinkTrId = 0;
         XPos = 130698.772;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 216116.823;
         XOri = 0.00;
         YOri = 292.31;
@@ -65673,7 +66778,7 @@ Group
         Index = 13894;
         LinkTrId = 0;
         XPos = 130734.229;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 215759.613;
         XOri = 0.00;
         YOri = 113.06;
@@ -65695,7 +66800,7 @@ Group
         Index = 13895;
         LinkTrId = 0;
         XPos = 130842.573;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 215756.389;
         XOri = 0.00;
         YOri = 23.54;
@@ -65725,7 +66830,7 @@ Group
         Index = 13897;
         LinkTrId = 0;
         XPos = 130586.041;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 216953.687;
         XOri = 0.00;
         YOri = 110.06;
@@ -65747,7 +66852,7 @@ Group
         Index = 13898;
         LinkTrId = 0;
         XPos = 130405.724;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 216892.871;
         XOri = 0.00;
         YOri = 111.77;
@@ -65769,7 +66874,7 @@ Group
         Index = 13899;
         LinkTrId = 0;
         XPos = 130770.925;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 217025.286;
         XOri = 0.00;
         YOri = 110.06;
@@ -65791,7 +66896,7 @@ Group
         Index = 13900;
         LinkTrId = 0;
         XPos = 130659.238;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 216789.517;
         XOri = 0.00;
         YOri = 290.93;
@@ -65813,7 +66918,7 @@ Group
         Index = 13901;
         LinkTrId = 0;
         XPos = 130720.685;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 216867.519;
         XOri = 0.00;
         YOri = 21.14;
@@ -65835,7 +66940,7 @@ Group
         Index = 13902;
         LinkTrId = 0;
         XPos = 130561.151;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 216755.276;
         XOri = 0.00;
         YOri = 21.14;
@@ -65857,7 +66962,7 @@ Group
         Index = 13903;
         LinkTrId = 0;
         XPos = 130459.547;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 216774.156;
         XOri = 0.00;
         YOri = 21.89;
@@ -65879,7 +66984,7 @@ Group
         Index = 13904;
         LinkTrId = 0;
         XPos = 130261.670;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 216835.701;
         XOri = 0.00;
         YOri = 22.16;
@@ -65901,7 +67006,7 @@ Group
         Index = 13905;
         LinkTrId = 0;
         XPos = 130734.341;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 216669.492;
         XOri = 0.00;
         YOri = 110.81;
@@ -65923,7 +67028,7 @@ Group
         Index = 13906;
         LinkTrId = 0;
         XPos = 130605.968;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 216632.336;
         XOri = 0.00;
         YOri = 111.59;
@@ -65945,7 +67050,7 @@ Group
         Index = 13907;
         LinkTrId = 0;
         XPos = 130760.872;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 216578.659;
         XOri = 0.00;
         YOri = 110.81;
@@ -65967,7 +67072,7 @@ Group
         Index = 13908;
         LinkTrId = 0;
         XPos = 130321.991;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 216717.601;
         XOri = 0.00;
         YOri = 111.02;
@@ -65989,7 +67094,7 @@ Group
         Index = 13909;
         LinkTrId = 0;
         XPos = 130848.534;
-        YPos = 181.378;
+        YPos = 59.952;
         ZPos = 216910.660;
         XOri = 0.00;
         YOri = 290.81;
@@ -67644,212 +68749,6 @@ Group
     Name = "Group";
     Index = 13991;
     Desc = "";
-    Block
-    {
-      Name = "Block";
-      Index = 13992;
-      LinkTrId = 0;
-      XPos = 127890.411;
-      YPos = 181.378;
-      ZPos = 221387.472;
-      XOri = 0.00;
-      YOri = 17.68;
-      ZOri = 0.00;
-      Model = "graphics\blocks\sklad_01.mgm";
-      Script = "LuaScripts\WorldObjects\Blocks\sklad_01.txt";
-      Country = 0;
-      Desc = "";
-      Durability = 25000;
-      DamageReport = 50;
-      DamageThreshold = 1;
-      DeleteAfterDeath = 1;
-    }
-    
-
-    Block
-    {
-      Name = "Block";
-      Index = 13993;
-      LinkTrId = 0;
-      XPos = 128311.695;
-      YPos = 181.378;
-      ZPos = 220556.545;
-      XOri = 0.00;
-      YOri = 202.94;
-      ZOri = 0.00;
-      Model = "graphics\blocks\sklad_01.mgm";
-      Script = "LuaScripts\WorldObjects\Blocks\sklad_01.txt";
-      Country = 0;
-      Desc = "";
-      Durability = 25000;
-      DamageReport = 50;
-      DamageThreshold = 1;
-      DeleteAfterDeath = 1;
-    }
-    
-
-    Group
-    {
-      Name = "misc_big_1";
-      Index = 13994;
-      Desc = "";
-      Block
-      {
-        Name = "misc_1";
-        Index = 13995;
-        LinkTrId = 0;
-        XPos = 127922.910;
-        YPos = 181.378;
-        ZPos = 220639.204;
-        XOri = 0.00;
-        YOri = 250.84;
-        ZOri = 0.00;
-        Model = "graphics\blocks\scot_01.mgm";
-        Script = "LuaScripts\WorldObjects\Blocks\scot_01.txt";
-        Country = 0;
-        Desc = "";
-        Durability = 5000;
-        DamageReport = 50;
-        DamageThreshold = 1;
-        DeleteAfterDeath = 1;
-      }
-      
-
-      Block
-      {
-        Name = "misc_3";
-        Index = 13996;
-        LinkTrId = 0;
-        XPos = 127646.074;
-        YPos = 181.378;
-        ZPos = 220500.865;
-        XOri = 0.00;
-        YOri = 23.68;
-        ZOri = 0.00;
-        Model = "graphics\blocks\meh_01.mgm";
-        Script = "LuaScripts\WorldObjects\Blocks\meh_01.txt";
-        Country = 0;
-        Desc = "";
-        Durability = 5000;
-        DamageReport = 50;
-        DamageThreshold = 1;
-        DeleteAfterDeath = 1;
-      }
-      
-
-      Block
-      {
-        Name = "misc_2";
-        Index = 13997;
-        LinkTrId = 0;
-        XPos = 128041.531;
-        YPos = 181.378;
-        ZPos = 220344.948;
-        XOri = 0.00;
-        YOri = 112.39;
-        ZOri = 0.00;
-        Model = "graphics\blocks\sklad_01.mgm";
-        Script = "LuaScripts\WorldObjects\Blocks\sklad_01.txt";
-        Country = 0;
-        Desc = "";
-        Durability = 5000;
-        DamageReport = 50;
-        DamageThreshold = 1;
-        DeleteAfterDeath = 1;
-      }
-      
-
-      Block
-      {
-        Name = "Block";
-        Index = 13998;
-        LinkTrId = 0;
-        XPos = 127727.891;
-        YPos = 181.378;
-        ZPos = 220578.537;
-        XOri = 0.00;
-        YOri = 295.57;
-        ZOri = 0.00;
-        Model = "graphics\blocks\country_m_corner_block2.mgm";
-        Script = "LuaScripts\WorldObjects\Blocks\country_m_corner_block2.txt";
-        Country = 0;
-        Desc = "";
-        Durability = 5000;
-        DamageReport = 50;
-        DamageThreshold = 1;
-        DeleteAfterDeath = 1;
-      }
-      
-
-      Block
-      {
-        Name = "Block";
-        Index = 13999;
-        LinkTrId = 0;
-        XPos = 127886.049;
-        YPos = 181.378;
-        ZPos = 220280.680;
-        XOri = 0.00;
-        YOri = 114.07;
-        ZOri = 0.00;
-        Model = "graphics\blocks\country_m_corner_block2.mgm";
-        Script = "LuaScripts\WorldObjects\Blocks\country_m_corner_block2.txt";
-        Country = 0;
-        Desc = "";
-        Durability = 5000;
-        DamageReport = 50;
-        DamageThreshold = 1;
-        DeleteAfterDeath = 1;
-      }
-      
-
-      Block
-      {
-        Name = "Block";
-        Index = 14000;
-        LinkTrId = 0;
-        XPos = 127740.628;
-        YPos = 181.378;
-        ZPos = 220288.338;
-        XOri = 0.00;
-        YOri = 23.68;
-        ZOri = 0.00;
-        Model = "graphics\blocks\country_200x100_2.mgm";
-        Script = "LuaScripts\WorldObjects\Blocks\country_200x100_2.txt";
-        Country = 0;
-        Desc = "";
-        Durability = 5000;
-        DamageReport = 50;
-        DamageThreshold = 1;
-        DeleteAfterDeath = 1;
-      }
-      
-
-      Block
-      {
-        Name = "Block";
-        Index = 14001;
-        LinkTrId = 0;
-        XPos = 128056.496;
-        YPos = 181.378;
-        ZPos = 220471.410;
-        XOri = 0.00;
-        YOri = 203.86;
-        ZOri = 0.00;
-        Model = "graphics\blocks\country_m_corner_block7.mgm";
-        Script = "LuaScripts\WorldObjects\Blocks\country_m_corner_block7.txt";
-        Country = 0;
-        Desc = "";
-        Durability = 5000;
-        DamageReport = 50;
-        DamageThreshold = 1;
-        DeleteAfterDeath = 1;
-      }
-      
-
-    }
-    
-
     Group
     {
       Name = "lay_cnt_xcr_02";
@@ -67861,7 +68760,7 @@ Group
         Index = 14003;
         LinkTrId = 0;
         XPos = 128593.047;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 220286.462;
         XOri = 0.00;
         YOri = 26.51;
@@ -67883,7 +68782,7 @@ Group
         Index = 14004;
         LinkTrId = 0;
         XPos = 128707.828;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 220344.120;
         XOri = 0.00;
         YOri = 208.46;
@@ -67905,7 +68804,7 @@ Group
         Index = 14005;
         LinkTrId = 0;
         XPos = 128777.033;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 220573.035;
         XOri = 0.00;
         YOri = 297.68;
@@ -67927,7 +68826,7 @@ Group
         Index = 14006;
         LinkTrId = 0;
         XPos = 128605.042;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 220548.747;
         XOri = 0.00;
         YOri = 208.25;
@@ -67949,7 +68848,7 @@ Group
         Index = 14007;
         LinkTrId = 0;
         XPos = 128487.267;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 220484.188;
         XOri = 0.00;
         YOri = 28.70;
@@ -67971,7 +68870,7 @@ Group
         Index = 14008;
         LinkTrId = 0;
         XPos = 128815.449;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 220450.539;
         XOri = 0.00;
         YOri = 297.35;
@@ -67993,7 +68892,7 @@ Group
         Index = 14009;
         LinkTrId = 0;
         XPos = 128376.558;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 220370.530;
         XOri = 0.00;
         YOri = 296.33;
@@ -68015,7 +68914,7 @@ Group
         Index = 14010;
         LinkTrId = 0;
         XPos = 128452.957;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 220266.891;
         XOri = 0.00;
         YOri = 297.53;
@@ -68037,7 +68936,7 @@ Group
         Index = 14011;
         LinkTrId = 0;
         XPos = 128531.094;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 220677.448;
         XOri = 0.00;
         YOri = 298.67;
@@ -68059,7 +68958,7 @@ Group
         Index = 14012;
         LinkTrId = 0;
         XPos = 128650.043;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 220157.288;
         XOri = 0.00;
         YOri = 296.75;
@@ -68081,7 +68980,7 @@ Group
         Index = 14013;
         LinkTrId = 0;
         XPos = 128424.033;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 220614.687;
         XOri = 0.00;
         YOri = 297.71;
@@ -68103,7 +69002,7 @@ Group
         Index = 14014;
         LinkTrId = 0;
         XPos = 128764.234;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 220225.153;
         XOri = 0.00;
         YOri = 117.38;
@@ -68133,7 +69032,7 @@ Group
         Index = 14016;
         LinkTrId = 0;
         XPos = 128232.168;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 221083.890;
         XOri = 0.00;
         YOri = 201.23;
@@ -68155,7 +69054,7 @@ Group
         Index = 14017;
         LinkTrId = 0;
         XPos = 128296.851;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 220904.923;
         XOri = 0.00;
         YOri = 202.94;
@@ -68177,7 +69076,7 @@ Group
         Index = 14018;
         LinkTrId = 0;
         XPos = 128156.608;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 221267.191;
         XOri = 0.00;
         YOri = 201.23;
@@ -68199,7 +69098,7 @@ Group
         Index = 14019;
         LinkTrId = 0;
         XPos = 128394.725;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 221160.603;
         XOri = 0.00;
         YOri = 22.10;
@@ -68221,7 +69120,7 @@ Group
         Index = 14020;
         LinkTrId = 0;
         XPos = 128315.419;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 221220.358;
         XOri = 0.00;
         YOri = 112.31;
@@ -68243,7 +69142,7 @@ Group
         Index = 14021;
         LinkTrId = 0;
         XPos = 128431.069;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 221063.276;
         XOri = 0.00;
         YOri = 112.31;
@@ -68265,7 +69164,7 @@ Group
         Index = 14022;
         LinkTrId = 0;
         XPos = 128414.379;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 220961.288;
         XOri = 0.00;
         YOri = 113.06;
@@ -68287,7 +69186,7 @@ Group
         Index = 14023;
         LinkTrId = 0;
         XPos = 128357.105;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 220762.133;
         XOri = 0.00;
         YOri = 113.33;
@@ -68309,7 +69208,7 @@ Group
         Index = 14024;
         LinkTrId = 0;
         XPos = 128513.106;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 221238.272;
         XOri = 0.00;
         YOri = 201.98;
@@ -68331,7 +69230,7 @@ Group
         Index = 14025;
         LinkTrId = 0;
         XPos = 128553.016;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 221110.728;
         XOri = 0.00;
         YOri = 202.76;
@@ -68353,7 +69252,7 @@ Group
         Index = 14026;
         LinkTrId = 0;
         XPos = 128603.347;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 221266.751;
         XOri = 0.00;
         YOri = 201.98;
@@ -68375,7 +69274,7 @@ Group
         Index = 14027;
         LinkTrId = 0;
         XPos = 128473.880;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 220824.982;
         XOri = 0.00;
         YOri = 202.19;
@@ -68397,7 +69296,7 @@ Group
         Index = 14028;
         LinkTrId = 0;
         XPos = 128269.538;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 221347.248;
         XOri = 0.00;
         YOri = 21.98;
@@ -68427,7 +69326,7 @@ Group
         Index = 14030;
         LinkTrId = 0;
         XPos = 127791.515;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 219942.640;
         XOri = 0.00;
         YOri = 201.90;
@@ -68449,7 +69348,7 @@ Group
         Index = 14031;
         LinkTrId = 0;
         XPos = 127695.925;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 219895.223;
         XOri = 0.00;
         YOri = 202.26;
@@ -68471,7 +69370,7 @@ Group
         Index = 14032;
         LinkTrId = 0;
         XPos = 127950.286;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 220003.666;
         XOri = 0.00;
         YOri = 112.80;
@@ -68493,7 +69392,7 @@ Group
         Index = 14033;
         LinkTrId = 0;
         XPos = 127854.322;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 220115.041;
         XOri = 0.00;
         YOri = 113.20;
@@ -68515,7 +69414,7 @@ Group
         Index = 14034;
         LinkTrId = 0;
         XPos = 127552.266;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 219838.788;
         XOri = 0.00;
         YOri = 112.92;
@@ -68537,7 +69436,7 @@ Group
         Index = 14035;
         LinkTrId = 0;
         XPos = 127593.314;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 219970.518;
         XOri = 0.00;
         YOri = 292.18;
@@ -68559,7 +69458,7 @@ Group
         Index = 14036;
         LinkTrId = 0;
         XPos = 127989.021;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 220181.753;
         XOri = 0.00;
         YOri = 25.03;
@@ -68581,7 +69480,7 @@ Group
         Index = 14037;
         LinkTrId = 0;
         XPos = 128121.282;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 220243.694;
         XOri = 0.00;
         YOri = 295.11;
@@ -68603,7 +69502,7 @@ Group
         Index = 14038;
         LinkTrId = 0;
         XPos = 128132.767;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 220087.606;
         XOri = 0.00;
         YOri = 113.47;
@@ -68625,7 +69524,7 @@ Group
         Index = 14039;
         LinkTrId = 0;
         XPos = 128250.571;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 220149.513;
         XOri = 0.00;
         YOri = 204.06;
@@ -68647,7 +69546,7 @@ Group
         Index = 14040;
         LinkTrId = 0;
         XPos = 127420.076;
-        YPos = 181.378;
+        YPos = 61.533;
         ZPos = 219796.058;
         XOri = 0.00;
         YOri = 112.95;
@@ -90452,6 +91351,236 @@ Group
     BColor = 255;
     LineType = 0;
     Coalitions = [2];
+  }
+  
+
+  MCU_Icon
+  {
+    Index = 17336;
+    Targets = [];
+    Objects = [];
+    XPos = 127860.542;
+    YPos = 50.973;
+    ZPos = 220709.796;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    LCName = 69;
+    LCDesc = 70;
+    IconId = 507;
+    RColor = 255;
+    GColor = 255;
+    BColor = 255;
+    LineType = 0;
+    Coalitions = [2];
+  }
+  
+
+  MCU_Icon
+  {
+    Index = 17337;
+    Targets = [];
+    Objects = [];
+    XPos = 127707.520;
+    YPos = 50.973;
+    ZPos = 220707.716;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    LCName = 71;
+    LCDesc = 72;
+    IconId = 557;
+    RColor = 255;
+    GColor = 255;
+    BColor = 255;
+    LineType = 0;
+    Coalitions = [1];
+  }
+  
+
+  MCU_Icon
+  {
+    Index = 17338;
+    Targets = [17339];
+    Objects = [];
+    XPos = 132692.531;
+    YPos = 46.391;
+    ZPos = 200453.455;
+    XOri = 0.00;
+    YOri = 9.94;
+    ZOri = 0.00;
+    Enabled = 1;
+    LCName = 73;
+    LCDesc = 74;
+    IconId = 0;
+    RColor = 0;
+    GColor = 32;
+    BColor = 200;
+    LineType = 0;
+    Coalitions = [1, 2, 0];
+  }
+  
+
+  MCU_Icon
+  {
+    Index = 17339;
+    Targets = [17341];
+    Objects = [];
+    XPos = 131467.358;
+    YPos = 46.391;
+    ZPos = 201930.188;
+    XOri = 0.00;
+    YOri = 9.94;
+    ZOri = 0.00;
+    Enabled = 1;
+    LCName = 75;
+    LCDesc = 76;
+    IconId = 0;
+    RColor = 0;
+    GColor = 32;
+    BColor = 200;
+    LineType = 0;
+    Coalitions = [1, 2, 0];
+  }
+  
+
+  MCU_Icon
+  {
+    Index = 17341;
+    Targets = [];
+    Objects = [];
+    XPos = 129546.878;
+    YPos = 46.391;
+    ZPos = 202318.634;
+    XOri = 0.00;
+    YOri = 9.94;
+    ZOri = 0.00;
+    Enabled = 1;
+    LCName = 77;
+    LCDesc = 78;
+    IconId = 0;
+    RColor = 0;
+    GColor = 32;
+    BColor = 200;
+    LineType = 0;
+    Coalitions = [1, 2, 0];
+  }
+  
+
+  MCU_Icon
+  {
+    Index = 17343;
+    Targets = [17344];
+    Objects = [];
+    XPos = 126311.928;
+    YPos = 46.391;
+    ZPos = 200105.955;
+    XOri = 0.00;
+    YOri = 68.55;
+    ZOri = 0.00;
+    Enabled = 1;
+    LCName = 79;
+    LCDesc = 80;
+    IconId = 0;
+    RColor = 0;
+    GColor = 32;
+    BColor = 200;
+    LineType = 0;
+    Coalitions = [1, 2, 0];
+  }
+  
+
+  MCU_Icon
+  {
+    Index = 17344;
+    Targets = [17346];
+    Objects = [];
+    XPos = 124413.347;
+    YPos = 46.391;
+    ZPos = 199828.139;
+    XOri = 0.00;
+    YOri = 68.55;
+    ZOri = 0.00;
+    Enabled = 1;
+    LCName = 81;
+    LCDesc = 82;
+    IconId = 0;
+    RColor = 0;
+    GColor = 32;
+    BColor = 200;
+    LineType = 0;
+    Coalitions = [1, 2, 0];
+  }
+  
+
+  MCU_Icon
+  {
+    Index = 17346;
+    Targets = [];
+    Objects = [];
+    XPos = 123082.307;
+    YPos = 46.391;
+    ZPos = 198390.271;
+    XOri = 0.00;
+    YOri = 68.55;
+    ZOri = 0.00;
+    Enabled = 1;
+    LCName = 83;
+    LCDesc = 84;
+    IconId = 0;
+    RColor = 0;
+    GColor = 32;
+    BColor = 200;
+    LineType = 0;
+    Coalitions = [1, 2, 0];
+  }
+  
+
+  MCU_Icon
+  {
+    Index = 17348;
+    Targets = [];
+    Objects = [];
+    XPos = 130768.155;
+    YPos = 50.973;
+    ZPos = 218518.339;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    LCName = 85;
+    LCDesc = 86;
+    IconId = 510;
+    RColor = 255;
+    GColor = 255;
+    BColor = 255;
+    LineType = 0;
+    Coalitions = [2];
+  }
+  
+
+  MCU_Icon
+  {
+    Index = 17349;
+    Targets = [];
+    Objects = [];
+    XPos = 130615.133;
+    YPos = 50.973;
+    ZPos = 218516.259;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    LCName = 87;
+    LCDesc = 88;
+    IconId = 560;
+    RColor = 255;
+    GColor = 255;
+    BColor = 255;
+    LineType = 0;
+    Coalitions = [1];
   }
   
 
