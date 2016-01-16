@@ -7,6 +7,13 @@ aieverywhere.pol
 aieverywhere.rus
 aieverywhere.spa
 buildscripts/packages/
+KalachNightAttack.Mission
+KalachNightAttack.eng
+KalachNightAttack.fra
+KalachNightAttack.ger
+KalachNightAttack.pol
+KalachNightAttack.rus
+KalachNightAttack.spa
 syntax: regexp
 /bin/
 /obj/
