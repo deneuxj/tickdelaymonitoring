@@ -120,7 +120,8 @@ let build() =
     addTargetLink serverInput reqKill.Index
 
     // Write mission file
-    using (File.CreateText(Path.Combine(__SOURCE_DIRECTORY__, "..", "..", "output.Mission"))) (fun file ->
+    let basename = "KalachNightAttack"
+    using (File.CreateText(Path.Combine(__SOURCE_DIRECTORY__, "..", "..", basename + ".Mission"))) (fun file ->
         file.WriteLine "# Mission File Version = 1.0;"
         file.WriteLine ""
         let options =
@@ -165,6 +166,6 @@ let build() =
     let allLcStrings = missionLcStrings
 
     for lang in [ "eng"; "ger"; "pol"; "rus" ; "spa" ; "fra" ] do
-        createLcFile ("output" + "." + lang) allLcStrings
+        createLcFile (basename + "." + lang) allLcStrings
 
 build()
