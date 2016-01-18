@@ -12,6 +12,8 @@ type StepPerSecData =
       Average : float32
     }
 
+exception ConnectionException of unit
+
 /// <summary>
 /// Interaction between the web server and DServer.
 /// Provides authentication, triggering server inputs...
@@ -25,7 +27,7 @@ type Client(address : IPAddress, port, login, password) as this =
         with
         | exc ->
             printfn "Failed to connect to game server: %s" exc.Message
-            raise exc
+            raise(ConnectionException())
     let stream = this.GetStream()
 
     let send(buff, idx, len) = Async.FromBeginEnd((fun (cb, par) -> stream.BeginWrite(buff, idx, len, cb, par)), stream.EndWrite)
@@ -130,7 +132,16 @@ let main argv =
     let password = "com123"
     let period = 5000
     let reqKill = "ReqKill"
-    use client = new Client(IPAddress.Loopback, 8991, login, password)
+    use client =
+        let rec f() =
+            try
+                new Client(IPAddress.Loopback, 8991, login, password)
+            with
+            | :? ConnectionException ->
+                printfn "Failed to connect to DServer. Retry in 10s."
+                System.Threading.Thread.Sleep(10000)
+                f()
+        f()
     async {
         let! response = client.Auth()
         printfn "Auth response: %s" response
@@ -138,7 +149,7 @@ let main argv =
             let! response = client.ResetSPS()
             do! Async.Sleep(period)
             let! stepPerSec = client.GetSPS()
-            if stepPerSec.Average < 49.0f then
+            if stepPerSec.Average < 49.0f && stepPerSec.Average > 0.0f then
                 let! response = client.ServerInput(reqKill)
                 printfn "Overload detected, %s sent, reponse: %s" reqKill response
             printfn "SPS: %4.1f" stepPerSec.Average
