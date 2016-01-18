@@ -16,6 +16,22 @@ open System.IO
 
 type T = Provider<"Sample.Mission", "ResourceDespawn.Group">
 
+type UnitPrioApi =
+    { SetHighPrio : string option
+      SetLowPrio : string option
+      SetMedPrio : string option
+      SetNoPrio : string option
+      Kill : string
+    }
+with
+    static member Create(kill, ?setHighPrio, ?setLowPrio, ?setMedPrio, ?setNoPrio) =
+        { SetHighPrio = setHighPrio
+          SetLowPrio = setLowPrio
+          SetMedPrio = setMedPrio
+          SetNoPrio = setNoPrio
+          Kill = kill
+        }
+
 let build() =
     // The stores that are responsible for providing collision-free new identifiers.
     /// MCU Index store.
@@ -54,42 +70,48 @@ let build() =
     let instances =
         [
             for i in 1..2 do
-                yield sprintf "StartPe2-%d" i, sprintf "KillPe2-%d" i, Some <| sprintf "SetLowPrioPe2-%d" i
+                yield UnitPrioApi.Create(sprintf "KillPe2-%d" i, setHighPrio = sprintf "StartPe2-%d" i, setLowPrio = sprintf "SetLowPrioPe2-%d" i)
             for i in 1..5 do
-                yield sprintf "StartJu87-%d" i, sprintf "KillJu87-%d" i, Some <| sprintf "SetLowPrioJu87-%d" i
+                yield UnitPrioApi.Create(sprintf "KillJu87-%d" i, setHighPrio = sprintf "StartJu87-%d" i, setLowPrio = sprintf "SetLowPrioJu87-%d" i)
             for i in 1..6 do
-                yield (sprintf "StartF4-%d" i, sprintf "KillF4-%d" i, None)
+                yield UnitPrioApi.Create(sprintf "KillF4-%d" i, setMedPrio = sprintf "StartF4-%d" i)
             for i in 1..7 do
-                yield (sprintf "StartLagg3-%d" i, sprintf "KillLagg3-%d" i, None)
+                yield UnitPrioApi.Create(sprintf "KillLagg3-%d" i, setMedPrio = sprintf "StartLagg3-%d" i)
             for i in 1..12 do
-                yield (sprintf "Start%d" i, sprintf "Kill%d" i, None)
-                yield (sprintf "Start%db" i, sprintf "Kill%db" i, None)
-                yield (sprintf "Start%dc" i, sprintf "Kill%dc" i, None)
+                yield UnitPrioApi.Create(sprintf "Kill%dc" i, setHighPrio = sprintf "Start%dc" i)
+            yield UnitPrioApi.Create("EvacKill", setNoPrio = "EvacStopped", setLowPrio = "EvacStarted")
         ]
     // Create blocks, connect to each vehicle group
     let blocks =
         [
-            for start, kill, setLowPrio in instances do
+            for api in instances do
                 let exists =
                     try
-                        getCommandByName start mission |> ignore
+                        getCommandByName api.Kill mission |> ignore
                         true
                     with
                     | _ -> false
                 if exists then
-                    let mcuStart = getCommandByName start mission
-                    let mcuKill = getCommandByName kill mission
+                    let mcuKill = getCommandByName api.Kill mission
                     let mcuLowPrio =
-                        setLowPrio
+                        api.SetLowPrio
+                        |> Option.map (fun name -> getCommandByName name mission)
+                    let mcuMedPrio =
+                        api.SetMedPrio
+                        |> Option.map (fun name -> getCommandByName name mission)
+                    let mcuHighPrio =
+                        api.SetHighPrio
                         |> Option.map (fun name -> getCommandByName name mission)
                     let block = T.ResourceDespawn.CreateMcuList()
                     subst block |> ignore
                     let onKilled = getCommandByName "OnKilled" block
                     let setHighPrio = getCommandByName "SetHighPrio" block
+                    let setMedPrio = getCommandByName "SetMedPrio" block
                     let setLowPrio = getCommandByName "SetLowPrio" block
                     addTargetLink onKilled mcuKill.Index
-                    addTargetLink mcuStart setHighPrio.Index
                     mcuLowPrio |> Option.iter (fun mcu -> addTargetLink mcu setLowPrio.Index)
+                    mcuMedPrio |> Option.iter (fun mcu -> addTargetLink mcu setMedPrio.Index)
+                    mcuHighPrio |> Option.iter (fun mcu -> addTargetLink mcu setHighPrio.Index)
                     yield block
         ]
     // Connect blocks to form a queue
