@@ -71,6 +71,8 @@ let build() =
         [
             for i in 1..2 do
                 yield UnitPrioApi.Create(sprintf "KillPe2-%d" i, setHighPrio = sprintf "StartPe2-%d" i, setLowPrio = sprintf "SetLowPrioPe2-%d" i)
+            for i in 1..2 do
+                yield UnitPrioApi.Create(sprintf "KillHe111-%d" i, setHighPrio = sprintf "StartHe111-%d" i, setLowPrio = sprintf "SetLowPrioHe111-%d" i)
             for i in 1..5 do
                 yield UnitPrioApi.Create(sprintf "KillJu87-%d" i, setHighPrio = sprintf "StartJu87-%d" i, setLowPrio = sprintf "SetLowPrioJu87-%d" i)
             for i in 1..6 do
