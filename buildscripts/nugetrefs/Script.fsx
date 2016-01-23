@@ -79,7 +79,7 @@ let build() =
                 yield UnitPrioApi.Create(sprintf "KillF4-%d" i, setMedPrio = sprintf "StartF4-%d" i)
             for i in 1..7 do
                 yield UnitPrioApi.Create(sprintf "KillLagg3-%d" i, setMedPrio = sprintf "StartLagg3-%d" i)
-            for i in 1..12 do
+            for i in 1..14 do
                 yield UnitPrioApi.Create(sprintf "Kill%dc" i, setHighPrio = sprintf "Start%dc" i)
             yield UnitPrioApi.Create("EvacKill", setNoPrio = "EvacStopped", setLowPrio = "EvacStarted")
         ]
