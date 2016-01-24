@@ -71,6 +71,11 @@ let build() =
     // Names of MCUs that control starting and stopping vehicle groups
     let instances =
         [
+            for i in 1..3 do
+                yield UnitPrioApi.Create(sprintf "KillDecoTraffic%d" i, setLowPrio = sprintf "StartDecoTraffic%d" i)
+                yield UnitPrioApi.Create(sprintf "KillDecoTraffic%db" i, setLowPrio = sprintf "StartDecoTraffic%db" i)
+            for i in 1..3 do
+                yield UnitPrioApi.Create(sprintf "KillDeco%d" i, setLowPrio = sprintf "StartDeco%d" i)
             for i in 1..2 do
                 yield UnitPrioApi.Create(sprintf "KillPe2-%d" i, setHighPrio = sprintf "StartPe2-%d" i, setLowPrio = sprintf "SetLowPrioPe2-%d" i)
             for i in 1..2 do
