@@ -1,5 +1,4 @@
 syntax: glob
-aieverywhere.fra
 aieverywhere.ger
 aieverywhere.list
 aieverywhere.msnbin
@@ -14,6 +13,13 @@ KalachNightAttack.ger
 KalachNightAttack.pol
 KalachNightAttack.rus
 KalachNightAttack.spa
+My.Group
+My.eng
+My.fra
+My.ger
+My.pol
+My.rus
+My.spa
 syntax: regexp
 /bin/
 /obj/

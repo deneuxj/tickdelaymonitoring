@@ -41076,7 +41076,7 @@ Group
     Index = 2098;
     Name = "StartPe2-1";
     Desc = "";
-    Targets = [2099,2100];
+    Targets = [2099,2100,5393];
     Objects = [];
     XPos = 142051.859;
     YPos = 100.825;
@@ -41143,7 +41143,7 @@ Group
   MCU_Timer
   {
     Index = 2105;
-    Name = "30s";
+    Name = "45min";
     Desc = "";
     Targets = [2098];
     Objects = [];
@@ -41153,7 +41153,7 @@ Group
     XOri = 0.00;
     YOri = 202.20;
     ZOri = 0.00;
-    Time = 30;
+    Time = 2700;
     Random = 100;
   }
   
@@ -41234,7 +41234,7 @@ Group
     Index = 2111;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [2113,2114];
+    Targets = [2113,2114,5392];
     Objects = [2090];
     XPos = 152483.767;
     YPos = 3000.000;
@@ -41303,6 +41303,66 @@ Group
     AttackArea = 1000;
     Time = 1200;
     Priority = 2;
+  }
+  
+
+  MCU_TR_Subtitle
+  {
+    Index = 5392;
+    Name = "Axis";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 153419.195;
+    YPos = 110.064;
+    ZPos = 189975.526;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    SubtitleInfo
+    {
+      Duration = 15;
+      FontSize = 20;
+      HAlign = 1;
+      VAlign = 0;
+      RColor = 255;
+      GColor = 0;
+      BColor = 0;
+      LCText = 173;
+    }
+    
+    Coalitions = [2];
+  }
+  
+
+  MCU_TR_Subtitle
+  {
+    Index = 5393;
+    Name = "All";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 142086.804;
+    YPos = 110.064;
+    ZPos = 228588.712;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    SubtitleInfo
+    {
+      Duration = 15;
+      FontSize = 20;
+      HAlign = 1;
+      VAlign = 0;
+      RColor = 255;
+      GColor = 0;
+      BColor = 0;
+      LCText = 174;
+    }
+    
+    Coalitions = [0, 1, 2];
   }
   
 
@@ -51046,7 +51106,7 @@ Group
     AttackGTargets = 0;
     AttackArea = 10000;
     Time = 59940;
-    Priority = 2;
+    Priority = 0;
   }
   
 
@@ -51366,7 +51426,7 @@ Group
     AttackGTargets = 0;
     AttackArea = 10000;
     Time = 59940;
-    Priority = 2;
+    Priority = 0;
   }
   
 
@@ -51686,7 +51746,7 @@ Group
     AttackGTargets = 0;
     AttackArea = 10000;
     Time = 59940;
-    Priority = 2;
+    Priority = 0;
   }
   
 
@@ -52006,7 +52066,7 @@ Group
     AttackGTargets = 0;
     AttackArea = 10000;
     Time = 59940;
-    Priority = 2;
+    Priority = 0;
   }
   
 
@@ -52326,7 +52386,7 @@ Group
     AttackGTargets = 0;
     AttackArea = 10000;
     Time = 59940;
-    Priority = 2;
+    Priority = 0;
   }
   
 
@@ -52646,7 +52706,7 @@ Group
     AttackGTargets = 0;
     AttackArea = 10000;
     Time = 59940;
-    Priority = 2;
+    Priority = 0;
   }
   
 
@@ -54731,102 +54791,6 @@ Group
   Desc = "";
   Vehicle
   {
-    Name = "t70";
-    Index = 3190;
-    LinkTrId = 3191;
-    XPos = 135112.533;
-    YPos = 58.088;
-    ZPos = 209160.641;
-    XOri = 359.17;
-    YOri = 215.01;
-    ZOri = 0.69;
-    Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
-    Model = "graphics\vehicles\t70\t70.mgm";
-    Desc = "";
-    Country = 101;
-    NumberInFormation = 0;
-    Vulnerable = 1;
-    Engageable = 1;
-    LimitAmmo = 1;
-    AILevel = 2;
-    DamageReport = 50;
-    DamageThreshold = 1;
-    DeleteAfterDeath = 1;
-    CoopStart = 0;
-    Spotter = -1;
-    BeaconChannel = 0;
-    Callsign = 0;
-  }
-  
-
-  MCU_TR_Entity
-  {
-    Index = 3191;
-    Name = "kv1 entity";
-    Desc = "";
-    Targets = [];
-    Objects = [];
-    XPos = 135112.533;
-    YPos = 58.288;
-    ZPos = 209160.641;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 0;
-    MisObjID = 3190;
-  }
-  
-
-  Vehicle
-  {
-    Name = "t70";
-    Index = 3193;
-    LinkTrId = 3194;
-    XPos = 135131.860;
-    YPos = 58.088;
-    ZPos = 209143.140;
-    XOri = 358.99;
-    YOri = 215.01;
-    ZOri = 0.82;
-    Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
-    Model = "graphics\vehicles\t70\t70.mgm";
-    Desc = "";
-    Country = 101;
-    NumberInFormation = 1;
-    Vulnerable = 1;
-    Engageable = 1;
-    LimitAmmo = 1;
-    AILevel = 2;
-    DamageReport = 50;
-    DamageThreshold = 1;
-    DeleteAfterDeath = 1;
-    CoopStart = 0;
-    Spotter = -1;
-    BeaconChannel = 0;
-    Callsign = 0;
-  }
-  
-
-  MCU_TR_Entity
-  {
-    Index = 3194;
-    Name = "kv1 entity";
-    Desc = "";
-    Targets = [3191];
-    Objects = [];
-    XPos = 135131.860;
-    YPos = 58.288;
-    ZPos = 209143.140;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 0;
-    MisObjID = 3193;
-  }
-  
-
-  Vehicle
-  {
     Name = "Stug37";
     Index = 3196;
     LinkTrId = 3197;
@@ -54981,25 +54945,6 @@ Group
     ZPos = 206029.795;
     XOri = 0.00;
     YOri = 0.00;
-    ZOri = 0.00;
-    Area = 20;
-    Speed = 5;
-    Priority = 0;
-  }
-  
-
-  MCU_Waypoint
-  {
-    Index = 3207;
-    Name = "Trigger Waypoint";
-    Desc = "";
-    Targets = [];
-    Objects = [3191];
-    XPos = 130731.360;
-    YPos = 58.677;
-    ZPos = 203594.478;
-    XOri = 0.00;
-    YOri = 228.50;
     ZOri = 0.00;
     Area = 20;
     Speed = 5;
@@ -55502,7 +55447,7 @@ Group
     Index = 3241;
     LinkTrId = 3242;
     XPos = 131905.453;
-    YPos = 58.677;
+    YPos = 58.088;
     ZPos = 204142.101;
     XOri = 0.00;
     YOri = 4.63;
@@ -55534,7 +55479,7 @@ Group
     Targets = [];
     Objects = [];
     XPos = 131905.453;
-    YPos = 58.877;
+    YPos = 58.288;
     ZPos = 204142.101;
     XOri = 0.00;
     YOri = 0.00;
@@ -55550,7 +55495,7 @@ Group
     Index = 3244;
     LinkTrId = 3245;
     XPos = 131894.737;
-    YPos = 58.677;
+    YPos = 58.088;
     ZPos = 204171.401;
     XOri = 0.00;
     YOri = 4.63;
@@ -55582,7 +55527,7 @@ Group
     Targets = [3242];
     Objects = [];
     XPos = 131894.737;
-    YPos = 58.877;
+    YPos = 58.288;
     ZPos = 204171.401;
     XOri = 0.00;
     YOri = 0.00;
@@ -55598,7 +55543,7 @@ Group
     Index = 3247;
     LinkTrId = 3248;
     XPos = 131885.516;
-    YPos = 58.677;
+    YPos = 58.088;
     ZPos = 204201.841;
     XOri = 0.00;
     YOri = 4.63;
@@ -55630,7 +55575,7 @@ Group
     Targets = [3242];
     Objects = [];
     XPos = 131885.516;
-    YPos = 58.877;
+    YPos = 58.288;
     ZPos = 204201.841;
     XOri = 0.00;
     YOri = 0.00;
@@ -55813,513 +55758,6 @@ Group
     XPos = 131598.179;
     YPos = 58.677;
     ZPos = 205378.511;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Area = 20;
-    Speed = 5;
-    Priority = 0;
-  }
-  
-
-  Vehicle
-  {
-    Name = "t70";
-    Index = 3264;
-    LinkTrId = 3265;
-    XPos = 135487.344;
-    YPos = 58.088;
-    ZPos = 208773.617;
-    XOri = 359.85;
-    YOri = 215.01;
-    ZOri = 357.79;
-    Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
-    Model = "graphics\vehicles\t70\t70.mgm";
-    Desc = "";
-    Country = 101;
-    NumberInFormation = 0;
-    Vulnerable = 1;
-    Engageable = 1;
-    LimitAmmo = 1;
-    AILevel = 2;
-    DamageReport = 50;
-    DamageThreshold = 1;
-    DeleteAfterDeath = 1;
-    CoopStart = 0;
-    Spotter = -1;
-    BeaconChannel = 0;
-    Callsign = 0;
-  }
-  
-
-  MCU_TR_Entity
-  {
-    Index = 3265;
-    Name = "kv1 entity";
-    Desc = "";
-    Targets = [];
-    Objects = [];
-    XPos = 135487.344;
-    YPos = 58.288;
-    ZPos = 208773.617;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 0;
-    MisObjID = 3264;
-  }
-  
-
-  Vehicle
-  {
-    Name = "t70";
-    Index = 3267;
-    LinkTrId = 3268;
-    XPos = 135506.671;
-    YPos = 58.088;
-    ZPos = 208756.116;
-    XOri = 359.23;
-    YOri = 215.01;
-    ZOri = 356.89;
-    Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
-    Model = "graphics\vehicles\t70\t70.mgm";
-    Desc = "";
-    Country = 101;
-    NumberInFormation = 1;
-    Vulnerable = 1;
-    Engageable = 1;
-    LimitAmmo = 1;
-    AILevel = 2;
-    DamageReport = 50;
-    DamageThreshold = 1;
-    DeleteAfterDeath = 1;
-    CoopStart = 0;
-    Spotter = -1;
-    BeaconChannel = 0;
-    Callsign = 0;
-  }
-  
-
-  MCU_TR_Entity
-  {
-    Index = 3268;
-    Name = "kv1 entity";
-    Desc = "";
-    Targets = [3265];
-    Objects = [];
-    XPos = 135506.671;
-    YPos = 58.288;
-    ZPos = 208756.116;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 0;
-    MisObjID = 3267;
-  }
-  
-
-  Vehicle
-  {
-    Name = "t70";
-    Index = 3270;
-    LinkTrId = 3271;
-    XPos = 134643.161;
-    YPos = 58.088;
-    ZPos = 209465.426;
-    XOri = 1.47;
-    YOri = 215.01;
-    ZOri = 359.06;
-    Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
-    Model = "graphics\vehicles\t70\t70.mgm";
-    Desc = "";
-    Country = 101;
-    NumberInFormation = 0;
-    Vulnerable = 1;
-    Engageable = 1;
-    LimitAmmo = 1;
-    AILevel = 2;
-    DamageReport = 50;
-    DamageThreshold = 1;
-    DeleteAfterDeath = 1;
-    CoopStart = 0;
-    Spotter = -1;
-    BeaconChannel = 0;
-    Callsign = 0;
-  }
-  
-
-  MCU_TR_Entity
-  {
-    Index = 3271;
-    Name = "kv1 entity";
-    Desc = "";
-    Targets = [];
-    Objects = [];
-    XPos = 134643.161;
-    YPos = 58.288;
-    ZPos = 209465.426;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 0;
-    MisObjID = 3270;
-  }
-  
-
-  Vehicle
-  {
-    Name = "t70";
-    Index = 3273;
-    LinkTrId = 3274;
-    XPos = 134662.488;
-    YPos = 58.088;
-    ZPos = 209447.925;
-    XOri = 358.45;
-    YOri = 215.01;
-    ZOri = 359.11;
-    Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
-    Model = "graphics\vehicles\t70\t70.mgm";
-    Desc = "";
-    Country = 101;
-    NumberInFormation = 1;
-    Vulnerable = 1;
-    Engageable = 1;
-    LimitAmmo = 1;
-    AILevel = 2;
-    DamageReport = 50;
-    DamageThreshold = 1;
-    DeleteAfterDeath = 1;
-    CoopStart = 0;
-    Spotter = -1;
-    BeaconChannel = 0;
-    Callsign = 0;
-  }
-  
-
-  MCU_TR_Entity
-  {
-    Index = 3274;
-    Name = "kv1 entity";
-    Desc = "";
-    Targets = [3271];
-    Objects = [];
-    XPos = 134662.488;
-    YPos = 58.288;
-    ZPos = 209447.925;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 0;
-    MisObjID = 3273;
-  }
-  
-
-  Vehicle
-  {
-    Name = "t70";
-    Index = 3276;
-    LinkTrId = 3277;
-    XPos = 135611.225;
-    YPos = 58.088;
-    ZPos = 209719.522;
-    XOri = 358.73;
-    YOri = 215.01;
-    ZOri = 2.97;
-    Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
-    Model = "graphics\vehicles\t70\t70.mgm";
-    Desc = "";
-    Country = 101;
-    NumberInFormation = 0;
-    Vulnerable = 1;
-    Engageable = 1;
-    LimitAmmo = 1;
-    AILevel = 2;
-    DamageReport = 50;
-    DamageThreshold = 1;
-    DeleteAfterDeath = 1;
-    CoopStart = 0;
-    Spotter = -1;
-    BeaconChannel = 0;
-    Callsign = 0;
-  }
-  
-
-  MCU_TR_Entity
-  {
-    Index = 3277;
-    Name = "kv1 entity";
-    Desc = "";
-    Targets = [];
-    Objects = [];
-    XPos = 135611.225;
-    YPos = 58.288;
-    ZPos = 209719.522;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 0;
-    MisObjID = 3276;
-  }
-  
-
-  Vehicle
-  {
-    Name = "t70";
-    Index = 3279;
-    LinkTrId = 3280;
-    XPos = 135630.552;
-    YPos = 58.088;
-    ZPos = 209702.021;
-    XOri = 358.73;
-    YOri = 215.01;
-    ZOri = 2.97;
-    Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
-    Model = "graphics\vehicles\t70\t70.mgm";
-    Desc = "";
-    Country = 101;
-    NumberInFormation = 1;
-    Vulnerable = 1;
-    Engageable = 1;
-    LimitAmmo = 1;
-    AILevel = 2;
-    DamageReport = 50;
-    DamageThreshold = 1;
-    DeleteAfterDeath = 1;
-    CoopStart = 0;
-    Spotter = -1;
-    BeaconChannel = 0;
-    Callsign = 0;
-  }
-  
-
-  MCU_TR_Entity
-  {
-    Index = 3280;
-    Name = "kv1 entity";
-    Desc = "";
-    Targets = [3277];
-    Objects = [];
-    XPos = 135630.552;
-    YPos = 58.288;
-    ZPos = 209702.021;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 0;
-    MisObjID = 3279;
-  }
-  
-
-  Vehicle
-  {
-    Name = "t70";
-    Index = 3282;
-    LinkTrId = 3283;
-    XPos = 135651.601;
-    YPos = 58.088;
-    ZPos = 209689.767;
-    XOri = 358.82;
-    YOri = 215.01;
-    ZOri = 2.29;
-    Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
-    Model = "graphics\vehicles\t70\t70.mgm";
-    Desc = "";
-    Country = 101;
-    NumberInFormation = 2;
-    Vulnerable = 1;
-    Engageable = 1;
-    LimitAmmo = 1;
-    AILevel = 2;
-    DamageReport = 50;
-    DamageThreshold = 1;
-    DeleteAfterDeath = 1;
-    CoopStart = 0;
-    Spotter = -1;
-    BeaconChannel = 0;
-    Callsign = 0;
-  }
-  
-
-  MCU_TR_Entity
-  {
-    Index = 3283;
-    Name = "kv1 entity";
-    Desc = "";
-    Targets = [3277];
-    Objects = [];
-    XPos = 135651.601;
-    YPos = 58.288;
-    ZPos = 209689.767;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 0;
-    MisObjID = 3282;
-  }
-  
-
-  MCU_Waypoint
-  {
-    Index = 3285;
-    Name = "Trigger Waypoint";
-    Desc = "";
-    Targets = [3286];
-    Objects = [3265];
-    XPos = 134899.481;
-    YPos = 124.328;
-    ZPos = 206178.854;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Area = 20;
-    Speed = 5;
-    Priority = 0;
-  }
-  
-
-  MCU_Waypoint
-  {
-    Index = 3286;
-    Name = "Trigger Waypoint";
-    Desc = "";
-    Targets = [3288];
-    Objects = [3265];
-    XPos = 133878.333;
-    YPos = 89.106;
-    ZPos = 205118.431;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Area = 20;
-    Speed = 5;
-    Priority = 0;
-  }
-  
-
-  MCU_Waypoint
-  {
-    Index = 3288;
-    Name = "Trigger Waypoint";
-    Desc = "";
-    Targets = [3290];
-    Objects = [3265];
-    XPos = 132079.541;
-    YPos = 58.677;
-    ZPos = 203853.778;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Area = 20;
-    Speed = 5;
-    Priority = 0;
-  }
-  
-
-  MCU_Waypoint
-  {
-    Index = 3290;
-    Name = "Trigger Waypoint";
-    Desc = "";
-    Targets = [];
-    Objects = [3265];
-    XPos = 130683.288;
-    YPos = 58.677;
-    ZPos = 203475.491;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Area = 20;
-    Speed = 5;
-    Priority = 0;
-  }
-  
-
-  MCU_Waypoint
-  {
-    Index = 3292;
-    Name = "Trigger Waypoint";
-    Desc = "";
-    Targets = [3293];
-    Objects = [3271];
-    XPos = 132371.635;
-    YPos = 90.352;
-    ZPos = 208214.806;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Area = 20;
-    Speed = 5;
-    Priority = 0;
-  }
-  
-
-  MCU_Waypoint
-  {
-    Index = 3293;
-    Name = "Trigger Waypoint";
-    Desc = "";
-    Targets = [3295];
-    Objects = [3271];
-    XPos = 131319.479;
-    YPos = 72.427;
-    ZPos = 206651.142;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Area = 20;
-    Speed = 5;
-    Priority = 0;
-  }
-  
-
-  MCU_Waypoint
-  {
-    Index = 3295;
-    Name = "Trigger Waypoint";
-    Desc = "";
-    Targets = [3297];
-    Objects = [3271];
-    XPos = 130488.406;
-    YPos = 50.285;
-    ZPos = 205353.914;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Area = 20;
-    Speed = 5;
-    Priority = 0;
-  }
-  
-
-  MCU_Waypoint
-  {
-    Index = 3297;
-    Name = "Trigger Waypoint";
-    Desc = "";
-    Targets = [];
-    Objects = [3271];
-    XPos = 130458.990;
-    YPos = 58.677;
-    ZPos = 204066.964;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Area = 20;
-    Speed = 5;
-    Priority = 0;
-  }
-  
-
-  MCU_Waypoint
-  {
-    Index = 3299;
-    Name = "Trigger Waypoint";
-    Desc = "";
-    Targets = [];
-    Objects = [3277];
-    XPos = 130620.591;
-    YPos = 58.677;
-    ZPos = 203726.860;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -57496,216 +56934,8 @@ Group
 
   MCU_Timer
   {
-    Index = 3360;
-    Name = "Start1c";
-    Desc = "";
-    Targets = [3361,3362];
-    Objects = [];
-    XPos = 134594.962;
-    YPos = 106.594;
-    ZPos = 209471.570;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 0;
-    Random = 100;
-  }
-  
-
-  MCU_Activate
-  {
-    Index = 3361;
-    Name = "";
-    Desc = "";
-    Targets = [];
-    Objects = [3271];
-    XPos = 134616.893;
-    YPos = 106.373;
-    ZPos = 209469.496;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 3362;
-    Name = "5s";
-    Desc = "";
-    Targets = [3292];
-    Objects = [];
-    XPos = 134581.033;
-    YPos = 106.779;
-    ZPos = 209457.937;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 5;
-    Random = 100;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 3365;
-    Name = "Start9c";
-    Desc = "";
-    Targets = [3366,3367];
-    Objects = [];
-    XPos = 135567.151;
-    YPos = 106.271;
-    ZPos = 209722.055;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 0;
-    Random = 100;
-  }
-  
-
-  MCU_Activate
-  {
-    Index = 3366;
-    Name = "";
-    Desc = "";
-    Targets = [];
-    Objects = [3277];
-    XPos = 135589.083;
-    YPos = 106.352;
-    ZPos = 209719.980;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 3367;
-    Name = "5s";
-    Desc = "";
-    Targets = [3299];
-    Objects = [];
-    XPos = 135553.222;
-    YPos = 106.724;
-    ZPos = 209708.422;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 5;
-    Random = 100;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 3370;
-    Name = "Start3c";
-    Desc = "";
-    Targets = [3371,3372];
-    Objects = [];
-    XPos = 135061.033;
-    YPos = 111.352;
-    ZPos = 209163.573;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 0;
-    Random = 100;
-  }
-  
-
-  MCU_Activate
-  {
-    Index = 3371;
-    Name = "";
-    Desc = "";
-    Targets = [];
-    Objects = [3191];
-    XPos = 135082.965;
-    YPos = 111.126;
-    ZPos = 209161.498;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 3372;
-    Name = "5s";
-    Desc = "";
-    Targets = [3207];
-    Objects = [];
-    XPos = 135047.104;
-    YPos = 111.829;
-    ZPos = 209149.940;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 5;
-    Random = 100;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 3375;
-    Name = "Start5c";
-    Desc = "";
-    Targets = [3376,3377];
-    Objects = [];
-    XPos = 135415.940;
-    YPos = 115.524;
-    ZPos = 208778.426;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 0;
-    Random = 100;
-  }
-  
-
-  MCU_Activate
-  {
-    Index = 3376;
-    Name = "";
-    Desc = "";
-    Targets = [];
-    Objects = [3265];
-    XPos = 135437.872;
-    YPos = 116.060;
-    ZPos = 208776.351;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 3377;
-    Name = "5s";
-    Desc = "";
-    Targets = [3285];
-    Objects = [];
-    XPos = 135402.011;
-    YPos = 115.455;
-    ZPos = 208764.793;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 5;
-    Random = 100;
-  }
-  
-
-  MCU_Timer
-  {
     Index = 3380;
-    Name = "Start2c";
+    Name = "Start1";
     Desc = "";
     Targets = [3381,3382];
     Objects = [];
@@ -57757,7 +56987,7 @@ Group
   MCU_Timer
   {
     Index = 3386;
-    Name = "Start4c";
+    Name = "Start2";
     Desc = "";
     Targets = [3387,3388];
     Objects = [];
@@ -57809,7 +57039,7 @@ Group
   MCU_Timer
   {
     Index = 3392;
-    Name = "Start6c";
+    Name = "Start3";
     Desc = "";
     Targets = [3393,3394];
     Objects = [];
@@ -57861,7 +57091,7 @@ Group
   MCU_Timer
   {
     Index = 3398;
-    Name = "Start12c";
+    Name = "Start6";
     Desc = "";
     Targets = [3399,3400];
     Objects = [];
@@ -57913,7 +57143,7 @@ Group
   MCU_Timer
   {
     Index = 3404;
-    Name = "Start10c";
+    Name = "Start5";
     Desc = "";
     Targets = [3405,3406];
     Objects = [];
@@ -57965,7 +57195,7 @@ Group
   MCU_Timer
   {
     Index = 3410;
-    Name = "Start8c";
+    Name = "Start4";
     Desc = "";
     Targets = [3411,3412];
     Objects = [];
@@ -58016,72 +57246,8 @@ Group
 
   MCU_Deactivate
   {
-    Index = 3416;
-    Name = "Kill1c";
-    Desc = "";
-    Targets = [];
-    Objects = [3271];
-    XPos = 134623.157;
-    YPos = 106.658;
-    ZPos = 209485.257;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-  }
-  
-
-  MCU_Deactivate
-  {
-    Index = 3417;
-    Name = "Kill3c";
-    Desc = "";
-    Targets = [];
-    Objects = [3191];
-    XPos = 135093.735;
-    YPos = 110.611;
-    ZPos = 209182.800;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-  }
-  
-
-  MCU_Deactivate
-  {
-    Index = 3418;
-    Name = "Kill5c";
-    Desc = "";
-    Targets = [];
-    Objects = [3265];
-    XPos = 135459.677;
-    YPos = 116.611;
-    ZPos = 208809.358;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-  }
-  
-
-  MCU_Deactivate
-  {
-    Index = 3419;
-    Name = "Kill9c";
-    Desc = "";
-    Targets = [];
-    Objects = [3277];
-    XPos = 135601.807;
-    YPos = 105.217;
-    ZPos = 209741.191;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-  }
-  
-
-  MCU_Deactivate
-  {
     Index = 3420;
-    Name = "Kill2c";
+    Name = "Kill1";
     Desc = "";
     Targets = [];
     Objects = [3231];
@@ -58097,7 +57263,7 @@ Group
   MCU_Deactivate
   {
     Index = 3421;
-    Name = "Kill4c";
+    Name = "Kill2";
     Desc = "";
     Targets = [];
     Objects = [3197];
@@ -58113,7 +57279,7 @@ Group
   MCU_Deactivate
   {
     Index = 3422;
-    Name = "Kill6c";
+    Name = "Kill3";
     Desc = "";
     Targets = [];
     Objects = [3220];
@@ -58129,7 +57295,7 @@ Group
   MCU_Deactivate
   {
     Index = 3423;
-    Name = "Kill12c";
+    Name = "Kill6";
     Desc = "";
     Targets = [];
     Objects = [3242];
@@ -58145,7 +57311,7 @@ Group
   MCU_Deactivate
   {
     Index = 3424;
-    Name = "Kill10c";
+    Name = "Kill5";
     Desc = "";
     Targets = [];
     Objects = [3209];
@@ -58161,7 +57327,7 @@ Group
   MCU_Deactivate
   {
     Index = 3425;
-    Name = "Kill8c";
+    Name = "Kill4";
     Desc = "";
     Targets = [];
     Objects = [3254];
@@ -58179,7 +57345,7 @@ Group
     Index = 3426;
     Name = "";
     Desc = "";
-    Targets = [3427];
+    Targets = [5385];
     Objects = [];
     XPos = 135584.241;
     YPos = 109.345;
@@ -58248,9 +57414,9 @@ Group
   MCU_Timer
   {
     Index = 3433;
-    Name = "90min";
+    Name = "60min";
     Desc = "";
-    Targets = [3435];
+    Targets = [3435,5388];
     Objects = [];
     XPos = 135593.506;
     YPos = 111.708;
@@ -58258,7 +57424,7 @@ Group
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
-    Time = 5400;
+    Time = 3600;
     Random = 100;
   }
   
@@ -58304,7 +57470,7 @@ Group
     Index = 3439;
     Name = "";
     Desc = "";
-    Targets = [3442];
+    Targets = [3442,5374];
     Objects = [];
     XPos = 135653.066;
     YPos = 112.479;
@@ -62101,7 +61267,7 @@ Group
     Index = 3722;
     LinkTrId = 3723;
     XPos = 135283.786;
-    YPos = 106.111;
+    YPos = 58.088;
     ZPos = 209808.441;
     XOri = 0.80;
     YOri = 234.14;
@@ -62133,7 +61299,7 @@ Group
     Targets = [3725];
     Objects = [];
     XPos = 135283.786;
-    YPos = 106.311;
+    YPos = 58.288;
     ZPos = 209808.441;
     XOri = 0.00;
     YOri = 0.00;
@@ -62149,7 +61315,7 @@ Group
     Index = 3726;
     LinkTrId = 3725;
     XPos = 135268.542;
-    YPos = 106.399;
+    YPos = 58.088;
     ZPos = 209830.982;
     XOri = 0.80;
     YOri = 234.14;
@@ -62181,7 +61347,7 @@ Group
     Targets = [];
     Objects = [];
     XPos = 135268.542;
-    YPos = 106.599;
+    YPos = 58.288;
     ZPos = 209830.982;
     XOri = 0.00;
     YOri = 0.00;
@@ -62197,7 +61363,7 @@ Group
     Index = 3728;
     LinkTrId = 3729;
     XPos = 135256.608;
-    YPos = 106.651;
+    YPos = 58.088;
     ZPos = 209848.740;
     XOri = 0.74;
     YOri = 234.14;
@@ -62229,7 +61395,7 @@ Group
     Targets = [3725];
     Objects = [];
     XPos = 135256.608;
-    YPos = 106.851;
+    YPos = 58.288;
     ZPos = 209848.740;
     XOri = 0.00;
     YOri = 0.00;
@@ -62245,7 +61411,7 @@ Group
     Index = 3731;
     LinkTrId = 0;
     XPos = 135283.759;
-    YPos = 106.110;
+    YPos = 58.088;
     ZPos = 209807.909;
     XOri = 0.00;
     YOri = 230.72;
@@ -62267,7 +61433,7 @@ Group
     Index = 3732;
     LinkTrId = 0;
     XPos = 135268.455;
-    YPos = 106.400;
+    YPos = 58.088;
     ZPos = 209830.920;
     XOri = 0.00;
     YOri = 230.72;
@@ -62289,7 +61455,7 @@ Group
     Index = 3733;
     LinkTrId = 0;
     XPos = 135256.342;
-    YPos = 106.651;
+    YPos = 58.088;
     ZPos = 209848.357;
     XOri = 0.00;
     YOri = 230.72;
@@ -62363,7 +61529,7 @@ Group
     Index = 3737;
     LinkTrId = 0;
     XPos = 135336.063;
-    YPos = 104.127;
+    YPos = 58.088;
     ZPos = 209912.641;
     XOri = 0.00;
     YOri = 31.67;
@@ -62385,7 +61551,7 @@ Group
     Index = 3738;
     LinkTrId = 3739;
     XPos = 135130.883;
-    YPos = 110.524;
+    YPos = 58.088;
     ZPos = 209264.391;
     XOri = 358.90;
     YOri = 217.82;
@@ -62417,7 +61583,7 @@ Group
     Targets = [3741];
     Objects = [];
     XPos = 135130.883;
-    YPos = 110.724;
+    YPos = 58.288;
     ZPos = 209264.391;
     XOri = 0.00;
     YOri = 0.00;
@@ -62433,7 +61599,7 @@ Group
     Index = 3742;
     LinkTrId = 3741;
     XPos = 135122.585;
-    YPos = 110.324;
+    YPos = 58.088;
     ZPos = 209290.306;
     XOri = 359.08;
     YOri = 217.82;
@@ -62465,7 +61631,7 @@ Group
     Targets = [];
     Objects = [];
     XPos = 135122.585;
-    YPos = 110.524;
+    YPos = 58.288;
     ZPos = 209290.306;
     XOri = 0.00;
     YOri = 0.00;
@@ -62481,7 +61647,7 @@ Group
     Index = 3744;
     LinkTrId = 3745;
     XPos = 135116.118;
-    YPos = 110.141;
+    YPos = 58.088;
     ZPos = 209310.702;
     XOri = 358.69;
     YOri = 217.82;
@@ -62513,7 +61679,7 @@ Group
     Targets = [3741];
     Objects = [];
     XPos = 135116.118;
-    YPos = 110.341;
+    YPos = 58.288;
     ZPos = 209310.702;
     XOri = 0.00;
     YOri = 0.00;
@@ -62529,7 +61695,7 @@ Group
     Index = 3747;
     LinkTrId = 0;
     XPos = 135130.709;
-    YPos = 111.015;
+    YPos = 58.088;
     ZPos = 209263.889;
     XOri = 0.00;
     YOri = 214.40;
@@ -62551,7 +61717,7 @@ Group
     Index = 3748;
     LinkTrId = 0;
     XPos = 135122.484;
-    YPos = 110.634;
+    YPos = 58.088;
     ZPos = 209290.271;
     XOri = 0.00;
     YOri = 214.40;
@@ -62573,7 +61739,7 @@ Group
     Index = 3749;
     LinkTrId = 0;
     XPos = 135115.756;
-    YPos = 110.328;
+    YPos = 58.088;
     ZPos = 209310.408;
     XOri = 0.00;
     YOri = 214.40;
@@ -62647,7 +61813,7 @@ Group
     Index = 3753;
     LinkTrId = 0;
     XPos = 135210.323;
-    YPos = 110.524;
+    YPos = 58.088;
     ZPos = 209349.714;
     XOri = 0.00;
     YOri = 15.35;
@@ -62669,7 +61835,7 @@ Group
     Index = 3754;
     LinkTrId = 3755;
     XPos = 135540.876;
-    YPos = 123.392;
+    YPos = 58.088;
     ZPos = 208286.177;
     XOri = 359.09;
     YOri = 234.14;
@@ -62701,7 +61867,7 @@ Group
     Targets = [3757];
     Objects = [];
     XPos = 135540.876;
-    YPos = 123.592;
+    YPos = 58.288;
     ZPos = 208286.177;
     XOri = 0.00;
     YOri = 0.00;
@@ -62717,7 +61883,7 @@ Group
     Index = 3758;
     LinkTrId = 3757;
     XPos = 135525.633;
-    YPos = 122.694;
+    YPos = 58.088;
     ZPos = 208308.718;
     XOri = 356.98;
     YOri = 234.14;
@@ -62749,7 +61915,7 @@ Group
     Targets = [];
     Objects = [];
     XPos = 135525.633;
-    YPos = 122.894;
+    YPos = 58.288;
     ZPos = 208308.718;
     XOri = 0.00;
     YOri = 0.00;
@@ -62765,7 +61931,7 @@ Group
     Index = 3760;
     LinkTrId = 3761;
     XPos = 135513.698;
-    YPos = 121.459;
+    YPos = 58.088;
     ZPos = 208326.477;
     XOri = 356.98;
     YOri = 234.14;
@@ -62797,7 +61963,7 @@ Group
     Targets = [3757];
     Objects = [];
     XPos = 135513.698;
-    YPos = 121.659;
+    YPos = 58.288;
     ZPos = 208326.477;
     XOri = 0.00;
     YOri = 0.00;
@@ -62813,7 +61979,7 @@ Group
     Index = 3763;
     LinkTrId = 0;
     XPos = 135540.850;
-    YPos = 123.384;
+    YPos = 58.088;
     ZPos = 208285.646;
     XOri = 0.00;
     YOri = 230.72;
@@ -62835,7 +62001,7 @@ Group
     Index = 3764;
     LinkTrId = 0;
     XPos = 135525.546;
-    YPos = 122.695;
+    YPos = 58.088;
     ZPos = 208308.656;
     XOri = 0.00;
     YOri = 230.72;
@@ -62857,7 +62023,7 @@ Group
     Index = 3765;
     LinkTrId = 0;
     XPos = 135513.433;
-    YPos = 121.470;
+    YPos = 58.088;
     ZPos = 208326.093;
     XOri = 0.00;
     YOri = 230.72;
@@ -62931,7 +62097,7 @@ Group
     Index = 3769;
     LinkTrId = 0;
     XPos = 135593.153;
-    YPos = 121.527;
+    YPos = 58.088;
     ZPos = 208390.378;
     XOri = 0.00;
     YOri = 31.67;
@@ -62947,426 +62113,2187 @@ Group
   }
   
 
-  Vehicle
+  Group
   {
-    Name = "t70";
-    Index = 3770;
-    LinkTrId = 3771;
-    XPos = 136011.557;
-    YPos = 111.808;
-    ZPos = 209388.347;
-    XOri = 359.33;
-    YOri = 215.01;
-    ZOri = 0.97;
-    Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
-    Model = "graphics\vehicles\t70\t70.mgm";
+    Name = "Wave 1";
+    Index = 5319;
     Desc = "";
-    Country = 101;
-    NumberInFormation = 0;
-    Vulnerable = 1;
-    Engageable = 1;
-    LimitAmmo = 1;
-    AILevel = 2;
-    DamageReport = 50;
-    DamageThreshold = 1;
-    DeleteAfterDeath = 1;
-    CoopStart = 0;
-    Spotter = -1;
-    BeaconChannel = 0;
-    Callsign = 0;
+    MCU_Timer
+    {
+      Index = 3362;
+      Name = "5s";
+      Desc = "";
+      Targets = [3292];
+      Objects = [];
+      XPos = 134581.033;
+      YPos = 106.779;
+      ZPos = 209457.937;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 5;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3360;
+      Name = "Start1b";
+      Desc = "";
+      Targets = [3361,3362];
+      Objects = [];
+      XPos = 134594.962;
+      YPos = 106.594;
+      ZPos = 209471.570;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Activate
+    {
+      Index = 3361;
+      Name = "";
+      Desc = "";
+      Targets = [];
+      Objects = [3271];
+      XPos = 134616.893;
+      YPos = 106.373;
+      ZPos = 209469.496;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Deactivate
+    {
+      Index = 3416;
+      Name = "Kill1b";
+      Desc = "";
+      Targets = [];
+      Objects = [3271];
+      XPos = 134623.157;
+      YPos = 106.658;
+      ZPos = 209485.257;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    Vehicle
+    {
+      Name = "t70";
+      Index = 3270;
+      LinkTrId = 3271;
+      XPos = 134643.161;
+      YPos = 87.444;
+      ZPos = 209465.426;
+      XOri = 1.47;
+      YOri = 215.01;
+      ZOri = 359.06;
+      Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
+      Model = "graphics\vehicles\t70\t70.mgm";
+      Desc = "";
+      Country = 101;
+      NumberInFormation = 0;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      AILevel = 2;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+      CoopStart = 0;
+      Spotter = -1;
+      BeaconChannel = 0;
+      Callsign = 0;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3271;
+      Name = "kv1 entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 134643.161;
+      YPos = 87.644;
+      ZPos = 209465.426;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3270;
+    }
+    
+
+    Vehicle
+    {
+      Name = "t70";
+      Index = 3273;
+      LinkTrId = 3274;
+      XPos = 134662.488;
+      YPos = 87.444;
+      ZPos = 209447.925;
+      XOri = 358.45;
+      YOri = 215.01;
+      ZOri = 359.11;
+      Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
+      Model = "graphics\vehicles\t70\t70.mgm";
+      Desc = "";
+      Country = 101;
+      NumberInFormation = 1;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      AILevel = 2;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+      CoopStart = 0;
+      Spotter = -1;
+      BeaconChannel = 0;
+      Callsign = 0;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3274;
+      Name = "kv1 entity";
+      Desc = "";
+      Targets = [3271];
+      Objects = [];
+      XPos = 134662.488;
+      YPos = 87.644;
+      ZPos = 209447.925;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3273;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 3292;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [3293];
+      Objects = [3271];
+      XPos = 132371.635;
+      YPos = 90.352;
+      ZPos = 208214.806;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 5;
+      Priority = 0;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 3293;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [3295];
+      Objects = [3271];
+      XPos = 131319.479;
+      YPos = 72.427;
+      ZPos = 206651.142;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 5;
+      Priority = 0;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 3295;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [3297];
+      Objects = [3271];
+      XPos = 130488.406;
+      YPos = 50.285;
+      ZPos = 205353.914;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 5;
+      Priority = 0;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 3297;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [];
+      Objects = [3271];
+      XPos = 130458.990;
+      YPos = 58.677;
+      ZPos = 204066.964;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 5;
+      Priority = 0;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3372;
+      Name = "5s";
+      Desc = "";
+      Targets = [3207];
+      Objects = [];
+      XPos = 135047.104;
+      YPos = 111.829;
+      ZPos = 209149.940;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 5;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3370;
+      Name = "Start2b";
+      Desc = "";
+      Targets = [3371,3372];
+      Objects = [];
+      XPos = 135061.033;
+      YPos = 111.352;
+      ZPos = 209163.573;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Activate
+    {
+      Index = 3371;
+      Name = "";
+      Desc = "";
+      Targets = [];
+      Objects = [3191];
+      XPos = 135082.965;
+      YPos = 111.126;
+      ZPos = 209161.498;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Deactivate
+    {
+      Index = 3417;
+      Name = "Kill2b";
+      Desc = "";
+      Targets = [];
+      Objects = [3191];
+      XPos = 135093.735;
+      YPos = 110.611;
+      ZPos = 209182.800;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    Vehicle
+    {
+      Name = "t70";
+      Index = 3190;
+      LinkTrId = 3191;
+      XPos = 135112.533;
+      YPos = 87.444;
+      ZPos = 209160.641;
+      XOri = 359.17;
+      YOri = 215.01;
+      ZOri = 0.69;
+      Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
+      Model = "graphics\vehicles\t70\t70.mgm";
+      Desc = "";
+      Country = 101;
+      NumberInFormation = 0;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      AILevel = 2;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+      CoopStart = 0;
+      Spotter = -1;
+      BeaconChannel = 0;
+      Callsign = 0;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3191;
+      Name = "kv1 entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 135112.533;
+      YPos = 87.644;
+      ZPos = 209160.641;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3190;
+    }
+    
+
+    Vehicle
+    {
+      Name = "t70";
+      Index = 3193;
+      LinkTrId = 3194;
+      XPos = 135131.860;
+      YPos = 87.444;
+      ZPos = 209143.140;
+      XOri = 358.99;
+      YOri = 215.01;
+      ZOri = 0.82;
+      Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
+      Model = "graphics\vehicles\t70\t70.mgm";
+      Desc = "";
+      Country = 101;
+      NumberInFormation = 1;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      AILevel = 2;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+      CoopStart = 0;
+      Spotter = -1;
+      BeaconChannel = 0;
+      Callsign = 0;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3194;
+      Name = "kv1 entity";
+      Desc = "";
+      Targets = [3191];
+      Objects = [];
+      XPos = 135131.860;
+      YPos = 87.644;
+      ZPos = 209143.140;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3193;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 3207;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [];
+      Objects = [3191];
+      XPos = 130731.360;
+      YPos = 58.677;
+      ZPos = 203594.478;
+      XOri = 0.00;
+      YOri = 228.50;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 5;
+      Priority = 0;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3375;
+      Name = "Start3b";
+      Desc = "";
+      Targets = [3376,3377];
+      Objects = [];
+      XPos = 135415.940;
+      YPos = 115.524;
+      ZPos = 208778.426;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3377;
+      Name = "5s";
+      Desc = "";
+      Targets = [3285];
+      Objects = [];
+      XPos = 135402.011;
+      YPos = 115.455;
+      ZPos = 208764.793;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 5;
+      Random = 100;
+    }
+    
+
+    MCU_Activate
+    {
+      Index = 3376;
+      Name = "";
+      Desc = "";
+      Targets = [];
+      Objects = [3265];
+      XPos = 135437.872;
+      YPos = 116.060;
+      ZPos = 208776.351;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Deactivate
+    {
+      Index = 3418;
+      Name = "Kill3b";
+      Desc = "";
+      Targets = [];
+      Objects = [3265];
+      XPos = 135459.677;
+      YPos = 116.611;
+      ZPos = 208809.358;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    Vehicle
+    {
+      Name = "t70";
+      Index = 3264;
+      LinkTrId = 3265;
+      XPos = 135487.344;
+      YPos = 87.444;
+      ZPos = 208773.617;
+      XOri = 359.85;
+      YOri = 215.01;
+      ZOri = 357.79;
+      Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
+      Model = "graphics\vehicles\t70\t70.mgm";
+      Desc = "";
+      Country = 101;
+      NumberInFormation = 0;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      AILevel = 2;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+      CoopStart = 0;
+      Spotter = -1;
+      BeaconChannel = 0;
+      Callsign = 0;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3265;
+      Name = "kv1 entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 135487.344;
+      YPos = 87.644;
+      ZPos = 208773.617;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3264;
+    }
+    
+
+    Vehicle
+    {
+      Name = "t70";
+      Index = 3267;
+      LinkTrId = 3268;
+      XPos = 135506.671;
+      YPos = 87.444;
+      ZPos = 208756.116;
+      XOri = 359.23;
+      YOri = 215.01;
+      ZOri = 356.89;
+      Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
+      Model = "graphics\vehicles\t70\t70.mgm";
+      Desc = "";
+      Country = 101;
+      NumberInFormation = 1;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      AILevel = 2;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+      CoopStart = 0;
+      Spotter = -1;
+      BeaconChannel = 0;
+      Callsign = 0;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3268;
+      Name = "kv1 entity";
+      Desc = "";
+      Targets = [3265];
+      Objects = [];
+      XPos = 135506.671;
+      YPos = 87.644;
+      ZPos = 208756.116;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3267;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 3285;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [3286];
+      Objects = [3265];
+      XPos = 134899.481;
+      YPos = 124.328;
+      ZPos = 206178.854;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 5;
+      Priority = 0;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 3286;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [3288];
+      Objects = [3265];
+      XPos = 133878.333;
+      YPos = 89.106;
+      ZPos = 205118.431;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 5;
+      Priority = 0;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 3288;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [3290];
+      Objects = [3265];
+      XPos = 132079.541;
+      YPos = 58.677;
+      ZPos = 203853.778;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 5;
+      Priority = 0;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 3290;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [];
+      Objects = [3265];
+      XPos = 130683.288;
+      YPos = 58.677;
+      ZPos = 203475.491;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 5;
+      Priority = 0;
+    }
+    
+
   }
   
 
-  MCU_TR_Entity
+  Group
   {
-    Index = 3771;
-    Name = "kv1 entity";
+    Name = "Wave 2";
+    Index = 5320;
     Desc = "";
-    Targets = [];
-    Objects = [];
-    XPos = 136011.557;
-    YPos = 112.008;
-    ZPos = 209388.347;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 0;
-    MisObjID = 3770;
+    MCU_Timer
+    {
+      Index = 3791;
+      Name = "5s";
+      Desc = "";
+      Targets = [3794];
+      Objects = [];
+      XPos = 135149.059;
+      YPos = 115.455;
+      ZPos = 210094.306;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 5;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3442;
+      Name = "Start1c";
+      Desc = "";
+      Targets = [3790,3791];
+      Objects = [];
+      XPos = 135162.988;
+      YPos = 115.524;
+      ZPos = 210107.939;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Activate
+    {
+      Index = 3790;
+      Name = "";
+      Desc = "";
+      Targets = [];
+      Objects = [3784];
+      XPos = 135184.920;
+      YPos = 116.060;
+      ZPos = 210105.864;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Deactivate
+    {
+      Index = 3795;
+      Name = "Kill1c";
+      Desc = "";
+      Targets = [];
+      Objects = [3784];
+      XPos = 135206.725;
+      YPos = 116.611;
+      ZPos = 210138.871;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    Vehicle
+    {
+      Name = "t70";
+      Index = 3783;
+      LinkTrId = 3784;
+      XPos = 135234.392;
+      YPos = 101.386;
+      ZPos = 210103.130;
+      XOri = 359.26;
+      YOri = 215.01;
+      ZOri = 2.40;
+      Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
+      Model = "graphics\vehicles\t70\t70.mgm";
+      Desc = "";
+      Country = 101;
+      NumberInFormation = 0;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      AILevel = 2;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+      CoopStart = 0;
+      Spotter = -1;
+      BeaconChannel = 0;
+      Callsign = 0;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3784;
+      Name = "kv1 entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 135234.392;
+      YPos = 101.586;
+      ZPos = 210103.130;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3783;
+    }
+    
+
+    Vehicle
+    {
+      Name = "t70";
+      Index = 3786;
+      LinkTrId = 3787;
+      XPos = 135253.719;
+      YPos = 101.427;
+      ZPos = 210085.629;
+      XOri = 358.78;
+      YOri = 215.01;
+      ZOri = 0.62;
+      Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
+      Model = "graphics\vehicles\t70\t70.mgm";
+      Desc = "";
+      Country = 101;
+      NumberInFormation = 1;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      AILevel = 2;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+      CoopStart = 0;
+      Spotter = -1;
+      BeaconChannel = 0;
+      Callsign = 0;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3787;
+      Name = "kv1 entity";
+      Desc = "";
+      Targets = [3784];
+      Objects = [];
+      XPos = 135253.719;
+      YPos = 101.627;
+      ZPos = 210085.629;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3786;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3367;
+      Name = "5s";
+      Desc = "";
+      Targets = [3299];
+      Objects = [];
+      XPos = 135553.222;
+      YPos = 106.724;
+      ZPos = 209708.422;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 5;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3365;
+      Name = "Start2c";
+      Desc = "";
+      Targets = [3366,3367];
+      Objects = [];
+      XPos = 135567.151;
+      YPos = 106.271;
+      ZPos = 209722.055;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Activate
+    {
+      Index = 3366;
+      Name = "";
+      Desc = "";
+      Targets = [];
+      Objects = [3277];
+      XPos = 135589.083;
+      YPos = 106.352;
+      ZPos = 209719.980;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Deactivate
+    {
+      Index = 3419;
+      Name = "Kill2c";
+      Desc = "";
+      Targets = [];
+      Objects = [3277];
+      XPos = 135601.807;
+      YPos = 105.217;
+      ZPos = 209741.191;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    Vehicle
+    {
+      Name = "t70";
+      Index = 3276;
+      LinkTrId = 3277;
+      XPos = 135611.225;
+      YPos = 105.976;
+      ZPos = 209719.522;
+      XOri = 358.73;
+      YOri = 215.01;
+      ZOri = 2.97;
+      Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
+      Model = "graphics\vehicles\t70\t70.mgm";
+      Desc = "";
+      Country = 101;
+      NumberInFormation = 0;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      AILevel = 2;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+      CoopStart = 0;
+      Spotter = -1;
+      BeaconChannel = 0;
+      Callsign = 0;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3277;
+      Name = "kv1 entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 135611.225;
+      YPos = 106.176;
+      ZPos = 209719.522;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3276;
+    }
+    
+
+    Vehicle
+    {
+      Name = "t70";
+      Index = 3279;
+      LinkTrId = 3280;
+      XPos = 135630.552;
+      YPos = 106.240;
+      ZPos = 209702.021;
+      XOri = 358.73;
+      YOri = 215.01;
+      ZOri = 2.97;
+      Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
+      Model = "graphics\vehicles\t70\t70.mgm";
+      Desc = "";
+      Country = 101;
+      NumberInFormation = 1;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      AILevel = 2;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+      CoopStart = 0;
+      Spotter = -1;
+      BeaconChannel = 0;
+      Callsign = 0;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3280;
+      Name = "kv1 entity";
+      Desc = "";
+      Targets = [3277];
+      Objects = [];
+      XPos = 135630.552;
+      YPos = 106.440;
+      ZPos = 209702.021;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3279;
+    }
+    
+
+    Vehicle
+    {
+      Name = "t70";
+      Index = 3282;
+      LinkTrId = 3283;
+      XPos = 135651.601;
+      YPos = 106.133;
+      ZPos = 209689.767;
+      XOri = 358.82;
+      YOri = 215.01;
+      ZOri = 2.29;
+      Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
+      Model = "graphics\vehicles\t70\t70.mgm";
+      Desc = "";
+      Country = 101;
+      NumberInFormation = 2;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      AILevel = 2;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+      CoopStart = 0;
+      Spotter = -1;
+      BeaconChannel = 0;
+      Callsign = 0;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3283;
+      Name = "kv1 entity";
+      Desc = "";
+      Targets = [3277];
+      Objects = [];
+      XPos = 135651.601;
+      YPos = 106.333;
+      ZPos = 209689.767;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3282;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 3794;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [3797];
+      Objects = [3784];
+      XPos = 132088.686;
+      YPos = 89.787;
+      ZPos = 207417.303;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 5;
+      Priority = 0;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 3797;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [3799];
+      Objects = [3784];
+      XPos = 130679.362;
+      YPos = 89.787;
+      ZPos = 205270.226;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 5;
+      Priority = 0;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 3799;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [];
+      Objects = [3784];
+      XPos = 130511.897;
+      YPos = 89.787;
+      ZPos = 204076.992;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 5;
+      Priority = 0;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 3299;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [];
+      Objects = [3277];
+      XPos = 130620.591;
+      YPos = 58.677;
+      ZPos = 203726.860;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 5;
+      Priority = 0;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3778;
+      Name = "5s";
+      Desc = "";
+      Targets = [3781];
+      Objects = [];
+      XPos = 135926.224;
+      YPos = 115.455;
+      ZPos = 209379.523;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 5;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3440;
+      Name = "Start3c";
+      Desc = "";
+      Targets = [3777,3778];
+      Objects = [];
+      XPos = 135940.153;
+      YPos = 115.524;
+      ZPos = 209393.156;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Activate
+    {
+      Index = 3777;
+      Name = "";
+      Desc = "";
+      Targets = [];
+      Objects = [3771];
+      XPos = 135962.085;
+      YPos = 116.060;
+      ZPos = 209391.081;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Deactivate
+    {
+      Index = 3782;
+      Name = "Kill3c";
+      Desc = "";
+      Targets = [];
+      Objects = [3771];
+      XPos = 135983.890;
+      YPos = 116.611;
+      ZPos = 209424.088;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    Vehicle
+    {
+      Name = "t70";
+      Index = 3770;
+      LinkTrId = 3771;
+      XPos = 136011.557;
+      YPos = 111.808;
+      ZPos = 209388.347;
+      XOri = 359.33;
+      YOri = 215.01;
+      ZOri = 0.97;
+      Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
+      Model = "graphics\vehicles\t70\t70.mgm";
+      Desc = "";
+      Country = 101;
+      NumberInFormation = 0;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      AILevel = 2;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+      CoopStart = 0;
+      Spotter = -1;
+      BeaconChannel = 0;
+      Callsign = 0;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3771;
+      Name = "kv1 entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 136011.557;
+      YPos = 112.008;
+      ZPos = 209388.347;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3770;
+    }
+    
+
+    Vehicle
+    {
+      Name = "t70";
+      Index = 3773;
+      LinkTrId = 3774;
+      XPos = 136030.884;
+      YPos = 112.055;
+      ZPos = 209370.846;
+      XOri = 359.72;
+      YOri = 215.01;
+      ZOri = 358.77;
+      Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
+      Model = "graphics\vehicles\t70\t70.mgm";
+      Desc = "";
+      Country = 101;
+      NumberInFormation = 1;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      AILevel = 2;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+      CoopStart = 0;
+      Spotter = -1;
+      BeaconChannel = 0;
+      Callsign = 0;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3774;
+      Name = "kv1 entity";
+      Desc = "";
+      Targets = [3771];
+      Objects = [];
+      XPos = 136030.884;
+      YPos = 112.255;
+      ZPos = 209370.846;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3773;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 3781;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [3802];
+      Objects = [3771];
+      XPos = 133836.483;
+      YPos = 93.889;
+      ZPos = 205515.233;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 5;
+      Priority = 0;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 3802;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [];
+      Objects = [3771];
+      XPos = 130798.281;
+      YPos = 93.889;
+      ZPos = 203759.640;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 5;
+      Priority = 0;
+    }
+    
+
   }
   
 
-  Vehicle
+  Group
   {
-    Name = "t70";
-    Index = 3773;
-    LinkTrId = 3774;
-    XPos = 136030.884;
-    YPos = 58.088;
-    ZPos = 209370.846;
-    XOri = 359.23;
-    YOri = 215.01;
-    ZOri = 356.89;
-    Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
-    Model = "graphics\vehicles\t70\t70.mgm";
+    Name = "Wave 3";
+    Index = 5321;
     Desc = "";
-    Country = 101;
-    NumberInFormation = 1;
-    Vulnerable = 1;
-    Engageable = 1;
-    LimitAmmo = 1;
-    AILevel = 2;
-    DamageReport = 50;
-    DamageThreshold = 1;
-    DeleteAfterDeath = 1;
-    CoopStart = 0;
-    Spotter = -1;
-    BeaconChannel = 0;
-    Callsign = 0;
-  }
-  
+    MCU_Timer
+    {
+      Index = 5322;
+      Name = "5s";
+      Desc = "";
+      Targets = [5323];
+      Objects = [];
+      XPos = 134580.593;
+      YPos = 106.779;
+      ZPos = 209457.934;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 5;
+      Random = 100;
+    }
+    
 
-  MCU_TR_Entity
-  {
-    Index = 3774;
-    Name = "kv1 entity";
-    Desc = "";
-    Targets = [3771];
-    Objects = [];
-    XPos = 136030.884;
-    YPos = 58.288;
-    ZPos = 209370.846;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 0;
-    MisObjID = 3773;
+    MCU_Timer
+    {
+      Index = 5324;
+      Name = "Start1c";
+      Desc = "";
+      Targets = [5325,5322];
+      Objects = [];
+      XPos = 134594.522;
+      YPos = 106.594;
+      ZPos = 209471.567;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Activate
+    {
+      Index = 5325;
+      Name = "";
+      Desc = "";
+      Targets = [];
+      Objects = [5327];
+      XPos = 134616.453;
+      YPos = 106.373;
+      ZPos = 209469.493;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Deactivate
+    {
+      Index = 5328;
+      Name = "Kill1c";
+      Desc = "";
+      Targets = [];
+      Objects = [5327];
+      XPos = 134622.717;
+      YPos = 106.658;
+      ZPos = 209485.254;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    Vehicle
+    {
+      Name = "t70";
+      Index = 5329;
+      LinkTrId = 5327;
+      XPos = 134642.721;
+      YPos = 87.445;
+      ZPos = 209465.423;
+      XOri = 1.47;
+      YOri = 215.01;
+      ZOri = 359.06;
+      Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
+      Model = "graphics\vehicles\t70\t70.mgm";
+      Desc = "";
+      Country = 101;
+      NumberInFormation = 0;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      AILevel = 2;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+      CoopStart = 0;
+      Spotter = -1;
+      BeaconChannel = 0;
+      Callsign = 0;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 5327;
+      Name = "kv1 entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 134642.721;
+      YPos = 87.645;
+      ZPos = 209465.423;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 5329;
+    }
+    
+
+    Vehicle
+    {
+      Name = "t70";
+      Index = 5331;
+      LinkTrId = 5332;
+      XPos = 134662.048;
+      YPos = 87.445;
+      ZPos = 209447.922;
+      XOri = 358.45;
+      YOri = 215.01;
+      ZOri = 359.11;
+      Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
+      Model = "graphics\vehicles\t70\t70.mgm";
+      Desc = "";
+      Country = 101;
+      NumberInFormation = 1;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      AILevel = 2;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+      CoopStart = 0;
+      Spotter = -1;
+      BeaconChannel = 0;
+      Callsign = 0;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 5332;
+      Name = "kv1 entity";
+      Desc = "";
+      Targets = [5327];
+      Objects = [];
+      XPos = 134662.048;
+      YPos = 87.645;
+      ZPos = 209447.922;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 5331;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 5323;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [5335];
+      Objects = [5327];
+      XPos = 132371.195;
+      YPos = 90.352;
+      ZPos = 208214.803;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 5;
+      Priority = 0;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 5335;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [5337];
+      Objects = [5327];
+      XPos = 131319.039;
+      YPos = 72.427;
+      ZPos = 206651.139;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 5;
+      Priority = 0;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 5337;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [5339];
+      Objects = [5327];
+      XPos = 130487.966;
+      YPos = 50.285;
+      ZPos = 205353.911;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 5;
+      Priority = 0;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 5339;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [];
+      Objects = [5327];
+      XPos = 130458.550;
+      YPos = 58.677;
+      ZPos = 204066.961;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 5;
+      Priority = 0;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 5341;
+      Name = "5s";
+      Desc = "";
+      Targets = [5342];
+      Objects = [];
+      XPos = 135046.664;
+      YPos = 111.829;
+      ZPos = 209149.937;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 5;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 5343;
+      Name = "Start2c";
+      Desc = "";
+      Targets = [5344,5341];
+      Objects = [];
+      XPos = 135060.593;
+      YPos = 111.352;
+      ZPos = 209163.570;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Activate
+    {
+      Index = 5344;
+      Name = "";
+      Desc = "";
+      Targets = [];
+      Objects = [5346];
+      XPos = 135082.525;
+      YPos = 111.126;
+      ZPos = 209161.495;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Deactivate
+    {
+      Index = 5347;
+      Name = "Kill2c";
+      Desc = "";
+      Targets = [];
+      Objects = [5346];
+      XPos = 135093.295;
+      YPos = 110.611;
+      ZPos = 209182.797;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    Vehicle
+    {
+      Name = "t70";
+      Index = 5348;
+      LinkTrId = 5346;
+      XPos = 135112.093;
+      YPos = 87.445;
+      ZPos = 209160.638;
+      XOri = 359.17;
+      YOri = 215.01;
+      ZOri = 0.69;
+      Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
+      Model = "graphics\vehicles\t70\t70.mgm";
+      Desc = "";
+      Country = 101;
+      NumberInFormation = 0;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      AILevel = 2;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+      CoopStart = 0;
+      Spotter = -1;
+      BeaconChannel = 0;
+      Callsign = 0;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 5346;
+      Name = "kv1 entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 135112.093;
+      YPos = 87.645;
+      ZPos = 209160.638;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 5348;
+    }
+    
+
+    Vehicle
+    {
+      Name = "t70";
+      Index = 5350;
+      LinkTrId = 5351;
+      XPos = 135131.420;
+      YPos = 87.445;
+      ZPos = 209143.137;
+      XOri = 358.99;
+      YOri = 215.01;
+      ZOri = 0.82;
+      Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
+      Model = "graphics\vehicles\t70\t70.mgm";
+      Desc = "";
+      Country = 101;
+      NumberInFormation = 1;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      AILevel = 2;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+      CoopStart = 0;
+      Spotter = -1;
+      BeaconChannel = 0;
+      Callsign = 0;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 5351;
+      Name = "kv1 entity";
+      Desc = "";
+      Targets = [5346];
+      Objects = [];
+      XPos = 135131.420;
+      YPos = 87.645;
+      ZPos = 209143.137;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 5350;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 5342;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [];
+      Objects = [5346];
+      XPos = 130730.920;
+      YPos = 58.677;
+      ZPos = 203594.475;
+      XOri = 0.00;
+      YOri = 228.50;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 5;
+      Priority = 0;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 5354;
+      Name = "Start3c";
+      Desc = "";
+      Targets = [5355,5356];
+      Objects = [];
+      XPos = 135415.500;
+      YPos = 115.524;
+      ZPos = 208778.423;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 5356;
+      Name = "5s";
+      Desc = "";
+      Targets = [5358];
+      Objects = [];
+      XPos = 135401.571;
+      YPos = 115.455;
+      ZPos = 208764.790;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 5;
+      Random = 100;
+    }
+    
+
+    MCU_Activate
+    {
+      Index = 5355;
+      Name = "";
+      Desc = "";
+      Targets = [];
+      Objects = [5360];
+      XPos = 135437.432;
+      YPos = 116.060;
+      ZPos = 208776.348;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Deactivate
+    {
+      Index = 5361;
+      Name = "Kill3c";
+      Desc = "";
+      Targets = [];
+      Objects = [5360];
+      XPos = 135459.237;
+      YPos = 116.611;
+      ZPos = 208809.355;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    Vehicle
+    {
+      Name = "t70";
+      Index = 5362;
+      LinkTrId = 5360;
+      XPos = 135486.904;
+      YPos = 87.445;
+      ZPos = 208773.614;
+      XOri = 359.85;
+      YOri = 215.01;
+      ZOri = 357.79;
+      Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
+      Model = "graphics\vehicles\t70\t70.mgm";
+      Desc = "";
+      Country = 101;
+      NumberInFormation = 0;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      AILevel = 2;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+      CoopStart = 0;
+      Spotter = -1;
+      BeaconChannel = 0;
+      Callsign = 0;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 5360;
+      Name = "kv1 entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 135486.904;
+      YPos = 87.645;
+      ZPos = 208773.614;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 5362;
+    }
+    
+
+    Vehicle
+    {
+      Name = "t70";
+      Index = 5364;
+      LinkTrId = 5365;
+      XPos = 135506.231;
+      YPos = 87.445;
+      ZPos = 208756.113;
+      XOri = 359.23;
+      YOri = 215.01;
+      ZOri = 356.89;
+      Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
+      Model = "graphics\vehicles\t70\t70.mgm";
+      Desc = "";
+      Country = 101;
+      NumberInFormation = 1;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      AILevel = 2;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      DeleteAfterDeath = 1;
+      CoopStart = 0;
+      Spotter = -1;
+      BeaconChannel = 0;
+      Callsign = 0;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 5365;
+      Name = "kv1 entity";
+      Desc = "";
+      Targets = [5360];
+      Objects = [];
+      XPos = 135506.231;
+      YPos = 87.645;
+      ZPos = 208756.113;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 5364;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 5358;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [5368];
+      Objects = [5360];
+      XPos = 134899.041;
+      YPos = 124.328;
+      ZPos = 206178.851;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 5;
+      Priority = 0;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 5368;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [5370];
+      Objects = [5360];
+      XPos = 133877.893;
+      YPos = 89.106;
+      ZPos = 205118.428;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 5;
+      Priority = 0;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 5370;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [5372];
+      Objects = [5360];
+      XPos = 132079.101;
+      YPos = 58.677;
+      ZPos = 203853.775;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 5;
+      Priority = 0;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 5372;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [];
+      Objects = [5360];
+      XPos = 130682.848;
+      YPos = 58.677;
+      ZPos = 203475.488;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 20;
+      Speed = 5;
+      Priority = 0;
+    }
+    
+
   }
   
 
   MCU_Timer
   {
-    Index = 3440;
-    Name = "Start13c";
+    Index = 5374;
+    Name = "60min";
     Desc = "";
-    Targets = [3777,3778];
+    Targets = [5375,5389];
     Objects = [];
-    XPos = 135940.153;
-    YPos = 115.524;
-    ZPos = 209393.156;
+    XPos = 135653.067;
+    YPos = 111.708;
+    ZPos = 209558.332;
     XOri = 0.00;
-    YOri = 0.00;
+    YOri = 93.89;
     ZOri = 0.00;
-    Time = 0;
+    Time = 3600;
     Random = 100;
   }
   
 
-  MCU_Activate
+  MCU_Timer
   {
-    Index = 3777;
+    Index = 5375;
     Name = "";
     Desc = "";
-    Targets = [];
-    Objects = [3771];
-    XPos = 135962.085;
-    YPos = 116.060;
-    ZPos = 209391.081;
+    Targets = [5377,5324];
+    Objects = [];
+    XPos = 135650.137;
+    YPos = 112.267;
+    ZPos = 209583.847;
     XOri = 0.00;
-    YOri = 0.00;
+    YOri = 93.89;
     ZOri = 0.00;
+    Time = 1;
+    Random = 100;
   }
   
 
   MCU_Timer
   {
-    Index = 3778;
-    Name = "5s";
-    Desc = "";
-    Targets = [3781];
-    Objects = [];
-    XPos = 135926.224;
-    YPos = 115.455;
-    ZPos = 209379.523;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 5;
-    Random = 100;
-  }
-  
-
-  MCU_Deactivate
-  {
-    Index = 3782;
-    Name = "Kill13c";
-    Desc = "";
-    Targets = [];
-    Objects = [3771];
-    XPos = 135983.890;
-    YPos = 116.611;
-    ZPos = 209424.088;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-  }
-  
-
-  Vehicle
-  {
-    Name = "t70";
-    Index = 3783;
-    LinkTrId = 3784;
-    XPos = 135234.392;
-    YPos = 58.088;
-    ZPos = 210103.130;
-    XOri = 359.85;
-    YOri = 215.01;
-    ZOri = 357.79;
-    Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
-    Model = "graphics\vehicles\t70\t70.mgm";
-    Desc = "";
-    Country = 101;
-    NumberInFormation = 0;
-    Vulnerable = 1;
-    Engageable = 1;
-    LimitAmmo = 1;
-    AILevel = 2;
-    DamageReport = 50;
-    DamageThreshold = 1;
-    DeleteAfterDeath = 1;
-    CoopStart = 0;
-    Spotter = -1;
-    BeaconChannel = 0;
-    Callsign = 0;
-  }
-  
-
-  MCU_TR_Entity
-  {
-    Index = 3784;
-    Name = "kv1 entity";
-    Desc = "";
-    Targets = [];
-    Objects = [];
-    XPos = 135234.392;
-    YPos = 58.288;
-    ZPos = 210103.130;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 0;
-    MisObjID = 3783;
-  }
-  
-
-  Vehicle
-  {
-    Name = "t70";
-    Index = 3786;
-    LinkTrId = 3787;
-    XPos = 135253.719;
-    YPos = 58.088;
-    ZPos = 210085.629;
-    XOri = 359.23;
-    YOri = 215.01;
-    ZOri = 356.89;
-    Script = "LuaScripts\WorldObjects\vehicles\t70.txt";
-    Model = "graphics\vehicles\t70\t70.mgm";
-    Desc = "";
-    Country = 101;
-    NumberInFormation = 1;
-    Vulnerable = 1;
-    Engageable = 1;
-    LimitAmmo = 1;
-    AILevel = 2;
-    DamageReport = 50;
-    DamageThreshold = 1;
-    DeleteAfterDeath = 1;
-    CoopStart = 0;
-    Spotter = -1;
-    BeaconChannel = 0;
-    Callsign = 0;
-  }
-  
-
-  MCU_TR_Entity
-  {
-    Index = 3787;
-    Name = "kv1 entity";
-    Desc = "";
-    Targets = [3784];
-    Objects = [];
-    XPos = 135253.719;
-    YPos = 58.288;
-    ZPos = 210085.629;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 0;
-    MisObjID = 3786;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 3442;
-    Name = "Start14c";
-    Desc = "";
-    Targets = [3790,3791];
-    Objects = [];
-    XPos = 135162.988;
-    YPos = 115.524;
-    ZPos = 210107.939;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 0;
-    Random = 100;
-  }
-  
-
-  MCU_Activate
-  {
-    Index = 3790;
+    Index = 5377;
     Name = "";
     Desc = "";
-    Targets = [];
-    Objects = [3784];
-    XPos = 135184.920;
-    YPos = 116.060;
-    ZPos = 210105.864;
+    Targets = [5380,5343];
+    Objects = [];
+    XPos = 135628.117;
+    YPos = 113.052;
+    ZPos = 209604.548;
     XOri = 0.00;
-    YOri = 0.00;
+    YOri = 93.89;
     ZOri = 0.00;
+    Time = 1;
+    Random = 100;
   }
   
 
   MCU_Timer
   {
-    Index = 3791;
-    Name = "5s";
+    Index = 5380;
+    Name = "";
     Desc = "";
-    Targets = [3794];
+    Targets = [5354];
     Objects = [];
-    XPos = 135149.059;
-    YPos = 115.455;
-    ZPos = 210094.306;
+    XPos = 135601.127;
+    YPos = 112.479;
+    ZPos = 209614.526;
     XOri = 0.00;
-    YOri = 0.00;
+    YOri = 93.89;
     ZOri = 0.00;
-    Time = 5;
+    Time = 1;
     Random = 100;
   }
   
 
-  MCU_Deactivate
+  MCU_TR_Subtitle
   {
-    Index = 3795;
-    Name = "Kill14c";
+    Index = 5384;
+    Name = "All";
     Desc = "";
     Targets = [];
-    Objects = [3784];
-    XPos = 135206.725;
-    YPos = 116.611;
-    ZPos = 210138.871;
+    Objects = [];
+    XPos = 135492.206;
+    YPos = 110.064;
+    ZPos = 209518.640;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
+    Enabled = 1;
+    SubtitleInfo
+    {
+      Duration = 15;
+      FontSize = 20;
+      HAlign = 1;
+      VAlign = 0;
+      RColor = 255;
+      GColor = 255;
+      BColor = 0;
+      LCText = 168;
+    }
+    
+    Coalitions = [0, 1, 2];
   }
   
 
-  MCU_Waypoint
+  MCU_Timer
   {
-    Index = 3794;
-    Name = "Trigger Waypoint";
+    Index = 5385;
+    Name = "5min";
     Desc = "";
-    Targets = [3797];
-    Objects = [3784];
-    XPos = 132088.686;
-    YPos = 89.787;
-    ZPos = 207417.303;
+    Targets = [3427,5384];
+    Objects = [];
+    XPos = 135525.028;
+    YPos = 108.955;
+    ZPos = 209520.108;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
-    Area = 20;
-    Speed = 5;
-    Priority = 0;
+    Time = 300;
+    Random = 100;
   }
   
 
-  MCU_Waypoint
+  MCU_TR_Subtitle
   {
-    Index = 3797;
-    Name = "Trigger Waypoint";
-    Desc = "";
-    Targets = [3799];
-    Objects = [3784];
-    XPos = 130679.362;
-    YPos = 89.787;
-    ZPos = 205270.226;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Area = 20;
-    Speed = 5;
-    Priority = 0;
-  }
-  
-
-  MCU_Waypoint
-  {
-    Index = 3799;
-    Name = "Trigger Waypoint";
+    Index = 5388;
+    Name = "All";
     Desc = "";
     Targets = [];
-    Objects = [3784];
-    XPos = 130511.897;
-    YPos = 89.787;
-    ZPos = 204076.992;
+    Objects = [];
+    XPos = 135594.464;
+    YPos = 110.064;
+    ZPos = 209437.881;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
-    Area = 20;
-    Speed = 5;
-    Priority = 0;
+    Enabled = 1;
+    SubtitleInfo
+    {
+      Duration = 15;
+      FontSize = 20;
+      HAlign = 1;
+      VAlign = 0;
+      RColor = 255;
+      GColor = 255;
+      BColor = 0;
+      LCText = 169;
+    }
+    
+    Coalitions = [0, 1, 2];
   }
   
 
-  MCU_Waypoint
+  MCU_TR_Subtitle
   {
-    Index = 3781;
-    Name = "Trigger Waypoint";
-    Desc = "";
-    Targets = [3802];
-    Objects = [3771];
-    XPos = 133836.483;
-    YPos = 93.889;
-    ZPos = 205515.233;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Area = 20;
-    Speed = 5;
-    Priority = 0;
-  }
-  
-
-  MCU_Waypoint
-  {
-    Index = 3802;
-    Name = "Trigger Waypoint";
+    Index = 5389;
+    Name = "All";
     Desc = "";
     Targets = [];
-    Objects = [3771];
-    XPos = 130798.281;
-    YPos = 93.889;
-    ZPos = 203759.640;
+    Objects = [];
+    XPos = 135680.149;
+    YPos = 110.064;
+    ZPos = 209574.962;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
-    Area = 20;
-    Speed = 5;
-    Priority = 0;
+    Enabled = 1;
+    SubtitleInfo
+    {
+      Duration = 15;
+      FontSize = 20;
+      HAlign = 1;
+      VAlign = 0;
+      RColor = 255;
+      GColor = 255;
+      BColor = 0;
+      LCText = 170;
+    }
+    
+    Coalitions = [0, 1, 2];
   }
   
 
@@ -63477,7 +64404,7 @@ Group
     AttackGTargets = 0;
     AttackArea = 10000;
     Time = 59940;
-    Priority = 2;
+    Priority = 0;
   }
   
 
@@ -63797,7 +64724,7 @@ Group
     AttackGTargets = 0;
     AttackArea = 10000;
     Time = 59940;
-    Priority = 2;
+    Priority = 0;
   }
   
 
@@ -64117,7 +65044,7 @@ Group
     AttackGTargets = 0;
     AttackArea = 10000;
     Time = 59940;
-    Priority = 2;
+    Priority = 0;
   }
   
 
@@ -64437,7 +65364,7 @@ Group
     AttackGTargets = 0;
     AttackArea = 10000;
     Time = 59940;
-    Priority = 2;
+    Priority = 0;
   }
   
 
@@ -64757,7 +65684,7 @@ Group
     AttackGTargets = 0;
     AttackArea = 10000;
     Time = 59940;
-    Priority = 2;
+    Priority = 0;
   }
   
 
@@ -65077,7 +66004,7 @@ Group
     AttackGTargets = 0;
     AttackArea = 10000;
     Time = 59940;
-    Priority = 2;
+    Priority = 0;
   }
   
 
@@ -77546,7 +78473,7 @@ Group
   {
     Name = "NDB";
     Index = 4942;
-    LinkTrId = 5316;
+    LinkTrId = 4943;
     XPos = 105183.801;
     YPos = 83.966;
     ZPos = 208716.539;
@@ -77614,7 +78541,7 @@ Group
 
   MCU_Deactivate
   {
-    Index = 4947;
+    Index = 4946;
     Name = "";
     Desc = "";
     Targets = [4936];
@@ -77630,10 +78557,10 @@ Group
 
   MCU_Timer
   {
-    Index = 4948;
+    Index = 4947;
     Name = "75min";
     Desc = "";
-    Targets = [4949,4934];
+    Targets = [4948,4934];
     Objects = [];
     XPos = 105072.226;
     YPos = 85.580;
@@ -77648,7 +78575,7 @@ Group
 
   MCU_Activate
   {
-    Index = 4949;
+    Index = 4948;
     Name = "";
     Desc = "";
     Targets = [4936];
@@ -77664,10 +78591,10 @@ Group
 
   MCU_TR_MissionBegin
   {
-    Index = 4951;
+    Index = 4950;
     Name = "";
     Desc = "";
-    Targets = [4948,4947];
+    Targets = [4947,4946];
     Objects = [];
     XPos = 105060.029;
     YPos = 85.580;
@@ -77681,7 +78608,7 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5316;
+    Index = 4943;
     Name = "NDB entity";
     Desc = "";
     Targets = [];
@@ -79068,7 +79995,7 @@ Group
     Index = 5039;
     Name = "StartPe2-2";
     Desc = "";
-    Targets = [5040,5041];
+    Targets = [5040,5041,5390];
     Objects = [];
     XPos = 142023.643;
     YPos = 100.825;
@@ -79226,7 +80153,7 @@ Group
     Index = 5052;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [5054,5055];
+    Targets = [5054,5055,5391];
     Objects = [5031];
     XPos = 123240.386;
     YPos = 3000.000;
@@ -79295,6 +80222,66 @@ Group
     AttackArea = 1000;
     Time = 1200;
     Priority = 2;
+  }
+  
+
+  MCU_TR_Subtitle
+  {
+    Index = 5390;
+    Name = "All";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 142045.621;
+    YPos = 110.064;
+    ZPos = 228573.032;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    SubtitleInfo
+    {
+      Duration = 15;
+      FontSize = 20;
+      HAlign = 1;
+      VAlign = 0;
+      RColor = 255;
+      GColor = 0;
+      BColor = 0;
+      LCText = 171;
+    }
+    
+    Coalitions = [0, 1, 2];
+  }
+  
+
+  MCU_TR_Subtitle
+  {
+    Index = 5391;
+    Name = "All";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 123855.189;
+    YPos = 110.064;
+    ZPos = 160896.909;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    SubtitleInfo
+    {
+      Duration = 15;
+      FontSize = 20;
+      HAlign = 1;
+      VAlign = 0;
+      RColor = 255;
+      GColor = 0;
+      BColor = 0;
+      LCText = 172;
+    }
+    
+    Coalitions = [0, 1, 2];
   }
   
 
@@ -82361,7 +83348,7 @@ Group
     Index = 5295;
     Name = "StartHe111-1";
     Desc = "";
-    Targets = [5296,5297];
+    Targets = [5296,5297,5394];
     Objects = [];
     XPos = 126098.070;
     YPos = 100.825;
@@ -82438,7 +83425,7 @@ Group
     XOri = 0.00;
     YOri = 23.06;
     ZOri = 0.00;
-    Time = 2700;
+    Time = 3900;
     Random = 100;
   }
   
@@ -82519,7 +83506,7 @@ Group
     Index = 5308;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [5310,5311];
+    Targets = [5310,5311,5395];
     Objects = [5287];
     XPos = 118703.363;
     YPos = 3000.000;
@@ -82588,6 +83575,66 @@ Group
     AttackArea = 3500;
     Time = 1200;
     Priority = 2;
+  }
+  
+
+  MCU_TR_Subtitle
+  {
+    Index = 5394;
+    Name = "All";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 126068.141;
+    YPos = 110.064;
+    ZPos = 154385.267;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    SubtitleInfo
+    {
+      Duration = 15;
+      FontSize = 20;
+      HAlign = 1;
+      VAlign = 0;
+      RColor = 0;
+      GColor = 0;
+      BColor = 255;
+      LCText = 175;
+    }
+    
+    Coalitions = [0, 1, 2];
+  }
+  
+
+  MCU_TR_Subtitle
+  {
+    Index = 5395;
+    Name = "Allies";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 118093.318;
+    YPos = 110.064;
+    ZPos = 201995.593;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    SubtitleInfo
+    {
+      Duration = 15;
+      FontSize = 20;
+      HAlign = 1;
+      VAlign = 0;
+      RColor = 0;
+      GColor = 0;
+      BColor = 255;
+      LCText = 176;
+    }
+    
+    Coalitions = [1];
   }
   
 

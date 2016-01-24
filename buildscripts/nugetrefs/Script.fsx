@@ -64,7 +64,9 @@ let build() =
         if x < 3 then x
         else getLcId0 x
     let missionLcStrings =
-        Localization.transfer true getLcId (Path.Combine(__SOURCE_DIRECTORY__, "..", "..", "aieverywhere.eng"))
+        [ ("eng", Localization.transfer true getLcId (Path.Combine(__SOURCE_DIRECTORY__, "..", "..", "aieverywhere.eng")))
+          ("fra", Localization.transfer true getLcId (Path.Combine(__SOURCE_DIRECTORY__, "..", "..", "aieverywhere.fra"))) ]
+        |> dict
 
     // Names of MCUs that control starting and stopping vehicle groups
     let instances =
@@ -79,7 +81,9 @@ let build() =
                 yield UnitPrioApi.Create(sprintf "KillF4-%d" i, setMedPrio = sprintf "StartF4-%d" i)
             for i in 1..7 do
                 yield UnitPrioApi.Create(sprintf "KillLagg3-%d" i, setMedPrio = sprintf "StartLagg3-%d" i)
-            for i in 1..14 do
+            for i in 1..6 do
+                yield UnitPrioApi.Create(sprintf "Kill%d" i, setHighPrio = sprintf "Start%d" i)
+                yield UnitPrioApi.Create(sprintf "Kill%db" i, setHighPrio = sprintf "Start%db" i)
                 yield UnitPrioApi.Create(sprintf "Kill%dc" i, setHighPrio = sprintf "Start%dc" i)
             yield UnitPrioApi.Create("EvacKill", setNoPrio = "EvacStopped", setLowPrio = "EvacStarted")
         ]
@@ -115,6 +119,8 @@ let build() =
                     mcuMedPrio |> Option.iter (fun mcu -> addTargetLink mcu setMedPrio.Index)
                     mcuHighPrio |> Option.iter (fun mcu -> addTargetLink mcu setHighPrio.Index)
                     yield block
+                else
+                    printfn "%s does not exist" api.Kill
         ]
     // Connect blocks to form a queue
     for curr, next in Seq.pairwise blocks do
@@ -190,6 +196,11 @@ let build() =
     let allLcStrings = missionLcStrings
 
     for lang in [ "eng"; "ger"; "pol"; "rus" ; "spa" ; "fra" ] do
-        createLcFile (basename + "." + lang) allLcStrings
+        match allLcStrings.TryGetValue(lang) with
+        | true, lcStrings ->
+            lcStrings
+        | false, _ ->
+            allLcStrings.["eng"]
+        |> createLcFile (basename + "." + lang)
 
 build()
