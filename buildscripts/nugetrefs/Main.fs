@@ -221,5 +221,6 @@ let main argv =
         |> Async.RunSynchronously
         0
     | None ->
+        printfn "Version: %s" TickDelayMonitoring.AssemblyInfo.Constants.version
         printfn "%s" usage
         1
