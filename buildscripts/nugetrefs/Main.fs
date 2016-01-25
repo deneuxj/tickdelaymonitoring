@@ -213,7 +213,7 @@ let main argv =
                 let! response = client.ResetSPS()
                 do! Async.Sleep(opts.Period)
                 let! stepPerSec = client.GetSPS()
-                if stepPerSec.Average < 49.0f && stepPerSec.Average > 0.0f then
+                if stepPerSec.Average < 49.0f && stepPerSec.Minimum > 0.0f then
                     let! response = client.ServerInput(opts.ReqKill)
                     printfn "Overload detected, %s sent, reponse: %s" opts.ReqKill response
                 printfn "SPS: %4.1f" stepPerSec.Average
