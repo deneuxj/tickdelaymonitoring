@@ -133,4 +133,6 @@ let main argv =
             build(opts.InputFilename, opts.OutputFilename, opts.PrimaryLanguage, opts.AdditionalLanguages, instances, opts.ReqKill)
             0
     | None ->
+        printfn "Version : %s" InjectPrio.AssemblyInfo.Constants.libraryVersion
+        printfn "%s" usage
         1
