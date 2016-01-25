@@ -1,21 +1,17 @@
-﻿namespace InjectPrio.AssemblyInfo
+﻿namespace InjectPrio.Cli.AssemblyInfo
 
 open System.Reflection
 open System.Runtime.CompilerServices
 open System.Runtime.InteropServices
 
-module Constants =
-    [<Literal>]
-    let libraryVersion = "1.0.0.0"
-
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[<assembly: AssemblyTitle("InjectPrio")>]
+[<assembly: AssemblyTitle("InjectPrio.Cli")>]
 [<assembly: AssemblyDescription("")>]
 [<assembly: AssemblyConfiguration("")>]
 [<assembly: AssemblyCompany("")>]
-[<assembly: AssemblyProduct("InjectPrio")>]
+[<assembly: AssemblyProduct("InjectPrio.Cli")>]
 [<assembly: AssemblyCopyright("Copyright © Johann Deneux 2016")>]
 [<assembly: AssemblyTrademark("")>]
 [<assembly: AssemblyCulture("")>]
@@ -26,7 +22,7 @@ module Constants =
 [<assembly: ComVisible(false)>]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[<assembly: Guid("86d115c4-68dc-41ea-aede-cb222d356719")>]
+[<assembly: Guid("9d18f2b5-d2f9-4f31-80ee-14d65a69e8e9")>]
 
 // Version information for an assembly consists of the following four values:
 // 
@@ -38,8 +34,8 @@ module Constants =
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [<assembly: AssemblyVersion("1.0.*")>]
-[<assembly: AssemblyVersion(Constants.libraryVersion)>]
-[<assembly: AssemblyFileVersion(Constants.libraryVersion)>]
+[<assembly: AssemblyVersion(InjectPrio.AssemblyInfo.Constants.libraryVersion)>]
+[<assembly: AssemblyFileVersion(InjectPrio.AssemblyInfo.Constants.libraryVersion)>]
 
 do
     ()

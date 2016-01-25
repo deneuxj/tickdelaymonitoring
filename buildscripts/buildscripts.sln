@@ -7,6 +7,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TickDelayMonitoring", "nuge
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "InjectPrio", "InjectPrio\InjectPrio.fsproj", "{86D115C4-68DC-41EA-AEDE-CB222D356719}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "InjectPrio.Cli", "InjectPrio.Cli\InjectPrio.Cli.fsproj", "{9D18F2B5-D2F9-4F31-80EE-14D65A69E8E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{86D115C4-68DC-41EA-AEDE-CB222D356719}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86D115C4-68DC-41EA-AEDE-CB222D356719}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86D115C4-68DC-41EA-AEDE-CB222D356719}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D18F2B5-D2F9-4F31-80EE-14D65A69E8E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D18F2B5-D2F9-4F31-80EE-14D65A69E8E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D18F2B5-D2F9-4F31-80EE-14D65A69E8E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D18F2B5-D2F9-4F31-80EE-14D65A69E8E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
