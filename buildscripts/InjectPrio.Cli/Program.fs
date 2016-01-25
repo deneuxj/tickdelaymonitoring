@@ -8,7 +8,8 @@ type Options =
       OutputFilename : string
       PrimaryLanguage : string
       AdditionalLanguages : string list
-      InstancesFile : string
+      InstancesFilename : string
+      ReqKill : string
     }
 
 let rec tryParse args opt =
@@ -24,7 +25,9 @@ let rec tryParse args opt =
         | [] -> failwith "Missing list of languages after -l"
         | primary :: additional -> tryParse rest { opt with PrimaryLanguage = primary; AdditionalLanguages = additional }
     | "-x" :: filename :: rest ->
-        tryParse rest { opt with InstancesFile = filename }
+        tryParse rest { opt with InstancesFilename = filename }
+    | "-k" :: reqKill :: rest ->
+        tryParse rest { opt with ReqKill = reqKill }
     | other :: _ ->
         failwithf "Unknown argument '%s'" other
 
@@ -32,8 +35,8 @@ let validateOpts (opt : Options) =
     if not <| System.IO.File.Exists(opt.InputFilename) then
         printfn "Input mission file '%s' cannot be opened for reading" opt.InputFilename
         false
-    elif not <| System.IO.File.Exists(opt.InstancesFile) then
-        printfn "Instance specification file '%s' cannot be opened for reading" opt.InstancesFile
+    elif not <| System.IO.File.Exists(opt.InstancesFilename) then
+        printfn "Instance specification file '%s' cannot be opened for reading" opt.InstancesFilename
         false
     else
         true
@@ -41,6 +44,7 @@ let validateOpts (opt : Options) =
 let usage = """
 Usage: InjectPrio.exe -i <input mission file> -o <output mission file>
                       -l <languages> -x <instance specification file>
+                      -k <name of kill request MCU>
 
 where <input mission file> is the path to an existing Mission file,
       <output mission file> is the path to a Mission file to be produced;
@@ -55,6 +59,8 @@ where <input mission file> is the path to an existing Mission file,
       <instance specification file> is the path to a text file that lists
         nodes in the input mission file to which injected priority logic
         will be connected. See below for an example.
+      <name of kill request MCU> is the name of the server input MCU
+        in the input mission file.
 
 Instance specification file example
 -----------------------------------
@@ -104,7 +110,8 @@ let main argv =
           OutputFilename = ""
           PrimaryLanguage = "eng"
           AdditionalLanguages = []
-          InstancesFile = ""
+          InstancesFilename = ""
+          ReqKill = "ReqKill"
         }
     let opts =
         try
@@ -121,9 +128,9 @@ let main argv =
             printfn "%s" usage
             1
         else
-            let lines = System.IO.File.ReadAllLines(opts.InstancesFile)
+            let lines = System.IO.File.ReadAllLines(opts.InstancesFilename)
             let instances = tryParseInstances 1 (List.ofArray lines) [] |> List.rev
-            build(opts.InputFilename, opts.OutputFilename, opts.PrimaryLanguage, opts.AdditionalLanguages, instances)
+            build(opts.InputFilename, opts.OutputFilename, opts.PrimaryLanguage, opts.AdditionalLanguages, instances, opts.ReqKill)
             0
     | None ->
         1

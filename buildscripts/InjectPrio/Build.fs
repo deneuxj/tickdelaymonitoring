@@ -32,7 +32,7 @@ with
 
 let allLanguages = [ "eng"; "ger"; "pol"; "rus" ; "spa" ; "fra" ]
 
-let build(filename, outputFilename, primaryLanguage, additionalLanguages, instances) =
+let build(filename, outputFilename, primaryLanguage, additionalLanguages, instances, reqKillName) =
     // The stores that are responsible for providing collision-free new identifiers.
     /// MCU Index store.
     let idStore = new IdStore()
@@ -126,7 +126,7 @@ let build(filename, outputFilename, primaryLanguage, additionalLanguages, instan
     f "Low"
     f "Med"
     // Server input -> ReqKillLow of first
-    let serverInput = getCommandByName "ReqKill" mission
+    let serverInput = getCommandByName reqKillName mission
     let reqKill = getCommandByName "ReqKillLow" first
     addTargetLink serverInput reqKill.Index
 

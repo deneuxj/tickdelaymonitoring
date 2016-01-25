@@ -35,4 +35,4 @@ let instances =
 
 let filename = __SOURCE_DIRECTORY__ + "/../../aieverywhere.Mission"
 let outputFilename = __SOURCE_DIRECTORY__ + "/../../KalachNightAttack.Mission"
-build(filename, outputFilename, "eng", ["fra"], instances)
+build(filename, outputFilename, "eng", ["fra"], instances, "ReqKill")
