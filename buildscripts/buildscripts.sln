@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TickDelayMonitoring", "nugetrefs\TickDelayMonitoring.fsproj", "{475EFE83-6221-4502-BE6F-4CA02581D422}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "InjectPrio", "InjectPrio\InjectPrio.fsproj", "{86D115C4-68DC-41EA-AEDE-CB222D356719}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{475EFE83-6221-4502-BE6F-4CA02581D422}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{475EFE83-6221-4502-BE6F-4CA02581D422}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{475EFE83-6221-4502-BE6F-4CA02581D422}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86D115C4-68DC-41EA-AEDE-CB222D356719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86D115C4-68DC-41EA-AEDE-CB222D356719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86D115C4-68DC-41EA-AEDE-CB222D356719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86D115C4-68DC-41EA-AEDE-CB222D356719}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
