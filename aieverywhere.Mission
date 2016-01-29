@@ -7,6 +7,8 @@ Options
   LCAuthor = 2;
   PlayerConfig = "";
   MultiplayerPlaneConfig = "LuaScripts\WorldObjects\Planes\bf109e7.txt";
+  MultiplayerPlaneConfig = "LuaScripts\WorldObjects\Planes\bf109f2.txt";
+  MultiplayerPlaneConfig = "LuaScripts\WorldObjects\Planes\bf109f4.txt";
   MultiplayerPlaneConfig = "LuaScripts\WorldObjects\Planes\bf109g2.txt";
   MultiplayerPlaneConfig = "LuaScripts\WorldObjects\Planes\bf110e2.txt";
   MultiplayerPlaneConfig = "LuaScripts\WorldObjects\Planes\fw190a3.txt";
@@ -14,10 +16,13 @@ Options
   MultiplayerPlaneConfig = "LuaScripts\WorldObjects\Planes\i16t24.txt";
   MultiplayerPlaneConfig = "LuaScripts\WorldObjects\Planes\il2m42.txt";
   MultiplayerPlaneConfig = "LuaScripts\WorldObjects\Planes\ju87d3.txt";
+  MultiplayerPlaneConfig = "LuaScripts\WorldObjects\Planes\la5s8.txt";
   MultiplayerPlaneConfig = "LuaScripts\WorldObjects\Planes\lagg3s29.txt";
   MultiplayerPlaneConfig = "LuaScripts\WorldObjects\Planes\mc202s8.txt";
+  MultiplayerPlaneConfig = "LuaScripts\WorldObjects\Planes\mig3s24.txt";
   MultiplayerPlaneConfig = "LuaScripts\WorldObjects\Planes\p40e1.txt";
   MultiplayerPlaneConfig = "LuaScripts\WorldObjects\Planes\pe2s87.txt";
+  MultiplayerPlaneConfig = "LuaScripts\WorldObjects\Planes\yak1s69.txt";
   MultiplayerPlaneConfig = "LuaScripts\WorldObjects\Vehicles\_pziii-l.txt";
   MultiplayerPlaneConfig = "LuaScripts\WorldObjects\Vehicles\_t34-76stz.txt";
   Time = 16:30:0;
@@ -40892,7 +40897,7 @@ Group
     AttackGTargets = 1;
     AttackArea = 3000;
     Time = 1200;
-    Priority = 2;
+    Priority = 1;
   }
   
 
@@ -41797,7 +41802,7 @@ Group
     AttackGTargets = 1;
     AttackArea = 3000;
     Time = 1200;
-    Priority = 2;
+    Priority = 1;
   }
   
 
@@ -42236,7 +42241,7 @@ Group
     AttackGTargets = 1;
     AttackArea = 3000;
     Time = 1200;
-    Priority = 2;
+    Priority = 1;
   }
   
 
@@ -42675,7 +42680,7 @@ Group
     AttackGTargets = 1;
     AttackArea = 3000;
     Time = 1200;
-    Priority = 2;
+    Priority = 1;
   }
   
 
@@ -42743,9 +42748,9 @@ Group
     Name = "Ju87-5";
     Index = 2235;
     LinkTrId = 2236;
-    XPos = 147572.031;
+    XPos = 147565.634;
     YPos = 1000.000;
-    ZPos = 180201.519;
+    ZPos = 180198.000;
     XOri = 0.00;
     YOri = 191.23;
     ZOri = 0.00;
@@ -42781,9 +42786,9 @@ Group
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 147572.031;
+    XPos = 147565.634;
     YPos = 1000.200;
-    ZPos = 180201.519;
+    ZPos = 180198.000;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -42837,9 +42842,9 @@ Group
     Desc = "";
     Targets = [];
     Objects = [2236];
-    XPos = 147538.225;
+    XPos = 147531.828;
     YPos = 147.825;
-    ZPos = 180224.666;
+    ZPos = 180221.148;
     XOri = 0.00;
     YOri = 151.33;
     ZOri = 0.00;
@@ -42853,9 +42858,9 @@ Group
     Desc = "";
     Targets = [];
     Objects = [2236];
-    XPos = 147593.599;
+    XPos = 147587.202;
     YPos = 147.825;
-    ZPos = 180246.268;
+    ZPos = 180242.750;
     XOri = 0.00;
     YOri = 151.33;
     ZOri = 0.00;
@@ -42870,9 +42875,9 @@ Group
     Desc = "";
     Targets = [2243];
     Objects = [];
-    XPos = 147595.951;
+    XPos = 147589.554;
     YPos = 147.825;
-    ZPos = 180279.422;
+    ZPos = 180275.904;
     XOri = 0.00;
     YOri = 151.33;
     ZOri = 0.00;
@@ -42888,9 +42893,9 @@ Group
     Desc = "";
     Targets = [2248];
     Objects = [];
-    XPos = 147671.489;
+    XPos = 147665.092;
     YPos = 147.825;
-    ZPos = 180311.060;
+    ZPos = 180307.542;
     XOri = 0.00;
     YOri = 151.33;
     ZOri = 0.00;
@@ -42905,9 +42910,9 @@ Group
     Desc = "";
     Targets = [2246];
     Objects = [];
-    XPos = 147635.585;
+    XPos = 147629.188;
     YPos = 147.825;
-    ZPos = 180299.045;
+    ZPos = 180295.527;
     XOri = 0.00;
     YOri = 151.33;
     ZOri = 0.00;
@@ -42923,9 +42928,9 @@ Group
     Desc = "";
     Targets = [2244,2251];
     Objects = [];
-    XPos = 147553.266;
+    XPos = 147546.869;
     YPos = 147.825;
-    ZPos = 180286.520;
+    ZPos = 180283.002;
     XOri = 0.00;
     YOri = 151.33;
     ZOri = 0.00;
@@ -42941,9 +42946,9 @@ Group
     Desc = "";
     Targets = [2246];
     Objects = [];
-    XPos = 147573.323;
+    XPos = 147566.926;
     YPos = 147.825;
-    ZPos = 180284.299;
+    ZPos = 180280.781;
     XOri = 0.00;
     YOri = 151.33;
     ZOri = 0.00;
@@ -42959,9 +42964,9 @@ Group
     Desc = "";
     Targets = [2240];
     Objects = [];
-    XPos = 147551.721;
+    XPos = 147545.324;
     YPos = 147.825;
-    ZPos = 180234.366;
+    ZPos = 180230.848;
     XOri = 0.00;
     YOri = 151.33;
     ZOri = 0.00;
@@ -42977,9 +42982,9 @@ Group
     Desc = "";
     Targets = [2246];
     Objects = [];
-    XPos = 147618.256;
+    XPos = 147611.859;
     YPos = 147.825;
-    ZPos = 180262.279;
+    ZPos = 180258.761;
     XOri = 0.00;
     YOri = 151.33;
     ZOri = 0.00;
@@ -42993,9 +42998,9 @@ Group
     Desc = "";
     Targets = [];
     Objects = [2236];
-    XPos = 148002.803;
+    XPos = 147996.406;
     YPos = 147.825;
-    ZPos = 181020.539;
+    ZPos = 181017.020;
     XOri = 0.00;
     YOri = 271.96;
     ZOri = 0.00;
@@ -43010,9 +43015,9 @@ Group
     Desc = "";
     Targets = [2241];
     Objects = [2236];
-    XPos = 147842.712;
+    XPos = 147836.315;
     YPos = 1000.000;
-    ZPos = 180550.594;
+    ZPos = 180547.076;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -43029,9 +43034,9 @@ Group
     Desc = "";
     Targets = [2258];
     Objects = [2236];
-    XPos = 139977.806;
+    XPos = 139971.409;
     YPos = 2000.000;
-    ZPos = 179982.085;
+    ZPos = 179978.567;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -43048,9 +43053,9 @@ Group
     Desc = "";
     Targets = [2260,2261,2262];
     Objects = [2236];
-    XPos = 132525.774;
+    XPos = 132519.377;
     YPos = 2000.000;
-    ZPos = 197508.683;
+    ZPos = 197505.165;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -43067,9 +43072,9 @@ Group
     Desc = "";
     Targets = [2239];
     Objects = [];
-    XPos = 132681.754;
+    XPos = 132675.357;
     YPos = 83.580;
-    ZPos = 197597.839;
+    ZPos = 197594.321;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -43085,9 +43090,9 @@ Group
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 132892.301;
+    XPos = 132885.904;
     YPos = 52.140;
-    ZPos = 197663.122;
+    ZPos = 197659.604;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -43103,9 +43108,9 @@ Group
     Desc = "";
     Targets = [];
     Objects = [2236];
-    XPos = 131978.358;
+    XPos = 131971.961;
     YPos = 1500.000;
-    ZPos = 205760.565;
+    ZPos = 205757.047;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -43114,7 +43119,7 @@ Group
     AttackGTargets = 1;
     AttackArea = 3000;
     Time = 1200;
-    Priority = 2;
+    Priority = 1;
   }
   
 
@@ -43125,9 +43130,9 @@ Group
     Desc = "";
     Targets = [2267,2264,2242];
     Objects = [];
-    XPos = 132788.252;
+    XPos = 132781.855;
     YPos = 60.423;
-    ZPos = 197594.261;
+    ZPos = 197590.742;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -43143,9 +43148,9 @@ Group
     Desc = "";
     Targets = [2239];
     Objects = [];
-    XPos = 132817.554;
+    XPos = 132811.157;
     YPos = 60.709;
-    ZPos = 197590.132;
+    ZPos = 197586.613;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -43159,9 +43164,9 @@ Group
     Desc = "";
     Targets = [2239];
     Objects = [];
-    XPos = 132776.680;
+    XPos = 132770.283;
     YPos = 64.273;
-    ZPos = 197548.289;
+    ZPos = 197544.770;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
@@ -54837,7 +54842,7 @@ Group
   Desc = "";
   Vehicle
   {
-    Name = "Stug37";
+    Name = "Pz4";
     Index = 3197;
     LinkTrId = 3198;
     XPos = 132557.724;
@@ -54846,8 +54851,8 @@ Group
     XOri = 359.42;
     YOri = 44.85;
     ZOri = 1.33;
-    Script = "LuaScripts\WorldObjects\vehicles\stug37l24.txt";
-    Model = "graphics\vehicles\stug37l24\stug37l24.mgm";
+    Script = "LuaScripts\WorldObjects\vehicles\pziv-g.txt";
+    Model = "graphics\vehicles\pziv-g\pziv-g.mgm";
     Desc = "";
     Country = 201;
     NumberInFormation = 0;
@@ -54885,17 +54890,17 @@ Group
 
   Vehicle
   {
-    Name = "Stug37";
+    Name = "Pz4";
     Index = 3200;
     LinkTrId = 3201;
     XPos = 132530.622;
-    YPos = 58.088;
+    YPos = 69.883;
     ZPos = 205903.269;
     XOri = 359.50;
     YOri = 44.85;
     ZOri = 1.48;
-    Script = "LuaScripts\WorldObjects\vehicles\stug37l24.txt";
-    Model = "graphics\vehicles\stug37l24\stug37l24.mgm";
+    Script = "LuaScripts\WorldObjects\vehicles\pziv-g.txt";
+    Model = "graphics\vehicles\pziv-g\pziv-g.mgm";
     Desc = "";
     Country = 201;
     NumberInFormation = 1;
@@ -54921,7 +54926,7 @@ Group
     Targets = [3198];
     Objects = [];
     XPos = 132530.622;
-    YPos = 58.288;
+    YPos = 70.083;
     ZPos = 205903.269;
     XOri = 0.00;
     YOri = 0.00;
@@ -54933,17 +54938,17 @@ Group
 
   Vehicle
   {
-    Name = "Stug37";
+    Name = "Pz4";
     Index = 3203;
     LinkTrId = 3204;
     XPos = 132503.926;
-    YPos = 58.088;
+    YPos = 69.979;
     ZPos = 205920.559;
     XOri = 359.50;
     YOri = 44.85;
     ZOri = 1.48;
-    Script = "LuaScripts\WorldObjects\vehicles\stug37l24.txt";
-    Model = "graphics\vehicles\stug37l24\stug37l24.mgm";
+    Script = "LuaScripts\WorldObjects\vehicles\pziv-g.txt";
+    Model = "graphics\vehicles\pziv-g\pziv-g.mgm";
     Desc = "";
     Country = 201;
     NumberInFormation = 2;
@@ -54969,7 +54974,7 @@ Group
     Targets = [3198];
     Objects = [];
     XPos = 132503.926;
-    YPos = 58.288;
+    YPos = 70.179;
     ZPos = 205920.559;
     XOri = 0.00;
     YOri = 0.00;
@@ -55000,17 +55005,17 @@ Group
 
   Vehicle
   {
-    Name = "Stug37";
+    Name = "Pz4";
     Index = 3208;
     LinkTrId = 3209;
     XPos = 131785.572;
-    YPos = 58.088;
+    YPos = 59.388;
     ZPos = 205039.776;
     XOri = 359.89;
     YOri = 44.85;
     ZOri = 0.16;
-    Script = "LuaScripts\WorldObjects\vehicles\stug37l24.txt";
-    Model = "graphics\vehicles\stug37l24\stug37l24.mgm";
+    Script = "LuaScripts\WorldObjects\vehicles\pziv-g.txt";
+    Model = "graphics\vehicles\pziv-g\pziv-g.mgm";
     Desc = "";
     Country = 201;
     NumberInFormation = 0;
@@ -55036,7 +55041,7 @@ Group
     Targets = [];
     Objects = [];
     XPos = 131785.572;
-    YPos = 58.288;
+    YPos = 59.588;
     ZPos = 205039.776;
     XOri = 0.00;
     YOri = 0.00;
@@ -55048,17 +55053,17 @@ Group
 
   Vehicle
   {
-    Name = "Stug37";
+    Name = "Pz4";
     Index = 3211;
     LinkTrId = 3212;
     XPos = 131758.470;
-    YPos = 58.088;
+    YPos = 59.423;
     ZPos = 205055.229;
     XOri = 359.89;
     YOri = 44.85;
     ZOri = 0.16;
-    Script = "LuaScripts\WorldObjects\vehicles\stug37l24.txt";
-    Model = "graphics\vehicles\stug37l24\stug37l24.mgm";
+    Script = "LuaScripts\WorldObjects\vehicles\pziv-g.txt";
+    Model = "graphics\vehicles\pziv-g\pziv-g.mgm";
     Desc = "";
     Country = 201;
     NumberInFormation = 1;
@@ -55084,7 +55089,7 @@ Group
     Targets = [3209];
     Objects = [];
     XPos = 131758.470;
-    YPos = 58.288;
+    YPos = 59.623;
     ZPos = 205055.229;
     XOri = 0.00;
     YOri = 0.00;
@@ -55096,17 +55101,17 @@ Group
 
   Vehicle
   {
-    Name = "Stug37";
+    Name = "Pz4";
     Index = 3214;
     LinkTrId = 3215;
     XPos = 131731.774;
-    YPos = 58.088;
+    YPos = 59.446;
     ZPos = 205072.519;
     XOri = 359.93;
     YOri = 44.85;
     ZOri = 0.20;
-    Script = "LuaScripts\WorldObjects\vehicles\stug37l24.txt";
-    Model = "graphics\vehicles\stug37l24\stug37l24.mgm";
+    Script = "LuaScripts\WorldObjects\vehicles\pziv-g.txt";
+    Model = "graphics\vehicles\pziv-g\pziv-g.mgm";
     Desc = "";
     Country = 201;
     NumberInFormation = 2;
@@ -55132,7 +55137,7 @@ Group
     Targets = [3209];
     Objects = [];
     XPos = 131731.774;
-    YPos = 58.288;
+    YPos = 59.646;
     ZPos = 205072.519;
     XOri = 0.00;
     YOri = 0.00;
@@ -55163,17 +55168,17 @@ Group
 
   Vehicle
   {
-    Name = "Stug37";
+    Name = "Pz3";
     Index = 3219;
     LinkTrId = 3220;
     XPos = 133070.330;
-    YPos = 58.088;
+    YPos = 72.376;
     ZPos = 205452.747;
     XOri = 0.83;
     YOri = 44.85;
     ZOri = 0.96;
-    Script = "LuaScripts\WorldObjects\vehicles\stug37l24.txt";
-    Model = "graphics\vehicles\stug37l24\stug37l24.mgm";
+    Script = "LuaScripts\WorldObjects\vehicles\pziii-l.txt";
+    Model = "graphics\vehicles\pziii-l\pziii-l.mgm";
     Desc = "";
     Country = 201;
     NumberInFormation = 0;
@@ -55199,7 +55204,7 @@ Group
     Targets = [];
     Objects = [];
     XPos = 133070.330;
-    YPos = 58.288;
+    YPos = 72.576;
     ZPos = 205452.747;
     XOri = 0.00;
     YOri = 0.00;
@@ -55211,17 +55216,17 @@ Group
 
   Vehicle
   {
-    Name = "Stug37";
+    Name = "Pz3";
     Index = 3222;
     LinkTrId = 3223;
     XPos = 133043.228;
-    YPos = 58.088;
+    YPos = 71.816;
     ZPos = 205468.200;
     XOri = 0.74;
     YOri = 44.85;
     ZOri = 0.87;
-    Script = "LuaScripts\WorldObjects\vehicles\stug37l24.txt";
-    Model = "graphics\vehicles\stug37l24\stug37l24.mgm";
+    Script = "LuaScripts\WorldObjects\vehicles\pziii-l.txt";
+    Model = "graphics\vehicles\pziii-l\pziii-l.mgm";
     Desc = "";
     Country = 201;
     NumberInFormation = 1;
@@ -55247,7 +55252,7 @@ Group
     Targets = [3220];
     Objects = [];
     XPos = 133043.228;
-    YPos = 58.288;
+    YPos = 72.016;
     ZPos = 205468.200;
     XOri = 0.00;
     YOri = 0.00;
@@ -55259,17 +55264,17 @@ Group
 
   Vehicle
   {
-    Name = "Stug37";
+    Name = "Pz3";
     Index = 3225;
     LinkTrId = 3226;
     XPos = 133016.532;
-    YPos = 58.088;
+    YPos = 71.311;
     ZPos = 205485.490;
     XOri = 0.74;
     YOri = 44.85;
     ZOri = 0.87;
-    Script = "LuaScripts\WorldObjects\vehicles\stug37l24.txt";
-    Model = "graphics\vehicles\stug37l24\stug37l24.mgm";
+    Script = "LuaScripts\WorldObjects\vehicles\pziii-l.txt";
+    Model = "graphics\vehicles\pziii-l\pziii-l.mgm";
     Desc = "";
     Country = 201;
     NumberInFormation = 2;
@@ -55295,7 +55300,7 @@ Group
     Targets = [3220];
     Objects = [];
     XPos = 133016.532;
-    YPos = 58.288;
+    YPos = 71.511;
     ZPos = 205485.490;
     XOri = 0.00;
     YOri = 0.00;
@@ -55326,17 +55331,17 @@ Group
 
   Vehicle
   {
-    Name = "Stug37";
+    Name = "Pz3";
     Index = 3230;
     LinkTrId = 3231;
     XPos = 131933.084;
-    YPos = 58.088;
+    YPos = 76.735;
     ZPos = 206373.018;
     XOri = 359.75;
     YOri = 44.85;
     ZOri = 1.53;
-    Script = "LuaScripts\WorldObjects\vehicles\stug37l24.txt";
-    Model = "graphics\vehicles\stug37l24\stug37l24.mgm";
+    Script = "LuaScripts\WorldObjects\vehicles\pziii-l.txt";
+    Model = "graphics\vehicles\pziii-l\pziii-l.mgm";
     Desc = "";
     Country = 201;
     NumberInFormation = 0;
@@ -55362,7 +55367,7 @@ Group
     Targets = [];
     Objects = [];
     XPos = 131933.084;
-    YPos = 58.288;
+    YPos = 76.935;
     ZPos = 206373.018;
     XOri = 0.00;
     YOri = 0.00;
@@ -55374,17 +55379,17 @@ Group
 
   Vehicle
   {
-    Name = "Stug37";
+    Name = "Pz3";
     Index = 3233;
     LinkTrId = 3234;
     XPos = 131905.982;
-    YPos = 58.088;
+    YPos = 76.658;
     ZPos = 206388.471;
     XOri = 359.75;
     YOri = 44.85;
     ZOri = 1.31;
-    Script = "LuaScripts\WorldObjects\vehicles\stug37l24.txt";
-    Model = "graphics\vehicles\stug37l24\stug37l24.mgm";
+    Script = "LuaScripts\WorldObjects\vehicles\pziii-l.txt";
+    Model = "graphics\vehicles\pziii-l\pziii-l.mgm";
     Desc = "";
     Country = 201;
     NumberInFormation = 1;
@@ -55410,7 +55415,7 @@ Group
     Targets = [3231];
     Objects = [];
     XPos = 131905.982;
-    YPos = 58.288;
+    YPos = 76.858;
     ZPos = 206388.471;
     XOri = 0.00;
     YOri = 0.00;
@@ -55422,17 +55427,17 @@ Group
 
   Vehicle
   {
-    Name = "Stug37";
+    Name = "Pz3";
     Index = 3236;
     LinkTrId = 3237;
     XPos = 131879.286;
-    YPos = 58.088;
+    YPos = 76.541;
     ZPos = 206405.761;
     XOri = 0.05;
     YOri = 44.85;
     ZOri = 1.33;
-    Script = "LuaScripts\WorldObjects\vehicles\stug37l24.txt";
-    Model = "graphics\vehicles\stug37l24\stug37l24.mgm";
+    Script = "LuaScripts\WorldObjects\vehicles\pziii-l.txt";
+    Model = "graphics\vehicles\pziii-l\pziii-l.mgm";
     Desc = "";
     Country = 201;
     NumberInFormation = 2;
@@ -55458,7 +55463,7 @@ Group
     Targets = [3231];
     Objects = [];
     XPos = 131879.286;
-    YPos = 58.288;
+    YPos = 76.741;
     ZPos = 206405.761;
     XOri = 0.00;
     YOri = 0.00;
@@ -55489,7 +55494,7 @@ Group
 
   Vehicle
   {
-    Name = "Stug37";
+    Name = "Pz3";
     Index = 3241;
     LinkTrId = 3242;
     XPos = 131905.453;
@@ -55498,8 +55503,8 @@ Group
     XOri = 0.00;
     YOri = 4.63;
     ZOri = 0.00;
-    Script = "LuaScripts\WorldObjects\vehicles\stug37l24.txt";
-    Model = "graphics\vehicles\stug37l24\stug37l24.mgm";
+    Script = "LuaScripts\WorldObjects\vehicles\pziii-l.txt";
+    Model = "graphics\vehicles\pziii-l\pziii-l.mgm";
     Desc = "";
     Country = 201;
     NumberInFormation = 0;
@@ -55537,17 +55542,17 @@ Group
 
   Vehicle
   {
-    Name = "Stug37";
+    Name = "Pz3";
     Index = 3244;
     LinkTrId = 3245;
     XPos = 131894.737;
-    YPos = 58.088;
+    YPos = 58.677;
     ZPos = 204171.401;
     XOri = 0.00;
     YOri = 4.63;
     ZOri = 0.00;
-    Script = "LuaScripts\WorldObjects\vehicles\stug37l24.txt";
-    Model = "graphics\vehicles\stug37l24\stug37l24.mgm";
+    Script = "LuaScripts\WorldObjects\vehicles\pziii-l.txt";
+    Model = "graphics\vehicles\pziii-l\pziii-l.mgm";
     Desc = "";
     Country = 201;
     NumberInFormation = 1;
@@ -55573,7 +55578,7 @@ Group
     Targets = [3242];
     Objects = [];
     XPos = 131894.737;
-    YPos = 58.288;
+    YPos = 58.877;
     ZPos = 204171.401;
     XOri = 0.00;
     YOri = 0.00;
@@ -55585,17 +55590,17 @@ Group
 
   Vehicle
   {
-    Name = "Stug37";
+    Name = "Pz3";
     Index = 3247;
     LinkTrId = 3248;
     XPos = 131885.516;
-    YPos = 58.088;
+    YPos = 58.677;
     ZPos = 204201.841;
     XOri = 0.00;
     YOri = 4.63;
     ZOri = 0.00;
-    Script = "LuaScripts\WorldObjects\vehicles\stug37l24.txt";
-    Model = "graphics\vehicles\stug37l24\stug37l24.mgm";
+    Script = "LuaScripts\WorldObjects\vehicles\pziii-l.txt";
+    Model = "graphics\vehicles\pziii-l\pziii-l.mgm";
     Desc = "";
     Country = 201;
     NumberInFormation = 2;
@@ -55621,7 +55626,7 @@ Group
     Targets = [3242];
     Objects = [];
     XPos = 131885.516;
-    YPos = 58.288;
+    YPos = 58.877;
     ZPos = 204201.841;
     XOri = 0.00;
     YOri = 0.00;
@@ -55652,7 +55657,7 @@ Group
 
   Vehicle
   {
-    Name = "Stug37";
+    Name = "Pz3";
     Index = 3253;
     LinkTrId = 3254;
     XPos = 131205.506;
@@ -55661,8 +55666,8 @@ Group
     XOri = 359.72;
     YOri = 44.85;
     ZOri = 0.16;
-    Script = "LuaScripts\WorldObjects\vehicles\stug37l24.txt";
-    Model = "graphics\vehicles\stug37l24\stug37l24.mgm";
+    Script = "LuaScripts\WorldObjects\vehicles\pziii-l.txt";
+    Model = "graphics\vehicles\pziii-l\pziii-l.mgm";
     Desc = "";
     Country = 201;
     NumberInFormation = 0;
@@ -55700,17 +55705,17 @@ Group
 
   Vehicle
   {
-    Name = "Stug37";
+    Name = "Pz3";
     Index = 3256;
     LinkTrId = 3257;
     XPos = 131178.404;
-    YPos = 58.088;
+    YPos = 60.112;
     ZPos = 205204.246;
     XOri = 359.65;
     YOri = 44.85;
     ZOri = 0.04;
-    Script = "LuaScripts\WorldObjects\vehicles\stug37l24.txt";
-    Model = "graphics\vehicles\stug37l24\stug37l24.mgm";
+    Script = "LuaScripts\WorldObjects\vehicles\pziii-l.txt";
+    Model = "graphics\vehicles\pziii-l\pziii-l.mgm";
     Desc = "";
     Country = 201;
     NumberInFormation = 1;
@@ -55736,7 +55741,7 @@ Group
     Targets = [3254];
     Objects = [];
     XPos = 131178.404;
-    YPos = 58.288;
+    YPos = 60.312;
     ZPos = 205204.246;
     XOri = 0.00;
     YOri = 0.00;
@@ -55748,17 +55753,17 @@ Group
 
   Vehicle
   {
-    Name = "Stug37";
+    Name = "Pz3";
     Index = 3259;
     LinkTrId = 3260;
     XPos = 131151.708;
-    YPos = 58.088;
+    YPos = 60.300;
     ZPos = 205221.536;
     XOri = 359.65;
     YOri = 44.85;
     ZOri = 0.04;
-    Script = "LuaScripts\WorldObjects\vehicles\stug37l24.txt";
-    Model = "graphics\vehicles\stug37l24\stug37l24.mgm";
+    Script = "LuaScripts\WorldObjects\vehicles\pziii-l.txt";
+    Model = "graphics\vehicles\pziii-l\pziii-l.mgm";
     Desc = "";
     Country = 201;
     NumberInFormation = 2;
@@ -55784,7 +55789,7 @@ Group
     Targets = [3254];
     Objects = [];
     XPos = 131151.708;
-    YPos = 58.288;
+    YPos = 60.500;
     ZPos = 205221.536;
     XOri = 0.00;
     YOri = 0.00;
@@ -62238,7 +62243,7 @@ Group
       Index = 3724;
       LinkTrId = 3722;
       XPos = 134643.161;
-      YPos = 87.444;
+      YPos = 58.088;
       ZPos = 209465.426;
       XOri = 1.47;
       YOri = 215.01;
@@ -62270,7 +62275,7 @@ Group
       Targets = [];
       Objects = [];
       XPos = 134643.161;
-      YPos = 87.644;
+      YPos = 58.288;
       ZPos = 209465.426;
       XOri = 0.00;
       YOri = 0.00;
@@ -62286,7 +62291,7 @@ Group
       Index = 3726;
       LinkTrId = 3727;
       XPos = 134662.488;
-      YPos = 87.444;
+      YPos = 58.088;
       ZPos = 209447.925;
       XOri = 358.45;
       YOri = 215.01;
@@ -62318,7 +62323,7 @@ Group
       Targets = [3722];
       Objects = [];
       XPos = 134662.488;
-      YPos = 87.644;
+      YPos = 58.288;
       ZPos = 209447.925;
       XOri = 0.00;
       YOri = 0.00;
@@ -62478,7 +62483,7 @@ Group
       Index = 3743;
       LinkTrId = 3741;
       XPos = 135112.533;
-      YPos = 87.444;
+      YPos = 58.088;
       ZPos = 209160.641;
       XOri = 359.17;
       YOri = 215.01;
@@ -62510,7 +62515,7 @@ Group
       Targets = [];
       Objects = [];
       XPos = 135112.533;
-      YPos = 87.644;
+      YPos = 58.288;
       ZPos = 209160.641;
       XOri = 0.00;
       YOri = 0.00;
@@ -62526,7 +62531,7 @@ Group
       Index = 3745;
       LinkTrId = 3746;
       XPos = 135131.860;
-      YPos = 87.444;
+      YPos = 58.088;
       ZPos = 209143.140;
       XOri = 358.99;
       YOri = 215.01;
@@ -62558,7 +62563,7 @@ Group
       Targets = [3741];
       Objects = [];
       XPos = 135131.860;
-      YPos = 87.644;
+      YPos = 58.288;
       ZPos = 209143.140;
       XOri = 0.00;
       YOri = 0.00;
@@ -62661,7 +62666,7 @@ Group
       Index = 3757;
       LinkTrId = 3755;
       XPos = 135487.344;
-      YPos = 87.444;
+      YPos = 58.088;
       ZPos = 208773.617;
       XOri = 359.85;
       YOri = 215.01;
@@ -62693,7 +62698,7 @@ Group
       Targets = [];
       Objects = [];
       XPos = 135487.344;
-      YPos = 87.644;
+      YPos = 58.288;
       ZPos = 208773.617;
       XOri = 0.00;
       YOri = 0.00;
@@ -62709,7 +62714,7 @@ Group
       Index = 3759;
       LinkTrId = 3760;
       XPos = 135506.671;
-      YPos = 87.444;
+      YPos = 58.088;
       ZPos = 208756.116;
       XOri = 359.23;
       YOri = 215.01;
@@ -62741,7 +62746,7 @@ Group
       Targets = [3755];
       Objects = [];
       XPos = 135506.671;
-      YPos = 87.644;
+      YPos = 58.288;
       ZPos = 208756.116;
       XOri = 0.00;
       YOri = 0.00;
@@ -62909,7 +62914,7 @@ Group
       Index = 3777;
       LinkTrId = 3775;
       XPos = 135234.392;
-      YPos = 101.386;
+      YPos = 58.088;
       ZPos = 210103.130;
       XOri = 359.26;
       YOri = 215.01;
@@ -62941,7 +62946,7 @@ Group
       Targets = [];
       Objects = [];
       XPos = 135234.392;
-      YPos = 101.586;
+      YPos = 58.288;
       ZPos = 210103.130;
       XOri = 0.00;
       YOri = 0.00;
@@ -62957,7 +62962,7 @@ Group
       Index = 3779;
       LinkTrId = 3780;
       XPos = 135253.719;
-      YPos = 101.427;
+      YPos = 58.088;
       ZPos = 210085.629;
       XOri = 358.78;
       YOri = 215.01;
@@ -62989,7 +62994,7 @@ Group
       Targets = [3775];
       Objects = [];
       XPos = 135253.719;
-      YPos = 101.627;
+      YPos = 58.288;
       ZPos = 210085.629;
       XOri = 0.00;
       YOri = 0.00;
@@ -63073,7 +63078,7 @@ Group
       Index = 3789;
       LinkTrId = 3787;
       XPos = 135611.225;
-      YPos = 105.976;
+      YPos = 58.088;
       ZPos = 209719.522;
       XOri = 358.73;
       YOri = 215.01;
@@ -63105,7 +63110,7 @@ Group
       Targets = [];
       Objects = [];
       XPos = 135611.225;
-      YPos = 106.176;
+      YPos = 58.288;
       ZPos = 209719.522;
       XOri = 0.00;
       YOri = 0.00;
@@ -63121,7 +63126,7 @@ Group
       Index = 3791;
       LinkTrId = 3792;
       XPos = 135630.552;
-      YPos = 106.240;
+      YPos = 58.088;
       ZPos = 209702.021;
       XOri = 358.73;
       YOri = 215.01;
@@ -63153,7 +63158,7 @@ Group
       Targets = [3787];
       Objects = [];
       XPos = 135630.552;
-      YPos = 106.440;
+      YPos = 58.288;
       ZPos = 209702.021;
       XOri = 0.00;
       YOri = 0.00;
@@ -63169,7 +63174,7 @@ Group
       Index = 3794;
       LinkTrId = 3795;
       XPos = 135651.601;
-      YPos = 106.133;
+      YPos = 58.088;
       ZPos = 209689.767;
       XOri = 358.82;
       YOri = 215.01;
@@ -63201,7 +63206,7 @@ Group
       Targets = [3787];
       Objects = [];
       XPos = 135651.601;
-      YPos = 106.333;
+      YPos = 58.288;
       ZPos = 209689.767;
       XOri = 0.00;
       YOri = 0.00;
@@ -63361,7 +63366,7 @@ Group
       Index = 3810;
       LinkTrId = 3808;
       XPos = 136011.557;
-      YPos = 111.808;
+      YPos = 58.088;
       ZPos = 209388.347;
       XOri = 359.33;
       YOri = 215.01;
@@ -63393,7 +63398,7 @@ Group
       Targets = [];
       Objects = [];
       XPos = 136011.557;
-      YPos = 112.008;
+      YPos = 58.288;
       ZPos = 209388.347;
       XOri = 0.00;
       YOri = 0.00;
@@ -63409,7 +63414,7 @@ Group
       Index = 3812;
       LinkTrId = 3813;
       XPos = 136030.884;
-      YPos = 112.055;
+      YPos = 58.088;
       ZPos = 209370.846;
       XOri = 359.72;
       YOri = 215.01;
@@ -63441,7 +63446,7 @@ Group
       Targets = [3808];
       Objects = [];
       XPos = 136030.884;
-      YPos = 112.255;
+      YPos = 58.288;
       ZPos = 209370.846;
       XOri = 0.00;
       YOri = 0.00;
@@ -63571,7 +63576,7 @@ Group
       Index = 3826;
       LinkTrId = 3824;
       XPos = 134642.721;
-      YPos = 87.445;
+      YPos = 58.088;
       ZPos = 209465.423;
       XOri = 1.47;
       YOri = 215.01;
@@ -63603,7 +63608,7 @@ Group
       Targets = [];
       Objects = [];
       XPos = 134642.721;
-      YPos = 87.645;
+      YPos = 58.288;
       ZPos = 209465.423;
       XOri = 0.00;
       YOri = 0.00;
@@ -63619,7 +63624,7 @@ Group
       Index = 3828;
       LinkTrId = 3829;
       XPos = 134662.048;
-      YPos = 87.445;
+      YPos = 58.088;
       ZPos = 209447.922;
       XOri = 358.45;
       YOri = 215.01;
@@ -63651,7 +63656,7 @@ Group
       Targets = [3824];
       Objects = [];
       XPos = 134662.048;
-      YPos = 87.645;
+      YPos = 58.288;
       ZPos = 209447.922;
       XOri = 0.00;
       YOri = 0.00;
@@ -63811,7 +63816,7 @@ Group
       Index = 3845;
       LinkTrId = 3843;
       XPos = 135112.093;
-      YPos = 87.445;
+      YPos = 58.088;
       ZPos = 209160.638;
       XOri = 359.17;
       YOri = 215.01;
@@ -63843,7 +63848,7 @@ Group
       Targets = [];
       Objects = [];
       XPos = 135112.093;
-      YPos = 87.645;
+      YPos = 58.288;
       ZPos = 209160.638;
       XOri = 0.00;
       YOri = 0.00;
@@ -63859,7 +63864,7 @@ Group
       Index = 3847;
       LinkTrId = 3848;
       XPos = 135131.420;
-      YPos = 87.445;
+      YPos = 58.088;
       ZPos = 209143.137;
       XOri = 358.99;
       YOri = 215.01;
@@ -63891,7 +63896,7 @@ Group
       Targets = [3843];
       Objects = [];
       XPos = 135131.420;
-      YPos = 87.645;
+      YPos = 58.288;
       ZPos = 209143.137;
       XOri = 0.00;
       YOri = 0.00;
@@ -63994,7 +63999,7 @@ Group
       Index = 3859;
       LinkTrId = 3857;
       XPos = 135486.904;
-      YPos = 87.445;
+      YPos = 58.088;
       ZPos = 208773.614;
       XOri = 359.85;
       YOri = 215.01;
@@ -64026,7 +64031,7 @@ Group
       Targets = [];
       Objects = [];
       XPos = 135486.904;
-      YPos = 87.645;
+      YPos = 58.288;
       ZPos = 208773.614;
       XOri = 0.00;
       YOri = 0.00;
@@ -64042,7 +64047,7 @@ Group
       Index = 3861;
       LinkTrId = 3862;
       XPos = 135506.231;
-      YPos = 87.445;
+      YPos = 58.088;
       ZPos = 208756.113;
       XOri = 359.23;
       YOri = 215.01;
@@ -64074,7 +64079,7 @@ Group
       Targets = [3857];
       Objects = [];
       XPos = 135506.231;
-      YPos = 87.645;
+      YPos = 58.288;
       ZPos = 208756.113;
       XOri = 0.00;
       YOri = 0.00;
@@ -75175,102 +75180,6 @@ Group
         RouteTime = 0;
         RenewTime = 1800;
         Altitude = 500;
-        Model = "graphics\planes\bf109g2\bf109g2.mgm";
-        Script = "LuaScripts\WorldObjects\Planes\bf109g2.txt";
-        Name = "";
-        Skin = "";
-        Callsign = 0;
-        Callnum = 0;
-      }
-      Plane
-      {
-        SetIndex = 0;
-        Number = -1;
-        AILevel = 2;
-        StartInAir = 2;
-        Engageable = 1;
-        Vulnerable = 1;
-        LimitAmmo = 1;
-        AIRTBDecision = 1;
-        Renewable = 1;
-        PayloadId = 0;
-        WMMask = 1;
-        Fuel = 1;
-        RouteTime = 0;
-        RenewTime = 1800;
-        Altitude = 500;
-        Model = "graphics\planes\fw190a3\fw190a3.mgm";
-        Script = "LuaScripts\WorldObjects\Planes\fw190a3.txt";
-        Name = "";
-        Skin = "";
-        Callsign = 0;
-        Callnum = 0;
-      }
-      Plane
-      {
-        SetIndex = 0;
-        Number = -1;
-        AILevel = 2;
-        StartInAir = 2;
-        Engageable = 1;
-        Vulnerable = 1;
-        LimitAmmo = 1;
-        AIRTBDecision = 1;
-        Renewable = 1;
-        PayloadId = 0;
-        WMMask = 1;
-        Fuel = 1;
-        RouteTime = 0;
-        RenewTime = 1800;
-        Altitude = 500;
-        Model = "graphics\planes\he111h6\he111h6.mgm";
-        Script = "LuaScripts\WorldObjects\Planes\he111h6.txt";
-        Name = "";
-        Skin = "";
-        Callsign = 0;
-        Callnum = 0;
-      }
-      Plane
-      {
-        SetIndex = 0;
-        Number = -1;
-        AILevel = 2;
-        StartInAir = 2;
-        Engageable = 1;
-        Vulnerable = 1;
-        LimitAmmo = 1;
-        AIRTBDecision = 1;
-        Renewable = 1;
-        PayloadId = 0;
-        WMMask = 1;
-        Fuel = 1;
-        RouteTime = 0;
-        RenewTime = 1800;
-        Altitude = 500;
-        Model = "graphics\planes\ju87d3\ju87d3.mgm";
-        Script = "LuaScripts\WorldObjects\Planes\ju87d3.txt";
-        Name = "";
-        Skin = "";
-        Callsign = 0;
-        Callnum = 0;
-      }
-      Plane
-      {
-        SetIndex = 0;
-        Number = -1;
-        AILevel = 2;
-        StartInAir = 2;
-        Engageable = 1;
-        Vulnerable = 1;
-        LimitAmmo = 1;
-        AIRTBDecision = 1;
-        Renewable = 1;
-        PayloadId = 0;
-        WMMask = 1;
-        Fuel = 1;
-        RouteTime = 0;
-        RenewTime = 1800;
-        Altitude = 500;
         Model = "graphics\planes\mc202s8\mc202s8.mgm";
         Script = "LuaScripts\WorldObjects\Planes\mc202s8.txt";
         Name = "";
@@ -75319,8 +75228,152 @@ Group
         RouteTime = 0;
         RenewTime = 1800;
         Altitude = 500;
+        Model = "graphics\planes\bf109f2\bf109f2.mgm";
+        Script = "LuaScripts\WorldObjects\Planes\bf109f2.txt";
+        Name = "";
+        Skin = "";
+        Callsign = 0;
+        Callnum = 0;
+      }
+      Plane
+      {
+        SetIndex = 0;
+        Number = -1;
+        AILevel = 2;
+        StartInAir = 2;
+        Engageable = 1;
+        Vulnerable = 1;
+        LimitAmmo = 1;
+        AIRTBDecision = 1;
+        Renewable = 1;
+        PayloadId = 0;
+        WMMask = 1;
+        Fuel = 1;
+        RouteTime = 0;
+        RenewTime = 1800;
+        Altitude = 500;
+        Model = "graphics\planes\bf109f4\bf109f4.mgm";
+        Script = "LuaScripts\WorldObjects\Planes\bf109f4.txt";
+        Name = "";
+        Skin = "";
+        Callsign = 0;
+        Callnum = 0;
+      }
+      Plane
+      {
+        SetIndex = 0;
+        Number = -1;
+        AILevel = 2;
+        StartInAir = 2;
+        Engageable = 1;
+        Vulnerable = 1;
+        LimitAmmo = 1;
+        AIRTBDecision = 1;
+        Renewable = 1;
+        PayloadId = 0;
+        WMMask = 1;
+        Fuel = 1;
+        RouteTime = 0;
+        RenewTime = 1800;
+        Altitude = 500;
+        Model = "graphics\planes\bf109g2\bf109g2.mgm";
+        Script = "LuaScripts\WorldObjects\Planes\bf109g2.txt";
+        Name = "";
+        Skin = "";
+        Callsign = 0;
+        Callnum = 0;
+      }
+      Plane
+      {
+        SetIndex = 0;
+        Number = -1;
+        AILevel = 2;
+        StartInAir = 2;
+        Engageable = 1;
+        Vulnerable = 1;
+        LimitAmmo = 1;
+        AIRTBDecision = 1;
+        Renewable = 1;
+        PayloadId = 0;
+        WMMask = 1;
+        Fuel = 1;
+        RouteTime = 0;
+        RenewTime = 1800;
+        Altitude = 500;
+        Model = "graphics\planes\fw190a3\fw190a3.mgm";
+        Script = "LuaScripts\WorldObjects\Planes\fw190a3.txt";
+        Name = "";
+        Skin = "";
+        Callsign = 0;
+        Callnum = 0;
+      }
+      Plane
+      {
+        SetIndex = 0;
+        Number = -1;
+        AILevel = 2;
+        StartInAir = 2;
+        Engageable = 1;
+        Vulnerable = 1;
+        LimitAmmo = 1;
+        AIRTBDecision = 1;
+        Renewable = 1;
+        PayloadId = 0;
+        WMMask = 1;
+        Fuel = 1;
+        RouteTime = 0;
+        RenewTime = 1800;
+        Altitude = 500;
+        Model = "graphics\planes\ju87d3\ju87d3.mgm";
+        Script = "LuaScripts\WorldObjects\Planes\ju87d3.txt";
+        Name = "";
+        Skin = "";
+        Callsign = 0;
+        Callnum = 0;
+      }
+      Plane
+      {
+        SetIndex = 0;
+        Number = -1;
+        AILevel = 2;
+        StartInAir = 2;
+        Engageable = 1;
+        Vulnerable = 1;
+        LimitAmmo = 1;
+        AIRTBDecision = 1;
+        Renewable = 1;
+        PayloadId = 0;
+        WMMask = 1;
+        Fuel = 1;
+        RouteTime = 0;
+        RenewTime = 1800;
+        Altitude = 500;
         Model = "graphics\planes\bf110e2\bf110e2.mgm";
         Script = "LuaScripts\WorldObjects\Planes\bf110e2.txt";
+        Name = "";
+        Skin = "";
+        Callsign = 0;
+        Callnum = 0;
+      }
+      Plane
+      {
+        SetIndex = 0;
+        Number = -1;
+        AILevel = 2;
+        StartInAir = 2;
+        Engageable = 1;
+        Vulnerable = 1;
+        LimitAmmo = 1;
+        AIRTBDecision = 1;
+        Renewable = 1;
+        PayloadId = 0;
+        WMMask = 1;
+        Fuel = 1;
+        RouteTime = 0;
+        RenewTime = 1800;
+        Altitude = 500;
+        Model = "graphics\planes\he111h6\he111h6.mgm";
+        Script = "LuaScripts\WorldObjects\Planes\he111h6.txt";
         Name = "";
         Skin = "";
         Callsign = 0;
@@ -76927,8 +76980,8 @@ Group
         RouteTime = 0;
         RenewTime = 1800;
         Altitude = 500;
-        Model = "graphics\planes\il2m42\il2m42.mgm";
-        Script = "LuaScripts\WorldObjects\Planes\il2m42.txt";
+        Model = "graphics\planes\p40e1\p40e1.mgm";
+        Script = "LuaScripts\WorldObjects\Planes\p40e1.txt";
         Name = "";
         Skin = "";
         Callsign = 0;
@@ -76975,8 +77028,8 @@ Group
         RouteTime = 0;
         RenewTime = 1800;
         Altitude = 500;
-        Model = "graphics\planes\pe2s87\pe2s87.mgm";
-        Script = "LuaScripts\WorldObjects\Planes\pe2s87.txt";
+        Model = "graphics\planes\yak1s69\yak1s69.mgm";
+        Script = "LuaScripts\WorldObjects\Planes\yak1s69.txt";
         Name = "";
         Skin = "";
         Callsign = 0;
@@ -76999,8 +77052,80 @@ Group
         RouteTime = 0;
         RenewTime = 1800;
         Altitude = 500;
-        Model = "graphics\planes\p40e1\p40e1.mgm";
-        Script = "LuaScripts\WorldObjects\Planes\p40e1.txt";
+        Model = "graphics\planes\la5s8\la5s8.mgm";
+        Script = "LuaScripts\WorldObjects\Planes\la5s8.txt";
+        Name = "";
+        Skin = "";
+        Callsign = 0;
+        Callnum = 0;
+      }
+      Plane
+      {
+        SetIndex = 0;
+        Number = -1;
+        AILevel = 2;
+        StartInAir = 2;
+        Engageable = 1;
+        Vulnerable = 1;
+        LimitAmmo = 1;
+        AIRTBDecision = 1;
+        Renewable = 1;
+        PayloadId = 0;
+        WMMask = 1;
+        Fuel = 1;
+        RouteTime = 0;
+        RenewTime = 1800;
+        Altitude = 500;
+        Model = "graphics\planes\mig3s24\mig3s24.mgm";
+        Script = "LuaScripts\WorldObjects\Planes\mig3s24.txt";
+        Name = "";
+        Skin = "";
+        Callsign = 0;
+        Callnum = 0;
+      }
+      Plane
+      {
+        SetIndex = 0;
+        Number = -1;
+        AILevel = 2;
+        StartInAir = 2;
+        Engageable = 1;
+        Vulnerable = 1;
+        LimitAmmo = 1;
+        AIRTBDecision = 1;
+        Renewable = 1;
+        PayloadId = 0;
+        WMMask = 1;
+        Fuel = 1;
+        RouteTime = 0;
+        RenewTime = 1800;
+        Altitude = 500;
+        Model = "graphics\planes\il2m42\il2m42.mgm";
+        Script = "LuaScripts\WorldObjects\Planes\il2m42.txt";
+        Name = "";
+        Skin = "";
+        Callsign = 0;
+        Callnum = 0;
+      }
+      Plane
+      {
+        SetIndex = 0;
+        Number = -1;
+        AILevel = 2;
+        StartInAir = 2;
+        Engageable = 1;
+        Vulnerable = 1;
+        LimitAmmo = 1;
+        AIRTBDecision = 1;
+        Renewable = 1;
+        PayloadId = 0;
+        WMMask = 1;
+        Fuel = 1;
+        RouteTime = 0;
+        RenewTime = 1800;
+        Altitude = 500;
+        Model = "graphics\planes\pe2s87\pe2s87.mgm";
+        Script = "LuaScripts\WorldObjects\Planes\pe2s87.txt";
         Name = "";
         Skin = "";
         Callsign = 0;
@@ -78521,7 +78646,7 @@ Group
     Index = 5021;
     LinkTrId = 5022;
     XPos = 105183.801;
-    YPos = 83.966;
+    YPos = 85.580;
     ZPos = 208716.539;
     XOri = 359.83;
     YOri = 0.00;
@@ -78660,7 +78785,7 @@ Group
     Targets = [];
     Objects = [];
     XPos = 105183.801;
-    YPos = 84.166;
+    YPos = 85.780;
     ZPos = 208716.539;
     XOri = 0.00;
     YOri = 0.00;
@@ -84855,7 +84980,7 @@ Group
     Index = 5470;
     Name = "StartDeco1";
     Desc = "";
-    Targets = [5471,5472,5473,5474,6103];
+    Targets = [5471,5472,5473,5474,5475];
     Objects = [];
     XPos = 139680.823;
     YPos = 105.430;
@@ -84904,7 +85029,7 @@ Group
 
   MCU_Deactivate
   {
-    Index = 5477;
+    Index = 5478;
     Name = "";
     Desc = "";
     Targets = [5469,5416];
@@ -84920,10 +85045,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5478;
+    Index = 5479;
     Name = "KillDeco1";
     Desc = "";
-    Targets = [5477,5479,5480,6114];
+    Targets = [5478,5480,5481,5482];
     Objects = [];
     XPos = 139605.134;
     YPos = 105.923;
@@ -84939,8 +85064,8 @@ Group
   Vehicle
   {
     Name = "Artillery";
-    Index = 5481;
-    LinkTrId = 5482;
+    Index = 5483;
+    LinkTrId = 5484;
     XPos = 136492.961;
     YPos = 105.698;
     ZPos = 194154.467;
@@ -84968,7 +85093,7 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5482;
+    Index = 5484;
     Name = "Artillery entity";
     Desc = "";
     Targets = [];
@@ -84980,15 +85105,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5481;
+    MisObjID = 5483;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5484;
-    LinkTrId = 5485;
+    Index = 5486;
+    LinkTrId = 5487;
     XPos = 136465.315;
     YPos = 104.756;
     ZPos = 194168.463;
@@ -85016,10 +85141,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5485;
+    Index = 5487;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5482];
+    Targets = [5484];
     Objects = [];
     XPos = 136465.315;
     YPos = 104.956;
@@ -85028,15 +85153,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5484;
+    MisObjID = 5486;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5487;
-    LinkTrId = 5488;
+    Index = 5489;
+    LinkTrId = 5490;
     XPos = 136524.187;
     YPos = 105.789;
     ZPos = 194139.761;
@@ -85064,10 +85189,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5488;
+    Index = 5490;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5482];
+    Targets = [5484];
     Objects = [];
     XPos = 136524.187;
     YPos = 105.989;
@@ -85076,14 +85201,14 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5487;
+    MisObjID = 5489;
   }
   
 
   Block
   {
     Name = "Block";
-    Index = 5490;
+    Index = 5492;
     LinkTrId = 0;
     XPos = 136464.273;
     YPos = 104.720;
@@ -85105,7 +85230,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5491;
+    Index = 5493;
     LinkTrId = 0;
     XPos = 136492.309;
     YPos = 105.675;
@@ -85127,7 +85252,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5492;
+    Index = 5494;
     LinkTrId = 0;
     XPos = 136523.189;
     YPos = 105.775;
@@ -85148,11 +85273,11 @@ Group
 
   MCU_CMD_AttackArea
   {
-    Index = 5493;
+    Index = 5495;
     Name = "Ground";
     Desc = "";
     Targets = [];
-    Objects = [5482];
+    Objects = [5484];
     XPos = 139498.770;
     YPos = 103.318;
     ZPos = 200489.230;
@@ -85171,8 +85296,8 @@ Group
   Vehicle
   {
     Name = "Artillery";
-    Index = 5494;
-    LinkTrId = 5495;
+    Index = 5496;
+    LinkTrId = 5497;
     XPos = 136641.462;
     YPos = 104.726;
     ZPos = 194042.629;
@@ -85200,10 +85325,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5495;
+    Index = 5497;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5482];
+    Targets = [5484];
     Objects = [];
     XPos = 136641.462;
     YPos = 104.926;
@@ -85212,15 +85337,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5494;
+    MisObjID = 5496;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5497;
-    LinkTrId = 5498;
+    Index = 5499;
+    LinkTrId = 5500;
     XPos = 136613.816;
     YPos = 105.322;
     ZPos = 194056.624;
@@ -85248,10 +85373,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5498;
+    Index = 5500;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5482];
+    Targets = [5484];
     Objects = [];
     XPos = 136613.816;
     YPos = 105.522;
@@ -85260,15 +85385,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5497;
+    MisObjID = 5499;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5500;
-    LinkTrId = 5501;
+    Index = 5502;
+    LinkTrId = 5503;
     XPos = 136672.688;
     YPos = 104.501;
     ZPos = 194027.922;
@@ -85296,10 +85421,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5501;
+    Index = 5503;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5482];
+    Targets = [5484];
     Objects = [];
     XPos = 136672.688;
     YPos = 104.701;
@@ -85308,14 +85433,14 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5500;
+    MisObjID = 5502;
   }
   
 
   Block
   {
     Name = "Block";
-    Index = 5503;
+    Index = 5505;
     LinkTrId = 0;
     XPos = 136612.774;
     YPos = 105.298;
@@ -85337,7 +85462,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5504;
+    Index = 5506;
     LinkTrId = 0;
     XPos = 136640.811;
     YPos = 104.670;
@@ -85359,7 +85484,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5505;
+    Index = 5507;
     LinkTrId = 0;
     XPos = 136671.690;
     YPos = 104.431;
@@ -85381,8 +85506,8 @@ Group
   Vehicle
   {
     Name = "Artillery";
-    Index = 5506;
-    LinkTrId = 5507;
+    Index = 5508;
+    LinkTrId = 5509;
     XPos = 136906.246;
     YPos = 104.587;
     ZPos = 193950.429;
@@ -85410,10 +85535,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5507;
+    Index = 5509;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5482];
+    Targets = [5484];
     Objects = [];
     XPos = 136906.246;
     YPos = 104.787;
@@ -85422,15 +85547,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5506;
+    MisObjID = 5508;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5509;
-    LinkTrId = 5510;
+    Index = 5511;
+    LinkTrId = 5512;
     XPos = 136878.600;
     YPos = 104.390;
     ZPos = 193964.424;
@@ -85458,10 +85583,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5510;
+    Index = 5512;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5482];
+    Targets = [5484];
     Objects = [];
     XPos = 136878.600;
     YPos = 104.590;
@@ -85470,15 +85595,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5509;
+    MisObjID = 5511;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5512;
-    LinkTrId = 5513;
+    Index = 5514;
+    LinkTrId = 5515;
     XPos = 136937.472;
     YPos = 105.649;
     ZPos = 193935.722;
@@ -85506,10 +85631,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5513;
+    Index = 5515;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5482];
+    Targets = [5484];
     Objects = [];
     XPos = 136937.472;
     YPos = 105.849;
@@ -85518,14 +85643,14 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5512;
+    MisObjID = 5514;
   }
   
 
   Block
   {
     Name = "Block";
-    Index = 5515;
+    Index = 5517;
     LinkTrId = 0;
     XPos = 136877.559;
     YPos = 104.421;
@@ -85547,7 +85672,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5516;
+    Index = 5518;
     LinkTrId = 0;
     XPos = 136905.595;
     YPos = 104.607;
@@ -85569,7 +85694,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5517;
+    Index = 5519;
     LinkTrId = 0;
     XPos = 136936.474;
     YPos = 105.664;
@@ -85591,8 +85716,8 @@ Group
   Vehicle
   {
     Name = "Artillery";
-    Index = 5518;
-    LinkTrId = 5519;
+    Index = 5520;
+    LinkTrId = 5521;
     XPos = 136718.587;
     YPos = 102.434;
     ZPos = 193855.935;
@@ -85620,10 +85745,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5519;
+    Index = 5521;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5482];
+    Targets = [5484];
     Objects = [];
     XPos = 136718.587;
     YPos = 102.634;
@@ -85632,15 +85757,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5518;
+    MisObjID = 5520;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5521;
-    LinkTrId = 5522;
+    Index = 5523;
+    LinkTrId = 5524;
     XPos = 136690.941;
     YPos = 101.859;
     ZPos = 193869.931;
@@ -85668,10 +85793,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5522;
+    Index = 5524;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5482];
+    Targets = [5484];
     Objects = [];
     XPos = 136690.941;
     YPos = 102.059;
@@ -85680,15 +85805,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5521;
+    MisObjID = 5523;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5524;
-    LinkTrId = 5525;
+    Index = 5526;
+    LinkTrId = 5527;
     XPos = 136749.813;
     YPos = 104.010;
     ZPos = 193841.228;
@@ -85716,10 +85841,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5525;
+    Index = 5527;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5482];
+    Targets = [5484];
     Objects = [];
     XPos = 136749.813;
     YPos = 104.210;
@@ -85728,14 +85853,14 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5524;
+    MisObjID = 5526;
   }
   
 
   Block
   {
     Name = "Block";
-    Index = 5527;
+    Index = 5529;
     LinkTrId = 0;
     XPos = 136689.900;
     YPos = 103.661;
@@ -85757,7 +85882,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5528;
+    Index = 5530;
     LinkTrId = 0;
     XPos = 136717.936;
     YPos = 102.724;
@@ -85779,7 +85904,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5529;
+    Index = 5531;
     LinkTrId = 0;
     XPos = 136748.815;
     YPos = 102.359;
@@ -85801,8 +85926,8 @@ Group
   Vehicle
   {
     Name = "Artillery";
-    Index = 5530;
-    LinkTrId = 5531;
+    Index = 5532;
+    LinkTrId = 5533;
     XPos = 136544.446;
     YPos = 102.389;
     ZPos = 193963.580;
@@ -85830,10 +85955,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5531;
+    Index = 5533;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5482];
+    Targets = [5484];
     Objects = [];
     XPos = 136544.446;
     YPos = 102.589;
@@ -85842,15 +85967,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5530;
+    MisObjID = 5532;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5533;
-    LinkTrId = 5534;
+    Index = 5535;
+    LinkTrId = 5536;
     XPos = 136516.801;
     YPos = 102.293;
     ZPos = 193977.576;
@@ -85878,10 +86003,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5534;
+    Index = 5536;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5482];
+    Targets = [5484];
     Objects = [];
     XPos = 136516.801;
     YPos = 102.493;
@@ -85890,15 +86015,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5533;
+    MisObjID = 5535;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5536;
-    LinkTrId = 5537;
+    Index = 5538;
+    LinkTrId = 5539;
     XPos = 136575.673;
     YPos = 102.611;
     ZPos = 193948.873;
@@ -85926,10 +86051,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5537;
+    Index = 5539;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5482];
+    Targets = [5484];
     Objects = [];
     XPos = 136575.673;
     YPos = 102.811;
@@ -85938,14 +86063,14 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5536;
+    MisObjID = 5538;
   }
   
 
   Block
   {
     Name = "Block";
-    Index = 5539;
+    Index = 5541;
     LinkTrId = 0;
     XPos = 136515.759;
     YPos = 102.405;
@@ -85967,7 +86092,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5540;
+    Index = 5542;
     LinkTrId = 0;
     XPos = 136543.795;
     YPos = 102.413;
@@ -85989,7 +86114,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5541;
+    Index = 5543;
     LinkTrId = 0;
     XPos = 136574.674;
     YPos = 102.602;
@@ -86011,8 +86136,8 @@ Group
   Vehicle
   {
     Name = "Dont shoot me friendly";
-    Index = 5542;
-    LinkTrId = 5543;
+    Index = 5544;
+    LinkTrId = 5545;
     XPos = 136585.687;
     YPos = 103.567;
     ZPos = 193817.105;
@@ -86040,7 +86165,7 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5543;
+    Index = 5545;
     Name = "Dont shoot me friendly entity";
     Desc = "";
     Targets = [];
@@ -86052,17 +86177,17 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5542;
+    MisObjID = 5544;
   }
   
 
   MCU_CMD_Flare
   {
-    Index = 5545;
+    Index = 5547;
     Name = "command Flare";
     Desc = "";
     Targets = [];
-    Objects = [5543];
+    Objects = [5545];
     XPos = 136599.653;
     YPos = 108.413;
     ZPos = 193809.327;
@@ -86075,10 +86200,10 @@ Group
 
   MCU_CheckZone
   {
-    Index = 5546;
+    Index = 5548;
     Name = "Friendly close";
     Desc = "";
-    Targets = [5545];
+    Targets = [5547];
     Objects = [];
     XPos = 136593.375;
     YPos = 107.916;
@@ -86098,7 +86223,7 @@ Group
     Index = 5473;
     Name = "StartDecoRelayed";
     Desc = "";
-    Targets = [5548,5549,5550];
+    Targets = [5550,5551,5552];
     Objects = [];
     XPos = 136513.319;
     YPos = 105.430;
@@ -86113,11 +86238,11 @@ Group
 
   MCU_Activate
   {
-    Index = 5548;
+    Index = 5550;
     Name = "Trigger Activate";
     Desc = "";
     Targets = [];
-    Objects = [5482,5543];
+    Objects = [5484,5545];
     XPos = 136507.079;
     YPos = 106.956;
     ZPos = 194190.689;
@@ -86129,10 +86254,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5549;
+    Index = 5551;
     Name = "5s";
     Desc = "";
-    Targets = [5493,5546];
+    Targets = [5495,5548];
     Objects = [];
     XPos = 136537.279;
     YPos = 104.903;
@@ -86147,11 +86272,11 @@ Group
 
   MCU_Deactivate
   {
-    Index = 5553;
+    Index = 5555;
     Name = "";
     Desc = "";
-    Targets = [5546,5493];
-    Objects = [5482,5543];
+    Targets = [5548,5495];
+    Objects = [5484,5545];
     XPos = 136595.869;
     YPos = 105.830;
     ZPos = 194296.847;
@@ -86163,10 +86288,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5479;
+    Index = 5480;
     Name = "KillDecoRelayed";
     Desc = "";
-    Targets = [5553,5555];
+    Targets = [5555,5557];
     Objects = [];
     XPos = 136589.244;
     YPos = 105.923;
@@ -86181,7 +86306,7 @@ Group
 
   MCU_CheckZone
   {
-    Index = 5556;
+    Index = 5558;
     Name = "Visible";
     Desc = "";
     Targets = [5470];
@@ -86204,7 +86329,7 @@ Group
     Index = 5474;
     Name = "";
     Desc = "";
-    Targets = [5556];
+    Targets = [5558];
     Objects = [];
     XPos = 139467.523;
     YPos = 106.277;
@@ -86217,10 +86342,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5480;
+    Index = 5481;
     Name = "10min";
     Desc = "";
-    Targets = [5559];
+    Targets = [5561];
     Objects = [];
     XPos = 139419.443;
     YPos = 106.248;
@@ -86235,10 +86360,10 @@ Group
 
   MCU_Activate
   {
-    Index = 5559;
+    Index = 5561;
     Name = "";
     Desc = "";
-    Targets = [5556];
+    Targets = [5558];
     Objects = [];
     XPos = 139408.332;
     YPos = 105.380;
@@ -86251,7 +86376,7 @@ Group
 
   MCU_CheckZone
   {
-    Index = 5561;
+    Index = 5563;
     Name = "Visible";
     Desc = "";
     Targets = [5470];
@@ -86271,10 +86396,10 @@ Group
 
   MCU_Deactivate
   {
-    Index = 5550;
+    Index = 5552;
     Name = "";
     Desc = "";
-    Targets = [5561];
+    Targets = [5563];
     Objects = [];
     XPos = 136714.823;
     YPos = 106.277;
@@ -86287,10 +86412,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5555;
+    Index = 5557;
     Name = "10min";
     Desc = "";
-    Targets = [5564];
+    Targets = [5566];
     Objects = [];
     XPos = 136695.808;
     YPos = 106.248;
@@ -86305,10 +86430,10 @@ Group
 
   MCU_Activate
   {
-    Index = 5564;
+    Index = 5566;
     Name = "";
     Desc = "";
-    Targets = [5561];
+    Targets = [5563];
     Objects = [];
     XPos = 136745.666;
     YPos = 105.380;
@@ -86321,10 +86446,10 @@ Group
 
   MCU_TR_MissionBegin
   {
-    Index = 5566;
+    Index = 5568;
     Name = "";
     Desc = "";
-    Targets = [5567];
+    Targets = [5569];
     Objects = [];
     XPos = 136816.345;
     YPos = 105.330;
@@ -86338,10 +86463,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5567;
+    Index = 5569;
     Name = "45s";
     Desc = "";
-    Targets = [5561];
+    Targets = [5563];
     Objects = [];
     XPos = 136799.477;
     YPos = 105.457;
@@ -86356,10 +86481,10 @@ Group
 
   MCU_TR_MissionBegin
   {
-    Index = 5569;
+    Index = 5571;
     Name = "";
     Desc = "";
-    Targets = [5570];
+    Targets = [5572];
     Objects = [];
     XPos = 139373.197;
     YPos = 105.330;
@@ -86373,10 +86498,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5570;
+    Index = 5572;
     Name = "45s";
     Desc = "";
-    Targets = [5556];
+    Targets = [5558];
     Objects = [];
     XPos = 139390.085;
     YPos = 105.457;
@@ -86392,8 +86517,8 @@ Group
   Vehicle
   {
     Name = "MG";
-    Index = 6057;
-    LinkTrId = 6058;
+    Index = 5574;
+    LinkTrId = 5575;
     XPos = 138433.007;
     YPos = 101.503;
     ZPos = 196796.567;
@@ -86421,7 +86546,7 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6058;
+    Index = 5575;
     Name = "MG entity";
     Desc = "";
     Targets = [];
@@ -86433,15 +86558,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6057;
+    MisObjID = 5574;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6059;
-    LinkTrId = 6060;
+    Index = 5577;
+    LinkTrId = 5578;
     XPos = 138439.234;
     YPos = 100.978;
     ZPos = 196774.865;
@@ -86469,10 +86594,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6060;
+    Index = 5578;
     Name = "MG entity";
     Desc = "";
-    Targets = [6058];
+    Targets = [5575];
     Objects = [];
     XPos = 138439.234;
     YPos = 101.178;
@@ -86481,15 +86606,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6059;
+    MisObjID = 5577;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6062;
-    LinkTrId = 6063;
+    Index = 5580;
+    LinkTrId = 5581;
     XPos = 138444.991;
     YPos = 100.335;
     ZPos = 196751.564;
@@ -86517,10 +86642,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6063;
+    Index = 5581;
     Name = "MG entity";
     Desc = "";
-    Targets = [6058];
+    Targets = [5575];
     Objects = [];
     XPos = 138444.991;
     YPos = 100.535;
@@ -86529,15 +86654,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6062;
+    MisObjID = 5580;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6065;
-    LinkTrId = 6066;
+    Index = 5583;
+    LinkTrId = 5584;
     XPos = 138455.880;
     YPos = 100.311;
     ZPos = 196731.776;
@@ -86565,10 +86690,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6066;
+    Index = 5584;
     Name = "MG entity";
     Desc = "";
-    Targets = [6058];
+    Targets = [5575];
     Objects = [];
     XPos = 138455.880;
     YPos = 100.511;
@@ -86577,15 +86702,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6065;
+    MisObjID = 5583;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6068;
-    LinkTrId = 6069;
+    Index = 5586;
+    LinkTrId = 5587;
     XPos = 138465.277;
     YPos = 100.270;
     ZPos = 196717.298;
@@ -86613,10 +86738,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6069;
+    Index = 5587;
     Name = "MG entity";
     Desc = "";
-    Targets = [6058];
+    Targets = [5575];
     Objects = [];
     XPos = 138465.277;
     YPos = 100.470;
@@ -86625,15 +86750,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6068;
+    MisObjID = 5586;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6071;
-    LinkTrId = 6072;
+    Index = 5589;
+    LinkTrId = 5590;
     XPos = 138472.130;
     YPos = 100.225;
     ZPos = 196700.576;
@@ -86661,10 +86786,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6072;
+    Index = 5590;
     Name = "MG entity";
     Desc = "";
-    Targets = [6058];
+    Targets = [5575];
     Objects = [];
     XPos = 138472.130;
     YPos = 100.425;
@@ -86673,15 +86798,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6071;
+    MisObjID = 5589;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6074;
-    LinkTrId = 6075;
+    Index = 5592;
+    LinkTrId = 5593;
     XPos = 139069.433;
     YPos = 106.163;
     ZPos = 197050.784;
@@ -86709,10 +86834,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6075;
+    Index = 5593;
     Name = "MG entity";
     Desc = "";
-    Targets = [6086];
+    Targets = [5595];
     Objects = [];
     XPos = 139069.433;
     YPos = 106.363;
@@ -86721,15 +86846,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6074;
+    MisObjID = 5592;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6076;
-    LinkTrId = 6077;
+    Index = 5596;
+    LinkTrId = 5597;
     XPos = 139064.065;
     YPos = 106.163;
     ZPos = 197062.985;
@@ -86757,10 +86882,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6077;
+    Index = 5597;
     Name = "MG entity";
     Desc = "";
-    Targets = [6086];
+    Targets = [5595];
     Objects = [];
     XPos = 139064.065;
     YPos = 106.363;
@@ -86769,15 +86894,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6076;
+    MisObjID = 5596;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6079;
-    LinkTrId = 6080;
+    Index = 5599;
+    LinkTrId = 5600;
     XPos = 139060.332;
     YPos = 106.163;
     ZPos = 197073.249;
@@ -86805,10 +86930,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6080;
+    Index = 5600;
     Name = "MG entity";
     Desc = "";
-    Targets = [6086];
+    Targets = [5595];
     Objects = [];
     XPos = 139060.332;
     YPos = 106.363;
@@ -86817,15 +86942,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6079;
+    MisObjID = 5599;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6082;
-    LinkTrId = 6083;
+    Index = 5602;
+    LinkTrId = 5603;
     XPos = 139056.133;
     YPos = 106.163;
     ZPos = 197086.080;
@@ -86853,10 +86978,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6083;
+    Index = 5603;
     Name = "MG entity";
     Desc = "";
-    Targets = [6086];
+    Targets = [5595];
     Objects = [];
     XPos = 139056.133;
     YPos = 106.363;
@@ -86865,15 +86990,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6082;
+    MisObjID = 5602;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6085;
-    LinkTrId = 6086;
+    Index = 5605;
+    LinkTrId = 5595;
     XPos = 139047.268;
     YPos = 106.163;
     ZPos = 197095.878;
@@ -86901,7 +87026,7 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6086;
+    Index = 5595;
     Name = "MG entity";
     Desc = "";
     Targets = [];
@@ -86913,15 +87038,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6085;
+    MisObjID = 5605;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6088;
-    LinkTrId = 6089;
+    Index = 5607;
+    LinkTrId = 5608;
     XPos = 138901.841;
     YPos = 106.922;
     ZPos = 197199.137;
@@ -86949,10 +87074,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6089;
+    Index = 5608;
     Name = "MG entity";
     Desc = "";
-    Targets = [6086];
+    Targets = [5595];
     Objects = [];
     XPos = 138901.841;
     YPos = 107.122;
@@ -86961,15 +87086,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6088;
+    MisObjID = 5607;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6091;
-    LinkTrId = 6092;
+    Index = 5610;
+    LinkTrId = 5611;
     XPos = 138884.168;
     YPos = 107.147;
     ZPos = 197209.326;
@@ -86997,10 +87122,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6092;
+    Index = 5611;
     Name = "MG entity";
     Desc = "";
-    Targets = [6086];
+    Targets = [5595];
     Objects = [];
     XPos = 138884.168;
     YPos = 107.347;
@@ -87009,15 +87134,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6091;
+    MisObjID = 5610;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6094;
-    LinkTrId = 6095;
+    Index = 5613;
+    LinkTrId = 5614;
     XPos = 138867.986;
     YPos = 107.263;
     ZPos = 197216.916;
@@ -87045,10 +87170,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6095;
+    Index = 5614;
     Name = "MG entity";
     Desc = "";
-    Targets = [6086];
+    Targets = [5595];
     Objects = [];
     XPos = 138867.986;
     YPos = 107.463;
@@ -87057,15 +87182,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6094;
+    MisObjID = 5613;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6097;
-    LinkTrId = 6098;
+    Index = 5616;
+    LinkTrId = 5617;
     XPos = 138848.443;
     YPos = 107.214;
     ZPos = 197220.443;
@@ -87093,10 +87218,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6098;
+    Index = 5617;
     Name = "MG entity";
     Desc = "";
-    Targets = [6086];
+    Targets = [5595];
     Objects = [];
     XPos = 138848.443;
     YPos = 107.414;
@@ -87105,17 +87230,17 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6097;
+    MisObjID = 5616;
   }
   
 
   MCU_CMD_AttackArea
   {
-    Index = 6100;
+    Index = 5619;
     Name = "Ground";
     Desc = "";
     Targets = [];
-    Objects = [6086];
+    Objects = [5595];
     XPos = 138428.934;
     YPos = 99.920;
     ZPos = 196737.790;
@@ -87133,11 +87258,11 @@ Group
 
   MCU_CMD_AttackArea
   {
-    Index = 6101;
+    Index = 5620;
     Name = "Ground";
     Desc = "";
     Targets = [];
-    Objects = [6058];
+    Objects = [5575];
     XPos = 138964.450;
     YPos = 99.920;
     ZPos = 197136.361;
@@ -87155,10 +87280,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6103;
+    Index = 5475;
     Name = "StartDecoRelayed";
     Desc = "";
-    Targets = [6104,6105];
+    Targets = [5622,5623];
     Objects = [];
     XPos = 138829.675;
     YPos = 105.430;
@@ -87173,10 +87298,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6105;
+    Index = 5623;
     Name = "5s";
     Desc = "";
-    Targets = [6100,6101];
+    Targets = [5619,5620];
     Objects = [];
     XPos = 138784.887;
     YPos = 104.903;
@@ -87191,11 +87316,11 @@ Group
 
   MCU_Activate
   {
-    Index = 6104;
+    Index = 5622;
     Name = "Trigger Activate";
     Desc = "";
     Targets = [];
-    Objects = [6086,6058];
+    Objects = [5595,5575];
     XPos = 138863.416;
     YPos = 106.956;
     ZPos = 196849.277;
@@ -87207,10 +87332,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6114;
+    Index = 5482;
     Name = "KillDecoRelayed";
     Desc = "";
-    Targets = [6115];
+    Targets = [5627];
     Objects = [];
     XPos = 138732.965;
     YPos = 105.923;
@@ -87225,11 +87350,11 @@ Group
 
   MCU_Deactivate
   {
-    Index = 6115;
+    Index = 5627;
     Name = "";
     Desc = "";
     Targets = [];
-    Objects = [6058,6086];
+    Objects = [5575,5595];
     XPos = 138780.693;
     YPos = 105.830;
     ZPos = 196786.799;
@@ -87246,13 +87371,13 @@ Group
 Group
 {
   Name = "Deco battle 2";
-  Index = 5572;
+  Index = 5629;
   Desc = "";
   Vehicle
   {
     Name = "Artillery";
-    Index = 5573;
-    LinkTrId = 5574;
+    Index = 5630;
+    LinkTrId = 5631;
     XPos = 143879.045;
     YPos = 100.022;
     ZPos = 194233.202;
@@ -87280,7 +87405,7 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5574;
+    Index = 5631;
     Name = "Artillery entity";
     Desc = "";
     Targets = [];
@@ -87292,15 +87417,15 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5573;
+    MisObjID = 5630;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5576;
-    LinkTrId = 5577;
+    Index = 5633;
+    LinkTrId = 5634;
     XPos = 143909.736;
     YPos = 99.311;
     ZPos = 194228.930;
@@ -87328,10 +87453,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5577;
+    Index = 5634;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5574];
+    Targets = [5631];
     Objects = [];
     XPos = 143909.736;
     YPos = 99.511;
@@ -87340,15 +87465,15 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5576;
+    MisObjID = 5633;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5579;
-    LinkTrId = 5580;
+    Index = 5636;
+    LinkTrId = 5637;
     XPos = 143844.737;
     YPos = 100.162;
     ZPos = 194236.986;
@@ -87376,10 +87501,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5580;
+    Index = 5637;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5574];
+    Targets = [5631];
     Objects = [];
     XPos = 143844.737;
     YPos = 100.362;
@@ -87388,14 +87513,14 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5579;
+    MisObjID = 5636;
   }
   
 
   Block
   {
     Name = "Block";
-    Index = 5582;
+    Index = 5639;
     LinkTrId = 0;
     XPos = 143910.152;
     YPos = 99.256;
@@ -87417,7 +87542,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5583;
+    Index = 5640;
     LinkTrId = 0;
     XPos = 143879.114;
     YPos = 99.990;
@@ -87439,7 +87564,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5584;
+    Index = 5641;
     LinkTrId = 0;
     XPos = 143845.021;
     YPos = 100.173;
@@ -87460,11 +87585,11 @@ Group
 
   MCU_CMD_AttackArea
   {
-    Index = 5585;
+    Index = 5642;
     Name = "Ground";
     Desc = "";
     Targets = [];
-    Objects = [5574];
+    Objects = [5631];
     XPos = 142688.771;
     YPos = 41.593;
     ZPos = 186632.812;
@@ -87483,8 +87608,8 @@ Group
   Vehicle
   {
     Name = "Artillery";
-    Index = 5586;
-    LinkTrId = 5587;
+    Index = 5643;
+    LinkTrId = 5644;
     XPos = 143652.225;
     YPos = 98.824;
     ZPos = 194314.705;
@@ -87512,10 +87637,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5587;
+    Index = 5644;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5574];
+    Targets = [5631];
     Objects = [];
     XPos = 143652.225;
     YPos = 99.024;
@@ -87524,15 +87649,15 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5586;
+    MisObjID = 5643;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5589;
-    LinkTrId = 5590;
+    Index = 5646;
+    LinkTrId = 5647;
     XPos = 143682.915;
     YPos = 99.469;
     ZPos = 194310.433;
@@ -87560,10 +87685,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5590;
+    Index = 5647;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5574];
+    Targets = [5631];
     Objects = [];
     XPos = 143682.915;
     YPos = 99.669;
@@ -87572,15 +87697,15 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5589;
+    MisObjID = 5646;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5592;
-    LinkTrId = 5593;
+    Index = 5649;
+    LinkTrId = 5650;
     XPos = 143617.916;
     YPos = 99.986;
     ZPos = 194318.488;
@@ -87608,10 +87733,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5593;
+    Index = 5650;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5574];
+    Targets = [5631];
     Objects = [];
     XPos = 143617.916;
     YPos = 100.186;
@@ -87620,14 +87745,14 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5592;
+    MisObjID = 5649;
   }
   
 
   Block
   {
     Name = "Block";
-    Index = 5595;
+    Index = 5652;
     LinkTrId = 0;
     XPos = 143683.331;
     YPos = 99.563;
@@ -87649,7 +87774,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5596;
+    Index = 5653;
     LinkTrId = 0;
     XPos = 143652.293;
     YPos = 98.901;
@@ -87671,7 +87796,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5597;
+    Index = 5654;
     LinkTrId = 0;
     XPos = 143618.201;
     YPos = 99.992;
@@ -87693,8 +87818,8 @@ Group
   Vehicle
   {
     Name = "Artillery";
-    Index = 5598;
-    LinkTrId = 5599;
+    Index = 5655;
+    LinkTrId = 5656;
     XPos = 143333.926;
     YPos = 100.059;
     ZPos = 194280.337;
@@ -87722,10 +87847,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5599;
+    Index = 5656;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5574];
+    Targets = [5631];
     Objects = [];
     XPos = 143333.926;
     YPos = 100.259;
@@ -87734,15 +87859,15 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5598;
+    MisObjID = 5655;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5601;
-    LinkTrId = 5602;
+    Index = 5658;
+    LinkTrId = 5659;
     XPos = 143364.617;
     YPos = 100.073;
     ZPos = 194276.065;
@@ -87770,10 +87895,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5602;
+    Index = 5659;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5574];
+    Targets = [5631];
     Objects = [];
     XPos = 143364.617;
     YPos = 100.273;
@@ -87782,15 +87907,15 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5601;
+    MisObjID = 5658;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5604;
-    LinkTrId = 5605;
+    Index = 5661;
+    LinkTrId = 5662;
     XPos = 143299.618;
     YPos = 100.628;
     ZPos = 194284.121;
@@ -87818,10 +87943,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5605;
+    Index = 5662;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5574];
+    Targets = [5631];
     Objects = [];
     XPos = 143299.618;
     YPos = 100.828;
@@ -87830,14 +87955,14 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5604;
+    MisObjID = 5661;
   }
   
 
   Block
   {
     Name = "Block";
-    Index = 5607;
+    Index = 5664;
     LinkTrId = 0;
     XPos = 143365.033;
     YPos = 100.204;
@@ -87859,7 +87984,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5608;
+    Index = 5665;
     LinkTrId = 0;
     XPos = 143333.995;
     YPos = 100.168;
@@ -87881,7 +88006,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5609;
+    Index = 5666;
     LinkTrId = 0;
     XPos = 143299.903;
     YPos = 100.733;
@@ -87903,8 +88028,8 @@ Group
   Vehicle
   {
     Name = "Artillery";
-    Index = 5610;
-    LinkTrId = 5611;
+    Index = 5667;
+    LinkTrId = 5668;
     XPos = 143559.640;
     YPos = 100.275;
     ZPos = 194486.186;
@@ -87932,10 +88057,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5611;
+    Index = 5668;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5574];
+    Targets = [5631];
     Objects = [];
     XPos = 143559.640;
     YPos = 100.475;
@@ -87944,15 +88069,15 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5610;
+    MisObjID = 5667;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5613;
-    LinkTrId = 5614;
+    Index = 5670;
+    LinkTrId = 5671;
     XPos = 143590.331;
     YPos = 100.842;
     ZPos = 194481.914;
@@ -87980,10 +88105,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5614;
+    Index = 5671;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5574];
+    Targets = [5631];
     Objects = [];
     XPos = 143590.331;
     YPos = 101.042;
@@ -87992,15 +88117,15 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5613;
+    MisObjID = 5670;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5616;
-    LinkTrId = 5617;
+    Index = 5673;
+    LinkTrId = 5674;
     XPos = 143525.332;
     YPos = 100.431;
     ZPos = 194489.969;
@@ -88028,10 +88153,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5617;
+    Index = 5674;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5574];
+    Targets = [5631];
     Objects = [];
     XPos = 143525.332;
     YPos = 100.631;
@@ -88040,14 +88165,14 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5616;
+    MisObjID = 5673;
   }
   
 
   Block
   {
     Name = "Block";
-    Index = 5619;
+    Index = 5676;
     LinkTrId = 0;
     XPos = 143590.747;
     YPos = 100.877;
@@ -88069,7 +88194,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5620;
+    Index = 5677;
     LinkTrId = 0;
     XPos = 143559.709;
     YPos = 100.332;
@@ -88091,7 +88216,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5621;
+    Index = 5678;
     LinkTrId = 0;
     XPos = 143525.616;
     YPos = 100.494;
@@ -88113,8 +88238,8 @@ Group
   Vehicle
   {
     Name = "Artillery";
-    Index = 5622;
-    LinkTrId = 5623;
+    Index = 5679;
+    LinkTrId = 5680;
     XPos = 143770.954;
     YPos = 98.060;
     ZPos = 194423.904;
@@ -88142,10 +88267,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5623;
+    Index = 5680;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5574];
+    Targets = [5631];
     Objects = [];
     XPos = 143770.954;
     YPos = 98.260;
@@ -88154,15 +88279,15 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5622;
+    MisObjID = 5679;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5625;
-    LinkTrId = 5626;
+    Index = 5682;
+    LinkTrId = 5683;
     XPos = 143801.644;
     YPos = 98.329;
     ZPos = 194419.632;
@@ -88190,10 +88315,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5626;
+    Index = 5683;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5574];
+    Targets = [5631];
     Objects = [];
     XPos = 143801.644;
     YPos = 98.529;
@@ -88202,15 +88327,15 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5625;
+    MisObjID = 5682;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5628;
-    LinkTrId = 5629;
+    Index = 5685;
+    LinkTrId = 5686;
     XPos = 143736.645;
     YPos = 97.668;
     ZPos = 194427.687;
@@ -88238,10 +88363,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5629;
+    Index = 5686;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5574];
+    Targets = [5631];
     Objects = [];
     XPos = 143736.645;
     YPos = 97.868;
@@ -88250,14 +88375,14 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5628;
+    MisObjID = 5685;
   }
   
 
   Block
   {
     Name = "Block";
-    Index = 5631;
+    Index = 5688;
     LinkTrId = 0;
     XPos = 143802.060;
     YPos = 98.418;
@@ -88279,7 +88404,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5632;
+    Index = 5689;
     LinkTrId = 0;
     XPos = 143771.022;
     YPos = 98.106;
@@ -88301,7 +88426,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5633;
+    Index = 5690;
     LinkTrId = 0;
     XPos = 143736.930;
     YPos = 97.736;
@@ -88323,8 +88448,8 @@ Group
   Vehicle
   {
     Name = "Dont shoot me friendly";
-    Index = 5634;
-    LinkTrId = 5635;
+    Index = 5691;
+    LinkTrId = 5692;
     XPos = 143548.071;
     YPos = 101.682;
     ZPos = 194366.759;
@@ -88352,7 +88477,7 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5635;
+    Index = 5692;
     Name = "Dont shoot me friendly entity";
     Desc = "";
     Targets = [];
@@ -88364,17 +88489,17 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5634;
+    MisObjID = 5691;
   }
   
 
   MCU_CMD_Flare
   {
-    Index = 5637;
+    Index = 5694;
     Name = "command Flare";
     Desc = "";
     Targets = [];
-    Objects = [5635];
+    Objects = [5692];
     XPos = 143532.337;
     YPos = 102.606;
     ZPos = 194369.587;
@@ -88387,10 +88512,10 @@ Group
 
   MCU_CheckZone
   {
-    Index = 5638;
+    Index = 5695;
     Name = "Friendly close";
     Desc = "";
-    Targets = [5637];
+    Targets = [5694];
     Objects = [];
     XPos = 143543.912;
     YPos = 102.844;
@@ -88407,10 +88532,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5639;
+    Index = 5696;
     Name = "StartDeco2";
     Desc = "";
-    Targets = [5640,5641,5642,5643,6166];
+    Targets = [5697,5698,5699,5700,5701];
     Objects = [];
     XPos = 143899.434;
     YPos = 99.045;
@@ -88425,11 +88550,11 @@ Group
 
   MCU_Activate
   {
-    Index = 5640;
+    Index = 5697;
     Name = "Trigger Activate";
     Desc = "";
     Targets = [];
-    Objects = [5574,5635];
+    Objects = [5631,5692];
     XPos = 143877.438;
     YPos = 100.070;
     ZPos = 194194.360;
@@ -88441,10 +88566,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5641;
+    Index = 5698;
     Name = "5s";
     Desc = "";
-    Targets = [5585,5638];
+    Targets = [5642,5695];
     Objects = [];
     XPos = 143884.252;
     YPos = 98.009;
@@ -88459,11 +88584,11 @@ Group
 
   MCU_Deactivate
   {
-    Index = 5646;
+    Index = 5704;
     Name = "";
     Desc = "";
-    Targets = [5638,5585];
-    Objects = [5574,5635];
+    Targets = [5695,5642];
+    Objects = [5631,5692];
     XPos = 143818.736;
     YPos = 98.410;
     ZPos = 194108.916;
@@ -88475,10 +88600,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5647;
+    Index = 5705;
     Name = "KillDeco2";
     Desc = "";
-    Targets = [5646,5648,5649,6171];
+    Targets = [5704,5706,5707,5708];
     Objects = [];
     XPos = 143836.691;
     YPos = 97.531;
@@ -88494,8 +88619,8 @@ Group
   Vehicle
   {
     Name = "Artillery";
-    Index = 5650;
-    LinkTrId = 5651;
+    Index = 5709;
+    LinkTrId = 5710;
     XPos = 142393.164;
     YPos = 41.659;
     ZPos = 186715.435;
@@ -88523,7 +88648,7 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5651;
+    Index = 5710;
     Name = "Artillery entity";
     Desc = "";
     Targets = [];
@@ -88535,15 +88660,15 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5650;
+    MisObjID = 5709;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5653;
-    LinkTrId = 5654;
+    Index = 5712;
+    LinkTrId = 5713;
     XPos = 142362.510;
     YPos = 41.676;
     ZPos = 186719.964;
@@ -88571,10 +88696,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5654;
+    Index = 5713;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5651];
+    Targets = [5710];
     Objects = [];
     XPos = 142362.510;
     YPos = 41.876;
@@ -88583,15 +88708,15 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5653;
+    MisObjID = 5712;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5656;
-    LinkTrId = 5657;
+    Index = 5715;
+    LinkTrId = 5716;
     XPos = 142427.439;
     YPos = 41.642;
     ZPos = 186711.365;
@@ -88619,10 +88744,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5657;
+    Index = 5716;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5651];
+    Targets = [5710];
     Objects = [];
     XPos = 142427.439;
     YPos = 41.842;
@@ -88631,14 +88756,14 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5656;
+    MisObjID = 5715;
   }
   
 
   Block
   {
     Name = "Block";
-    Index = 5659;
+    Index = 5718;
     LinkTrId = 0;
     XPos = 142362.077;
     YPos = 41.676;
@@ -88660,7 +88785,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5660;
+    Index = 5719;
     LinkTrId = 0;
     XPos = 142393.079;
     YPos = 41.658;
@@ -88682,7 +88807,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5661;
+    Index = 5720;
     LinkTrId = 0;
     XPos = 142427.136;
     YPos = 41.641;
@@ -88703,11 +88828,11 @@ Group
 
   MCU_CMD_AttackArea
   {
-    Index = 5662;
+    Index = 5721;
     Name = "Ground";
     Desc = "";
     Targets = [];
-    Objects = [5651];
+    Objects = [5710];
     XPos = 143632.574;
     YPos = 100.425;
     ZPos = 194352.757;
@@ -88726,8 +88851,8 @@ Group
   Vehicle
   {
     Name = "Artillery";
-    Index = 5663;
-    LinkTrId = 5664;
+    Index = 5722;
+    LinkTrId = 5723;
     XPos = 142569.424;
     YPos = 41.591;
     ZPos = 186656.333;
@@ -88755,10 +88880,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5664;
+    Index = 5723;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5651];
+    Targets = [5710];
     Objects = [];
     XPos = 142569.424;
     YPos = 41.791;
@@ -88767,15 +88892,15 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5663;
+    MisObjID = 5722;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5666;
-    LinkTrId = 5667;
+    Index = 5725;
+    LinkTrId = 5726;
     XPos = 142538.770;
     YPos = 41.594;
     ZPos = 186660.861;
@@ -88803,10 +88928,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5667;
+    Index = 5726;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5651];
+    Targets = [5710];
     Objects = [];
     XPos = 142538.770;
     YPos = 41.794;
@@ -88815,15 +88940,15 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5666;
+    MisObjID = 5725;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5669;
-    LinkTrId = 5670;
+    Index = 5728;
+    LinkTrId = 5729;
     XPos = 142603.699;
     YPos = 41.589;
     ZPos = 186652.263;
@@ -88851,10 +88976,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5670;
+    Index = 5729;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5651];
+    Targets = [5710];
     Objects = [];
     XPos = 142603.699;
     YPos = 41.789;
@@ -88863,14 +88988,14 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5669;
+    MisObjID = 5728;
   }
   
 
   Block
   {
     Name = "Block";
-    Index = 5672;
+    Index = 5731;
     LinkTrId = 0;
     XPos = 142538.337;
     YPos = 41.594;
@@ -88892,7 +89017,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5673;
+    Index = 5732;
     LinkTrId = 0;
     XPos = 142569.340;
     YPos = 41.590;
@@ -88914,7 +89039,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5674;
+    Index = 5733;
     LinkTrId = 0;
     XPos = 142603.396;
     YPos = 41.588;
@@ -88936,8 +89061,8 @@ Group
   Vehicle
   {
     Name = "Artillery";
-    Index = 5675;
-    LinkTrId = 5676;
+    Index = 5734;
+    LinkTrId = 5735;
     XPos = 142849.777;
     YPos = 41.605;
     ZPos = 186652.656;
@@ -88965,10 +89090,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5676;
+    Index = 5735;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5651];
+    Targets = [5710];
     Objects = [];
     XPos = 142849.777;
     YPos = 41.805;
@@ -88977,15 +89102,15 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5675;
+    MisObjID = 5734;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5678;
-    LinkTrId = 5679;
+    Index = 5737;
+    LinkTrId = 5738;
     XPos = 142819.123;
     YPos = 41.612;
     ZPos = 186657.184;
@@ -89013,10 +89138,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5679;
+    Index = 5738;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5651];
+    Targets = [5710];
     Objects = [];
     XPos = 142819.123;
     YPos = 41.812;
@@ -89025,15 +89150,15 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5678;
+    MisObjID = 5737;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5681;
-    LinkTrId = 5682;
+    Index = 5740;
+    LinkTrId = 5741;
     XPos = 142884.052;
     YPos = 41.603;
     ZPos = 186648.586;
@@ -89061,10 +89186,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5682;
+    Index = 5741;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5651];
+    Targets = [5710];
     Objects = [];
     XPos = 142884.052;
     YPos = 41.803;
@@ -89073,14 +89198,14 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5681;
+    MisObjID = 5740;
   }
   
 
   Block
   {
     Name = "Block";
-    Index = 5684;
+    Index = 5743;
     LinkTrId = 0;
     XPos = 142818.691;
     YPos = 41.611;
@@ -89102,7 +89227,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5685;
+    Index = 5744;
     LinkTrId = 0;
     XPos = 142849.693;
     YPos = 41.604;
@@ -89124,7 +89249,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5686;
+    Index = 5745;
     LinkTrId = 0;
     XPos = 142883.749;
     YPos = 41.602;
@@ -89146,8 +89271,8 @@ Group
   Vehicle
   {
     Name = "Artillery";
-    Index = 5687;
-    LinkTrId = 5688;
+    Index = 5746;
+    LinkTrId = 5747;
     XPos = 142701.661;
     YPos = 41.588;
     ZPos = 186503.637;
@@ -89175,10 +89300,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5688;
+    Index = 5747;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5651];
+    Targets = [5710];
     Objects = [];
     XPos = 142701.661;
     YPos = 41.788;
@@ -89187,15 +89312,15 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5687;
+    MisObjID = 5746;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5690;
-    LinkTrId = 5691;
+    Index = 5749;
+    LinkTrId = 5750;
     XPos = 142671.007;
     YPos = 41.588;
     ZPos = 186508.166;
@@ -89223,10 +89348,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5691;
+    Index = 5750;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5651];
+    Targets = [5710];
     Objects = [];
     XPos = 142671.007;
     YPos = 41.788;
@@ -89235,15 +89360,15 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5690;
+    MisObjID = 5749;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5693;
-    LinkTrId = 5694;
+    Index = 5752;
+    LinkTrId = 5753;
     XPos = 142735.936;
     YPos = 41.588;
     ZPos = 186499.567;
@@ -89271,10 +89396,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5694;
+    Index = 5753;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5651];
+    Targets = [5710];
     Objects = [];
     XPos = 142735.936;
     YPos = 41.788;
@@ -89283,14 +89408,14 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5693;
+    MisObjID = 5752;
   }
   
 
   Block
   {
     Name = "Block";
-    Index = 5696;
+    Index = 5755;
     LinkTrId = 0;
     XPos = 142670.575;
     YPos = 41.588;
@@ -89312,7 +89437,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5697;
+    Index = 5756;
     LinkTrId = 0;
     XPos = 142701.577;
     YPos = 41.588;
@@ -89334,7 +89459,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5698;
+    Index = 5757;
     LinkTrId = 0;
     XPos = 142735.633;
     YPos = 41.588;
@@ -89356,8 +89481,8 @@ Group
   Vehicle
   {
     Name = "Artillery";
-    Index = 5699;
-    LinkTrId = 5700;
+    Index = 5758;
+    LinkTrId = 5759;
     XPos = 142502.406;
     YPos = 41.588;
     ZPos = 186550.648;
@@ -89385,10 +89510,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5700;
+    Index = 5759;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5651];
+    Targets = [5710];
     Objects = [];
     XPos = 142502.406;
     YPos = 41.788;
@@ -89397,15 +89522,15 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5699;
+    MisObjID = 5758;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5702;
-    LinkTrId = 5703;
+    Index = 5761;
+    LinkTrId = 5762;
     XPos = 142471.753;
     YPos = 41.588;
     ZPos = 186555.177;
@@ -89433,10 +89558,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5703;
+    Index = 5762;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5651];
+    Targets = [5710];
     Objects = [];
     XPos = 142471.753;
     YPos = 41.788;
@@ -89445,15 +89570,15 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5702;
+    MisObjID = 5761;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5705;
-    LinkTrId = 5706;
+    Index = 5764;
+    LinkTrId = 5765;
     XPos = 142536.682;
     YPos = 41.588;
     ZPos = 186546.578;
@@ -89481,10 +89606,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5706;
+    Index = 5765;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5651];
+    Targets = [5710];
     Objects = [];
     XPos = 142536.682;
     YPos = 41.788;
@@ -89493,14 +89618,14 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5705;
+    MisObjID = 5764;
   }
   
 
   Block
   {
     Name = "Block";
-    Index = 5708;
+    Index = 5767;
     LinkTrId = 0;
     XPos = 142471.320;
     YPos = 41.588;
@@ -89522,7 +89647,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5709;
+    Index = 5768;
     LinkTrId = 0;
     XPos = 142502.322;
     YPos = 41.588;
@@ -89544,7 +89669,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5710;
+    Index = 5769;
     LinkTrId = 0;
     XPos = 142536.378;
     YPos = 41.588;
@@ -89566,8 +89691,8 @@ Group
   Vehicle
   {
     Name = "Dont shoot me friendly";
-    Index = 5711;
-    LinkTrId = 5712;
+    Index = 5770;
+    LinkTrId = 5771;
     XPos = 142587.877;
     YPos = 41.588;
     ZPos = 186424.749;
@@ -89595,7 +89720,7 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5712;
+    Index = 5771;
     Name = "Dont shoot me friendly entity";
     Desc = "";
     Targets = [];
@@ -89607,17 +89732,17 @@ Group
     YOri = 18.45;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5711;
+    MisObjID = 5770;
   }
   
 
   MCU_CMD_Flare
   {
-    Index = 5714;
+    Index = 5773;
     Name = "command Flare";
     Desc = "";
     Targets = [];
-    Objects = [5712];
+    Objects = [5771];
     XPos = 142603.586;
     YPos = 41.588;
     ZPos = 186421.790;
@@ -89630,10 +89755,10 @@ Group
 
   MCU_CheckZone
   {
-    Index = 5715;
+    Index = 5774;
     Name = "Friendly close";
     Desc = "";
-    Targets = [5714];
+    Targets = [5773];
     Objects = [];
     XPos = 142592.132;
     YPos = 41.588;
@@ -89650,10 +89775,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5642;
+    Index = 5699;
     Name = "StartDecoRelayed";
     Desc = "";
-    Targets = [5717,5718,5719];
+    Targets = [5776,5777,5778];
     Objects = [];
     XPos = 142364.876;
     YPos = 41.874;
@@ -89668,11 +89793,11 @@ Group
 
   MCU_Activate
   {
-    Index = 5717;
+    Index = 5776;
     Name = "Trigger Activate";
     Desc = "";
     Targets = [];
-    Objects = [5651,5712];
+    Objects = [5710,5771];
     XPos = 142395.095;
     YPos = 41.677;
     ZPos = 186754.263;
@@ -89684,10 +89809,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5718;
+    Index = 5777;
     Name = "5s";
     Desc = "";
-    Targets = [5662,5715];
+    Targets = [5721,5774];
     Objects = [];
     XPos = 142380.305;
     YPos = 42.055;
@@ -89702,11 +89827,11 @@ Group
 
   MCU_Deactivate
   {
-    Index = 5722;
+    Index = 5781;
     Name = "";
     Desc = "";
-    Targets = [5715,5662];
-    Objects = [5651,5712];
+    Targets = [5774,5721];
+    Objects = [5710,5771];
     XPos = 142445.732;
     YPos = 42.112;
     ZPos = 186883.062;
@@ -89718,10 +89843,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5648;
+    Index = 5706;
     Name = "KillDecoRelayed";
     Desc = "";
-    Targets = [5722,5724];
+    Targets = [5781,5783];
     Objects = [];
     XPos = 142428.044;
     YPos = 42.354;
@@ -89736,10 +89861,10 @@ Group
 
   MCU_CheckZone
   {
-    Index = 5725;
+    Index = 5784;
     Name = "Visible";
     Desc = "";
-    Targets = [5639];
+    Targets = [5696];
     Objects = [];
     XPos = 143600.181;
     YPos = 103.243;
@@ -89756,10 +89881,10 @@ Group
 
   MCU_Deactivate
   {
-    Index = 5643;
+    Index = 5700;
     Name = "";
     Desc = "";
-    Targets = [5725];
+    Targets = [5784];
     Objects = [];
     XPos = 143660.739;
     YPos = 100.785;
@@ -89772,10 +89897,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5649;
+    Index = 5707;
     Name = "10min";
     Desc = "";
-    Targets = [5728];
+    Targets = [5787];
     Objects = [];
     XPos = 143644.760;
     YPos = 100.051;
@@ -89790,10 +89915,10 @@ Group
 
   MCU_Activate
   {
-    Index = 5728;
+    Index = 5787;
     Name = "";
     Desc = "";
-    Targets = [5725];
+    Targets = [5784];
     Objects = [];
     XPos = 143612.922;
     YPos = 102.766;
@@ -89806,10 +89931,10 @@ Group
 
   MCU_CheckZone
   {
-    Index = 5730;
+    Index = 5789;
     Name = "Visible";
     Desc = "";
-    Targets = [5639];
+    Targets = [5696];
     Objects = [];
     XPos = 142661.743;
     YPos = 41.843;
@@ -89826,10 +89951,10 @@ Group
 
   MCU_Deactivate
   {
-    Index = 5719;
+    Index = 5778;
     Name = "";
     Desc = "";
-    Targets = [5730];
+    Targets = [5789];
     Objects = [];
     XPos = 142603.528;
     YPos = 41.807;
@@ -89842,10 +89967,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5724;
+    Index = 5783;
     Name = "10min";
     Desc = "";
-    Targets = [5733];
+    Targets = [5792];
     Objects = [];
     XPos = 142552.730;
     YPos = 42.297;
@@ -89860,10 +89985,10 @@ Group
 
   MCU_Activate
   {
-    Index = 5733;
+    Index = 5792;
     Name = "";
     Desc = "";
-    Targets = [5730];
+    Targets = [5789];
     Objects = [];
     XPos = 142614.759;
     YPos = 42.054;
@@ -89876,10 +90001,10 @@ Group
 
   MCU_TR_MissionBegin
   {
-    Index = 5735;
+    Index = 5794;
     Name = "";
     Desc = "";
-    Targets = [5736];
+    Targets = [5795];
     Objects = [];
     XPos = 142697.497;
     YPos = 41.827;
@@ -89893,10 +90018,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5736;
+    Index = 5795;
     Name = "45s";
     Desc = "";
-    Targets = [5730];
+    Targets = [5789];
     Objects = [];
     XPos = 142681.778;
     YPos = 41.853;
@@ -89911,10 +90036,10 @@ Group
 
   MCU_TR_MissionBegin
   {
-    Index = 5738;
+    Index = 5797;
     Name = "";
     Desc = "";
-    Targets = [5739];
+    Targets = [5798];
     Objects = [];
     XPos = 143560.009;
     YPos = 103.396;
@@ -89928,10 +90053,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5739;
+    Index = 5798;
     Name = "45s";
     Desc = "";
-    Targets = [5725];
+    Targets = [5784];
     Objects = [];
     XPos = 143576.127;
     YPos = 103.223;
@@ -89947,8 +90072,8 @@ Group
   Vehicle
   {
     Name = "MG";
-    Index = 6119;
-    LinkTrId = 6120;
+    Index = 5800;
+    LinkTrId = 5801;
     XPos = 143134.350;
     YPos = 90.427;
     ZPos = 190166.875;
@@ -89976,7 +90101,7 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6120;
+    Index = 5801;
     Name = "MG entity";
     Desc = "";
     Targets = [];
@@ -89988,15 +90113,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6119;
+    MisObjID = 5800;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6122;
-    LinkTrId = 6123;
+    Index = 5803;
+    LinkTrId = 5804;
     XPos = 143156.841;
     YPos = 90.178;
     ZPos = 190164.901;
@@ -90024,10 +90149,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6123;
+    Index = 5804;
     Name = "MG entity";
     Desc = "";
-    Targets = [6120];
+    Targets = [5801];
     Objects = [];
     XPos = 143156.841;
     YPos = 90.378;
@@ -90036,15 +90161,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6122;
+    MisObjID = 5803;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6125;
-    LinkTrId = 6126;
+    Index = 5806;
+    LinkTrId = 5807;
     XPos = 143180.656;
     YPos = 90.284;
     ZPos = 190161.915;
@@ -90072,10 +90197,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6126;
+    Index = 5807;
     Name = "MG entity";
     Desc = "";
-    Targets = [6120];
+    Targets = [5801];
     Objects = [];
     XPos = 143180.656;
     YPos = 90.484;
@@ -90084,15 +90209,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6125;
+    MisObjID = 5806;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6128;
-    LinkTrId = 6129;
+    Index = 5809;
+    LinkTrId = 5810;
     XPos = 143203.034;
     YPos = 89.660;
     ZPos = 190164.980;
@@ -90120,10 +90245,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6129;
+    Index = 5810;
     Name = "MG entity";
     Desc = "";
-    Targets = [6120];
+    Targets = [5801];
     Objects = [];
     XPos = 143203.034;
     YPos = 89.860;
@@ -90132,15 +90257,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6128;
+    MisObjID = 5809;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6131;
-    LinkTrId = 6132;
+    Index = 5812;
+    LinkTrId = 5813;
     XPos = 143219.919;
     YPos = 89.067;
     ZPos = 190168.557;
@@ -90168,10 +90293,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6132;
+    Index = 5813;
     Name = "MG entity";
     Desc = "";
-    Targets = [6120];
+    Targets = [5801];
     Objects = [];
     XPos = 143219.919;
     YPos = 89.267;
@@ -90180,15 +90305,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6131;
+    MisObjID = 5812;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6134;
-    LinkTrId = 6135;
+    Index = 5815;
+    LinkTrId = 5816;
     XPos = 143237.986;
     YPos = 88.659;
     ZPos = 190168.954;
@@ -90216,10 +90341,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6135;
+    Index = 5816;
     Name = "MG entity";
     Desc = "";
-    Targets = [6120];
+    Targets = [5801];
     Objects = [];
     XPos = 143237.986;
     YPos = 88.859;
@@ -90228,15 +90353,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6134;
+    MisObjID = 5815;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6137;
-    LinkTrId = 6138;
+    Index = 5818;
+    LinkTrId = 5819;
     XPos = 143450.006;
     YPos = 86.152;
     ZPos = 190710.501;
@@ -90264,10 +90389,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6138;
+    Index = 5819;
     Name = "MG entity";
     Desc = "";
-    Targets = [6140];
+    Targets = [5821];
     Objects = [];
     XPos = 143450.006;
     YPos = 86.352;
@@ -90276,15 +90401,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6137;
+    MisObjID = 5818;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6141;
-    LinkTrId = 6142;
+    Index = 5822;
+    LinkTrId = 5823;
     XPos = 143438.123;
     YPos = 86.542;
     ZPos = 190716.541;
@@ -90312,10 +90437,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6142;
+    Index = 5823;
     Name = "MG entity";
     Desc = "";
-    Targets = [6140];
+    Targets = [5821];
     Objects = [];
     XPos = 143438.123;
     YPos = 86.742;
@@ -90324,15 +90449,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6141;
+    MisObjID = 5822;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6144;
-    LinkTrId = 6145;
+    Index = 5825;
+    LinkTrId = 5826;
     XPos = 143428.733;
     YPos = 86.876;
     ZPos = 190722.118;
@@ -90360,10 +90485,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6145;
+    Index = 5826;
     Name = "MG entity";
     Desc = "";
-    Targets = [6140];
+    Targets = [5821];
     Objects = [];
     XPos = 143428.733;
     YPos = 87.076;
@@ -90372,15 +90497,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6144;
+    MisObjID = 5825;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6147;
-    LinkTrId = 6148;
+    Index = 5828;
+    LinkTrId = 5829;
     XPos = 143417.356;
     YPos = 87.258;
     ZPos = 190729.386;
@@ -90408,10 +90533,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6148;
+    Index = 5829;
     Name = "MG entity";
     Desc = "";
-    Targets = [6140];
+    Targets = [5821];
     Objects = [];
     XPos = 143417.356;
     YPos = 87.458;
@@ -90420,15 +90545,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6147;
+    MisObjID = 5828;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6150;
-    LinkTrId = 6140;
+    Index = 5831;
+    LinkTrId = 5821;
     XPos = 143404.289;
     YPos = 87.394;
     ZPos = 190731.352;
@@ -90456,7 +90581,7 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6140;
+    Index = 5821;
     Name = "MG entity";
     Desc = "";
     Targets = [];
@@ -90468,15 +90593,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6150;
+    MisObjID = 5831;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6152;
-    LinkTrId = 6153;
+    Index = 5833;
+    LinkTrId = 5834;
     XPos = 143226.351;
     YPos = 91.126;
     ZPos = 190719.125;
@@ -90504,10 +90629,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6153;
+    Index = 5834;
     Name = "MG entity";
     Desc = "";
-    Targets = [6140];
+    Targets = [5821];
     Objects = [];
     XPos = 143226.351;
     YPos = 91.326;
@@ -90516,15 +90641,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6152;
+    MisObjID = 5833;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6155;
-    LinkTrId = 6156;
+    Index = 5836;
+    LinkTrId = 5837;
     XPos = 143206.222;
     YPos = 92.430;
     ZPos = 190715.814;
@@ -90552,10 +90677,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6156;
+    Index = 5837;
     Name = "MG entity";
     Desc = "";
-    Targets = [6140];
+    Targets = [5821];
     Objects = [];
     XPos = 143206.222;
     YPos = 92.630;
@@ -90564,15 +90689,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6155;
+    MisObjID = 5836;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6158;
-    LinkTrId = 6159;
+    Index = 5839;
+    LinkTrId = 5840;
     XPos = 143188.893;
     YPos = 93.524;
     ZPos = 190711.436;
@@ -90600,10 +90725,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6159;
+    Index = 5840;
     Name = "MG entity";
     Desc = "";
-    Targets = [6140];
+    Targets = [5821];
     Objects = [];
     XPos = 143188.893;
     YPos = 93.724;
@@ -90612,15 +90737,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6158;
+    MisObjID = 5839;
   }
   
 
   Vehicle
   {
     Name = "MG";
-    Index = 6161;
-    LinkTrId = 6162;
+    Index = 5842;
+    LinkTrId = 5843;
     XPos = 143171.537;
     YPos = 94.846;
     ZPos = 190701.785;
@@ -90648,10 +90773,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6162;
+    Index = 5843;
     Name = "MG entity";
     Desc = "";
-    Targets = [6140];
+    Targets = [5821];
     Objects = [];
     XPos = 143171.537;
     YPos = 95.046;
@@ -90660,17 +90785,17 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6161;
+    MisObjID = 5842;
   }
   
 
   MCU_CMD_AttackArea
   {
-    Index = 6164;
+    Index = 5845;
     Name = "Ground";
     Desc = "";
     Targets = [];
-    Objects = [6140];
+    Objects = [5821];
     XPos = 143187.752;
     YPos = 90.830;
     ZPos = 190141.985;
@@ -90688,11 +90813,11 @@ Group
 
   MCU_CMD_AttackArea
   {
-    Index = 6165;
+    Index = 5846;
     Name = "Ground";
     Desc = "";
     Targets = [];
-    Objects = [6120];
+    Objects = [5801];
     XPos = 143314.563;
     YPos = 89.742;
     ZPos = 190710.213;
@@ -90710,10 +90835,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6166;
+    Index = 5701;
     Name = "StartDecoRelayed";
     Desc = "";
-    Targets = [6167,6168];
+    Targets = [5848,5849];
     Objects = [];
     XPos = 143460.496;
     YPos = 105.430;
@@ -90728,10 +90853,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6168;
+    Index = 5849;
     Name = "5s";
     Desc = "";
-    Targets = [6164,6165];
+    Targets = [5845,5846];
     Objects = [];
     XPos = 143439.341;
     YPos = 104.903;
@@ -90746,11 +90871,11 @@ Group
 
   MCU_Activate
   {
-    Index = 6167;
+    Index = 5848;
     Name = "Trigger Activate";
     Desc = "";
     Targets = [];
-    Objects = [6140,6120];
+    Objects = [5821,5801];
     XPos = 143527.088;
     YPos = 106.956;
     ZPos = 190468.131;
@@ -90762,10 +90887,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6171;
+    Index = 5708;
     Name = "KillDecoRelayed";
     Desc = "";
-    Targets = [6172];
+    Targets = [5853];
     Objects = [];
     XPos = 143407.062;
     YPos = 105.923;
@@ -90780,11 +90905,11 @@ Group
 
   MCU_Deactivate
   {
-    Index = 6172;
+    Index = 5853;
     Name = "";
     Desc = "";
     Targets = [];
-    Objects = [6120,6140];
+    Objects = [5801,5821];
     XPos = 143514.416;
     YPos = 105.830;
     ZPos = 190365.243;
@@ -90801,13 +90926,13 @@ Group
 Group
 {
   Name = "Deco battle 3";
-  Index = 5741;
+  Index = 5855;
   Desc = "";
   Vehicle
   {
     Name = "Artillery";
-    Index = 5742;
-    LinkTrId = 5743;
+    Index = 5856;
+    LinkTrId = 5857;
     XPos = 148663.684;
     YPos = 48.772;
     ZPos = 188533.560;
@@ -90835,7 +90960,7 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5743;
+    Index = 5857;
     Name = "Artillery entity";
     Desc = "";
     Targets = [];
@@ -90847,15 +90972,15 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5742;
+    MisObjID = 5856;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5745;
-    LinkTrId = 5746;
+    Index = 5859;
+    LinkTrId = 5860;
     XPos = 148694.584;
     YPos = 47.089;
     ZPos = 188531.240;
@@ -90883,10 +91008,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5746;
+    Index = 5860;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5743];
+    Targets = [5857];
     Objects = [];
     XPos = 148694.584;
     YPos = 47.289;
@@ -90895,15 +91020,15 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5745;
+    MisObjID = 5859;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5748;
-    LinkTrId = 5749;
+    Index = 5862;
+    LinkTrId = 5863;
     XPos = 148629.205;
     YPos = 48.740;
     ZPos = 188535.164;
@@ -90931,10 +91056,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5749;
+    Index = 5863;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5743];
+    Targets = [5857];
     Objects = [];
     XPos = 148629.205;
     YPos = 48.940;
@@ -90943,14 +91068,14 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5748;
+    MisObjID = 5862;
   }
   
 
   Block
   {
     Name = "Block";
-    Index = 5751;
+    Index = 5865;
     LinkTrId = 0;
     XPos = 148694.872;
     YPos = 47.043;
@@ -90972,7 +91097,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5752;
+    Index = 5866;
     LinkTrId = 0;
     XPos = 148663.638;
     YPos = 48.807;
@@ -90994,7 +91119,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5753;
+    Index = 5867;
     LinkTrId = 0;
     XPos = 148629.347;
     YPos = 48.785;
@@ -91015,11 +91140,11 @@ Group
 
   MCU_CMD_AttackArea
   {
-    Index = 5754;
+    Index = 5868;
     Name = "Ground";
     Desc = "";
     Targets = [];
-    Objects = [5743];
+    Objects = [5857];
     XPos = 148526.934;
     YPos = 128.654;
     ZPos = 180396.834;
@@ -91038,8 +91163,8 @@ Group
   Vehicle
   {
     Name = "Artillery";
-    Index = 5755;
-    LinkTrId = 5756;
+    Index = 5869;
+    LinkTrId = 5870;
     XPos = 148432.158;
     YPos = 47.727;
     ZPos = 188600.536;
@@ -91067,10 +91192,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5756;
+    Index = 5870;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5743];
+    Targets = [5857];
     Objects = [];
     XPos = 148432.158;
     YPos = 47.927;
@@ -91079,15 +91204,15 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5755;
+    MisObjID = 5869;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5758;
-    LinkTrId = 5759;
+    Index = 5872;
+    LinkTrId = 5873;
     XPos = 148463.057;
     YPos = 48.183;
     ZPos = 188598.216;
@@ -91115,10 +91240,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5759;
+    Index = 5873;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5743];
+    Targets = [5857];
     Objects = [];
     XPos = 148463.057;
     YPos = 48.383;
@@ -91127,15 +91252,15 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5758;
+    MisObjID = 5872;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5761;
-    LinkTrId = 5762;
+    Index = 5875;
+    LinkTrId = 5876;
     XPos = 148397.679;
     YPos = 47.310;
     ZPos = 188602.139;
@@ -91163,10 +91288,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5762;
+    Index = 5876;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5743];
+    Targets = [5857];
     Objects = [];
     XPos = 148397.679;
     YPos = 47.510;
@@ -91175,14 +91300,14 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5761;
+    MisObjID = 5875;
   }
   
 
   Block
   {
     Name = "Block";
-    Index = 5764;
+    Index = 5878;
     LinkTrId = 0;
     XPos = 148463.346;
     YPos = 48.220;
@@ -91204,7 +91329,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5765;
+    Index = 5879;
     LinkTrId = 0;
     XPos = 148432.112;
     YPos = 47.756;
@@ -91226,7 +91351,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5766;
+    Index = 5880;
     LinkTrId = 0;
     XPos = 148397.820;
     YPos = 47.341;
@@ -91248,8 +91373,8 @@ Group
   Vehicle
   {
     Name = "Artillery";
-    Index = 5767;
-    LinkTrId = 5768;
+    Index = 5881;
+    LinkTrId = 5882;
     XPos = 148116.674;
     YPos = 46.123;
     ZPos = 188546.082;
@@ -91277,10 +91402,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5768;
+    Index = 5882;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5743];
+    Targets = [5857];
     Objects = [];
     XPos = 148116.674;
     YPos = 46.323;
@@ -91289,15 +91414,15 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5767;
+    MisObjID = 5881;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5770;
-    LinkTrId = 5771;
+    Index = 5884;
+    LinkTrId = 5885;
     XPos = 148147.574;
     YPos = 46.706;
     ZPos = 188543.762;
@@ -91325,10 +91450,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5771;
+    Index = 5885;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5743];
+    Targets = [5857];
     Objects = [];
     XPos = 148147.574;
     YPos = 46.906;
@@ -91337,15 +91462,15 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5770;
+    MisObjID = 5884;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5773;
-    LinkTrId = 5774;
+    Index = 5887;
+    LinkTrId = 5888;
     XPos = 148082.196;
     YPos = 46.135;
     ZPos = 188547.685;
@@ -91373,10 +91498,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5774;
+    Index = 5888;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5743];
+    Targets = [5857];
     Objects = [];
     XPos = 148082.196;
     YPos = 46.335;
@@ -91385,14 +91510,14 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5773;
+    MisObjID = 5887;
   }
   
 
   Block
   {
     Name = "Block";
-    Index = 5776;
+    Index = 5890;
     LinkTrId = 0;
     XPos = 148147.863;
     YPos = 46.745;
@@ -91414,7 +91539,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5777;
+    Index = 5891;
     LinkTrId = 0;
     XPos = 148116.629;
     YPos = 46.152;
@@ -91436,7 +91561,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5778;
+    Index = 5892;
     LinkTrId = 0;
     XPos = 148082.337;
     YPos = 46.111;
@@ -91458,8 +91583,8 @@ Group
   Vehicle
   {
     Name = "Artillery";
-    Index = 5779;
-    LinkTrId = 5780;
+    Index = 5893;
+    LinkTrId = 5894;
     XPos = 148328.900;
     YPos = 46.551;
     ZPos = 188765.810;
@@ -91487,10 +91612,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5780;
+    Index = 5894;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5743];
+    Targets = [5857];
     Objects = [];
     XPos = 148328.900;
     YPos = 46.751;
@@ -91499,15 +91624,15 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5779;
+    MisObjID = 5893;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5782;
-    LinkTrId = 5783;
+    Index = 5896;
+    LinkTrId = 5897;
     XPos = 148359.800;
     YPos = 47.070;
     ZPos = 188763.490;
@@ -91535,10 +91660,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5783;
+    Index = 5897;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5743];
+    Targets = [5857];
     Objects = [];
     XPos = 148359.800;
     YPos = 47.270;
@@ -91547,15 +91672,15 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5782;
+    MisObjID = 5896;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5785;
-    LinkTrId = 5786;
+    Index = 5899;
+    LinkTrId = 5900;
     XPos = 148294.421;
     YPos = 46.926;
     ZPos = 188767.413;
@@ -91583,10 +91708,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5786;
+    Index = 5900;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5743];
+    Targets = [5857];
     Objects = [];
     XPos = 148294.421;
     YPos = 47.126;
@@ -91595,14 +91720,14 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5785;
+    MisObjID = 5899;
   }
   
 
   Block
   {
     Name = "Block";
-    Index = 5788;
+    Index = 5902;
     LinkTrId = 0;
     XPos = 148360.088;
     YPos = 47.181;
@@ -91624,7 +91749,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5789;
+    Index = 5903;
     LinkTrId = 0;
     XPos = 148328.854;
     YPos = 46.563;
@@ -91646,7 +91771,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5790;
+    Index = 5904;
     LinkTrId = 0;
     XPos = 148294.563;
     YPos = 46.939;
@@ -91668,8 +91793,8 @@ Group
   Vehicle
   {
     Name = "Artillery";
-    Index = 5791;
-    LinkTrId = 5792;
+    Index = 5905;
+    LinkTrId = 5906;
     XPos = 148543.733;
     YPos = 48.954;
     ZPos = 188717.034;
@@ -91697,10 +91822,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5792;
+    Index = 5906;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5743];
+    Targets = [5857];
     Objects = [];
     XPos = 148543.733;
     YPos = 49.154;
@@ -91709,15 +91834,15 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5791;
+    MisObjID = 5905;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5794;
-    LinkTrId = 5795;
+    Index = 5908;
+    LinkTrId = 5909;
     XPos = 148574.633;
     YPos = 49.123;
     ZPos = 188714.714;
@@ -91745,10 +91870,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5795;
+    Index = 5909;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5743];
+    Targets = [5857];
     Objects = [];
     XPos = 148574.633;
     YPos = 49.323;
@@ -91757,15 +91882,15 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5794;
+    MisObjID = 5908;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5797;
-    LinkTrId = 5798;
+    Index = 5911;
+    LinkTrId = 5912;
     XPos = 148509.255;
     YPos = 48.320;
     ZPos = 188718.638;
@@ -91793,10 +91918,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5798;
+    Index = 5912;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5743];
+    Targets = [5857];
     Objects = [];
     XPos = 148509.255;
     YPos = 48.520;
@@ -91805,14 +91930,14 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5797;
+    MisObjID = 5911;
   }
   
 
   Block
   {
     Name = "Block";
-    Index = 5800;
+    Index = 5914;
     LinkTrId = 0;
     XPos = 148574.922;
     YPos = 49.093;
@@ -91834,7 +91959,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5801;
+    Index = 5915;
     LinkTrId = 0;
     XPos = 148543.688;
     YPos = 48.926;
@@ -91856,7 +91981,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5802;
+    Index = 5916;
     LinkTrId = 0;
     XPos = 148509.396;
     YPos = 48.328;
@@ -91878,8 +92003,8 @@ Group
   Vehicle
   {
     Name = "Dont shoot me friendly";
-    Index = 5803;
-    LinkTrId = 5804;
+    Index = 5917;
+    LinkTrId = 5918;
     XPos = 148324.917;
     YPos = 46.853;
     ZPos = 188645.891;
@@ -91907,7 +92032,7 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5804;
+    Index = 5918;
     Name = "Dont shoot me friendly entity";
     Desc = "";
     Targets = [];
@@ -91919,17 +92044,17 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5803;
+    MisObjID = 5917;
   }
   
 
   MCU_CMD_Flare
   {
-    Index = 5806;
+    Index = 5920;
     Name = "command Flare";
     Desc = "";
     Targets = [];
-    Objects = [5804];
+    Objects = [5918];
     XPos = 148309.035;
     YPos = 46.481;
     ZPos = 188647.716;
@@ -91942,10 +92067,10 @@ Group
 
   MCU_CheckZone
   {
-    Index = 5807;
+    Index = 5921;
     Name = "Friendly close";
     Desc = "";
-    Targets = [5806];
+    Targets = [5920];
     Objects = [];
     XPos = 148321.500;
     YPos = 47.117;
@@ -91962,10 +92087,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5808;
+    Index = 5922;
     Name = "StartDeco3";
     Desc = "";
-    Targets = [5809,5810,5811,5812];
+    Targets = [5923,5924,5925,5926];
     Objects = [];
     XPos = 148690.689;
     YPos = 47.265;
@@ -91980,11 +92105,11 @@ Group
 
   MCU_Activate
   {
-    Index = 5809;
+    Index = 5923;
     Name = "Trigger Activate";
     Desc = "";
     Targets = [];
-    Objects = [5743,5804];
+    Objects = [5857,5918];
     XPos = 148664.540;
     YPos = 48.156;
     ZPos = 188494.694;
@@ -91996,10 +92121,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5810;
+    Index = 5924;
     Name = "5s";
     Desc = "";
-    Targets = [5754,5807];
+    Targets = [5868,5921];
     Objects = [];
     XPos = 148677.411;
     YPos = 47.098;
@@ -92014,11 +92139,11 @@ Group
 
   MCU_Deactivate
   {
-    Index = 5815;
+    Index = 5929;
     Name = "";
     Desc = "";
-    Targets = [5807,5754];
-    Objects = [5743,5804];
+    Targets = [5921,5868];
+    Objects = [5857,5918];
     XPos = 148611.366;
     YPos = 47.197;
     ZPos = 188405.705;
@@ -92030,10 +92155,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5816;
+    Index = 5930;
     Name = "KillDeco3";
     Desc = "";
-    Targets = [5815,5817,5818];
+    Targets = [5929,5931,5932];
     Objects = [];
     XPos = 148631.308;
     YPos = 47.365;
@@ -92049,8 +92174,8 @@ Group
   Vehicle
   {
     Name = "Artillery";
-    Index = 5819;
-    LinkTrId = 5820;
+    Index = 5933;
+    LinkTrId = 5934;
     XPos = 148226.688;
     YPos = 147.684;
     ZPos = 180448.985;
@@ -92078,7 +92203,7 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5820;
+    Index = 5934;
     Name = "Artillery entity";
     Desc = "";
     Targets = [];
@@ -92090,15 +92215,15 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5819;
+    MisObjID = 5933;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5822;
-    LinkTrId = 5823;
+    Index = 5936;
+    LinkTrId = 5937;
     XPos = 148195.809;
     YPos = 147.818;
     ZPos = 180451.564;
@@ -92126,10 +92251,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5823;
+    Index = 5937;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5820];
+    Targets = [5934];
     Objects = [];
     XPos = 148195.809;
     YPos = 148.018;
@@ -92138,15 +92263,15 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5822;
+    MisObjID = 5936;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5825;
-    LinkTrId = 5826;
+    Index = 5939;
+    LinkTrId = 5940;
     XPos = 148261.152;
     YPos = 146.709;
     ZPos = 180447.094;
@@ -92174,10 +92299,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5826;
+    Index = 5940;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5820];
+    Targets = [5934];
     Objects = [];
     XPos = 148261.152;
     YPos = 146.909;
@@ -92186,14 +92311,14 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5825;
+    MisObjID = 5939;
   }
   
 
   Block
   {
     Name = "Block";
-    Index = 5828;
+    Index = 5942;
     LinkTrId = 0;
     XPos = 148195.503;
     YPos = 147.818;
@@ -92215,7 +92340,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5829;
+    Index = 5943;
     LinkTrId = 0;
     XPos = 148226.718;
     YPos = 147.675;
@@ -92237,7 +92362,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5830;
+    Index = 5944;
     LinkTrId = 0;
     XPos = 148260.992;
     YPos = 146.629;
@@ -92258,11 +92383,11 @@ Group
 
   MCU_CMD_AttackArea
   {
-    Index = 5831;
+    Index = 5945;
     Name = "Ground";
     Desc = "";
     Targets = [];
-    Objects = [5820];
+    Objects = [5934];
     XPos = 148410.137;
     YPos = 48.052;
     ZPos = 188637.268;
@@ -92281,8 +92406,8 @@ Group
   Vehicle
   {
     Name = "Artillery";
-    Index = 5832;
-    LinkTrId = 5833;
+    Index = 5946;
+    LinkTrId = 5947;
     XPos = 148406.336;
     YPos = 123.513;
     ZPos = 180401.164;
@@ -92310,10 +92435,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5833;
+    Index = 5947;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5820];
+    Targets = [5934];
     Objects = [];
     XPos = 148406.336;
     YPos = 123.713;
@@ -92322,15 +92447,15 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5832;
+    MisObjID = 5946;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5835;
-    LinkTrId = 5836;
+    Index = 5949;
+    LinkTrId = 5950;
     XPos = 148375.457;
     YPos = 125.629;
     ZPos = 180403.742;
@@ -92358,10 +92483,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5836;
+    Index = 5950;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5820];
+    Targets = [5934];
     Objects = [];
     XPos = 148375.457;
     YPos = 125.829;
@@ -92370,15 +92495,15 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5835;
+    MisObjID = 5949;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5838;
-    LinkTrId = 5839;
+    Index = 5952;
+    LinkTrId = 5953;
     XPos = 148440.801;
     YPos = 128.129;
     ZPos = 180399.272;
@@ -92406,10 +92531,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5839;
+    Index = 5953;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5820];
+    Targets = [5934];
     Objects = [];
     XPos = 148440.801;
     YPos = 128.329;
@@ -92418,14 +92543,14 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5838;
+    MisObjID = 5952;
   }
   
 
   Block
   {
     Name = "Block";
-    Index = 5841;
+    Index = 5955;
     LinkTrId = 0;
     XPos = 148375.151;
     YPos = 125.526;
@@ -92447,7 +92572,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5842;
+    Index = 5956;
     LinkTrId = 0;
     XPos = 148406.367;
     YPos = 123.532;
@@ -92469,7 +92594,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5843;
+    Index = 5957;
     LinkTrId = 0;
     XPos = 148440.640;
     YPos = 128.154;
@@ -92491,8 +92616,8 @@ Group
   Vehicle
   {
     Name = "Artillery";
-    Index = 5844;
-    LinkTrId = 5845;
+    Index = 5958;
+    LinkTrId = 5959;
     XPos = 148686.360;
     YPos = 127.845;
     ZPos = 180415.247;
@@ -92520,10 +92645,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5845;
+    Index = 5959;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5820];
+    Targets = [5934];
     Objects = [];
     XPos = 148686.360;
     YPos = 128.045;
@@ -92532,15 +92657,15 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5844;
+    MisObjID = 5958;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5847;
-    LinkTrId = 5848;
+    Index = 5961;
+    LinkTrId = 5962;
     XPos = 148655.481;
     YPos = 127.819;
     ZPos = 180417.825;
@@ -92568,10 +92693,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5848;
+    Index = 5962;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5820];
+    Targets = [5934];
     Objects = [];
     XPos = 148655.481;
     YPos = 128.019;
@@ -92580,15 +92705,15 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5847;
+    MisObjID = 5961;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5850;
-    LinkTrId = 5851;
+    Index = 5964;
+    LinkTrId = 5965;
     XPos = 148720.824;
     YPos = 127.235;
     ZPos = 180413.355;
@@ -92616,10 +92741,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5851;
+    Index = 5965;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5820];
+    Targets = [5934];
     Objects = [];
     XPos = 148720.824;
     YPos = 127.435;
@@ -92628,14 +92753,14 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5850;
+    MisObjID = 5964;
   }
   
 
   Block
   {
     Name = "Block";
-    Index = 5853;
+    Index = 5967;
     LinkTrId = 0;
     XPos = 148655.176;
     YPos = 127.902;
@@ -92657,7 +92782,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5854;
+    Index = 5968;
     LinkTrId = 0;
     XPos = 148686.391;
     YPos = 127.966;
@@ -92679,7 +92804,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5855;
+    Index = 5969;
     LinkTrId = 0;
     XPos = 148720.664;
     YPos = 127.395;
@@ -92701,8 +92826,8 @@ Group
   Vehicle
   {
     Name = "Artillery";
-    Index = 5856;
-    LinkTrId = 5857;
+    Index = 5970;
+    LinkTrId = 5971;
     XPos = 148547.978;
     YPos = 130.773;
     ZPos = 180257.148;
@@ -92730,10 +92855,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5857;
+    Index = 5971;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5820];
+    Targets = [5934];
     Objects = [];
     XPos = 148547.978;
     YPos = 130.973;
@@ -92742,15 +92867,15 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5856;
+    MisObjID = 5970;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5859;
-    LinkTrId = 5860;
+    Index = 5973;
+    LinkTrId = 5974;
     XPos = 148517.098;
     YPos = 130.538;
     ZPos = 180259.726;
@@ -92778,10 +92903,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5860;
+    Index = 5974;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5820];
+    Targets = [5934];
     Objects = [];
     XPos = 148517.098;
     YPos = 130.738;
@@ -92790,15 +92915,15 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5859;
+    MisObjID = 5973;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5862;
-    LinkTrId = 5863;
+    Index = 5976;
+    LinkTrId = 5977;
     XPos = 148582.442;
     YPos = 131.884;
     ZPos = 180255.256;
@@ -92826,10 +92951,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5863;
+    Index = 5977;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5820];
+    Targets = [5934];
     Objects = [];
     XPos = 148582.442;
     YPos = 132.084;
@@ -92838,14 +92963,14 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5862;
+    MisObjID = 5976;
   }
   
 
   Block
   {
     Name = "Block";
-    Index = 5865;
+    Index = 5979;
     LinkTrId = 0;
     XPos = 148516.793;
     YPos = 130.575;
@@ -92867,7 +92992,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5866;
+    Index = 5980;
     LinkTrId = 0;
     XPos = 148548.008;
     YPos = 130.826;
@@ -92889,7 +93014,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5867;
+    Index = 5981;
     LinkTrId = 0;
     XPos = 148582.281;
     YPos = 131.945;
@@ -92911,8 +93036,8 @@ Group
   Vehicle
   {
     Name = "Artillery";
-    Index = 5868;
-    LinkTrId = 5869;
+    Index = 5982;
+    LinkTrId = 5983;
     XPos = 148346.146;
     YPos = 127.369;
     ZPos = 180291.446;
@@ -92940,10 +93065,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5869;
+    Index = 5983;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5820];
+    Targets = [5934];
     Objects = [];
     XPos = 148346.146;
     YPos = 127.569;
@@ -92952,15 +93077,15 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5868;
+    MisObjID = 5982;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5871;
-    LinkTrId = 5872;
+    Index = 5985;
+    LinkTrId = 5986;
     XPos = 148315.267;
     YPos = 136.619;
     ZPos = 180294.026;
@@ -92988,10 +93113,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5872;
+    Index = 5986;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5820];
+    Targets = [5934];
     Objects = [];
     XPos = 148315.267;
     YPos = 136.819;
@@ -93000,15 +93125,15 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5871;
+    MisObjID = 5985;
   }
   
 
   Vehicle
   {
     Name = "Artillery";
-    Index = 5874;
-    LinkTrId = 5875;
+    Index = 5988;
+    LinkTrId = 5989;
     XPos = 148380.611;
     YPos = 125.482;
     ZPos = 180289.555;
@@ -93036,10 +93161,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5875;
+    Index = 5989;
     Name = "Artillery entity";
     Desc = "";
-    Targets = [5820];
+    Targets = [5934];
     Objects = [];
     XPos = 148380.611;
     YPos = 125.682;
@@ -93048,14 +93173,14 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5874;
+    MisObjID = 5988;
   }
   
 
   Block
   {
     Name = "Block";
-    Index = 5877;
+    Index = 5991;
     LinkTrId = 0;
     XPos = 148314.961;
     YPos = 136.733;
@@ -93077,7 +93202,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5878;
+    Index = 5992;
     LinkTrId = 0;
     XPos = 148346.176;
     YPos = 127.380;
@@ -93099,7 +93224,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 5879;
+    Index = 5993;
     LinkTrId = 0;
     XPos = 148380.449;
     YPos = 125.516;
@@ -93121,8 +93246,8 @@ Group
   Vehicle
   {
     Name = "Dont shoot me friendly";
-    Index = 5880;
-    LinkTrId = 5881;
+    Index = 5994;
+    LinkTrId = 5995;
     XPos = 148439.417;
     YPos = 128.574;
     ZPos = 180171.213;
@@ -93150,7 +93275,7 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5881;
+    Index = 5995;
     Name = "Dont shoot me friendly entity";
     Desc = "";
     Targets = [];
@@ -93162,17 +93287,17 @@ Group
     YOri = 22.08;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5880;
+    MisObjID = 5994;
   }
   
 
   MCU_CMD_Flare
   {
-    Index = 5883;
+    Index = 5997;
     Name = "command Flare";
     Desc = "";
     Targets = [];
-    Objects = [5881];
+    Objects = [5995];
     XPos = 148455.283;
     YPos = 129.181;
     ZPos = 180169.254;
@@ -93185,10 +93310,10 @@ Group
 
   MCU_CheckZone
   {
-    Index = 5884;
+    Index = 5998;
     Name = "Friendly close";
     Desc = "";
-    Targets = [5883];
+    Targets = [5997];
     Objects = [];
     XPos = 148442.933;
     YPos = 128.626;
@@ -93205,10 +93330,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5811;
+    Index = 5925;
     Name = "StartDecoRelayed";
     Desc = "";
-    Targets = [5886,5887,5888];
+    Targets = [6000,6001,6002];
     Objects = [];
     XPos = 148189.013;
     YPos = 147.826;
@@ -93223,11 +93348,11 @@ Group
 
   MCU_Activate
   {
-    Index = 5886;
+    Index = 6000;
     Name = "Trigger Activate";
     Desc = "";
     Targets = [];
-    Objects = [5820,5881];
+    Objects = [5934,5995];
     XPos = 148226.157;
     YPos = 147.736;
     ZPos = 180487.858;
@@ -93239,10 +93364,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5887;
+    Index = 6001;
     Name = "5s";
     Desc = "";
-    Targets = [5831,5884];
+    Targets = [5945,5998];
     Objects = [];
     XPos = 148202.545;
     YPos = 147.828;
@@ -93257,11 +93382,11 @@ Group
 
   MCU_Deactivate
   {
-    Index = 5891;
+    Index = 6005;
     Name = "";
     Desc = "";
-    Targets = [5884,5831];
-    Objects = [5820,5881];
+    Targets = [5998,5945];
+    Objects = [5934,5995];
     XPos = 148268.535;
     YPos = 147.732;
     ZPos = 180619.605;
@@ -93273,10 +93398,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5817;
+    Index = 5931;
     Name = "KillDecoRelayed";
     Desc = "";
-    Targets = [5891,5893];
+    Targets = [6005,6007];
     Objects = [];
     XPos = 148248.852;
     YPos = 147.810;
@@ -93291,10 +93416,10 @@ Group
 
   MCU_CheckZone
   {
-    Index = 5894;
+    Index = 6008;
     Name = "Visible";
     Desc = "";
-    Targets = [5808];
+    Targets = [5922];
     Objects = [];
     XPos = 148388.347;
     YPos = 46.849;
@@ -93311,10 +93436,10 @@ Group
 
   MCU_Deactivate
   {
-    Index = 5812;
+    Index = 5926;
     Name = "";
     Desc = "";
-    Targets = [5894];
+    Targets = [6008];
     Objects = [];
     XPos = 148449.845;
     YPos = 47.669;
@@ -93327,10 +93452,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5818;
+    Index = 5932;
     Name = "10min";
     Desc = "";
-    Targets = [5897];
+    Targets = [6011];
     Objects = [];
     XPos = 148440.487;
     YPos = 47.021;
@@ -93345,10 +93470,10 @@ Group
 
   MCU_Activate
   {
-    Index = 5897;
+    Index = 6011;
     Name = "";
     Desc = "";
-    Targets = [5894];
+    Targets = [6008];
     Objects = [];
     XPos = 148404.892;
     YPos = 46.687;
@@ -93361,10 +93486,10 @@ Group
 
   MCU_CheckZone
   {
-    Index = 5899;
+    Index = 6013;
     Name = "Visible";
     Desc = "";
-    Targets = [5808];
+    Targets = [5922];
     Objects = [];
     XPos = 148488.766;
     YPos = 124.519;
@@ -93381,10 +93506,10 @@ Group
 
   MCU_Deactivate
   {
-    Index = 5888;
+    Index = 6002;
     Name = "";
     Desc = "";
-    Targets = [5899];
+    Targets = [6013];
     Objects = [];
     XPos = 148432.166;
     YPos = 124.501;
@@ -93397,10 +93522,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5893;
+    Index = 6007;
     Name = "10min";
     Desc = "";
-    Targets = [5902];
+    Targets = [6016];
     Objects = [];
     XPos = 148375.632;
     YPos = 141.969;
@@ -93415,10 +93540,10 @@ Group
 
   MCU_Activate
   {
-    Index = 5902;
+    Index = 6016;
     Name = "";
     Desc = "";
-    Targets = [5899];
+    Targets = [6013];
     Objects = [];
     XPos = 148439.334;
     YPos = 128.868;
@@ -93431,10 +93556,10 @@ Group
 
   MCU_TR_MissionBegin
   {
-    Index = 5904;
+    Index = 6018;
     Name = "";
     Desc = "";
-    Targets = [5905];
+    Targets = [6019];
     Objects = [];
     XPos = 148523.469;
     YPos = 123.110;
@@ -93448,10 +93573,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5905;
+    Index = 6019;
     Name = "45s";
     Desc = "";
-    Targets = [5899];
+    Targets = [6013];
     Objects = [];
     XPos = 148508.172;
     YPos = 123.567;
@@ -93466,10 +93591,10 @@ Group
 
   MCU_TR_MissionBegin
   {
-    Index = 5907;
+    Index = 6021;
     Name = "";
     Desc = "";
-    Targets = [5908];
+    Targets = [6022];
     Objects = [];
     XPos = 148349.072;
     YPos = 46.103;
@@ -93483,10 +93608,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5908;
+    Index = 6022;
     Name = "45s";
     Desc = "";
-    Targets = [5894];
+    Targets = [6008];
     Objects = [];
     XPos = 148364.838;
     YPos = 46.411;
@@ -93506,13 +93631,13 @@ Group
 Group
 {
   Name = "Deco ground traffic 1";
-  Index = 5910;
+  Index = 6024;
   Desc = "";
   Vehicle
   {
     Name = "Vehicle";
-    Index = 5911;
-    LinkTrId = 5912;
+    Index = 6025;
+    LinkTrId = 6026;
     XPos = 136453.036;
     YPos = 99.828;
     ZPos = 223459.397;
@@ -93540,7 +93665,7 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5912;
+    Index = 6026;
     Name = "Vehicle entity";
     Desc = "";
     Targets = [];
@@ -93552,15 +93677,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5911;
+    MisObjID = 6025;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 5914;
-    LinkTrId = 5915;
+    Index = 6028;
+    LinkTrId = 6029;
     XPos = 136487.296;
     YPos = 101.510;
     ZPos = 223449.813;
@@ -93588,10 +93713,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5915;
+    Index = 6029;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [5912];
+    Targets = [6026];
     Objects = [];
     XPos = 136487.296;
     YPos = 101.710;
@@ -93600,15 +93725,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5914;
+    MisObjID = 6028;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 5917;
-    LinkTrId = 5918;
+    Index = 6031;
+    LinkTrId = 6032;
     XPos = 136516.311;
     YPos = 101.510;
     ZPos = 223439.258;
@@ -93636,10 +93761,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5918;
+    Index = 6032;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [5912];
+    Targets = [6026];
     Objects = [];
     XPos = 136516.311;
     YPos = 101.710;
@@ -93648,15 +93773,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5917;
+    MisObjID = 6031;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 5920;
-    LinkTrId = 5921;
+    Index = 6034;
+    LinkTrId = 6035;
     XPos = 136546.911;
     YPos = 104.725;
     ZPos = 223427.154;
@@ -93684,10 +93809,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5921;
+    Index = 6035;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [5912];
+    Targets = [6026];
     Objects = [];
     XPos = 136546.911;
     YPos = 104.925;
@@ -93696,15 +93821,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5920;
+    MisObjID = 6034;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 5923;
-    LinkTrId = 5924;
+    Index = 6037;
+    LinkTrId = 6038;
     XPos = 136577.853;
     YPos = 105.108;
     ZPos = 223417.026;
@@ -93732,10 +93857,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5924;
+    Index = 6038;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [5912];
+    Targets = [6026];
     Objects = [];
     XPos = 136577.853;
     YPos = 105.308;
@@ -93744,15 +93869,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5923;
+    MisObjID = 6037;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 5926;
-    LinkTrId = 5927;
+    Index = 6040;
+    LinkTrId = 6041;
     XPos = 136612.840;
     YPos = 105.634;
     ZPos = 223404.542;
@@ -93780,10 +93905,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5927;
+    Index = 6041;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [5912];
+    Targets = [6026];
     Objects = [];
     XPos = 136612.840;
     YPos = 105.834;
@@ -93792,17 +93917,17 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5926;
+    MisObjID = 6040;
   }
   
 
   MCU_Activate
   {
-    Index = 5929;
+    Index = 6043;
     Name = "";
     Desc = "";
     Targets = [];
-    Objects = [5912];
+    Objects = [6026];
     XPos = 136458.175;
     YPos = 99.884;
     ZPos = 223477.257;
@@ -93814,11 +93939,11 @@ Group
 
   MCU_CMD_Formation
   {
-    Index = 5930;
+    Index = 6044;
     Name = "OnRoad";
     Desc = "";
     Targets = [];
-    Objects = [5912];
+    Objects = [6026];
     XPos = 136450.597;
     YPos = 99.505;
     ZPos = 223477.413;
@@ -93832,11 +93957,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 5931;
+    Index = 6045;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [5932];
-    Objects = [5912];
+    Targets = [6046];
+    Objects = [6026];
     XPos = 136418.643;
     YPos = 98.318;
     ZPos = 223501.526;
@@ -93851,11 +93976,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 5932;
+    Index = 6046;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [5934];
-    Objects = [5912];
+    Targets = [6048];
+    Objects = [6026];
     XPos = 128298.962;
     YPos = 98.318;
     ZPos = 221088.947;
@@ -93870,11 +93995,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 5934;
+    Index = 6048;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [5936];
-    Objects = [5912];
+    Targets = [6050];
+    Objects = [6026];
     XPos = 128601.662;
     YPos = 98.318;
     ZPos = 220408.429;
@@ -93889,11 +94014,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 5936;
+    Index = 6050;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [5938];
-    Objects = [5912];
+    Targets = [6052];
+    Objects = [6026];
     XPos = 133150.780;
     YPos = 98.318;
     ZPos = 218043.362;
@@ -93908,11 +94033,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 5938;
+    Index = 6052;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [5931];
-    Objects = [5912];
+    Targets = [6045];
+    Objects = [6026];
     XPos = 138082.744;
     YPos = 98.318;
     ZPos = 217524.839;
@@ -93927,10 +94052,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5940;
+    Index = 6054;
     Name = "StartDecoTraffic1";
     Desc = "";
-    Targets = [5929,5941];
+    Targets = [6043,6055];
     Objects = [];
     XPos = 136458.205;
     YPos = 99.659;
@@ -93945,10 +94070,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5941;
+    Index = 6055;
     Name = "5s";
     Desc = "";
-    Targets = [5930,5943];
+    Targets = [6044,6057];
     Objects = [];
     XPos = 136450.615;
     YPos = 99.659;
@@ -93963,10 +94088,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5943;
+    Index = 6057;
     Name = "5s";
     Desc = "";
-    Targets = [5931];
+    Targets = [6045];
     Objects = [];
     XPos = 136442.482;
     YPos = 99.659;
@@ -93981,11 +94106,11 @@ Group
 
   MCU_Deactivate
   {
-    Index = 5945;
+    Index = 6059;
     Name = "KillDecoTraffic1";
     Desc = "";
     Targets = [];
-    Objects = [5912];
+    Objects = [6026];
     XPos = 136479.698;
     YPos = 99.980;
     ZPos = 223495.160;
@@ -93997,10 +94122,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6055;
+    Index = 6060;
     Name = "";
     Desc = "";
-    Targets = [5940];
+    Targets = [6054];
     Objects = [];
     XPos = 136456.168;
     YPos = 106.984;
@@ -94015,10 +94140,10 @@ Group
 
   MCU_TR_MissionBegin
   {
-    Index = 6056;
+    Index = 6061;
     Name = "";
     Desc = "";
-    Targets = [6055];
+    Targets = [6060];
     Objects = [];
     XPos = 136453.652;
     YPos = 107.052;
@@ -94037,13 +94162,13 @@ Group
 Group
 {
   Name = "Deco ground traffic 2";
-  Index = 5946;
+  Index = 6062;
   Desc = "";
   Vehicle
   {
     Name = "Vehicle";
-    Index = 5947;
-    LinkTrId = 5948;
+    Index = 6063;
+    LinkTrId = 6064;
     XPos = 143458.740;
     YPos = 93.879;
     ZPos = 230145.229;
@@ -94071,7 +94196,7 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5948;
+    Index = 6064;
     Name = "Vehicle entity";
     Desc = "";
     Targets = [];
@@ -94083,15 +94208,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5947;
+    MisObjID = 6063;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 5950;
-    LinkTrId = 5951;
+    Index = 6066;
+    LinkTrId = 6067;
     XPos = 143487.173;
     YPos = 94.155;
     ZPos = 230166.610;
@@ -94119,10 +94244,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5951;
+    Index = 6067;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [5948];
+    Targets = [6064];
     Objects = [];
     XPos = 143487.173;
     YPos = 94.355;
@@ -94131,15 +94256,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5950;
+    MisObjID = 6066;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 5953;
-    LinkTrId = 5954;
+    Index = 6069;
+    LinkTrId = 6070;
     XPos = 143513.190;
     YPos = 93.749;
     ZPos = 230183.235;
@@ -94167,10 +94292,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5954;
+    Index = 6070;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [5948];
+    Targets = [6064];
     Objects = [];
     XPos = 143513.190;
     YPos = 93.949;
@@ -94179,15 +94304,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5953;
+    MisObjID = 6069;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 5956;
-    LinkTrId = 5957;
+    Index = 6072;
+    LinkTrId = 6073;
     XPos = 143541.400;
     YPos = 92.486;
     ZPos = 230200.178;
@@ -94215,10 +94340,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5957;
+    Index = 6073;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [5948];
+    Targets = [6064];
     Objects = [];
     XPos = 143541.400;
     YPos = 92.686;
@@ -94227,15 +94352,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5956;
+    MisObjID = 6072;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 5959;
-    LinkTrId = 5960;
+    Index = 6075;
+    LinkTrId = 6076;
     XPos = 143568.249;
     YPos = 92.166;
     ZPos = 230218.593;
@@ -94263,10 +94388,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5960;
+    Index = 6076;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [5948];
+    Targets = [6064];
     Objects = [];
     XPos = 143568.249;
     YPos = 92.366;
@@ -94275,15 +94400,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5959;
+    MisObjID = 6075;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 5962;
-    LinkTrId = 5963;
+    Index = 6078;
+    LinkTrId = 6079;
     XPos = 143599.427;
     YPos = 92.161;
     ZPos = 230238.788;
@@ -94311,10 +94436,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5963;
+    Index = 6079;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [5948];
+    Targets = [6064];
     Objects = [];
     XPos = 143599.427;
     YPos = 92.361;
@@ -94323,17 +94448,17 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5962;
+    MisObjID = 6078;
   }
   
 
   MCU_Activate
   {
-    Index = 5965;
+    Index = 6081;
     Name = "";
     Desc = "";
     Targets = [];
-    Objects = [5948];
+    Objects = [6064];
     XPos = 143447.680;
     YPos = 94.003;
     ZPos = 230160.165;
@@ -94345,11 +94470,11 @@ Group
 
   MCU_CMD_Formation
   {
-    Index = 5966;
+    Index = 6082;
     Name = "OnRoad";
     Desc = "";
     Targets = [];
-    Objects = [5948];
+    Objects = [6064];
     XPos = 143442.951;
     YPos = 94.002;
     ZPos = 230154.242;
@@ -94363,11 +94488,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 5967;
+    Index = 6083;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [5968];
-    Objects = [5948];
+    Targets = [6084];
+    Objects = [6064];
     XPos = 143279.290;
     YPos = 98.318;
     ZPos = 230159.188;
@@ -94382,11 +94507,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 5968;
+    Index = 6084;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [5970];
-    Objects = [5948];
+    Targets = [6086];
+    Objects = [6064];
     XPos = 134458.714;
     YPos = 98.318;
     ZPos = 230973.188;
@@ -94401,11 +94526,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 5970;
+    Index = 6086;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [5972];
-    Objects = [5948];
+    Targets = [6088];
+    Objects = [6064];
     XPos = 135832.949;
     YPos = 98.318;
     ZPos = 229711.205;
@@ -94420,11 +94545,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 5972;
+    Index = 6088;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [5974];
-    Objects = [5948];
+    Targets = [6090];
+    Objects = [6064];
     XPos = 141423.746;
     YPos = 98.318;
     ZPos = 224386.699;
@@ -94439,11 +94564,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 5974;
+    Index = 6090;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [5967];
-    Objects = [5948];
+    Targets = [6083];
+    Objects = [6064];
     XPos = 142468.774;
     YPos = 98.318;
     ZPos = 224342.773;
@@ -94458,10 +94583,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5976;
+    Index = 6092;
     Name = "StartDecoTraffic2";
     Desc = "";
-    Targets = [5965,5977];
+    Targets = [6081,6093];
     Objects = [];
     XPos = 143433.090;
     YPos = 94.181;
@@ -94476,10 +94601,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5977;
+    Index = 6093;
     Name = "5s";
     Desc = "";
-    Targets = [5966,5979];
+    Targets = [6082,6095];
     Objects = [];
     XPos = 143428.735;
     YPos = 94.186;
@@ -94494,10 +94619,10 @@ Group
 
   MCU_Timer
   {
-    Index = 5979;
+    Index = 6095;
     Name = "5s";
     Desc = "";
-    Targets = [5967];
+    Targets = [6083];
     Objects = [];
     XPos = 143423.878;
     YPos = 94.211;
@@ -94512,11 +94637,11 @@ Group
 
   MCU_Deactivate
   {
-    Index = 5981;
+    Index = 6097;
     Name = "KillDecoTraffic2";
     Desc = "";
     Targets = [];
-    Objects = [5948];
+    Objects = [6064];
     XPos = 143446.545;
     YPos = 94.211;
     ZPos = 230188.138;
@@ -94528,10 +94653,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6053;
+    Index = 6098;
     Name = "";
     Desc = "";
-    Targets = [5976];
+    Targets = [6092];
     Objects = [];
     XPos = 143430.593;
     YPos = 94.231;
@@ -94546,10 +94671,10 @@ Group
 
   MCU_TR_MissionBegin
   {
-    Index = 6054;
+    Index = 6099;
     Name = "";
     Desc = "";
-    Targets = [6053];
+    Targets = [6098];
     Objects = [];
     XPos = 143428.077;
     YPos = 94.280;
@@ -94568,13 +94693,13 @@ Group
 Group
 {
   Name = "Deco ground traffic 3";
-  Index = 5982;
+  Index = 6100;
   Desc = "";
   Vehicle
   {
     Name = "Vehicle";
-    Index = 5983;
-    LinkTrId = 5984;
+    Index = 6101;
+    LinkTrId = 6102;
     XPos = 118400.014;
     YPos = 107.835;
     ZPos = 210097.786;
@@ -94602,7 +94727,7 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5984;
+    Index = 6102;
     Name = "Vehicle entity";
     Desc = "";
     Targets = [];
@@ -94614,15 +94739,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5983;
+    MisObjID = 6101;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 5986;
-    LinkTrId = 5987;
+    Index = 6104;
+    LinkTrId = 6105;
     XPos = 118434.274;
     YPos = 105.362;
     ZPos = 210088.202;
@@ -94650,10 +94775,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5987;
+    Index = 6105;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [5984];
+    Targets = [6102];
     Objects = [];
     XPos = 118434.274;
     YPos = 105.562;
@@ -94662,15 +94787,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5986;
+    MisObjID = 6104;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 5989;
-    LinkTrId = 5990;
+    Index = 6107;
+    LinkTrId = 6108;
     XPos = 118463.289;
     YPos = 103.159;
     ZPos = 210077.647;
@@ -94698,10 +94823,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5990;
+    Index = 6108;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [5984];
+    Targets = [6102];
     Objects = [];
     XPos = 118463.289;
     YPos = 103.359;
@@ -94710,15 +94835,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5989;
+    MisObjID = 6107;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 5992;
-    LinkTrId = 5993;
+    Index = 6110;
+    LinkTrId = 6111;
     XPos = 118493.889;
     YPos = 100.738;
     ZPos = 210065.543;
@@ -94746,10 +94871,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5993;
+    Index = 6111;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [5984];
+    Targets = [6102];
     Objects = [];
     XPos = 118493.889;
     YPos = 100.938;
@@ -94758,15 +94883,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5992;
+    MisObjID = 6110;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 5995;
-    LinkTrId = 5996;
+    Index = 6113;
+    LinkTrId = 6114;
     XPos = 118524.831;
     YPos = 98.517;
     ZPos = 210055.415;
@@ -94794,10 +94919,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5996;
+    Index = 6114;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [5984];
+    Targets = [6102];
     Objects = [];
     XPos = 118524.831;
     YPos = 98.717;
@@ -94806,15 +94931,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5995;
+    MisObjID = 6113;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 5998;
-    LinkTrId = 5999;
+    Index = 6116;
+    LinkTrId = 6117;
     XPos = 118559.818;
     YPos = 97.146;
     ZPos = 210042.931;
@@ -94842,10 +94967,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 5999;
+    Index = 6117;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [5984];
+    Targets = [6102];
     Objects = [];
     XPos = 118559.818;
     YPos = 97.346;
@@ -94854,17 +94979,17 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 5998;
+    MisObjID = 6116;
   }
   
 
   MCU_Activate
   {
-    Index = 6001;
+    Index = 6119;
     Name = "";
     Desc = "";
     Targets = [];
-    Objects = [5984];
+    Objects = [6102];
     XPos = 118405.153;
     YPos = 107.311;
     ZPos = 210115.646;
@@ -94876,11 +95001,11 @@ Group
 
   MCU_CMD_Formation
   {
-    Index = 6002;
+    Index = 6120;
     Name = "OnRoad";
     Desc = "";
     Targets = [];
-    Objects = [5984];
+    Objects = [6102];
     XPos = 118397.575;
     YPos = 107.744;
     ZPos = 210115.802;
@@ -94894,11 +95019,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 6003;
+    Index = 6121;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [6004];
-    Objects = [5984];
+    Targets = [6122];
+    Objects = [6102];
     XPos = 118307.741;
     YPos = 108.489;
     ZPos = 210086.956;
@@ -94913,11 +95038,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 6004;
+    Index = 6122;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [6006];
-    Objects = [5984];
+    Targets = [6124];
+    Objects = [6102];
     XPos = 109797.363;
     YPos = 98.318;
     ZPos = 208838.018;
@@ -94932,11 +95057,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 6006;
+    Index = 6124;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [6008];
-    Objects = [5984];
+    Targets = [6126];
+    Objects = [6102];
     XPos = 109505.677;
     YPos = 98.318;
     ZPos = 206820.851;
@@ -94951,11 +95076,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 6008;
+    Index = 6126;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [6010];
-    Objects = [5984];
+    Targets = [6128];
+    Objects = [6102];
     XPos = 115140.492;
     YPos = 98.318;
     ZPos = 204503.461;
@@ -94970,11 +95095,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 6010;
+    Index = 6128;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [6003];
-    Objects = [5984];
+    Targets = [6121];
+    Objects = [6102];
     XPos = 119168.345;
     YPos = 98.318;
     ZPos = 201484.541;
@@ -94989,10 +95114,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6012;
+    Index = 6130;
     Name = "StartDecoTraffic3";
     Desc = "";
-    Targets = [6001,6013];
+    Targets = [6119,6131];
     Objects = [];
     XPos = 118405.183;
     YPos = 107.103;
@@ -95007,10 +95132,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6013;
+    Index = 6131;
     Name = "5s";
     Desc = "";
-    Targets = [6002,6015];
+    Targets = [6120,6133];
     Objects = [];
     XPos = 118397.593;
     YPos = 107.543;
@@ -95025,10 +95150,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6015;
+    Index = 6133;
     Name = "5s";
     Desc = "";
-    Targets = [6003];
+    Targets = [6121];
     Objects = [];
     XPos = 118389.460;
     YPos = 107.802;
@@ -95043,11 +95168,11 @@ Group
 
   MCU_Deactivate
   {
-    Index = 6017;
+    Index = 6135;
     Name = "KillDecoTraffic3";
     Desc = "";
     Targets = [];
-    Objects = [5984];
+    Objects = [6102];
     XPos = 118426.676;
     YPos = 105.924;
     ZPos = 210133.549;
@@ -95059,10 +95184,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6051;
+    Index = 6136;
     Name = "";
     Desc = "";
-    Targets = [6012];
+    Targets = [6130];
     Objects = [];
     XPos = 118402.351;
     YPos = 106.984;
@@ -95077,10 +95202,10 @@ Group
 
   MCU_TR_MissionBegin
   {
-    Index = 6052;
+    Index = 6137;
     Name = "";
     Desc = "";
-    Targets = [6051];
+    Targets = [6136];
     Objects = [];
     XPos = 118399.835;
     YPos = 107.052;
@@ -95099,12 +95224,12 @@ Group
 Group
 {
   Name = "Group";
-  Index = 6018;
+  Index = 6138;
   Desc = "";
   Block
   {
     Name = "Block";
-    Index = 6019;
+    Index = 6139;
     LinkTrId = 0;
     XPos = 135462.478;
     YPos = 60.770;
@@ -95126,7 +95251,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6020;
+    Index = 6140;
     LinkTrId = 0;
     XPos = 135449.830;
     YPos = 60.770;
@@ -95148,7 +95273,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6021;
+    Index = 6141;
     LinkTrId = 0;
     XPos = 134397.652;
     YPos = 60.770;
@@ -95170,7 +95295,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6022;
+    Index = 6142;
     LinkTrId = 0;
     XPos = 134319.235;
     YPos = 60.770;
@@ -95192,7 +95317,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6023;
+    Index = 6143;
     LinkTrId = 0;
     XPos = 135890.631;
     YPos = 60.770;
@@ -95214,7 +95339,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6024;
+    Index = 6144;
     LinkTrId = 0;
     XPos = 136075.211;
     YPos = 60.770;
@@ -95236,7 +95361,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6025;
+    Index = 6145;
     LinkTrId = 0;
     XPos = 135949.367;
     YPos = 60.770;
@@ -95258,7 +95383,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6026;
+    Index = 6146;
     LinkTrId = 0;
     XPos = 134605.139;
     YPos = 60.770;
@@ -95280,7 +95405,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6027;
+    Index = 6147;
     LinkTrId = 0;
     XPos = 134619.342;
     YPos = 60.770;
@@ -95302,7 +95427,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6028;
+    Index = 6148;
     LinkTrId = 0;
     XPos = 134868.463;
     YPos = 60.770;
@@ -95324,7 +95449,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6029;
+    Index = 6149;
     LinkTrId = 0;
     XPos = 135618.495;
     YPos = 60.770;
@@ -95346,7 +95471,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6030;
+    Index = 6150;
     LinkTrId = 0;
     XPos = 134599.019;
     YPos = 60.770;
@@ -95368,7 +95493,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6031;
+    Index = 6151;
     LinkTrId = 0;
     XPos = 135116.825;
     YPos = 60.770;
@@ -95390,7 +95515,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6032;
+    Index = 6152;
     LinkTrId = 0;
     XPos = 135210.268;
     YPos = 60.770;
@@ -95412,7 +95537,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6033;
+    Index = 6153;
     LinkTrId = 0;
     XPos = 135083.578;
     YPos = 60.770;
@@ -95434,7 +95559,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6034;
+    Index = 6154;
     LinkTrId = 0;
     XPos = 135185.404;
     YPos = 60.770;
@@ -95456,7 +95581,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6035;
+    Index = 6155;
     LinkTrId = 0;
     XPos = 135351.044;
     YPos = 60.770;
@@ -95478,7 +95603,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6036;
+    Index = 6156;
     LinkTrId = 0;
     XPos = 134564.183;
     YPos = 60.770;
@@ -95500,7 +95625,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6037;
+    Index = 6157;
     LinkTrId = 0;
     XPos = 134544.770;
     YPos = 60.770;
@@ -95522,7 +95647,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6038;
+    Index = 6158;
     LinkTrId = 0;
     XPos = 134522.020;
     YPos = 60.770;
@@ -95544,7 +95669,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6039;
+    Index = 6159;
     LinkTrId = 0;
     XPos = 134926.119;
     YPos = 60.770;
@@ -95566,7 +95691,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6040;
+    Index = 6160;
     LinkTrId = 0;
     XPos = 134860.665;
     YPos = 60.770;
@@ -95588,7 +95713,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6041;
+    Index = 6161;
     LinkTrId = 0;
     XPos = 134798.763;
     YPos = 60.770;
@@ -95610,7 +95735,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6042;
+    Index = 6162;
     LinkTrId = 0;
     XPos = 134619.607;
     YPos = 60.770;
@@ -95632,7 +95757,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6043;
+    Index = 6163;
     LinkTrId = 0;
     XPos = 134605.715;
     YPos = 60.770;
@@ -95654,7 +95779,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6044;
+    Index = 6164;
     LinkTrId = 0;
     XPos = 134584.851;
     YPos = 60.770;
@@ -95676,7 +95801,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6045;
+    Index = 6165;
     LinkTrId = 0;
     XPos = 134671.783;
     YPos = 60.770;
@@ -95698,7 +95823,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6046;
+    Index = 6166;
     LinkTrId = 0;
     XPos = 134605.392;
     YPos = 60.770;
@@ -95720,7 +95845,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6047;
+    Index = 6167;
     LinkTrId = 0;
     XPos = 134538.635;
     YPos = 60.770;
@@ -95742,7 +95867,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6048;
+    Index = 6168;
     LinkTrId = 0;
     XPos = 135173.819;
     YPos = 60.770;
@@ -95764,7 +95889,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6049;
+    Index = 6169;
     LinkTrId = 0;
     XPos = 135329.797;
     YPos = 60.770;
@@ -95786,7 +95911,7 @@ Group
   Block
   {
     Name = "Block";
-    Index = 6050;
+    Index = 6170;
     LinkTrId = 0;
     XPos = 135219.300;
     YPos = 60.770;
@@ -95812,13 +95937,13 @@ Group
 Group
 {
   Name = "Deco ground traffic 1b";
-  Index = 6174;
+  Index = 6171;
   Desc = "";
   Vehicle
   {
     Name = "Vehicle";
-    Index = 6175;
-    LinkTrId = 6176;
+    Index = 6172;
+    LinkTrId = 6173;
     XPos = 108909.573;
     YPos = 50.822;
     ZPos = 152583.521;
@@ -95846,7 +95971,7 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6176;
+    Index = 6173;
     Name = "Vehicle entity";
     Desc = "";
     Targets = [];
@@ -95858,15 +95983,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6175;
+    MisObjID = 6172;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 6178;
-    LinkTrId = 6179;
+    Index = 6175;
+    LinkTrId = 6176;
     XPos = 108921.325;
     YPos = 50.786;
     ZPos = 152549.943;
@@ -95894,10 +96019,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6179;
+    Index = 6176;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [6176];
+    Targets = [6173];
     Objects = [];
     XPos = 108921.325;
     YPos = 50.986;
@@ -95906,15 +96031,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6178;
+    MisObjID = 6175;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 6181;
-    LinkTrId = 6182;
+    Index = 6178;
+    LinkTrId = 6179;
     XPos = 108929.277;
     YPos = 50.759;
     ZPos = 152520.109;
@@ -95942,10 +96067,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6182;
+    Index = 6179;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [6176];
+    Targets = [6173];
     Objects = [];
     XPos = 108929.277;
     YPos = 50.959;
@@ -95954,15 +96079,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6181;
+    MisObjID = 6178;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 6184;
-    LinkTrId = 6185;
+    Index = 6181;
+    LinkTrId = 6182;
     XPos = 108936.867;
     YPos = 50.728;
     ZPos = 152488.090;
@@ -95990,10 +96115,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6185;
+    Index = 6182;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [6176];
+    Targets = [6173];
     Objects = [];
     XPos = 108936.867;
     YPos = 50.928;
@@ -96002,15 +96127,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6184;
+    MisObjID = 6181;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 6187;
-    LinkTrId = 6188;
+    Index = 6184;
+    LinkTrId = 6185;
     XPos = 108946.273;
     YPos = 50.726;
     ZPos = 152456.921;
@@ -96038,10 +96163,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6188;
+    Index = 6185;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [6176];
+    Targets = [6173];
     Objects = [];
     XPos = 108946.273;
     YPos = 50.926;
@@ -96050,15 +96175,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6187;
+    MisObjID = 6184;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 6190;
-    LinkTrId = 6191;
+    Index = 6187;
+    LinkTrId = 6188;
     XPos = 108956.062;
     YPos = 50.777;
     ZPos = 152421.086;
@@ -96086,10 +96211,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6191;
+    Index = 6188;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [6176];
+    Targets = [6173];
     Objects = [];
     XPos = 108956.062;
     YPos = 50.977;
@@ -96098,17 +96223,17 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6190;
+    MisObjID = 6187;
   }
   
 
   MCU_Activate
   {
-    Index = 6193;
+    Index = 6190;
     Name = "";
     Desc = "";
     Targets = [];
-    Objects = [6176];
+    Objects = [6173];
     XPos = 108927.160;
     YPos = 107.311;
     ZPos = 152589.530;
@@ -96120,11 +96245,11 @@ Group
 
   MCU_CMD_Formation
   {
-    Index = 6194;
+    Index = 6191;
     Name = "OnRoad";
     Desc = "";
     Targets = [];
-    Objects = [6176];
+    Objects = [6173];
     XPos = 108922.950;
     YPos = 107.744;
     ZPos = 152595.833;
@@ -96138,11 +96263,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 6195;
+    Index = 6192;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [6212];
-    Objects = [6176];
+    Targets = [6193];
+    Objects = [6173];
     XPos = 108789.005;
     YPos = 108.489;
     ZPos = 152709.356;
@@ -96157,11 +96282,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 6196;
+    Index = 6194;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [6198];
-    Objects = [6176];
+    Targets = [6195];
+    Objects = [6173];
     XPos = 104154.462;
     YPos = 98.318;
     ZPos = 153234.645;
@@ -96176,11 +96301,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 6198;
+    Index = 6195;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [6200];
-    Objects = [6176];
+    Targets = [6197];
+    Objects = [6173];
     XPos = 99467.964;
     YPos = 98.318;
     ZPos = 147979.113;
@@ -96195,11 +96320,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 6200;
+    Index = 6197;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [6202];
-    Objects = [6176];
+    Targets = [6199];
+    Objects = [6173];
     XPos = 104544.980;
     YPos = 98.318;
     ZPos = 147199.074;
@@ -96214,11 +96339,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 6202;
+    Index = 6199;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [6212];
-    Objects = [6176];
+    Targets = [6193];
+    Objects = [6173];
     XPos = 109174.683;
     YPos = 98.318;
     ZPos = 148968.928;
@@ -96233,10 +96358,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6204;
+    Index = 6201;
     Name = "StartDecoTraffic1b";
     Desc = "";
-    Targets = [6193,6205];
+    Targets = [6190,6202];
     Objects = [];
     XPos = 108942.262;
     YPos = 107.103;
@@ -96251,10 +96376,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6205;
+    Index = 6202;
     Name = "5s";
     Desc = "";
-    Targets = [6194,6207];
+    Targets = [6191,6204];
     Objects = [];
     XPos = 108937.652;
     YPos = 107.543;
@@ -96269,10 +96394,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6207;
+    Index = 6204;
     Name = "5s";
     Desc = "";
-    Targets = [6195];
+    Targets = [6192];
     Objects = [];
     XPos = 108932.907;
     YPos = 107.802;
@@ -96287,11 +96412,11 @@ Group
 
   MCU_Deactivate
   {
-    Index = 6209;
+    Index = 6206;
     Name = "KillDecoTraffic1b";
     Desc = "";
     Targets = [];
-    Objects = [6176];
+    Objects = [6173];
     XPos = 108954.160;
     YPos = 105.924;
     ZPos = 152582.129;
@@ -96303,10 +96428,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6210;
+    Index = 6207;
     Name = "";
     Desc = "";
-    Targets = [6204];
+    Targets = [6201];
     Objects = [];
     XPos = 108950.175;
     YPos = 106.984;
@@ -96321,10 +96446,10 @@ Group
 
   MCU_TR_MissionBegin
   {
-    Index = 6211;
+    Index = 6208;
     Name = "";
     Desc = "";
-    Targets = [6210];
+    Targets = [6207];
     Objects = [];
     XPos = 108952.324;
     YPos = 107.052;
@@ -96338,10 +96463,10 @@ Group
 
   MCU_Waypoint
   {
-    Index = 6212;
+    Index = 6193;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [6196];
+    Targets = [6194];
     Objects = [];
     XPos = 108033.379;
     YPos = 108.489;
@@ -96362,13 +96487,13 @@ Group
 Group
 {
   Name = "Deco ground traffic 2b";
-  Index = 6215;
+  Index = 6210;
   Desc = "";
   Vehicle
   {
     Name = "Vehicle";
-    Index = 6216;
-    LinkTrId = 6217;
+    Index = 6211;
+    LinkTrId = 6212;
     XPos = 135991.468;
     YPos = 75.287;
     ZPos = 183270.502;
@@ -96396,7 +96521,7 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6217;
+    Index = 6212;
     Name = "Vehicle entity";
     Desc = "";
     Targets = [];
@@ -96408,15 +96533,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6216;
+    MisObjID = 6211;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 6219;
-    LinkTrId = 6220;
+    Index = 6214;
+    LinkTrId = 6215;
     XPos = 136019.969;
     YPos = 76.138;
     ZPos = 183249.212;
@@ -96444,10 +96569,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6220;
+    Index = 6215;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [6217];
+    Targets = [6212];
     Objects = [];
     XPos = 136019.969;
     YPos = 76.338;
@@ -96456,15 +96581,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6219;
+    MisObjID = 6214;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 6222;
-    LinkTrId = 6223;
+    Index = 6217;
+    LinkTrId = 6218;
     XPos = 136043.227;
     YPos = 77.464;
     ZPos = 183228.905;
@@ -96492,10 +96617,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6223;
+    Index = 6218;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [6217];
+    Targets = [6212];
     Objects = [];
     XPos = 136043.227;
     YPos = 77.664;
@@ -96504,15 +96629,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6222;
+    MisObjID = 6217;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 6225;
-    LinkTrId = 6226;
+    Index = 6220;
+    LinkTrId = 6221;
     XPos = 136067.406;
     YPos = 78.110;
     ZPos = 183206.584;
@@ -96540,10 +96665,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6226;
+    Index = 6221;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [6217];
+    Targets = [6212];
     Objects = [];
     XPos = 136067.406;
     YPos = 78.310;
@@ -96552,15 +96677,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6225;
+    MisObjID = 6220;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 6228;
-    LinkTrId = 6229;
+    Index = 6223;
+    LinkTrId = 6224;
     XPos = 136092.616;
     YPos = 77.962;
     ZPos = 183185.982;
@@ -96588,10 +96713,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6229;
+    Index = 6224;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [6217];
+    Targets = [6212];
     Objects = [];
     XPos = 136092.616;
     YPos = 78.162;
@@ -96600,15 +96725,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6228;
+    MisObjID = 6223;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 6231;
-    LinkTrId = 6232;
+    Index = 6226;
+    LinkTrId = 6227;
     XPos = 136120.749;
     YPos = 77.164;
     ZPos = 183161.724;
@@ -96636,10 +96761,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6232;
+    Index = 6227;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [6217];
+    Targets = [6212];
     Objects = [];
     XPos = 136120.749;
     YPos = 77.364;
@@ -96648,17 +96773,17 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6231;
+    MisObjID = 6226;
   }
   
 
   MCU_Activate
   {
-    Index = 6234;
+    Index = 6229;
     Name = "";
     Desc = "";
     Targets = [];
-    Objects = [6217];
+    Objects = [6212];
     XPos = 136002.700;
     YPos = 107.311;
     ZPos = 183285.309;
@@ -96670,11 +96795,11 @@ Group
 
   MCU_CMD_Formation
   {
-    Index = 6235;
+    Index = 6230;
     Name = "OnRoad";
     Desc = "";
     Targets = [];
-    Objects = [6217];
+    Objects = [6212];
     XPos = 135995.688;
     YPos = 107.744;
     ZPos = 183288.186;
@@ -96688,11 +96813,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 6238;
+    Index = 6231;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [6239];
-    Objects = [6217];
+    Targets = [6232];
+    Objects = [6212];
     XPos = 131763.148;
     YPos = 98.318;
     ZPos = 181157.836;
@@ -96707,11 +96832,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 6239;
+    Index = 6232;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [6241];
-    Objects = [6217];
+    Targets = [6234];
+    Objects = [6212];
     XPos = 130000.437;
     YPos = 98.318;
     ZPos = 179934.642;
@@ -96726,11 +96851,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 6241;
+    Index = 6234;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [6243];
-    Objects = [6217];
+    Targets = [6236];
+    Objects = [6212];
     XPos = 132425.647;
     YPos = 98.318;
     ZPos = 178434.081;
@@ -96745,11 +96870,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 6243;
+    Index = 6236;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [6237];
-    Objects = [6217];
+    Targets = [6238];
+    Objects = [6212];
     XPos = 135120.921;
     YPos = 98.318;
     ZPos = 180838.956;
@@ -96764,10 +96889,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6245;
+    Index = 6239;
     Name = "StartDecoTraffic2b";
     Desc = "";
-    Targets = [6234,6246];
+    Targets = [6229,6240];
     Objects = [];
     XPos = 136009.360;
     YPos = 107.103;
@@ -96782,10 +96907,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6246;
+    Index = 6240;
     Name = "5s";
     Desc = "";
-    Targets = [6235,6248];
+    Targets = [6230,6242];
     Objects = [];
     XPos = 136002.165;
     YPos = 107.543;
@@ -96800,10 +96925,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6248;
+    Index = 6242;
     Name = "5s";
     Desc = "";
-    Targets = [6237];
+    Targets = [6238];
     Objects = [];
     XPos = 135994.539;
     YPos = 107.802;
@@ -96818,11 +96943,11 @@ Group
 
   MCU_Deactivate
   {
-    Index = 6250;
+    Index = 6244;
     Name = "KillDecoTraffic2b";
     Desc = "";
     Targets = [];
-    Objects = [6217];
+    Objects = [6212];
     XPos = 136029.231;
     YPos = 105.924;
     ZPos = 183294.249;
@@ -96834,10 +96959,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6251;
+    Index = 6245;
     Name = "";
     Desc = "";
-    Targets = [6245];
+    Targets = [6239];
     Objects = [];
     XPos = 136010.911;
     YPos = 106.984;
@@ -96852,10 +96977,10 @@ Group
 
   MCU_TR_MissionBegin
   {
-    Index = 6252;
+    Index = 6246;
     Name = "";
     Desc = "";
-    Targets = [6251];
+    Targets = [6245];
     Objects = [];
     XPos = 136010.142;
     YPos = 107.052;
@@ -96869,10 +96994,10 @@ Group
 
   MCU_Waypoint
   {
-    Index = 6237;
+    Index = 6238;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [6238];
+    Targets = [6231];
     Objects = [];
     XPos = 135733.793;
     YPos = 108.489;
@@ -96893,13 +97018,13 @@ Group
 Group
 {
   Name = "Deco ground traffic 3b";
-  Index = 6254;
+  Index = 6248;
   Desc = "";
   Vehicle
   {
     Name = "Vehicle";
-    Index = 6255;
-    LinkTrId = 6256;
+    Index = 6249;
+    LinkTrId = 6250;
     XPos = 134574.215;
     YPos = 152.455;
     ZPos = 166737.950;
@@ -96927,7 +97052,7 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6256;
+    Index = 6250;
     Name = "Vehicle entity";
     Desc = "";
     Targets = [];
@@ -96939,15 +97064,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6255;
+    MisObjID = 6249;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 6258;
-    LinkTrId = 6259;
+    Index = 6252;
+    LinkTrId = 6253;
     XPos = 134609.782;
     YPos = 153.472;
     ZPos = 166738.696;
@@ -96975,10 +97100,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6259;
+    Index = 6253;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [6256];
+    Targets = [6250];
     Objects = [];
     XPos = 134609.782;
     YPos = 153.672;
@@ -96987,15 +97112,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6258;
+    MisObjID = 6252;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 6261;
-    LinkTrId = 6262;
+    Index = 6255;
+    LinkTrId = 6256;
     XPos = 134640.610;
     YPos = 154.471;
     ZPos = 166736.993;
@@ -97023,10 +97148,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6262;
+    Index = 6256;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [6256];
+    Targets = [6250];
     Objects = [];
     XPos = 134640.610;
     YPos = 154.671;
@@ -97035,15 +97160,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6261;
+    MisObjID = 6255;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 6264;
-    LinkTrId = 6265;
+    Index = 6258;
+    LinkTrId = 6259;
     XPos = 134673.404;
     YPos = 154.675;
     ZPos = 166734.267;
@@ -97071,10 +97196,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6265;
+    Index = 6259;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [6256];
+    Targets = [6250];
     Objects = [];
     XPos = 134673.404;
     YPos = 154.875;
@@ -97083,15 +97208,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6264;
+    MisObjID = 6258;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 6267;
-    LinkTrId = 6268;
+    Index = 6261;
+    LinkTrId = 6262;
     XPos = 134705.953;
     YPos = 154.785;
     ZPos = 166733.532;
@@ -97119,10 +97244,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6268;
+    Index = 6262;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [6256];
+    Targets = [6250];
     Objects = [];
     XPos = 134705.953;
     YPos = 154.985;
@@ -97131,15 +97256,15 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6267;
+    MisObjID = 6261;
   }
   
 
   Vehicle
   {
     Name = "Vehicle";
-    Index = 6270;
-    LinkTrId = 6271;
+    Index = 6264;
+    LinkTrId = 6265;
     XPos = 134743.056;
     YPos = 154.058;
     ZPos = 166731.712;
@@ -97167,10 +97292,10 @@ Group
 
   MCU_TR_Entity
   {
-    Index = 6271;
+    Index = 6265;
     Name = "Vehicle entity";
     Desc = "";
-    Targets = [6256];
+    Targets = [6250];
     Objects = [];
     XPos = 134743.056;
     YPos = 154.258;
@@ -97179,17 +97304,17 @@ Group
     YOri = 0.00;
     ZOri = 0.00;
     Enabled = 0;
-    MisObjID = 6270;
+    MisObjID = 6264;
   }
   
 
   MCU_Activate
   {
-    Index = 6273;
+    Index = 6267;
     Name = "";
     Desc = "";
     Targets = [];
-    Objects = [6256];
+    Objects = [6250];
     XPos = 134573.962;
     YPos = 144.457;
     ZPos = 166756.533;
@@ -97201,11 +97326,11 @@ Group
 
   MCU_CMD_Formation
   {
-    Index = 6274;
+    Index = 6268;
     Name = "OnRoad";
     Desc = "";
     Targets = [];
-    Objects = [6256];
+    Objects = [6250];
     XPos = 134566.664;
     YPos = 144.590;
     ZPos = 166754.488;
@@ -97219,11 +97344,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 6277;
+    Index = 6269;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [6278];
-    Objects = [6256];
+    Targets = [6270];
+    Objects = [6250];
     XPos = 131276.979;
     YPos = 98.318;
     ZPos = 165829.695;
@@ -97238,11 +97363,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 6278;
+    Index = 6270;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [6280];
-    Objects = [6256];
+    Targets = [6272];
+    Objects = [6250];
     XPos = 129483.043;
     YPos = 98.318;
     ZPos = 155440.893;
@@ -97257,11 +97382,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 6280;
+    Index = 6272;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [6282];
-    Objects = [6256];
+    Targets = [6274];
+    Objects = [6250];
     XPos = 132151.741;
     YPos = 98.318;
     ZPos = 155316.941;
@@ -97276,11 +97401,11 @@ Group
 
   MCU_Waypoint
   {
-    Index = 6282;
+    Index = 6274;
     Name = "Trigger Waypoint";
     Desc = "";
     Targets = [6276];
-    Objects = [6256];
+    Objects = [6250];
     XPos = 135993.817;
     YPos = 98.318;
     ZPos = 156938.737;
@@ -97295,10 +97420,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6284;
+    Index = 6277;
     Name = "StartDecoTraffic3b";
     Desc = "";
-    Targets = [6273,6285];
+    Targets = [6267,6278];
     Objects = [];
     XPos = 134568.664;
     YPos = 144.818;
@@ -97313,10 +97438,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6285;
+    Index = 6278;
     Name = "5s";
     Desc = "";
-    Targets = [6274,6287];
+    Targets = [6268,6280];
     Objects = [];
     XPos = 134561.494;
     YPos = 144.777;
@@ -97331,7 +97456,7 @@ Group
 
   MCU_Timer
   {
-    Index = 6287;
+    Index = 6280;
     Name = "5s";
     Desc = "";
     Targets = [6276];
@@ -97349,11 +97474,11 @@ Group
 
   MCU_Deactivate
   {
-    Index = 6289;
+    Index = 6282;
     Name = "KillDecoTraffic3b";
     Desc = "";
     Targets = [];
-    Objects = [6256];
+    Objects = [6250];
     XPos = 134589.380;
     YPos = 145.099;
     ZPos = 166779.901;
@@ -97365,10 +97490,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6290;
+    Index = 6283;
     Name = "";
     Desc = "";
-    Targets = [6284];
+    Targets = [6277];
     Objects = [];
     XPos = 134562.587;
     YPos = 145.115;
@@ -97383,10 +97508,10 @@ Group
 
   MCU_TR_MissionBegin
   {
-    Index = 6291;
+    Index = 6284;
     Name = "";
     Desc = "";
-    Targets = [6290];
+    Targets = [6283];
     Objects = [];
     XPos = 134558.912;
     YPos = 145.221;
@@ -97403,7 +97528,7 @@ Group
     Index = 6276;
     Name = "Trigger Waypoint";
     Desc = "";
-    Targets = [6277];
+    Targets = [6269];
     Objects = [];
     XPos = 133936.159;
     YPos = 108.489;
