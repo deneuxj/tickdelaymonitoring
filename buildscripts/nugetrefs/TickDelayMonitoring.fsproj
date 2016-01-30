@@ -53,7 +53,7 @@
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="Main.fs" />
-    <None Include="Script.fsx" />
+    <None Include="BuildEarlyInvasion.fsx" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
