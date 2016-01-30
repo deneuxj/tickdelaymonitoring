@@ -18,7 +18,7 @@ let instances =
         for i in 1..5 do
             yield UnitPrioApi.Create(sprintf "KillBf110-%d" i, setHighPrio = sprintf "StartBf110-%d" i, setMedPrio = sprintf "LowPrioBf110-%d" i)
         for i in 1..2 do
-            yield UnitPrioApi.Create(sprintf "KillIL-2-%d" i, setHighPrio = sprintf "StartIL-2-%d" i, setMedPrio = sprintf "LowPrioIL-2-%d" i)
+            yield UnitPrioApi.Create(sprintf "KillIL2-%d" i, setHighPrio = sprintf "StartIL2-%d" i, setMedPrio = sprintf "LowPrioIL2-%d" i)
         for i in 1..3 do
             yield UnitPrioApi.Create(sprintf "KillAfAAA-%d" i, setMedPrio = sprintf "StartAfAAA-%d" i, setLowPrio = sprintf "LowPrioAfAAA-%d" i)
             yield UnitPrioApi.Create(sprintf "KillAfAAA-%db" i, setMedPrio = sprintf "StartAfAAA-%d" i, setLowPrio = sprintf "LowPrioAfAAA-%db" i)
