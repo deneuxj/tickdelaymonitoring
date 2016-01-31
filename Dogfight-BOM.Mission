@@ -18670,7 +18670,7 @@ Group
       {
         SetIndex = 0;
         Number = 5;
-        AILevel = 2;
+        AILevel = 4;
         StartInAir = 2;
         Engageable = 1;
         Vulnerable = 1;
@@ -18748,7 +18748,7 @@ Group
       {
         SetIndex = 0;
         Number = 5;
-        AILevel = 2;
+        AILevel = 4;
         StartInAir = 2;
         Engageable = 1;
         Vulnerable = 1;
@@ -18772,7 +18772,7 @@ Group
       {
         SetIndex = 0;
         Number = 5;
-        AILevel = 2;
+        AILevel = 4;
         StartInAir = 2;
         Engageable = 1;
         Vulnerable = 1;
