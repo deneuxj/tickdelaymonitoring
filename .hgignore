@@ -1,18 +1,4 @@
 syntax: glob
-aieverywhere.ger
-aieverywhere.list
-aieverywhere.msnbin
-aieverywhere.pol
-aieverywhere.rus
-aieverywhere.spa
-buildscripts/packages/
-KalachNightAttack.Mission
-KalachNightAttack.eng
-KalachNightAttack.fra
-KalachNightAttack.ger
-KalachNightAttack.pol
-KalachNightAttack.rus
-KalachNightAttack.spa
 My.Group
 My.eng
 My.fra
@@ -20,6 +6,21 @@ My.ger
 My.pol
 My.rus
 My.spa
+projects/packages/
+*-out.*
+EarlyInvasion/EarlyInvasion-in.fra
+EarlyInvasion/EarlyInvasion-in.ger
+EarlyInvasion/EarlyInvasion-in.list
+EarlyInvasion/EarlyInvasion-in.msnbin
+EarlyInvasion/EarlyInvasion-in.pol
+EarlyInvasion/EarlyInvasion-in.rus
+EarlyInvasion/EarlyInvasion-in.spa
+NightAttackOnKalach/NightAttackOnKalach-in.ger
+NightAttackOnKalach/NightAttackOnKalach-in.list
+NightAttackOnKalach/NightAttackOnKalach-in.msnbin
+NightAttackOnKalach/NightAttackOnKalach-in.pol
+NightAttackOnKalach/NightAttackOnKalach-in.rus
+NightAttackOnKalach/NightAttackOnKalach-in.spa
 syntax: regexp
 /bin/
 /obj/
