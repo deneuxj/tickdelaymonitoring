@@ -24,6 +24,6 @@ let instances =
             yield UnitPrioApi.Create(sprintf "KillAfAAA-%db" i, setMedPrio = sprintf "StartAfAAA-%d" i, setLowPrio = sprintf "LowPrioAfAAA-%db" i)
     ]
 
-let filename = __SOURCE_DIRECTORY__ + "/../../EarlyInvasion-in.Mission"
+let filename = __SOURCE_DIRECTORY__ + "/../../EarlyInvasion/EarlyInvasion-in.Mission"
 let outputFilename = __SOURCE_DIRECTORY__ + "/../../EarlyInvasion-out.Mission"
 build(filename, outputFilename, "eng", [], instances, "ReqKill")

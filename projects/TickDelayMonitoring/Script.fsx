@@ -33,6 +33,6 @@ let instances =
         yield UnitPrioApi.Create("EvacKill", setNoPrio = "EvacStopped", setLowPrio = "EvacStarted")
     ]
 
-let filename = __SOURCE_DIRECTORY__ + "/../../NightAttackOnKalach-in.Mission"
+let filename = __SOURCE_DIRECTORY__ + "/../../NightAttackOnKalach/NightAttackOnKalach-in.Mission"
 let outputFilename = __SOURCE_DIRECTORY__ + "/../../NightAttackOnKalach-out.Mission"
 build(filename, outputFilename, "eng", ["fra"], instances, "ReqKill")
