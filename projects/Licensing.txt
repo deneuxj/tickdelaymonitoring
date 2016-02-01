@@ -1,0 +1,8 @@
+The F# code under projects/InjectPrio, projects/InjectPrio.Cli and
+projects/TickDelayMonitoring is licensed under the GNU GPL. See glp.txt.
+
+The software under project/packages is licensed under the terms provided by
+their respective authors.
+
+Missions are provided under the Creative Commons Attribution 4.0 International license.
+See http://creativecommons.org/licenses/by/4.0/
