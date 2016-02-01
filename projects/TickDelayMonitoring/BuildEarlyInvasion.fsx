@@ -25,5 +25,5 @@ let instances =
     ]
 
 let filename = __SOURCE_DIRECTORY__ + "/../../EarlyInvasion-in.Mission"
-let outputFilename = __SOURCE_DIRECTORY__ + "/../../EarlyInvasion.Mission"
+let outputFilename = __SOURCE_DIRECTORY__ + "/../../EarlyInvasion-out.Mission"
 build(filename, outputFilename, "eng", [], instances, "ReqKill")
