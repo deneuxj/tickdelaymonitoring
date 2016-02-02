@@ -6643,9 +6643,9 @@ Group
     MCU_Timer
     {
       Index = 508;
-      Name = "5min";
+      Name = "15min";
       Desc = "";
-      Targets = [];
+      Targets = [3545];
       Objects = [];
       XPos = 119768.042;
       YPos = 115.345;
@@ -6653,7 +6653,7 @@ Group
       XOri = 0.00;
       YOri = 0.00;
       ZOri = 0.00;
-      Time = 300;
+      Time = 900;
       Random = 100;
     }
     
@@ -6661,9 +6661,9 @@ Group
     MCU_Timer
     {
       Index = 509;
-      Name = "5min";
+      Name = "30min";
       Desc = "";
-      Targets = [508];
+      Targets = [508,3474];
       Objects = [];
       XPos = 119676.324;
       YPos = 115.345;
@@ -6671,7 +6671,7 @@ Group
       XOri = 0.00;
       YOri = 0.00;
       ZOri = 0.00;
-      Time = 300;
+      Time = 1800;
       Random = 100;
     }
     
@@ -6806,6 +6806,19 @@ Group
       ZOri = 0.00;
       Enabled = 0;
       MisObjID = 515;
+      OnEvents
+      {
+        OnEvent
+        {
+          Type = 13;
+          TarId = 3311;
+        }
+        OnEvent
+        {
+          Type = 7;
+          TarId = 3311;
+        }
+      }
     }
     
 
@@ -6860,6 +6873,19 @@ Group
       ZOri = 0.00;
       Enabled = 0;
       MisObjID = 519;
+      OnEvents
+      {
+        OnEvent
+        {
+          Type = 13;
+          TarId = 3310;
+        }
+        OnEvent
+        {
+          Type = 7;
+          TarId = 3310;
+        }
+      }
     }
     
 
@@ -7043,6 +7069,78 @@ Group
     }
     
 
+    MCU_Counter
+    {
+      Index = 3308;
+      Name = "Both done";
+      Desc = "";
+      Targets = [3309];
+      Objects = [];
+      XPos = 94984.085;
+      YPos = 81.650;
+      ZPos = 69424.055;
+      XOri = 0.00;
+      YOri = 131.60;
+      ZOri = 0.00;
+      Counter = 2;
+      Dropcount = 0;
+    }
+    
+
+    MCU_Counter
+    {
+      Index = 3310;
+      Name = "1x";
+      Desc = "";
+      Targets = [3308];
+      Objects = [];
+      XPos = 95017.913;
+      YPos = 81.650;
+      ZPos = 69432.353;
+      XOri = 0.00;
+      YOri = 131.60;
+      ZOri = 0.00;
+      Counter = 1;
+      Dropcount = 0;
+    }
+    
+
+    MCU_Counter
+    {
+      Index = 3311;
+      Name = "1x";
+      Desc = "";
+      Targets = [3308];
+      Objects = [];
+      XPos = 95006.640;
+      YPos = 81.650;
+      ZPos = 69385.340;
+      XOri = 0.00;
+      YOri = 131.60;
+      ZOri = 0.00;
+      Counter = 1;
+      Dropcount = 0;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3309;
+      Name = "StartNextPatrol";
+      Desc = "";
+      Targets = [3227];
+      Objects = [];
+      XPos = 94964.813;
+      YPos = 81.650;
+      ZPos = 69425.631;
+      XOri = 0.00;
+      YOri = 131.60;
+      ZOri = 0.00;
+      Time = 900;
+      Random = 100;
+    }
+    
+
   }
   
 
@@ -7102,6 +7200,19 @@ Group
       ZOri = 0.00;
       Enabled = 0;
       MisObjID = 537;
+      OnEvents
+      {
+        OnEvent
+        {
+          Type = 13;
+          TarId = 3305;
+        }
+        OnEvent
+        {
+          Type = 7;
+          TarId = 3305;
+        }
+      }
     }
     
 
@@ -7156,6 +7267,19 @@ Group
       ZOri = 0.00;
       Enabled = 0;
       MisObjID = 541;
+      OnEvents
+      {
+        OnEvent
+        {
+          Type = 13;
+          TarId = 3306;
+        }
+        OnEvent
+        {
+          Type = 7;
+          TarId = 3306;
+        }
+      }
     }
     
 
@@ -7339,6 +7463,78 @@ Group
     }
     
 
+    MCU_Counter
+    {
+      Index = 3303;
+      Name = "Both done";
+      Desc = "";
+      Targets = [3304];
+      Objects = [];
+      XPos = 103126.152;
+      YPos = 81.650;
+      ZPos = 66884.065;
+      XOri = 0.00;
+      YOri = 24.88;
+      ZOri = 0.00;
+      Counter = 2;
+      Dropcount = 0;
+    }
+    
+
+    MCU_Counter
+    {
+      Index = 3305;
+      Name = "1x";
+      Desc = "";
+      Targets = [3303];
+      Objects = [];
+      XPos = 103124.364;
+      YPos = 81.650;
+      ZPos = 66849.280;
+      XOri = 0.00;
+      YOri = 24.88;
+      ZOri = 0.00;
+      Counter = 1;
+      Dropcount = 0;
+    }
+    
+
+    MCU_Counter
+    {
+      Index = 3306;
+      Name = "1x";
+      Desc = "";
+      Targets = [3303];
+      Objects = [];
+      XPos = 103082.584;
+      YPos = 81.650;
+      ZPos = 66873.605;
+      XOri = 0.00;
+      YOri = 24.88;
+      ZOri = 0.00;
+      Counter = 1;
+      Dropcount = 0;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3304;
+      Name = "StartNextPatrol";
+      Desc = "";
+      Targets = [3249];
+      Objects = [];
+      XPos = 103133.208;
+      YPos = 81.650;
+      ZPos = 66902.068;
+      XOri = 0.00;
+      YOri = 24.88;
+      ZOri = 0.00;
+      Time = 900;
+      Random = 100;
+    }
+    
+
   }
   
 
@@ -7398,6 +7594,19 @@ Group
       ZOri = 0.00;
       Enabled = 0;
       MisObjID = 559;
+      OnEvents
+      {
+        OnEvent
+        {
+          Type = 13;
+          TarId = 3284;
+        }
+        OnEvent
+        {
+          Type = 7;
+          TarId = 3284;
+        }
+      }
     }
     
 
@@ -7452,6 +7661,19 @@ Group
       ZOri = 0.00;
       Enabled = 0;
       MisObjID = 563;
+      OnEvents
+      {
+        OnEvent
+        {
+          Type = 13;
+          TarId = 3285;
+        }
+        OnEvent
+        {
+          Type = 7;
+          TarId = 3285;
+        }
+      }
     }
     
 
@@ -7635,6 +7857,78 @@ Group
     }
     
 
+    MCU_Counter
+    {
+      Index = 3283;
+      Name = "Both done";
+      Desc = "";
+      Targets = [3286];
+      Objects = [];
+      XPos = 96470.249;
+      YPos = 81.650;
+      ZPos = 54777.752;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Counter = 2;
+      Dropcount = 0;
+    }
+    
+
+    MCU_Counter
+    {
+      Index = 3284;
+      Name = "1x";
+      Desc = "";
+      Targets = [3283];
+      Objects = [];
+      XPos = 96453.991;
+      YPos = 81.650;
+      ZPos = 54746.948;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Counter = 1;
+      Dropcount = 0;
+    }
+    
+
+    MCU_Counter
+    {
+      Index = 3285;
+      Name = "1x";
+      Desc = "";
+      Targets = [3283];
+      Objects = [];
+      XPos = 96426.324;
+      YPos = 81.650;
+      ZPos = 54786.594;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Counter = 1;
+      Dropcount = 0;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3286;
+      Name = "StartNextPatrol";
+      Desc = "";
+      Targets = [3271];
+      Objects = [];
+      XPos = 96484.225;
+      YPos = 81.650;
+      ZPos = 54791.115;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 900;
+      Random = 100;
+    }
+    
+
   }
   
 
@@ -7694,6 +7988,19 @@ Group
       ZOri = 0.00;
       Enabled = 0;
       MisObjID = 581;
+      OnEvents
+      {
+        OnEvent
+        {
+          Type = 13;
+          TarId = 3300;
+        }
+        OnEvent
+        {
+          Type = 7;
+          TarId = 3300;
+        }
+      }
     }
     
 
@@ -7748,6 +8055,19 @@ Group
       ZOri = 0.00;
       Enabled = 0;
       MisObjID = 585;
+      OnEvents
+      {
+        OnEvent
+        {
+          Type = 13;
+          TarId = 3301;
+        }
+        OnEvent
+        {
+          Type = 7;
+          TarId = 3301;
+        }
+      }
     }
     
 
@@ -7928,6 +8248,78 @@ Group
       AttackArea = 10000;
       Time = 7200;
       Priority = 0;
+    }
+    
+
+    MCU_Counter
+    {
+      Index = 3298;
+      Name = "Both done";
+      Desc = "";
+      Targets = [3299];
+      Objects = [];
+      XPos = 97686.048;
+      YPos = 81.650;
+      ZPos = 90514.995;
+      XOri = 0.00;
+      YOri = 296.89;
+      ZOri = 0.00;
+      Counter = 2;
+      Dropcount = 0;
+    }
+    
+
+    MCU_Counter
+    {
+      Index = 3300;
+      Name = "1x";
+      Desc = "";
+      Targets = [3298];
+      Objects = [];
+      XPos = 97656.641;
+      YPos = 81.650;
+      ZPos = 90518.426;
+      XOri = 0.00;
+      YOri = 296.89;
+      ZOri = 0.00;
+      Counter = 1;
+      Dropcount = 0;
+    }
+    
+
+    MCU_Counter
+    {
+      Index = 3301;
+      Name = "1x";
+      Desc = "";
+      Targets = [3298];
+      Objects = [];
+      XPos = 97674.080;
+      YPos = 81.650;
+      ZPos = 90558.174;
+      XOri = 0.00;
+      YOri = 296.89;
+      ZOri = 0.00;
+      Counter = 1;
+      Dropcount = 0;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3299;
+      Name = "StartNextPatrol";
+      Desc = "";
+      Targets = [3325];
+      Objects = [];
+      XPos = 97704.285;
+      YPos = 81.650;
+      ZPos = 90508.569;
+      XOri = 0.00;
+      YOri = 296.89;
+      ZOri = 0.00;
+      Time = 900;
+      Random = 100;
     }
     
 
@@ -9174,6 +9566,19 @@ Group
       ZOri = 0.00;
       Enabled = 0;
       MisObjID = 682;
+      OnEvents
+      {
+        OnEvent
+        {
+          Type = 13;
+          TarId = 3295;
+        }
+        OnEvent
+        {
+          Type = 7;
+          TarId = 3295;
+        }
+      }
     }
     
 
@@ -9228,6 +9633,19 @@ Group
       ZOri = 0.00;
       Enabled = 0;
       MisObjID = 686;
+      OnEvents
+      {
+        OnEvent
+        {
+          Type = 13;
+          TarId = 3296;
+        }
+        OnEvent
+        {
+          Type = 7;
+          TarId = 3296;
+        }
+      }
     }
     
 
@@ -9411,6 +9829,78 @@ Group
     }
     
 
+    MCU_Counter
+    {
+      Index = 3293;
+      Name = "Both done";
+      Desc = "";
+      Targets = [3294];
+      Objects = [];
+      XPos = 113088.960;
+      YPos = 81.650;
+      ZPos = 94358.087;
+      XOri = 0.00;
+      YOri = 334.34;
+      ZOri = 0.00;
+      Counter = 2;
+      Dropcount = 0;
+    }
+    
+
+    MCU_Counter
+    {
+      Index = 3295;
+      Name = "1x";
+      Desc = "";
+      Targets = [3293];
+      Objects = [];
+      XPos = 113060.963;
+      YPos = 81.650;
+      ZPos = 94337.365;
+      XOri = 0.00;
+      YOri = 334.34;
+      ZOri = 0.00;
+      Counter = 1;
+      Dropcount = 0;
+    }
+    
+
+    MCU_Counter
+    {
+      Index = 3296;
+      Name = "1x";
+      Desc = "";
+      Targets = [3293];
+      Objects = [];
+      XPos = 113053.200;
+      YPos = 81.650;
+      ZPos = 94385.083;
+      XOri = 0.00;
+      YOri = 334.34;
+      ZOri = 0.00;
+      Counter = 1;
+      Dropcount = 0;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3294;
+      Name = "StartNextPatrol";
+      Desc = "";
+      Targets = [3354];
+      Objects = [];
+      XPos = 113107.345;
+      YPos = 81.650;
+      ZPos = 94364.077;
+      XOri = 0.00;
+      YOri = 334.34;
+      ZOri = 0.00;
+      Time = 900;
+      Random = 100;
+    }
+    
+
   }
   
 
@@ -9470,6 +9960,19 @@ Group
       ZOri = 0.00;
       Enabled = 0;
       MisObjID = 704;
+      OnEvents
+      {
+        OnEvent
+        {
+          Type = 13;
+          TarId = 3415;
+        }
+        OnEvent
+        {
+          Type = 7;
+          TarId = 3415;
+        }
+      }
     }
     
 
@@ -9524,6 +10027,19 @@ Group
       ZOri = 0.00;
       Enabled = 0;
       MisObjID = 708;
+      OnEvents
+      {
+        OnEvent
+        {
+          Type = 13;
+          TarId = 3417;
+        }
+        OnEvent
+        {
+          Type = 7;
+          TarId = 3417;
+        }
+      }
     }
     
 
@@ -9704,6 +10220,78 @@ Group
       AttackArea = 10000;
       Time = 7200;
       Priority = 0;
+    }
+    
+
+    MCU_Counter
+    {
+      Index = 3415;
+      Name = "1x";
+      Desc = "";
+      Targets = [3416];
+      Objects = [];
+      XPos = 104432.918;
+      YPos = 81.650;
+      ZPos = 85389.472;
+      XOri = 0.00;
+      YOri = 18.27;
+      ZOri = 0.00;
+      Counter = 1;
+      Dropcount = 0;
+    }
+    
+
+    MCU_Counter
+    {
+      Index = 3417;
+      Name = "1x";
+      Desc = "";
+      Targets = [3416];
+      Objects = [];
+      XPos = 104394.210;
+      YPos = 81.650;
+      ZPos = 85418.436;
+      XOri = 0.00;
+      YOri = 18.27;
+      ZOri = 0.00;
+      Counter = 1;
+      Dropcount = 0;
+    }
+    
+
+    MCU_Counter
+    {
+      Index = 3416;
+      Name = "Both done";
+      Desc = "";
+      Targets = [3419];
+      Objects = [];
+      XPos = 104438.691;
+      YPos = 81.650;
+      ZPos = 85423.822;
+      XOri = 0.00;
+      YOri = 18.27;
+      ZOri = 0.00;
+      Counter = 2;
+      Dropcount = 0;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3419;
+      Name = "StartNextPatrol";
+      Desc = "";
+      Targets = [3381];
+      Objects = [];
+      XPos = 104447.768;
+      YPos = 81.650;
+      ZPos = 85440.895;
+      XOri = 0.00;
+      YOri = 18.27;
+      ZOri = 0.00;
+      Time = 900;
+      Random = 100;
     }
     
 
@@ -10031,6 +10619,3630 @@ Group
       ZOri = 0.00;
       Time = 900;
       Random = 100;
+    }
+    
+
+  }
+  
+
+  Group
+  {
+    Name = "German patrol 4";
+    Index = 3217;
+    Desc = "";
+    Plane
+    {
+      Name = "Patrol 4";
+      Index = 3218;
+      LinkTrId = 3219;
+      XPos = 94962.591;
+      YPos = 2500.000;
+      ZPos = 69438.098;
+      XOri = 3.56;
+      YOri = 0.00;
+      ZOri = 12.50;
+      Script = "LuaScripts\WorldObjects\Planes\bf109e7.txt";
+      Model = "graphics\planes\bf109e7\bf109e7.mgm";
+      Country = 201;
+      Desc = "";
+      Skin = "";
+      AILevel = 2;
+      CoopStart = 0;
+      NumberInFormation = 1;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      StartInAir = 0;
+      Callsign = 0;
+      Callnum = 0;
+      Time = 60;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      PayloadId = 0;
+      WMMask = 1;
+      AiRTBDecision = 0;
+      DeleteAfterDeath = 1;
+      Fuel = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3219;
+      Name = "Plane entity";
+      Desc = "";
+      Targets = [3221];
+      Objects = [];
+      XPos = 94962.591;
+      YPos = 2500.200;
+      ZPos = 69438.098;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3218;
+    }
+    
+
+    Plane
+    {
+      Name = "Patrol 4";
+      Index = 3222;
+      LinkTrId = 3221;
+      XPos = 94984.779;
+      YPos = 2500.000;
+      ZPos = 69489.211;
+      XOri = 3.56;
+      YOri = 0.00;
+      ZOri = 12.50;
+      Script = "LuaScripts\WorldObjects\Planes\bf109e7.txt";
+      Model = "graphics\planes\bf109e7\bf109e7.mgm";
+      Country = 201;
+      Desc = "";
+      Skin = "";
+      AILevel = 4;
+      CoopStart = 0;
+      NumberInFormation = 0;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      StartInAir = 0;
+      Callsign = 0;
+      Callnum = 0;
+      Time = 60;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      PayloadId = 0;
+      WMMask = 1;
+      AiRTBDecision = 0;
+      DeleteAfterDeath = 1;
+      Fuel = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3221;
+      Name = "Plane entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 94984.779;
+      YPos = 2500.200;
+      ZPos = 69489.211;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3222;
+    }
+    
+
+    MCU_Deactivate
+    {
+      Index = 3224;
+      Name = "";
+      Desc = "";
+      Targets = [];
+      Objects = [3221];
+      XPos = 94963.780;
+      YPos = 141.885;
+      ZPos = 69545.078;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Activate
+    {
+      Index = 3225;
+      Name = "";
+      Desc = "";
+      Targets = [];
+      Objects = [3221];
+      XPos = 94980.984;
+      YPos = 141.632;
+      ZPos = 69545.552;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3226;
+      Name = "KillBf109-4";
+      Desc = "";
+      Targets = [3224];
+      Objects = [];
+      XPos = 94962.350;
+      YPos = 143.995;
+      ZPos = 69573.364;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3227;
+      Name = "StartBf109-4";
+      Desc = "";
+      Targets = [3225,3228,3229];
+      Objects = [];
+      XPos = 94979.415;
+      YPos = 143.054;
+      ZPos = 69573.239;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3228;
+      Name = "5s";
+      Desc = "";
+      Targets = [3231,3232];
+      Objects = [];
+      XPos = 94992.195;
+      YPos = 143.054;
+      ZPos = 69574.014;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 5;
+      Random = 100;
+    }
+    
+
+    MCU_Proximity
+    {
+      Index = 3231;
+      Name = "HiPrioBf109-4";
+      Desc = "";
+      Targets = [3229];
+      Objects = [3221];
+      XPos = 95018.458;
+      YPos = 144.025;
+      ZPos = 69468.727;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Distance = 700;
+      Closer = 1;
+      PlaneCoalitions = [1];
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3229;
+      Name = "MedPrioBf109-4";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 95047.940;
+      YPos = 143.771;
+      ZPos = 69467.202;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 300;
+      Random = 100;
+    }
+    
+
+    MCU_CMD_AttackArea
+    {
+      Index = 3232;
+      Name = "";
+      Desc = "";
+      Targets = [];
+      Objects = [3221];
+      XPos = 95084.215;
+      YPos = 2500.000;
+      ZPos = 69625.166;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      AttackGround = 0;
+      AttackAir = 1;
+      AttackGTargets = 0;
+      AttackArea = 10000;
+      Time = 7200;
+      Priority = 0;
+    }
+    
+
+  }
+  
+
+  Group
+  {
+    Name = "German patrol 5";
+    Index = 3239;
+    Desc = "";
+    Plane
+    {
+      Name = "Patrol 5";
+      Index = 3240;
+      LinkTrId = 3241;
+      XPos = 103015.934;
+      YPos = 2500.000;
+      ZPos = 66886.761;
+      XOri = 3.56;
+      YOri = 90.96;
+      ZOri = 12.50;
+      Script = "LuaScripts\WorldObjects\Planes\bf109e7.txt";
+      Model = "graphics\planes\bf109e7\bf109e7.mgm";
+      Country = 201;
+      Desc = "";
+      Skin = "";
+      AILevel = 4;
+      CoopStart = 0;
+      NumberInFormation = 1;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      StartInAir = 0;
+      Callsign = 0;
+      Callnum = 0;
+      Time = 60;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      PayloadId = 0;
+      WMMask = 1;
+      AiRTBDecision = 0;
+      DeleteAfterDeath = 1;
+      Fuel = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3241;
+      Name = "Plane entity";
+      Desc = "";
+      Targets = [3243];
+      Objects = [];
+      XPos = 103015.934;
+      YPos = 2500.200;
+      ZPos = 66886.761;
+      XOri = 0.00;
+      YOri = 90.96;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3240;
+    }
+    
+
+    Plane
+    {
+      Name = "Patrol 5";
+      Index = 3244;
+      LinkTrId = 3243;
+      XPos = 102964.464;
+      YPos = 2500.000;
+      ZPos = 66908.108;
+      XOri = 3.56;
+      YOri = 90.96;
+      ZOri = 12.50;
+      Script = "LuaScripts\WorldObjects\Planes\bf109e7.txt";
+      Model = "graphics\planes\bf109e7\bf109e7.mgm";
+      Country = 201;
+      Desc = "";
+      Skin = "";
+      AILevel = 4;
+      CoopStart = 0;
+      NumberInFormation = 0;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      StartInAir = 0;
+      Callsign = 0;
+      Callnum = 0;
+      Time = 60;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      PayloadId = 0;
+      WMMask = 1;
+      AiRTBDecision = 0;
+      DeleteAfterDeath = 1;
+      Fuel = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3243;
+      Name = "Plane entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 102964.464;
+      YPos = 2500.200;
+      ZPos = 66908.108;
+      XOri = 0.00;
+      YOri = 90.96;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3244;
+    }
+    
+
+    MCU_Deactivate
+    {
+      Index = 3246;
+      Name = "";
+      Desc = "";
+      Targets = [];
+      Objects = [3243];
+      XPos = 102908.949;
+      YPos = 141.885;
+      ZPos = 66886.198;
+      XOri = 0.00;
+      YOri = 90.96;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Activate
+    {
+      Index = 3247;
+      Name = "";
+      Desc = "";
+      Targets = [];
+      Objects = [3243];
+      XPos = 102908.194;
+      YPos = 141.632;
+      ZPos = 66903.392;
+      XOri = 0.00;
+      YOri = 90.96;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3248;
+      Name = "KillBf109-5";
+      Desc = "";
+      Targets = [3246];
+      Objects = [];
+      XPos = 102880.690;
+      YPos = 143.995;
+      ZPos = 66884.306;
+      XOri = 0.00;
+      YOri = 90.96;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3249;
+      Name = "StartBf109-5";
+      Desc = "";
+      Targets = [3247,3250,3251];
+      Objects = [];
+      XPos = 102880.536;
+      YPos = 143.054;
+      ZPos = 66901.371;
+      XOri = 0.00;
+      YOri = 90.96;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3250;
+      Name = "5s";
+      Desc = "";
+      Targets = [3253,3254];
+      Objects = [];
+      XPos = 102879.552;
+      YPos = 143.054;
+      ZPos = 66914.137;
+      XOri = 0.00;
+      YOri = 90.96;
+      ZOri = 0.00;
+      Time = 5;
+      Random = 100;
+    }
+    
+
+    MCU_Proximity
+    {
+      Index = 3253;
+      Name = "HiPrioBf109-5";
+      Desc = "";
+      Targets = [3251];
+      Objects = [3241];
+      XPos = 103063.248;
+      YPos = 144.025;
+      ZPos = 66855.872;
+      XOri = 0.00;
+      YOri = 2.14;
+      ZOri = 0.00;
+      Distance = 700;
+      Closer = 1;
+      PlaneCoalitions = [1];
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3251;
+      Name = "MedPrioBf109-5";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 103092.766;
+      YPos = 143.771;
+      ZPos = 66855.441;
+      XOri = 0.00;
+      YOri = 2.14;
+      ZOri = 0.00;
+      Time = 300;
+      Random = 100;
+    }
+    
+
+    MCU_CMD_AttackArea
+    {
+      Index = 3254;
+      Name = "";
+      Desc = "";
+      Targets = [];
+      Objects = [3243];
+      XPos = 102946.246;
+      YPos = 2500.000;
+      ZPos = 66975.872;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      AttackGround = 0;
+      AttackAir = 1;
+      AttackGTargets = 0;
+      AttackArea = 10000;
+      Time = 7200;
+      Priority = 0;
+    }
+    
+
+  }
+  
+
+  Group
+  {
+    Name = "German patrol 6";
+    Index = 3261;
+    Desc = "";
+    Plane
+    {
+      Name = "Patrol 6";
+      Index = 3262;
+      LinkTrId = 3263;
+      XPos = 96158.455;
+      YPos = 2500.000;
+      ZPos = 54939.738;
+      XOri = 3.56;
+      YOri = 52.20;
+      ZOri = 12.50;
+      Script = "LuaScripts\WorldObjects\Planes\bf109e7.txt";
+      Model = "graphics\planes\bf109e7\bf109e7.mgm";
+      Country = 201;
+      Desc = "";
+      Skin = "";
+      AILevel = 4;
+      CoopStart = 0;
+      NumberInFormation = 1;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      StartInAir = 0;
+      Callsign = 0;
+      Callnum = 0;
+      Time = 60;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      PayloadId = 0;
+      WMMask = 1;
+      AiRTBDecision = 0;
+      DeleteAfterDeath = 1;
+      Fuel = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3263;
+      Name = "Plane entity";
+      Desc = "";
+      Targets = [3265];
+      Objects = [];
+      XPos = 96158.455;
+      YPos = 2500.200;
+      ZPos = 54939.738;
+      XOri = 0.00;
+      YOri = 52.20;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3262;
+    }
+    
+
+    Plane
+    {
+      Name = "Patrol 6";
+      Index = 3266;
+      LinkTrId = 3265;
+      XPos = 96131.692;
+      YPos = 2500.000;
+      ZPos = 54988.613;
+      XOri = 3.56;
+      YOri = 52.20;
+      ZOri = 12.50;
+      Script = "LuaScripts\WorldObjects\Planes\bf109e7.txt";
+      Model = "graphics\planes\bf109e7\bf109e7.mgm";
+      Country = 201;
+      Desc = "";
+      Skin = "";
+      AILevel = 4;
+      CoopStart = 0;
+      NumberInFormation = 0;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      StartInAir = 0;
+      Callsign = 0;
+      Callnum = 0;
+      Time = 60;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      PayloadId = 0;
+      WMMask = 1;
+      AiRTBDecision = 0;
+      DeleteAfterDeath = 1;
+      Fuel = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3265;
+      Name = "Plane entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 96131.692;
+      YPos = 2500.200;
+      ZPos = 54988.613;
+      XOri = 0.00;
+      YOri = 52.20;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3266;
+    }
+    
+
+    MCU_Deactivate
+    {
+      Index = 3268;
+      Name = "";
+      Desc = "";
+      Targets = [];
+      Objects = [3265];
+      XPos = 96074.689;
+      YPos = 141.885;
+      ZPos = 55006.293;
+      XOri = 0.00;
+      YOri = 52.20;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Activate
+    {
+      Index = 3269;
+      Name = "";
+      Desc = "";
+      Targets = [];
+      Objects = [3265];
+      XPos = 96084.867;
+      YPos = 141.632;
+      ZPos = 55020.171;
+      XOri = 0.00;
+      YOri = 52.20;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3270;
+      Name = "KillBf109-6";
+      Desc = "";
+      Targets = [3268];
+      Objects = [];
+      XPos = 96051.471;
+      YPos = 143.995;
+      ZPos = 55022.512;
+      XOri = 0.00;
+      YOri = 52.20;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3271;
+      Name = "StartBf109-6";
+      Desc = "";
+      Targets = [3269,3272,3273];
+      Objects = [];
+      XPos = 96062.037;
+      YPos = 143.054;
+      ZPos = 55035.914;
+      XOri = 0.00;
+      YOri = 52.20;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3272;
+      Name = "5s";
+      Desc = "";
+      Targets = [3275,3276];
+      Objects = [];
+      XPos = 96069.264;
+      YPos = 143.054;
+      ZPos = 55046.484;
+      XOri = 0.00;
+      YOri = 52.20;
+      ZOri = 0.00;
+      Time = 5;
+      Random = 100;
+    }
+    
+
+    MCU_Proximity
+    {
+      Index = 3275;
+      Name = "HiPrioBf109-6";
+      Desc = "";
+      Targets = [3273];
+      Objects = [3265];
+      XPos = 96107.185;
+      YPos = 144.025;
+      ZPos = 54963.013;
+      XOri = 0.00;
+      YOri = 242.03;
+      ZOri = 0.00;
+      Distance = 700;
+      Closer = 1;
+      PlaneCoalitions = [1];
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3273;
+      Name = "MedPrioBf109-6";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 96092.015;
+      YPos = 143.771;
+      ZPos = 54937.687;
+      XOri = 0.00;
+      YOri = 242.03;
+      ZOri = 0.00;
+      Time = 300;
+      Random = 100;
+    }
+    
+
+    MCU_CMD_AttackArea
+    {
+      Index = 3276;
+      Name = "";
+      Desc = "";
+      Targets = [];
+      Objects = [3265];
+      XPos = 96151.348;
+      YPos = 2500.000;
+      ZPos = 55021.996;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      AttackGround = 0;
+      AttackAir = 1;
+      AttackGTargets = 0;
+      AttackArea = 10000;
+      Time = 7200;
+      Priority = 0;
+    }
+    
+
+  }
+  
+
+  Group
+  {
+    Name = "Russian patrol 4";
+    Index = 3313;
+    Desc = "";
+    Plane
+    {
+      Name = "Patrol 1";
+      Index = 3314;
+      LinkTrId = 3315;
+      XPos = 97597.736;
+      YPos = 2500.000;
+      ZPos = 90538.036;
+      XOri = 3.56;
+      YOri = 0.00;
+      ZOri = 12.50;
+      Script = "LuaScripts\WorldObjects\Planes\mig3s24.txt";
+      Model = "graphics\planes\mig3s24\mig3s24.mgm";
+      Country = 101;
+      Desc = "";
+      Skin = "";
+      AILevel = 4;
+      CoopStart = 0;
+      NumberInFormation = 1;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      StartInAir = 0;
+      Callsign = 0;
+      Callnum = 0;
+      Time = 60;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      PayloadId = 0;
+      WMMask = 1;
+      AiRTBDecision = 0;
+      DeleteAfterDeath = 1;
+      Fuel = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3315;
+      Name = "Plane entity";
+      Desc = "";
+      Targets = [3317];
+      Objects = [];
+      XPos = 97597.736;
+      YPos = 2500.200;
+      ZPos = 90538.036;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3314;
+      OnEvents
+      {
+        OnEvent
+        {
+          Type = 13;
+          TarId = 3318;
+        }
+        OnEvent
+        {
+          Type = 7;
+          TarId = 3318;
+        }
+      }
+    }
+    
+
+    Plane
+    {
+      Name = "Patrol 1";
+      Index = 3319;
+      LinkTrId = 3317;
+      XPos = 97619.923;
+      YPos = 2500.000;
+      ZPos = 90589.150;
+      XOri = 3.56;
+      YOri = 0.00;
+      ZOri = 12.50;
+      Script = "LuaScripts\WorldObjects\Planes\mig3s24.txt";
+      Model = "graphics\planes\mig3s24\mig3s24.mgm";
+      Country = 101;
+      Desc = "";
+      Skin = "";
+      AILevel = 4;
+      CoopStart = 0;
+      NumberInFormation = 0;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      StartInAir = 0;
+      Callsign = 0;
+      Callnum = 0;
+      Time = 60;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      PayloadId = 0;
+      WMMask = 1;
+      AiRTBDecision = 0;
+      DeleteAfterDeath = 1;
+      Fuel = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3317;
+      Name = "Plane entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 97619.923;
+      YPos = 2500.200;
+      ZPos = 90589.150;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3319;
+      OnEvents
+      {
+        OnEvent
+        {
+          Type = 13;
+          TarId = 3321;
+        }
+        OnEvent
+        {
+          Type = 7;
+          TarId = 3321;
+        }
+      }
+    }
+    
+
+    MCU_Deactivate
+    {
+      Index = 3322;
+      Name = "";
+      Desc = "";
+      Targets = [];
+      Objects = [3317];
+      XPos = 97598.924;
+      YPos = 141.885;
+      ZPos = 90645.016;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Activate
+    {
+      Index = 3323;
+      Name = "";
+      Desc = "";
+      Targets = [];
+      Objects = [3317];
+      XPos = 97616.128;
+      YPos = 141.632;
+      ZPos = 90645.490;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3324;
+      Name = "KillLagg3-4";
+      Desc = "";
+      Targets = [3322];
+      Objects = [];
+      XPos = 97597.494;
+      YPos = 143.995;
+      ZPos = 90673.302;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3325;
+      Name = "StartLagg3-4";
+      Desc = "";
+      Targets = [3323,3326,3327];
+      Objects = [];
+      XPos = 97614.559;
+      YPos = 143.054;
+      ZPos = 90673.177;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3326;
+      Name = "5s";
+      Desc = "";
+      Targets = [3329,3330];
+      Objects = [];
+      XPos = 97627.340;
+      YPos = 143.054;
+      ZPos = 90673.952;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 5;
+      Random = 100;
+    }
+    
+
+    MCU_Proximity
+    {
+      Index = 3329;
+      Name = "HiPrioLagg3-4";
+      Desc = "";
+      Targets = [3327];
+      Objects = [3317];
+      XPos = 97653.602;
+      YPos = 144.025;
+      ZPos = 90568.665;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Distance = 700;
+      Closer = 1;
+      PlaneCoalitions = [2];
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3327;
+      Name = "MedPrioLagg3-4";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 97683.084;
+      YPos = 143.771;
+      ZPos = 90567.141;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 300;
+      Random = 100;
+    }
+    
+
+    MCU_CMD_AttackArea
+    {
+      Index = 3330;
+      Name = "";
+      Desc = "";
+      Targets = [];
+      Objects = [3317];
+      XPos = 97642.234;
+      YPos = 2500.000;
+      ZPos = 90618.216;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      AttackGround = 0;
+      AttackAir = 1;
+      AttackGTargets = 0;
+      AttackArea = 10000;
+      Time = 7200;
+      Priority = 0;
+    }
+    
+
+    MCU_Counter
+    {
+      Index = 3337;
+      Name = "Both done";
+      Desc = "";
+      Targets = [3338];
+      Objects = [];
+      XPos = 97647.598;
+      YPos = 81.650;
+      ZPos = 90519.968;
+      XOri = 0.00;
+      YOri = 296.89;
+      ZOri = 0.00;
+      Counter = 2;
+      Dropcount = 0;
+    }
+    
+
+    MCU_Counter
+    {
+      Index = 3318;
+      Name = "1x";
+      Desc = "";
+      Targets = [3337];
+      Objects = [];
+      XPos = 97618.191;
+      YPos = 81.650;
+      ZPos = 90523.399;
+      XOri = 0.00;
+      YOri = 296.89;
+      ZOri = 0.00;
+      Counter = 1;
+      Dropcount = 0;
+    }
+    
+
+    MCU_Counter
+    {
+      Index = 3321;
+      Name = "1x";
+      Desc = "";
+      Targets = [3337];
+      Objects = [];
+      XPos = 97635.630;
+      YPos = 81.650;
+      ZPos = 90563.147;
+      XOri = 0.00;
+      YOri = 296.89;
+      ZOri = 0.00;
+      Counter = 1;
+      Dropcount = 0;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3338;
+      Name = "StartNextPatrol";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 97665.835;
+      YPos = 81.650;
+      ZPos = 90513.542;
+      XOri = 0.00;
+      YOri = 296.89;
+      ZOri = 0.00;
+      Time = 900;
+      Random = 100;
+    }
+    
+
+  }
+  
+
+  Group
+  {
+    Name = "Russian patrol 5";
+    Index = 3342;
+    Desc = "";
+    Plane
+    {
+      Name = "Patrol 5";
+      Index = 3343;
+      LinkTrId = 3344;
+      XPos = 113031.686;
+      YPos = 2000.000;
+      ZPos = 94338.948;
+      XOri = 3.56;
+      YOri = 49.91;
+      ZOri = 12.50;
+      Script = "LuaScripts\WorldObjects\Planes\lagg3s29.txt";
+      Model = "graphics\planes\lagg3s29\lagg3s29.mgm";
+      Country = 101;
+      Desc = "";
+      Skin = "";
+      AILevel = 4;
+      CoopStart = 0;
+      NumberInFormation = 1;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      StartInAir = 0;
+      Callsign = 0;
+      Callnum = 0;
+      Time = 60;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      PayloadId = 1;
+      WMMask = 11;
+      AiRTBDecision = 0;
+      DeleteAfterDeath = 1;
+      Fuel = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3344;
+      Name = "Plane entity";
+      Desc = "";
+      Targets = [3346];
+      Objects = [];
+      XPos = 113031.686;
+      YPos = 2000.200;
+      ZPos = 94338.948;
+      XOri = 0.00;
+      YOri = 49.91;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3343;
+      OnEvents
+      {
+        OnEvent
+        {
+          Type = 13;
+          TarId = 3347;
+        }
+        OnEvent
+        {
+          Type = 7;
+          TarId = 3347;
+        }
+      }
+    }
+    
+
+    Plane
+    {
+      Name = "Patrol 5";
+      Index = 3348;
+      LinkTrId = 3346;
+      XPos = 113006.875;
+      YPos = 2000.000;
+      ZPos = 94388.841;
+      XOri = 3.56;
+      YOri = 49.91;
+      ZOri = 12.50;
+      Script = "LuaScripts\WorldObjects\Planes\lagg3s29.txt";
+      Model = "graphics\planes\lagg3s29\lagg3s29.mgm";
+      Country = 101;
+      Desc = "";
+      Skin = "";
+      AILevel = 4;
+      CoopStart = 0;
+      NumberInFormation = 0;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      StartInAir = 0;
+      Callsign = 0;
+      Callnum = 0;
+      Time = 60;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      PayloadId = 1;
+      WMMask = 11;
+      AiRTBDecision = 0;
+      DeleteAfterDeath = 1;
+      Fuel = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3346;
+      Name = "Plane entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 113006.875;
+      YPos = 2000.200;
+      ZPos = 94388.841;
+      XOri = 0.00;
+      YOri = 49.91;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3348;
+      OnEvents
+      {
+        OnEvent
+        {
+          Type = 13;
+          TarId = 3350;
+        }
+        OnEvent
+        {
+          Type = 7;
+          TarId = 3350;
+        }
+      }
+    }
+    
+
+    MCU_Deactivate
+    {
+      Index = 3351;
+      Name = "";
+      Desc = "";
+      Targets = [];
+      Objects = [3346];
+      XPos = 112950.614;
+      YPos = 141.885;
+      ZPos = 94408.758;
+      XOri = 0.00;
+      YOri = 49.91;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Activate
+    {
+      Index = 3352;
+      Name = "";
+      Desc = "";
+      Targets = [];
+      Objects = [3346];
+      XPos = 112961.332;
+      YPos = 141.632;
+      ZPos = 94422.224;
+      XOri = 0.00;
+      YOri = 49.91;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3353;
+      Name = "KillLagg3-5";
+      Desc = "";
+      Targets = [3351];
+      Objects = [];
+      XPos = 112928.055;
+      YPos = 143.995;
+      ZPos = 94425.882;
+      XOri = 0.00;
+      YOri = 49.91;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3354;
+      Name = "StartLagg3-5";
+      Desc = "";
+      Targets = [3352,3355,3356];
+      Objects = [];
+      XPos = 112939.141;
+      YPos = 143.054;
+      ZPos = 94438.856;
+      XOri = 0.00;
+      YOri = 49.91;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3355;
+      Name = "5s";
+      Desc = "";
+      Targets = [3358,3359];
+      Objects = [];
+      XPos = 112946.780;
+      YPos = 143.054;
+      ZPos = 94449.132;
+      XOri = 0.00;
+      YOri = 49.91;
+      ZOri = 0.00;
+      Time = 5;
+      Random = 100;
+    }
+    
+
+    MCU_Proximity
+    {
+      Index = 3358;
+      Name = "HiPrioLagg3-5";
+      Desc = "";
+      Targets = [3356];
+      Objects = [3346];
+      XPos = 113044.236;
+      YPos = 144.025;
+      ZPos = 94401.411;
+      XOri = 0.00;
+      YOri = 49.91;
+      ZOri = 0.00;
+      Distance = 700;
+      Closer = 1;
+      PlaneCoalitions = [2];
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3356;
+      Name = "MedPrioLagg3-5";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 113064.390;
+      YPos = 143.771;
+      ZPos = 94422.983;
+      XOri = 0.00;
+      YOri = 49.91;
+      ZOri = 0.00;
+      Time = 300;
+      Random = 100;
+    }
+    
+
+    MCU_CMD_AttackArea
+    {
+      Index = 3359;
+      Name = "";
+      Desc = "";
+      Targets = [];
+      Objects = [3346];
+      XPos = 113034.933;
+      YPos = 59.947;
+      ZPos = 94446.969;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      AttackGround = 0;
+      AttackAir = 1;
+      AttackGTargets = 0;
+      AttackArea = 10000;
+      Time = 7200;
+      Priority = 0;
+    }
+    
+
+    MCU_Counter
+    {
+      Index = 3366;
+      Name = "Both done";
+      Desc = "";
+      Targets = [3367];
+      Objects = [];
+      XPos = 113081.426;
+      YPos = 81.650;
+      ZPos = 94359.658;
+      XOri = 0.00;
+      YOri = 334.34;
+      ZOri = 0.00;
+      Counter = 2;
+      Dropcount = 0;
+    }
+    
+
+    MCU_Counter
+    {
+      Index = 3347;
+      Name = "1x";
+      Desc = "";
+      Targets = [3366];
+      Objects = [];
+      XPos = 113053.429;
+      YPos = 81.650;
+      ZPos = 94338.936;
+      XOri = 0.00;
+      YOri = 334.34;
+      ZOri = 0.00;
+      Counter = 1;
+      Dropcount = 0;
+    }
+    
+
+    MCU_Counter
+    {
+      Index = 3350;
+      Name = "1x";
+      Desc = "";
+      Targets = [3366];
+      Objects = [];
+      XPos = 113045.666;
+      YPos = 81.650;
+      ZPos = 94386.654;
+      XOri = 0.00;
+      YOri = 334.34;
+      ZOri = 0.00;
+      Counter = 1;
+      Dropcount = 0;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3367;
+      Name = "StartNextPatrol";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 113099.811;
+      YPos = 81.650;
+      ZPos = 94365.648;
+      XOri = 0.00;
+      YOri = 334.34;
+      ZOri = 0.00;
+      Time = 900;
+      Random = 100;
+    }
+    
+
+  }
+  
+
+  Group
+  {
+    Name = "Russian patrol 6";
+    Index = 3371;
+    Desc = "";
+    Plane
+    {
+      Name = "Patrol 6";
+      Index = 3372;
+      LinkTrId = 3373;
+      XPos = 104406.156;
+      YPos = 1500.000;
+      ZPos = 85369.668;
+      XOri = 3.56;
+      YOri = 90.91;
+      ZOri = 12.50;
+      Script = "LuaScripts\WorldObjects\Planes\i16t24.txt";
+      Model = "graphics\planes\i16t24\i16t24.mgm";
+      Country = 101;
+      Desc = "";
+      Skin = "";
+      AILevel = 4;
+      CoopStart = 0;
+      NumberInFormation = 1;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      StartInAir = 0;
+      Callsign = 0;
+      Callnum = 0;
+      Time = 60;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      PayloadId = 0;
+      WMMask = 1;
+      AiRTBDecision = 0;
+      DeleteAfterDeath = 1;
+      Fuel = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3373;
+      Name = "Plane entity";
+      Desc = "";
+      Targets = [3375];
+      Objects = [];
+      XPos = 104406.156;
+      YPos = 1500.200;
+      ZPos = 85369.668;
+      XOri = 0.00;
+      YOri = 90.91;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3372;
+    }
+    
+
+    Plane
+    {
+      Name = "Patrol 6";
+      Index = 3376;
+      LinkTrId = 3375;
+      XPos = 104354.689;
+      YPos = 1500.000;
+      ZPos = 85391.025;
+      XOri = 3.56;
+      YOri = 90.91;
+      ZOri = 12.50;
+      Script = "LuaScripts\WorldObjects\Planes\i16t24.txt";
+      Model = "graphics\planes\i16t24\i16t24.mgm";
+      Country = 101;
+      Desc = "";
+      Skin = "";
+      AILevel = 4;
+      CoopStart = 0;
+      NumberInFormation = 0;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      StartInAir = 0;
+      Callsign = 0;
+      Callnum = 0;
+      Time = 60;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      PayloadId = 0;
+      WMMask = 1;
+      AiRTBDecision = 0;
+      DeleteAfterDeath = 1;
+      Fuel = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3375;
+      Name = "Plane entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 104354.689;
+      YPos = 1500.200;
+      ZPos = 85391.025;
+      XOri = 0.00;
+      YOri = 90.91;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3376;
+    }
+    
+
+    MCU_Deactivate
+    {
+      Index = 3378;
+      Name = "";
+      Desc = "";
+      Targets = [];
+      Objects = [3375];
+      XPos = 104299.171;
+      YPos = 141.885;
+      ZPos = 85369.124;
+      XOri = 0.00;
+      YOri = 90.91;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Activate
+    {
+      Index = 3379;
+      Name = "";
+      Desc = "";
+      Targets = [];
+      Objects = [3375];
+      XPos = 104298.418;
+      YPos = 141.632;
+      ZPos = 85386.318;
+      XOri = 0.00;
+      YOri = 90.91;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3380;
+      Name = "KillLagg3-6";
+      Desc = "";
+      Targets = [3378];
+      Objects = [];
+      XPos = 104270.911;
+      YPos = 143.995;
+      ZPos = 85367.237;
+      XOri = 0.00;
+      YOri = 90.91;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3381;
+      Name = "StartLagg3-6";
+      Desc = "";
+      Targets = [3379,3382,3383];
+      Objects = [];
+      XPos = 104270.760;
+      YPos = 143.054;
+      ZPos = 85384.301;
+      XOri = 0.00;
+      YOri = 90.91;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3382;
+      Name = "5s";
+      Desc = "";
+      Targets = [3385,3386];
+      Objects = [];
+      XPos = 104269.778;
+      YPos = 143.054;
+      ZPos = 85397.068;
+      XOri = 0.00;
+      YOri = 90.91;
+      ZOri = 0.00;
+      Time = 5;
+      Random = 100;
+    }
+    
+
+    MCU_Proximity
+    {
+      Index = 3385;
+      Name = "HiPrioLagg3-6";
+      Desc = "";
+      Targets = [3383];
+      Objects = [3375];
+      XPos = 104374.627;
+      YPos = 144.025;
+      ZPos = 85425.031;
+      XOri = 0.00;
+      YOri = 90.91;
+      ZOri = 0.00;
+      Distance = 700;
+      Closer = 1;
+      PlaneCoalitions = [2];
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3383;
+      Name = "MedPrioLagg3-6";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 104375.673;
+      YPos = 143.771;
+      ZPos = 85454.534;
+      XOri = 0.00;
+      YOri = 90.91;
+      ZOri = 0.00;
+      Time = 300;
+      Random = 100;
+    }
+    
+
+    MCU_CMD_AttackArea
+    {
+      Index = 3386;
+      Name = "";
+      Desc = "";
+      Targets = [];
+      Objects = [3375];
+      XPos = 104410.789;
+      YPos = 1500.000;
+      ZPos = 85454.231;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      AttackGround = 0;
+      AttackAir = 1;
+      AttackGTargets = 0;
+      AttackArea = 10000;
+      Time = 7200;
+      Priority = 0;
+    }
+    
+
+  }
+  
+
+  Group
+  {
+    Name = "IL-2 3";
+    Index = 3422;
+    Desc = "";
+    Plane
+    {
+      Name = "Attack 3";
+      Index = 3423;
+      LinkTrId = 3424;
+      XPos = 121850.101;
+      YPos = 2000.000;
+      ZPos = 129155.936;
+      XOri = 0.04;
+      YOri = 266.18;
+      ZOri = 12.03;
+      Script = "LuaScripts\WorldObjects\Planes\il2m41.txt";
+      Model = "graphics\planes\il2m41\il2m41.mgm";
+      Country = 101;
+      Desc = "";
+      Skin = "";
+      AILevel = 2;
+      CoopStart = 0;
+      NumberInFormation = 0;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      StartInAir = 0;
+      Callsign = 0;
+      Callnum = 0;
+      Time = 60;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      PayloadId = 24;
+      WMMask = 1;
+      AiRTBDecision = 0;
+      DeleteAfterDeath = 1;
+      Fuel = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3424;
+      Name = "Plane entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 121850.101;
+      YPos = 2000.200;
+      ZPos = 129155.936;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3423;
+      OnEvents
+      {
+        OnEvent
+        {
+          Type = 8;
+          TarId = 3426;
+        }
+      }
+    }
+    
+
+    Plane
+    {
+      Name = "Attack 3";
+      Index = 3427;
+      LinkTrId = 3428;
+      XPos = 121975.685;
+      YPos = 2000.000;
+      ZPos = 129255.298;
+      XOri = 0.04;
+      YOri = 266.18;
+      ZOri = 12.03;
+      Script = "LuaScripts\WorldObjects\Planes\il2m41.txt";
+      Model = "graphics\planes\il2m41\il2m41.mgm";
+      Country = 101;
+      Desc = "";
+      Skin = "";
+      AILevel = 2;
+      CoopStart = 0;
+      NumberInFormation = 1;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      StartInAir = 0;
+      Callsign = 0;
+      Callnum = 0;
+      Time = 60;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      PayloadId = 24;
+      WMMask = 1;
+      AiRTBDecision = 0;
+      DeleteAfterDeath = 1;
+      Fuel = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3428;
+      Name = "Plane entity";
+      Desc = "";
+      Targets = [3424];
+      Objects = [];
+      XPos = 121975.685;
+      YPos = 2000.200;
+      ZPos = 129255.298;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3427;
+      OnEvents
+      {
+        OnEvent
+        {
+          Type = 8;
+          TarId = 3426;
+        }
+      }
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 3430;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [3431,3432,3433,3434];
+      Objects = [3424];
+      XPos = 115979.586;
+      YPos = 2000.000;
+      ZPos = 77495.516;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 300;
+      Speed = 300;
+      Priority = 1;
+    }
+    
+
+    MCU_CMD_AttackArea
+    {
+      Index = 3435;
+      Name = "command AttackArea";
+      Desc = "";
+      Targets = [];
+      Objects = [3424];
+      XPos = 106316.180;
+      YPos = 148.891;
+      ZPos = 81241.954;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      AttackGround = 0;
+      AttackAir = 0;
+      AttackGTargets = 1;
+      AttackArea = 5000;
+      Time = 600;
+      Priority = 1;
+    }
+    
+
+    MCU_CMD_AttackArea
+    {
+      Index = 3436;
+      Name = "command AttackArea";
+      Desc = "";
+      Targets = [];
+      Objects = [3424];
+      XPos = 108196.696;
+      YPos = 148.891;
+      ZPos = 73652.727;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      AttackGround = 0;
+      AttackAir = 0;
+      AttackGTargets = 1;
+      AttackArea = 5000;
+      Time = 600;
+      Priority = 1;
+    }
+    
+
+    MCU_CMD_AttackArea
+    {
+      Index = 3437;
+      Name = "command AttackArea";
+      Desc = "";
+      Targets = [];
+      Objects = [3424];
+      XPos = 109539.922;
+      YPos = 148.891;
+      ZPos = 65526.210;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      AttackGround = 0;
+      AttackAir = 0;
+      AttackGTargets = 1;
+      AttackArea = 5000;
+      Time = 600;
+      Priority = 1;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3431;
+      Name = "Gate";
+      Desc = "";
+      Targets = [3437,3439];
+      Objects = [];
+      XPos = 112205.913;
+      YPos = 115.720;
+      ZPos = 67260.048;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3432;
+      Name = "Gate";
+      Desc = "";
+      Targets = [3436,3441];
+      Objects = [];
+      XPos = 110850.967;
+      YPos = 115.720;
+      ZPos = 74636.978;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3433;
+      Name = "Gate";
+      Desc = "";
+      Targets = [3435,3443];
+      Objects = [];
+      XPos = 108592.723;
+      YPos = 115.720;
+      ZPos = 81532.150;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Deactivate
+    {
+      Index = 3444;
+      Name = "";
+      Desc = "";
+      Targets = [3432,3433];
+      Objects = [];
+      XPos = 111044.916;
+      YPos = 109.983;
+      ZPos = 78455.279;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_TR_MissionBegin
+    {
+      Index = 3445;
+      Name = "";
+      Desc = "";
+      Targets = [3444];
+      Objects = [];
+      XPos = 111261.841;
+      YPos = 111.830;
+      ZPos = 78453.767;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+    }
+    
+
+    MCU_CheckZone
+    {
+      Index = 3446;
+      Name = "Enenmy tank";
+      Desc = "";
+      Targets = [3447,3448];
+      Objects = [];
+      XPos = 109467.311;
+      YPos = 121.401;
+      ZPos = 65900.914;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Zone = 5000;
+      Cylinder = 1;
+      Closer = 1;
+      VehicleCoalitions = [2];
+    }
+    
+
+    MCU_Activate
+    {
+      Index = 3447;
+      Name = "";
+      Desc = "";
+      Targets = [3431];
+      Objects = [];
+      XPos = 110591.697;
+      YPos = 144.139;
+      ZPos = 66647.669;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Deactivate
+    {
+      Index = 3448;
+      Name = "";
+      Desc = "";
+      Targets = [3432,3433];
+      Objects = [];
+      XPos = 110231.975;
+      YPos = 141.503;
+      ZPos = 66975.650;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3451;
+      Name = "";
+      Desc = "";
+      Targets = [3446];
+      Objects = [];
+      XPos = 109165.622;
+      YPos = 119.184;
+      ZPos = 65881.075;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 30;
+      Random = 100;
+    }
+    
+
+    MCU_TR_MissionBegin
+    {
+      Index = 3452;
+      Name = "";
+      Desc = "";
+      Targets = [3451];
+      Objects = [];
+      XPos = 108866.385;
+      YPos = 125.021;
+      ZPos = 65867.543;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+    }
+    
+
+    MCU_CheckZone
+    {
+      Index = 3453;
+      Name = "Enenmy tank";
+      Desc = "";
+      Targets = [3454,3455];
+      Objects = [];
+      XPos = 107955.358;
+      YPos = 121.401;
+      ZPos = 73898.540;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Zone = 5000;
+      Cylinder = 1;
+      Closer = 1;
+      VehicleCoalitions = [2];
+    }
+    
+
+    MCU_Activate
+    {
+      Index = 3454;
+      Name = "";
+      Desc = "";
+      Targets = [3432];
+      Objects = [];
+      XPos = 109617.040;
+      YPos = 144.139;
+      ZPos = 74578.133;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Deactivate
+    {
+      Index = 3455;
+      Name = "";
+      Desc = "";
+      Targets = [3431,3433];
+      Objects = [];
+      XPos = 108975.238;
+      YPos = 141.503;
+      ZPos = 74328.521;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3458;
+      Name = "";
+      Desc = "";
+      Targets = [3453];
+      Objects = [];
+      XPos = 107653.669;
+      YPos = 119.184;
+      ZPos = 73878.701;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 30;
+      Random = 100;
+    }
+    
+
+    MCU_TR_MissionBegin
+    {
+      Index = 3459;
+      Name = "";
+      Desc = "";
+      Targets = [3458];
+      Objects = [];
+      XPos = 107354.432;
+      YPos = 125.021;
+      ZPos = 73865.169;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+    }
+    
+
+    MCU_CheckZone
+    {
+      Index = 3460;
+      Name = "Enenmy tank";
+      Desc = "";
+      Targets = [3461,3462];
+      Objects = [];
+      XPos = 106076.197;
+      YPos = 121.401;
+      ZPos = 81435.919;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Zone = 5000;
+      Cylinder = 1;
+      Closer = 1;
+      VehicleCoalitions = [2];
+    }
+    
+
+    MCU_Activate
+    {
+      Index = 3461;
+      Name = "";
+      Desc = "";
+      Targets = [3433];
+      Objects = [];
+      XPos = 107200.583;
+      YPos = 144.139;
+      ZPos = 82182.674;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Deactivate
+    {
+      Index = 3462;
+      Name = "";
+      Desc = "";
+      Targets = [3432,3431];
+      Objects = [];
+      XPos = 107540.127;
+      YPos = 141.503;
+      ZPos = 79957.998;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3465;
+      Name = "";
+      Desc = "";
+      Targets = [3460];
+      Objects = [];
+      XPos = 105774.508;
+      YPos = 119.184;
+      ZPos = 81416.080;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 30;
+      Random = 100;
+    }
+    
+
+    MCU_TR_MissionBegin
+    {
+      Index = 3466;
+      Name = "";
+      Desc = "";
+      Targets = [3465];
+      Objects = [];
+      XPos = 105475.271;
+      YPos = 125.021;
+      ZPos = 81402.548;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3434;
+      Name = "10min";
+      Desc = "";
+      Targets = [3468];
+      Objects = [];
+      XPos = 116864.060;
+      YPos = 149.619;
+      ZPos = 77526.278;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 600;
+      Random = 100;
+    }
+    
+
+    MCU_Counter
+    {
+      Index = 3468;
+      Name = "RTB";
+      Desc = "";
+      Targets = [3470,3471];
+      Objects = [];
+      XPos = 117444.734;
+      YPos = 145.146;
+      ZPos = 79193.529;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Counter = 1;
+      Dropcount = 0;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3426;
+      Name = "2min";
+      Desc = "";
+      Targets = [3468];
+      Objects = [];
+      XPos = 118910.758;
+      YPos = 140.298;
+      ZPos = 80260.638;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 120;
+      Random = 100;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 3470;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [];
+      Objects = [3424];
+      XPos = 119894.860;
+      YPos = 2000.000;
+      ZPos = 129209.033;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 300;
+      Speed = 350;
+      Priority = 0;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3474;
+      Name = "StartIL2-3";
+      Desc = "";
+      Targets = [3475,3476];
+      Objects = [];
+      XPos = 121655.975;
+      YPos = 41.160;
+      ZPos = 129531.753;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Activate
+    {
+      Index = 3475;
+      Name = "";
+      Desc = "";
+      Targets = [3478,3479,3480];
+      Objects = [3424];
+      XPos = 121757.067;
+      YPos = 41.160;
+      ZPos = 129531.753;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3476;
+      Name = "5s";
+      Desc = "";
+      Targets = [3430,3482];
+      Objects = [];
+      XPos = 121658.969;
+      YPos = 41.160;
+      ZPos = 129427.394;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 5;
+      Random = 100;
+    }
+    
+
+    MCU_Deactivate
+    {
+      Index = 3483;
+      Name = "";
+      Desc = "";
+      Targets = [3478,3479,3480];
+      Objects = [3424];
+      XPos = 121846.938;
+      YPos = 41.160;
+      ZPos = 129533.924;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3484;
+      Name = "KillIL2-3";
+      Desc = "";
+      Targets = [3483];
+      Objects = [];
+      XPos = 121842.603;
+      YPos = 41.160;
+      ZPos = 129621.699;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3471;
+      Name = "LowPrioIL2-3";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 118667.886;
+      YPos = 152.703;
+      ZPos = 77953.163;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Icon
+    {
+      Index = 3478;
+      Targets = [3479];
+      Objects = [];
+      XPos = 120916.595;
+      YPos = 47.821;
+      ZPos = 126606.598;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      LCName = 518;
+      LCDesc = 519;
+      IconId = 0;
+      RColor = 255;
+      GColor = 0;
+      BColor = 0;
+      LineType = 9;
+      Coalitions = [1, 2];
+    }
+    
+
+    MCU_Icon
+    {
+      Index = 3479;
+      Targets = [3480];
+      Objects = [];
+      XPos = 118602.232;
+      YPos = 47.821;
+      ZPos = 95766.416;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      LCName = 520;
+      LCDesc = 521;
+      IconId = 0;
+      RColor = 255;
+      GColor = 0;
+      BColor = 0;
+      LineType = 9;
+      Coalitions = [1, 2];
+    }
+    
+
+    MCU_Icon
+    {
+      Index = 3480;
+      Targets = [];
+      Objects = [];
+      XPos = 112423.393;
+      YPos = 47.821;
+      ZPos = 76491.124;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      LCName = 522;
+      LCDesc = 523;
+      IconId = 0;
+      RColor = 255;
+      GColor = 0;
+      BColor = 0;
+      LineType = 9;
+      Coalitions = [1, 2];
+    }
+    
+
+    MCU_TR_Subtitle
+    {
+      Index = 3482;
+      Name = "All";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 121524.209;
+      YPos = 41.160;
+      ZPos = 129412.000;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      SubtitleInfo
+      {
+        Duration = 15;
+        FontSize = 20;
+        HAlign = 1;
+        VAlign = 0;
+        RColor = 255;
+        GColor = 0;
+        BColor = 0;
+        LCText = 524;
+      }
+      
+      Coalitions = [0, 1, 2];
+    }
+    
+
+    MCU_TR_Subtitle
+    {
+      Index = 3439;
+      Name = "Allies";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 113089.724;
+      YPos = 113.955;
+      ZPos = 68187.517;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      SubtitleInfo
+      {
+        Duration = 15;
+        FontSize = 20;
+        HAlign = 1;
+        VAlign = 0;
+        RColor = 255;
+        GColor = 0;
+        BColor = 0;
+        LCText = 525;
+      }
+      
+      Coalitions = [2];
+    }
+    
+
+    MCU_TR_Subtitle
+    {
+      Index = 3441;
+      Name = "Allies";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 111836.438;
+      YPos = 113.955;
+      ZPos = 74659.033;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      SubtitleInfo
+      {
+        Duration = 15;
+        FontSize = 20;
+        HAlign = 1;
+        VAlign = 0;
+        RColor = 255;
+        GColor = 0;
+        BColor = 0;
+        LCText = 526;
+      }
+      
+      Coalitions = [2];
+    }
+    
+
+    MCU_TR_Subtitle
+    {
+      Index = 3443;
+      Name = "Allies";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 109580.522;
+      YPos = 113.955;
+      ZPos = 82133.178;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      SubtitleInfo
+      {
+        Duration = 15;
+        FontSize = 20;
+        HAlign = 1;
+        VAlign = 0;
+        RColor = 255;
+        GColor = 0;
+        BColor = 0;
+        LCText = 527;
+      }
+      
+      Coalitions = [2];
+    }
+    
+
+  }
+  
+
+  Group
+  {
+    Name = "IL-2 4";
+    Index = 3493;
+    Desc = "";
+    Plane
+    {
+      Name = "Attack 4";
+      Index = 3494;
+      LinkTrId = 3495;
+      XPos = 118866.885;
+      YPos = 2000.000;
+      ZPos = 129185.987;
+      XOri = 0.04;
+      YOri = 266.18;
+      ZOri = 12.03;
+      Script = "LuaScripts\WorldObjects\Planes\il2m41.txt";
+      Model = "graphics\planes\il2m41\il2m41.mgm";
+      Country = 101;
+      Desc = "";
+      Skin = "";
+      AILevel = 2;
+      CoopStart = 0;
+      NumberInFormation = 0;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      StartInAir = 0;
+      Callsign = 0;
+      Callnum = 0;
+      Time = 60;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      PayloadId = 24;
+      WMMask = 1;
+      AiRTBDecision = 0;
+      DeleteAfterDeath = 1;
+      Fuel = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3495;
+      Name = "Plane entity";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 118866.885;
+      YPos = 2000.200;
+      ZPos = 129185.987;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3494;
+      OnEvents
+      {
+        OnEvent
+        {
+          Type = 8;
+          TarId = 3497;
+        }
+      }
+    }
+    
+
+    Plane
+    {
+      Name = "Attack 4";
+      Index = 3498;
+      LinkTrId = 3499;
+      XPos = 118992.469;
+      YPos = 2000.000;
+      ZPos = 129285.349;
+      XOri = 0.04;
+      YOri = 266.18;
+      ZOri = 12.03;
+      Script = "LuaScripts\WorldObjects\Planes\il2m41.txt";
+      Model = "graphics\planes\il2m41\il2m41.mgm";
+      Country = 101;
+      Desc = "";
+      Skin = "";
+      AILevel = 2;
+      CoopStart = 0;
+      NumberInFormation = 1;
+      Vulnerable = 1;
+      Engageable = 1;
+      LimitAmmo = 1;
+      StartInAir = 0;
+      Callsign = 0;
+      Callnum = 0;
+      Time = 60;
+      DamageReport = 50;
+      DamageThreshold = 1;
+      PayloadId = 24;
+      WMMask = 1;
+      AiRTBDecision = 0;
+      DeleteAfterDeath = 1;
+      Fuel = 1;
+    }
+    
+
+    MCU_TR_Entity
+    {
+      Index = 3499;
+      Name = "Plane entity";
+      Desc = "";
+      Targets = [3495];
+      Objects = [];
+      XPos = 118992.469;
+      YPos = 2000.200;
+      ZPos = 129285.349;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 0;
+      MisObjID = 3498;
+      OnEvents
+      {
+        OnEvent
+        {
+          Type = 8;
+          TarId = 3497;
+        }
+      }
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 3501;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [3502,3503,3504,3505];
+      Objects = [3495];
+      XPos = 96944.004;
+      YPos = 2000.000;
+      ZPos = 90723.710;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 300;
+      Speed = 300;
+      Priority = 1;
+    }
+    
+
+    MCU_CMD_AttackArea
+    {
+      Index = 3506;
+      Name = "command AttackArea";
+      Desc = "";
+      Targets = [];
+      Objects = [3495];
+      XPos = 101153.741;
+      YPos = 148.891;
+      ZPos = 81997.854;
+      XOri = 0.00;
+      YOri = 332.08;
+      ZOri = 0.00;
+      AttackGround = 0;
+      AttackAir = 0;
+      AttackGTargets = 1;
+      AttackArea = 5000;
+      Time = 600;
+      Priority = 1;
+    }
+    
+
+    MCU_CMD_AttackArea
+    {
+      Index = 3507;
+      Name = "command AttackArea";
+      Desc = "";
+      Targets = [];
+      Objects = [3495];
+      XPos = 96809.446;
+      YPos = 148.891;
+      ZPos = 77318.589;
+      XOri = 0.00;
+      YOri = 332.08;
+      ZOri = 0.00;
+      AttackGround = 0;
+      AttackAir = 0;
+      AttackGTargets = 1;
+      AttackArea = 5000;
+      Time = 600;
+      Priority = 1;
+    }
+    
+
+    MCU_CMD_AttackArea
+    {
+      Index = 3508;
+      Name = "command AttackArea";
+      Desc = "";
+      Targets = [];
+      Objects = [3495];
+      XPos = 95562.056;
+      YPos = 148.891;
+      ZPos = 70071.656;
+      XOri = 0.00;
+      YOri = 332.08;
+      ZOri = 0.00;
+      AttackGround = 0;
+      AttackAir = 0;
+      AttackGTargets = 1;
+      AttackArea = 5000;
+      Time = 600;
+      Priority = 1;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3502;
+      Name = "Gate";
+      Desc = "";
+      Targets = [3508,3510];
+      Objects = [];
+      XPos = 98729.781;
+      YPos = 115.720;
+      ZPos = 70353.111;
+      XOri = 0.00;
+      YOri = 332.08;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3503;
+      Name = "Gate";
+      Desc = "";
+      Targets = [3507,3512];
+      Objects = [];
+      XPos = 99615.365;
+      YPos = 115.720;
+      ZPos = 76943.453;
+      XOri = 0.00;
+      YOri = 332.08;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3504;
+      Name = "Gate";
+      Desc = "";
+      Targets = [3506,3514];
+      Objects = [];
+      XPos = 100251.287;
+      YPos = 115.720;
+      ZPos = 80832.569;
+      XOri = 0.00;
+      YOri = 332.08;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Deactivate
+    {
+      Index = 3515;
+      Name = "";
+      Desc = "";
+      Targets = [3503,3504];
+      Objects = [];
+      XPos = 104023.914;
+      YPos = 109.983;
+      ZPos = 77319.328;
+      XOri = 0.00;
+      YOri = 332.08;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_TR_MissionBegin
+    {
+      Index = 3516;
+      Name = "";
+      Desc = "";
+      Targets = [3515];
+      Objects = [];
+      XPos = 104214.809;
+      YPos = 111.830;
+      ZPos = 77216.284;
+      XOri = 0.00;
+      YOri = 332.08;
+      ZOri = 0.00;
+      Enabled = 1;
+    }
+    
+
+    MCU_CheckZone
+    {
+      Index = 3517;
+      Name = "Enenmy tank";
+      Desc = "";
+      Targets = [3518,3519];
+      Objects = [];
+      XPos = 95673.606;
+      YPos = 121.401;
+      ZPos = 70436.665;
+      XOri = 0.00;
+      YOri = 332.08;
+      ZOri = 0.00;
+      Zone = 5000;
+      Cylinder = 1;
+      Closer = 1;
+      VehicleCoalitions = [2];
+    }
+    
+
+    MCU_Activate
+    {
+      Index = 3518;
+      Name = "";
+      Desc = "";
+      Targets = [3502];
+      Objects = [];
+      XPos = 97016.870;
+      YPos = 144.139;
+      ZPos = 70569.066;
+      XOri = 0.00;
+      YOri = 332.08;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Deactivate
+    {
+      Index = 3519;
+      Name = "";
+      Desc = "";
+      Targets = [3503,3504];
+      Objects = [];
+      XPos = 96852.917;
+      YPos = 141.503;
+      ZPos = 71027.422;
+      XOri = 0.00;
+      YOri = 332.08;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3522;
+      Name = "";
+      Desc = "";
+      Targets = [3517];
+      Objects = [];
+      XPos = 95397.832;
+      YPos = 119.184;
+      ZPos = 70560.594;
+      XOri = 0.00;
+      YOri = 332.08;
+      ZOri = 0.00;
+      Time = 30;
+      Random = 100;
+    }
+    
+
+    MCU_TR_MissionBegin
+    {
+      Index = 3523;
+      Name = "";
+      Desc = "";
+      Targets = [3522];
+      Objects = [];
+      XPos = 95127.180;
+      YPos = 125.021;
+      ZPos = 70688.943;
+      XOri = 0.00;
+      YOri = 332.08;
+      ZOri = 0.00;
+      Enabled = 1;
+    }
+    
+
+    MCU_CheckZone
+    {
+      Index = 3524;
+      Name = "Enenmy tank";
+      Desc = "";
+      Targets = [3525,3526];
+      Objects = [];
+      XPos = 96711.533;
+      YPos = 121.401;
+      ZPos = 77648.864;
+      XOri = 0.00;
+      YOri = 332.08;
+      ZOri = 0.00;
+      Zone = 5000;
+      Cylinder = 1;
+      Closer = 1;
+      VehicleCoalitions = [2];
+    }
+    
+
+    MCU_Activate
+    {
+      Index = 3525;
+      Name = "";
+      Desc = "";
+      Targets = [3503];
+      Objects = [];
+      XPos = 98497.884;
+      YPos = 144.139;
+      ZPos = 77470.022;
+      XOri = 0.00;
+      YOri = 332.08;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Deactivate
+    {
+      Index = 3526;
+      Name = "";
+      Desc = "";
+      Targets = [3502,3504];
+      Objects = [];
+      XPos = 97813.965;
+      YPos = 141.503;
+      ZPos = 77550.466;
+      XOri = 0.00;
+      YOri = 332.08;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3529;
+      Name = "";
+      Desc = "";
+      Targets = [3524];
+      Objects = [];
+      XPos = 96435.759;
+      YPos = 119.184;
+      ZPos = 77772.792;
+      XOri = 0.00;
+      YOri = 332.08;
+      ZOri = 0.00;
+      Time = 30;
+      Random = 100;
+    }
+    
+
+    MCU_TR_MissionBegin
+    {
+      Index = 3530;
+      Name = "";
+      Desc = "";
+      Targets = [3529];
+      Objects = [];
+      XPos = 96165.107;
+      YPos = 125.021;
+      ZPos = 77901.141;
+      XOri = 0.00;
+      YOri = 332.08;
+      ZOri = 0.00;
+      Enabled = 1;
+    }
+    
+
+    MCU_CheckZone
+    {
+      Index = 3531;
+      Name = "Enenmy tank";
+      Desc = "";
+      Targets = [3532,3533];
+      Objects = [];
+      XPos = 101032.715;
+      YPos = 121.401;
+      ZPos = 82281.697;
+      XOri = 0.00;
+      YOri = 332.08;
+      ZOri = 0.00;
+      Zone = 5000;
+      Cylinder = 1;
+      Closer = 1;
+      VehicleCoalitions = [2];
+    }
+    
+
+    MCU_Activate
+    {
+      Index = 3532;
+      Name = "";
+      Desc = "";
+      Targets = [3504];
+      Objects = [];
+      XPos = 102375.978;
+      YPos = 144.139;
+      ZPos = 82414.097;
+      XOri = 0.00;
+      YOri = 332.08;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Deactivate
+    {
+      Index = 3533;
+      Name = "";
+      Desc = "";
+      Targets = [3503,3502];
+      Objects = [];
+      XPos = 101632.814;
+      YPos = 141.503;
+      ZPos = 80289.908;
+      XOri = 0.00;
+      YOri = 332.08;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3536;
+      Name = "";
+      Desc = "";
+      Targets = [3531];
+      Objects = [];
+      XPos = 100756.940;
+      YPos = 119.184;
+      ZPos = 82405.625;
+      XOri = 0.00;
+      YOri = 332.08;
+      ZOri = 0.00;
+      Time = 30;
+      Random = 100;
+    }
+    
+
+    MCU_TR_MissionBegin
+    {
+      Index = 3537;
+      Name = "";
+      Desc = "";
+      Targets = [3536];
+      Objects = [];
+      XPos = 100486.289;
+      YPos = 125.021;
+      ZPos = 82533.975;
+      XOri = 0.00;
+      YOri = 332.08;
+      ZOri = 0.00;
+      Enabled = 1;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3505;
+      Name = "10min";
+      Desc = "";
+      Targets = [3539];
+      Objects = [];
+      XPos = 96060.103;
+      YPos = 149.619;
+      ZPos = 92451.309;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 600;
+      Random = 100;
+    }
+    
+
+    MCU_Counter
+    {
+      Index = 3539;
+      Name = "RTB";
+      Desc = "";
+      Targets = [3541,3542];
+      Objects = [];
+      XPos = 96640.777;
+      YPos = 145.146;
+      ZPos = 94118.560;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Counter = 1;
+      Dropcount = 0;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3497;
+      Name = "2min";
+      Desc = "";
+      Targets = [3539];
+      Objects = [];
+      XPos = 98106.801;
+      YPos = 140.298;
+      ZPos = 95185.669;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 120;
+      Random = 100;
+    }
+    
+
+    MCU_Waypoint
+    {
+      Index = 3541;
+      Name = "Trigger Waypoint";
+      Desc = "";
+      Targets = [];
+      Objects = [3495];
+      XPos = 116911.644;
+      YPos = 2000.000;
+      ZPos = 129239.084;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Area = 300;
+      Speed = 350;
+      Priority = 0;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3545;
+      Name = "StartIL2-4";
+      Desc = "";
+      Targets = [3546,3547];
+      Objects = [];
+      XPos = 118672.759;
+      YPos = 41.160;
+      ZPos = 129561.804;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Activate
+    {
+      Index = 3546;
+      Name = "";
+      Desc = "";
+      Targets = [3549,3550,3551];
+      Objects = [3495];
+      XPos = 118773.851;
+      YPos = 41.160;
+      ZPos = 129561.804;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3547;
+      Name = "5s";
+      Desc = "";
+      Targets = [3501,3553];
+      Objects = [];
+      XPos = 118675.753;
+      YPos = 41.160;
+      ZPos = 129457.445;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 5;
+      Random = 100;
+    }
+    
+
+    MCU_Deactivate
+    {
+      Index = 3554;
+      Name = "";
+      Desc = "";
+      Targets = [3549,3550,3551];
+      Objects = [3495];
+      XPos = 118863.722;
+      YPos = 41.160;
+      ZPos = 129563.975;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3555;
+      Name = "KillIL2-4";
+      Desc = "";
+      Targets = [3554];
+      Objects = [];
+      XPos = 118859.387;
+      YPos = 41.160;
+      ZPos = 129651.750;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_Timer
+    {
+      Index = 3542;
+      Name = "LowPrioIL2-4";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 95537.920;
+      YPos = 152.703;
+      ZPos = 95237.195;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Time = 0;
+      Random = 100;
+    }
+    
+
+    MCU_TR_Subtitle
+    {
+      Index = 3553;
+      Name = "All";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 118479.045;
+      YPos = 41.160;
+      ZPos = 129424.330;
+      XOri = 0.00;
+      YOri = 344.01;
+      ZOri = 0.00;
+      Enabled = 1;
+      SubtitleInfo
+      {
+        Duration = 15;
+        FontSize = 20;
+        HAlign = 1;
+        VAlign = 0;
+        RColor = 255;
+        GColor = 0;
+        BColor = 0;
+        LCText = 528;
+      }
+      
+      Coalitions = [0, 1, 2];
+    }
+    
+
+    MCU_Icon
+    {
+      Index = 3549;
+      Targets = [3550];
+      Objects = [];
+      XPos = 114811.913;
+      YPos = 47.821;
+      ZPos = 125541.420;
+      XOri = 0.00;
+      YOri = 344.01;
+      ZOri = 0.00;
+      Enabled = 0;
+      LCName = 529;
+      LCDesc = 530;
+      IconId = 0;
+      RColor = 255;
+      GColor = 0;
+      BColor = 0;
+      LineType = 9;
+      Coalitions = [1, 2];
+    }
+    
+
+    MCU_Icon
+    {
+      Index = 3550;
+      Targets = [3551];
+      Objects = [];
+      XPos = 98103.490;
+      YPos = 47.821;
+      ZPos = 101438.724;
+      XOri = 0.00;
+      YOri = 344.01;
+      ZOri = 0.00;
+      Enabled = 0;
+      LCName = 531;
+      LCDesc = 532;
+      IconId = 0;
+      RColor = 255;
+      GColor = 0;
+      BColor = 0;
+      LineType = 9;
+      Coalitions = [1, 2];
+    }
+    
+
+    MCU_Icon
+    {
+      Index = 3551;
+      Targets = [];
+      Objects = [];
+      XPos = 96384.644;
+      YPos = 47.821;
+      ZPos = 78839.565;
+      XOri = 0.00;
+      YOri = 344.01;
+      ZOri = 0.00;
+      Enabled = 0;
+      LCName = 533;
+      LCDesc = 534;
+      IconId = 0;
+      RColor = 255;
+      GColor = 0;
+      BColor = 0;
+      LineType = 9;
+      Coalitions = [1, 2];
+    }
+    
+
+    MCU_TR_Subtitle
+    {
+      Index = 3510;
+      Name = "Allies";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 99580.319;
+      YPos = 113.955;
+      ZPos = 70068.113;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      SubtitleInfo
+      {
+        Duration = 15;
+        FontSize = 20;
+        HAlign = 1;
+        VAlign = 0;
+        RColor = 255;
+        GColor = 0;
+        BColor = 0;
+        LCText = 535;
+      }
+      
+      Coalitions = [2];
+    }
+    
+
+    MCU_TR_Subtitle
+    {
+      Index = 3512;
+      Name = "Allies";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 100265.834;
+      YPos = 113.955;
+      ZPos = 76920.338;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      SubtitleInfo
+      {
+        Duration = 15;
+        FontSize = 20;
+        HAlign = 1;
+        VAlign = 0;
+        RColor = 255;
+        GColor = 0;
+        BColor = 0;
+        LCText = 536;
+      }
+      
+      Coalitions = [2];
+    }
+    
+
+    MCU_TR_Subtitle
+    {
+      Index = 3514;
+      Name = "Allies";
+      Desc = "";
+      Targets = [];
+      Objects = [];
+      XPos = 99634.409;
+      YPos = 113.955;
+      ZPos = 80878.291;
+      XOri = 0.00;
+      YOri = 0.00;
+      ZOri = 0.00;
+      Enabled = 1;
+      SubtitleInfo
+      {
+        Duration = 15;
+        FontSize = 20;
+        HAlign = 1;
+        VAlign = 0;
+        RColor = 255;
+        GColor = 0;
+        BColor = 0;
+        LCText = 537;
+      }
+      
+      Coalitions = [2];
     }
     
 
