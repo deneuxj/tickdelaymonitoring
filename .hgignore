@@ -21,6 +21,22 @@ NightAttackOnKalach/NightAttackOnKalach-in.msnbin
 NightAttackOnKalach/NightAttackOnKalach-in.pol
 NightAttackOnKalach/NightAttackOnKalach-in.rus
 NightAttackOnKalach/NightAttackOnKalach-in.spa
+Novomax/Novomax-in.fra
+Novomax/Novomax-in.ger
+Novomax/Novomax-in.list
+Novomax/Novomax-in.msnbin
+Novomax/Novomax-in.pol
+Novomax/Novomax-in.rus
+Novomax/Novomax-in.spa
+projects/InjectPrio/Sample.eng
+projects/InjectPrio/Sample.fra
+projects/InjectPrio/Sample.ger
+projects/InjectPrio/Sample.list
+projects/InjectPrio/Sample.msnbin
+projects/InjectPrio/Sample.pol
+projects/InjectPrio/Sample.rus
+projects/InjectPrio/Sample.spa
+instances.txt
 syntax: regexp
 /bin/
 /obj/
