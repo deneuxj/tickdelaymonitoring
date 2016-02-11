@@ -1744,7 +1744,7 @@ Flag
   XPos = 25365.295;
   YPos = 139.623;
   ZPos = 25615.599;
-  XOri = 359.96;
+  XOri = 359.92;
   YOri = 1.00;
   ZOri = 357.46;
   Model = "graphics\flag\windsock.mgm";
@@ -1752,8 +1752,8 @@ Flag
   Script = "LuaScripts\WorldObjects\Flags\windsock.txt";
   Country = 201;
   StartHeight = 0.5;
-  SpeedFactor = 1;
-  BlockThreshold = 1;
+  SpeedFactor = 0.5;
+  BlockThreshold = 0.5;
   Radius = 1000;
   Type = 0;
   CountPlanes = 1;
@@ -2163,6 +2163,102 @@ MCU_TR_MissionObjective
   Coalition = 2;
   Success = 0;
   IconType = 901;
+}
+
+
+
+Ship
+{
+  Name = "Ship";
+  Index = 108;
+  LinkTrId = 109;
+  XPos = 26849.640;
+  YPos = 19.201;
+  ZPos = 13357.942;
+  XOri = 359.90;
+  YOri = 6.00;
+  ZOri = 359.98;
+  Script = "LuaScripts\WorldObjects\Ships\1124.txt";
+  Model = "graphics\ships\1124\1124.mgm";
+  Desc = "";
+  Country = 201;
+  Vulnerable = 1;
+  Engageable = 1;
+  LimitAmmo = 1;
+  AILevel = 2;
+  DamageReport = 50;
+  DamageThreshold = 1;
+  DeleteAfterDeath = 1;
+  Spotter = 10;
+  BeaconChannel = 1;
+  Callsign = 43;
+}
+
+
+
+MCU_TR_Entity
+{
+  Index = 109;
+  Name = "Ship entity";
+  Desc = "";
+  Targets = [];
+  Objects = [];
+  XPos = 26849.640;
+  YPos = 19.401;
+  ZPos = 13357.942;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  MisObjID = 108;
+}
+
+
+
+Ship
+{
+  Name = "Ship";
+  Index = 110;
+  LinkTrId = 111;
+  XPos = 26776.377;
+  YPos = 19.165;
+  ZPos = 13201.887;
+  XOri = 359.99;
+  YOri = 6.00;
+  ZOri = 359.92;
+  Script = "LuaScripts\WorldObjects\Ships\1124.txt";
+  Model = "graphics\ships\1124\1124.mgm";
+  Desc = "";
+  Country = 201;
+  Vulnerable = 1;
+  Engageable = 1;
+  LimitAmmo = 1;
+  AILevel = 2;
+  DamageReport = 50;
+  DamageThreshold = 1;
+  DeleteAfterDeath = 1;
+  Spotter = 10;
+  BeaconChannel = 1;
+  Callsign = 43;
+}
+
+
+
+MCU_TR_Entity
+{
+  Index = 111;
+  Name = "Ship entity";
+  Desc = "";
+  Targets = [109];
+  Objects = [];
+  XPos = 26776.377;
+  YPos = 19.365;
+  ZPos = 13201.887;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  MisObjID = 110;
 }
 
 
