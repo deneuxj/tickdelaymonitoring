@@ -53,10 +53,12 @@
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="Main.fs" />
-    <None Include="BuildEarlyInvasion.fsx" />
+    <None Include="BuildNovomax.fsx" />
     <None Include="Script.fsx" />
+    <None Include="BuildEarlyInvasion.fsx" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="FSharp.Core, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
