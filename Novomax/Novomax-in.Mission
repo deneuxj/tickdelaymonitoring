@@ -73608,7 +73608,7 @@ Vehicle
   Engageable = 1;
   LimitAmmo = 1;
   AILevel = 2;
-  DamageReport = 50;
+  DamageReport = 25;
   DamageThreshold = 1;
   DeleteAfterDeath = 1;
   CoopStart = 0;
@@ -73634,6 +73634,14 @@ MCU_TR_Entity
   ZOri = 0.00;
   Enabled = 0;
   MisObjID = 3854;
+  OnEvents
+  {
+    OnEvent
+    {
+      Type = 12;
+      TarId = 6265;
+    }
+  }
 }
 
 
@@ -73658,7 +73666,7 @@ Vehicle
   Engageable = 1;
   LimitAmmo = 1;
   AILevel = 2;
-  DamageReport = 50;
+  DamageReport = 25;
   DamageThreshold = 1;
   DeleteAfterDeath = 1;
   CoopStart = 0;
@@ -73684,6 +73692,14 @@ MCU_TR_Entity
   ZOri = 0.00;
   Enabled = 0;
   MisObjID = 3857;
+  OnEvents
+  {
+    OnEvent
+    {
+      Type = 12;
+      TarId = 6266;
+    }
+  }
 }
 
 
@@ -73708,7 +73724,7 @@ Vehicle
   Engageable = 1;
   LimitAmmo = 1;
   AILevel = 2;
-  DamageReport = 50;
+  DamageReport = 25;
   DamageThreshold = 1;
   DeleteAfterDeath = 1;
   CoopStart = 0;
@@ -73734,6 +73750,14 @@ MCU_TR_Entity
   ZOri = 0.00;
   Enabled = 0;
   MisObjID = 3860;
+  OnEvents
+  {
+    OnEvent
+    {
+      Type = 12;
+      TarId = 6267;
+    }
+  }
 }
 
 
@@ -73758,7 +73782,7 @@ Vehicle
   Engageable = 1;
   LimitAmmo = 1;
   AILevel = 2;
-  DamageReport = 50;
+  DamageReport = 25;
   DamageThreshold = 1;
   DeleteAfterDeath = 1;
   CoopStart = 0;
@@ -73784,6 +73808,14 @@ MCU_TR_Entity
   ZOri = 0.00;
   Enabled = 0;
   MisObjID = 3863;
+  OnEvents
+  {
+    OnEvent
+    {
+      Type = 12;
+      TarId = 6268;
+    }
+  }
 }
 
 
@@ -73808,7 +73840,7 @@ Vehicle
   Engageable = 1;
   LimitAmmo = 1;
   AILevel = 2;
-  DamageReport = 50;
+  DamageReport = 25;
   DamageThreshold = 1;
   DeleteAfterDeath = 1;
   CoopStart = 0;
@@ -73834,6 +73866,14 @@ MCU_TR_Entity
   ZOri = 0.00;
   Enabled = 0;
   MisObjID = 3866;
+  OnEvents
+  {
+    OnEvent
+    {
+      Type = 12;
+      TarId = 6269;
+    }
+  }
 }
 
 
@@ -73883,7 +73923,7 @@ MCU_Waypoint
   Index = 3872;
   Name = "Trigger Waypoint";
   Desc = "";
-  Targets = [];
+  Targets = [6251,6252,6260];
   Objects = [3855];
   XPos = 106814.946;
   YPos = 46.285;
@@ -73918,7 +73958,7 @@ Vehicle
   Engageable = 1;
   LimitAmmo = 1;
   AILevel = 2;
-  DamageReport = 50;
+  DamageReport = 25;
   DamageThreshold = 1;
   DeleteAfterDeath = 1;
   CoopStart = 0;
@@ -73944,6 +73984,14 @@ MCU_TR_Entity
   ZOri = 0.00;
   Enabled = 0;
   MisObjID = 3874;
+  OnEvents
+  {
+    OnEvent
+    {
+      Type = 12;
+      TarId = 6283;
+    }
+  }
 }
 
 
@@ -73968,7 +74016,7 @@ Vehicle
   Engageable = 1;
   LimitAmmo = 1;
   AILevel = 2;
-  DamageReport = 50;
+  DamageReport = 25;
   DamageThreshold = 1;
   DeleteAfterDeath = 1;
   CoopStart = 0;
@@ -73994,6 +74042,14 @@ MCU_TR_Entity
   ZOri = 0.00;
   Enabled = 0;
   MisObjID = 3877;
+  OnEvents
+  {
+    OnEvent
+    {
+      Type = 12;
+      TarId = 6285;
+    }
+  }
 }
 
 
@@ -74018,7 +74074,7 @@ Vehicle
   Engageable = 1;
   LimitAmmo = 1;
   AILevel = 2;
-  DamageReport = 50;
+  DamageReport = 25;
   DamageThreshold = 1;
   DeleteAfterDeath = 1;
   CoopStart = 0;
@@ -74044,6 +74100,14 @@ MCU_TR_Entity
   ZOri = 0.00;
   Enabled = 0;
   MisObjID = 3880;
+  OnEvents
+  {
+    OnEvent
+    {
+      Type = 12;
+      TarId = 6286;
+    }
+  }
 }
 
 
@@ -74068,7 +74132,7 @@ Vehicle
   Engageable = 1;
   LimitAmmo = 1;
   AILevel = 2;
-  DamageReport = 50;
+  DamageReport = 25;
   DamageThreshold = 1;
   DeleteAfterDeath = 1;
   CoopStart = 0;
@@ -74094,6 +74158,14 @@ MCU_TR_Entity
   ZOri = 0.00;
   Enabled = 0;
   MisObjID = 3883;
+  OnEvents
+  {
+    OnEvent
+    {
+      Type = 12;
+      TarId = 6287;
+    }
+  }
 }
 
 
@@ -74118,7 +74190,7 @@ Vehicle
   Engageable = 1;
   LimitAmmo = 1;
   AILevel = 2;
-  DamageReport = 50;
+  DamageReport = 25;
   DamageThreshold = 1;
   DeleteAfterDeath = 1;
   CoopStart = 0;
@@ -74144,6 +74216,14 @@ MCU_TR_Entity
   ZOri = 0.00;
   Enabled = 0;
   MisObjID = 3886;
+  OnEvents
+  {
+    OnEvent
+    {
+      Type = 12;
+      TarId = 6288;
+    }
+  }
 }
 
 
@@ -74293,11 +74373,11 @@ MCU_Waypoint
   Index = 3902;
   Name = "Trigger Waypoint";
   Desc = "";
-  Targets = [];
+  Targets = [6256,6257,6262];
   Objects = [3875];
-  XPos = 107466.231;
+  XPos = 107831.511;
   YPos = 48.890;
-  ZPos = 152849.332;
+  ZPos = 152715.976;
   XOri = 0.00;
   YOri = 51.68;
   ZOri = 0.00;
@@ -80356,7 +80436,7 @@ Vehicle
   Engageable = 1;
   LimitAmmo = 1;
   AILevel = 2;
-  DamageReport = 50;
+  DamageReport = 25;
   DamageThreshold = 1;
   DeleteAfterDeath = 1;
   CoopStart = 0;
@@ -80382,6 +80462,14 @@ MCU_TR_Entity
   ZOri = 0.00;
   Enabled = 0;
   MisObjID = 4235;
+  OnEvents
+  {
+    OnEvent
+    {
+      Type = 12;
+      TarId = 6280;
+    }
+  }
 }
 
 
@@ -80406,7 +80494,7 @@ Vehicle
   Engageable = 1;
   LimitAmmo = 1;
   AILevel = 2;
-  DamageReport = 50;
+  DamageReport = 25;
   DamageThreshold = 1;
   DeleteAfterDeath = 1;
   CoopStart = 0;
@@ -80432,6 +80520,14 @@ MCU_TR_Entity
   ZOri = 0.00;
   Enabled = 0;
   MisObjID = 4238;
+  OnEvents
+  {
+    OnEvent
+    {
+      Type = 12;
+      TarId = 6279;
+    }
+  }
 }
 
 
@@ -80456,7 +80552,7 @@ Vehicle
   Engageable = 1;
   LimitAmmo = 1;
   AILevel = 2;
-  DamageReport = 50;
+  DamageReport = 25;
   DamageThreshold = 1;
   DeleteAfterDeath = 1;
   CoopStart = 0;
@@ -80482,6 +80578,14 @@ MCU_TR_Entity
   ZOri = 0.00;
   Enabled = 0;
   MisObjID = 4241;
+  OnEvents
+  {
+    OnEvent
+    {
+      Type = 12;
+      TarId = 6278;
+    }
+  }
 }
 
 
@@ -80506,7 +80610,7 @@ Vehicle
   Engageable = 1;
   LimitAmmo = 1;
   AILevel = 2;
-  DamageReport = 50;
+  DamageReport = 25;
   DamageThreshold = 1;
   DeleteAfterDeath = 1;
   CoopStart = 0;
@@ -80532,6 +80636,14 @@ MCU_TR_Entity
   ZOri = 0.00;
   Enabled = 0;
   MisObjID = 4244;
+  OnEvents
+  {
+    OnEvent
+    {
+      Type = 12;
+      TarId = 6275;
+    }
+  }
 }
 
 
@@ -80556,7 +80668,7 @@ Vehicle
   Engageable = 1;
   LimitAmmo = 1;
   AILevel = 2;
-  DamageReport = 50;
+  DamageReport = 25;
   DamageThreshold = 1;
   DeleteAfterDeath = 1;
   CoopStart = 0;
@@ -80582,6 +80694,14 @@ MCU_TR_Entity
   ZOri = 0.00;
   Enabled = 0;
   MisObjID = 4247;
+  OnEvents
+  {
+    OnEvent
+    {
+      Type = 12;
+      TarId = 6273;
+    }
+  }
 }
 
 
@@ -80686,11 +80806,11 @@ MCU_Waypoint
   Index = 4260;
   Name = "Trigger Waypoint";
   Desc = "";
-  Targets = [];
+  Targets = [6253,6255,6261];
   Objects = [4236];
-  XPos = 106721.142;
+  XPos = 106605.360;
   YPos = 45.168;
-  ZPos = 153674.655;
+  ZPos = 153723.774;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -80758,7 +80878,7 @@ Vehicle
   Engageable = 1;
   LimitAmmo = 1;
   AILevel = 2;
-  DamageReport = 50;
+  DamageReport = 75;
   DamageThreshold = 1;
   DeleteAfterDeath = 1;
   CoopStart = 0;
@@ -80784,6 +80904,14 @@ MCU_TR_Entity
   ZOri = 0.00;
   Enabled = 0;
   MisObjID = 4266;
+  OnEvents
+  {
+    OnEvent
+    {
+      Type = 12;
+      TarId = 6296;
+    }
+  }
 }
 
 
@@ -80808,7 +80936,7 @@ Vehicle
   Engageable = 1;
   LimitAmmo = 1;
   AILevel = 2;
-  DamageReport = 50;
+  DamageReport = 75;
   DamageThreshold = 1;
   DeleteAfterDeath = 1;
   CoopStart = 0;
@@ -80834,6 +80962,14 @@ MCU_TR_Entity
   ZOri = 0.00;
   Enabled = 0;
   MisObjID = 4269;
+  OnEvents
+  {
+    OnEvent
+    {
+      Type = 12;
+      TarId = 6295;
+    }
+  }
 }
 
 
@@ -80858,7 +80994,7 @@ Vehicle
   Engageable = 1;
   LimitAmmo = 1;
   AILevel = 2;
-  DamageReport = 50;
+  DamageReport = 75;
   DamageThreshold = 1;
   DeleteAfterDeath = 1;
   CoopStart = 0;
@@ -80884,6 +81020,14 @@ MCU_TR_Entity
   ZOri = 0.00;
   Enabled = 0;
   MisObjID = 4272;
+  OnEvents
+  {
+    OnEvent
+    {
+      Type = 12;
+      TarId = 6293;
+    }
+  }
 }
 
 
@@ -80895,9 +81039,9 @@ MCU_CMD_Formation
   Desc = "";
   Targets = [];
   Objects = [4267];
-  XPos = 100723.031;
+  XPos = 100730.881;
   YPos = 45.727;
-  ZPos = 148374.152;
+  ZPos = 148403.264;
   XOri = 0.00;
   YOri = 55.43;
   ZOri = 0.00;
@@ -80912,11 +81056,11 @@ MCU_Waypoint
   Index = 4276;
   Name = "Trigger Waypoint";
   Desc = "";
-  Targets = [];
+  Targets = [6263,6264];
   Objects = [4267];
-  XPos = 107554.785;
+  XPos = 106754.659;
   YPos = 50.973;
-  ZPos = 153991.500;
+  ZPos = 153861.823;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -95479,509 +95623,6 @@ MCU_Timer
 
 
 
-Group
-{
-  Name = "Victory";
-  Index = 5355;
-  Desc = "";
-  MCU_Timer
-  {
-    Index = 3679;
-    Name = "Germans win";
-    Desc = "";
-    Targets = [5357,5358,5359,5360];
-    Objects = [];
-    XPos = 92105.077;
-    YPos = 136.728;
-    ZPos = 123926.901;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 0;
-    Random = 100;
-  }
-  
-
-  MCU_TR_Subtitle
-  {
-    Index = 5357;
-    Name = "Translator Subtitle";
-    Desc = "";
-    Targets = [];
-    Objects = [];
-    XPos = 92113.820;
-    YPos = 115.411;
-    ZPos = 122878.301;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 1;
-    SubtitleInfo
-    {
-      Duration = 60;
-      FontSize = 20;
-      HAlign = 1;
-      VAlign = 0;
-      RColor = 0;
-      GColor = 200;
-      BColor = 200;
-      LCText = 3;
-    }
-    
-    Coalitions = [0, 1, 2];
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 5358;
-    Name = "1m";
-    Desc = "";
-    Targets = [5363,5364];
-    Objects = [];
-    XPos = 93901.497;
-    YPos = 92.324;
-    ZPos = 126007.484;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 60;
-    Random = 100;
-  }
-  
-
-  MCU_TR_Subtitle
-  {
-    Index = 5363;
-    Name = "Translator Subtitle";
-    Desc = "";
-    Targets = [];
-    Objects = [];
-    XPos = 93713.517;
-    YPos = 115.411;
-    ZPos = 127341.505;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 1;
-    SubtitleInfo
-    {
-      Duration = 60;
-      FontSize = 20;
-      HAlign = 1;
-      VAlign = 0;
-      RColor = 255;
-      GColor = 255;
-      BColor = 0;
-      LCText = 4;
-    }
-    
-    Coalitions = [0, 1, 2];
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 5364;
-    Name = "5m";
-    Desc = "";
-    Targets = [5367,5368];
-    Objects = [];
-    XPos = 95014.296;
-    YPos = 92.324;
-    ZPos = 126004.633;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 300;
-    Random = 100;
-  }
-  
-
-  MCU_TR_Subtitle
-  {
-    Index = 5367;
-    Name = "Translator Subtitle";
-    Desc = "";
-    Targets = [];
-    Objects = [];
-    XPos = 94943.370;
-    YPos = 115.411;
-    ZPos = 127210.363;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 1;
-    SubtitleInfo
-    {
-      Duration = 60;
-      FontSize = 20;
-      HAlign = 1;
-      VAlign = 0;
-      RColor = 255;
-      GColor = 255;
-      BColor = 0;
-      LCText = 5;
-    }
-    
-    Coalitions = [0, 1, 2];
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 5368;
-    Name = "1m";
-    Desc = "";
-    Targets = [5371,5372];
-    Objects = [];
-    XPos = 95964.694;
-    YPos = 92.324;
-    ZPos = 126018.818;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 60;
-    Random = 100;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 5371;
-    Name = "1m";
-    Desc = "";
-    Targets = [5374,5375];
-    Objects = [];
-    XPos = 96929.278;
-    YPos = 92.324;
-    ZPos = 126018.818;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 60;
-    Random = 100;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 5374;
-    Name = "1m";
-    Desc = "";
-    Targets = [5377,5378];
-    Objects = [];
-    XPos = 97851.307;
-    YPos = 92.324;
-    ZPos = 126004.633;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 60;
-    Random = 100;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 5377;
-    Name = "1m";
-    Desc = "";
-    Targets = [5380,5381];
-    Objects = [];
-    XPos = 98730.781;
-    YPos = 92.324;
-    ZPos = 126047.188;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 60;
-    Random = 100;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 5380;
-    Name = "1m";
-    Desc = "";
-    Targets = [5383];
-    Objects = [];
-    XPos = 99596.070;
-    YPos = 92.324;
-    ZPos = 126061.373;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 60;
-    Random = 100;
-  }
-  
-
-  MCU_TR_Subtitle
-  {
-    Index = 5372;
-    Name = "Translator Subtitle";
-    Desc = "";
-    Targets = [];
-    Objects = [];
-    XPos = 95964.694;
-    YPos = 115.411;
-    ZPos = 127224.548;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 1;
-    SubtitleInfo
-    {
-      Duration = 60;
-      FontSize = 20;
-      HAlign = 1;
-      VAlign = 0;
-      RColor = 255;
-      GColor = 255;
-      BColor = 0;
-      LCText = 6;
-    }
-    
-    Coalitions = [0, 1, 2];
-  }
-  
-
-  MCU_TR_Subtitle
-  {
-    Index = 5375;
-    Name = "Translator Subtitle";
-    Desc = "";
-    Targets = [];
-    Objects = [];
-    XPos = 96872.538;
-    YPos = 115.411;
-    ZPos = 127210.363;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 1;
-    SubtitleInfo
-    {
-      Duration = 60;
-      FontSize = 20;
-      HAlign = 1;
-      VAlign = 0;
-      RColor = 255;
-      GColor = 255;
-      BColor = 0;
-      LCText = 7;
-    }
-    
-    Coalitions = [0, 1, 2];
-  }
-  
-
-  MCU_TR_Subtitle
-  {
-    Index = 5378;
-    Name = "Translator Subtitle";
-    Desc = "";
-    Targets = [];
-    Objects = [];
-    XPos = 97780.382;
-    YPos = 115.411;
-    ZPos = 127210.363;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 1;
-    SubtitleInfo
-    {
-      Duration = 60;
-      FontSize = 20;
-      HAlign = 1;
-      VAlign = 0;
-      RColor = 255;
-      GColor = 255;
-      BColor = 0;
-      LCText = 8;
-    }
-    
-    Coalitions = [0, 1, 2];
-  }
-  
-
-  MCU_TR_Subtitle
-  {
-    Index = 5381;
-    Name = "Translator Subtitle";
-    Desc = "";
-    Targets = [];
-    Objects = [];
-    XPos = 98659.856;
-    YPos = 115.411;
-    ZPos = 127252.918;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 1;
-    SubtitleInfo
-    {
-      Duration = 60;
-      FontSize = 20;
-      HAlign = 1;
-      VAlign = 0;
-      RColor = 255;
-      GColor = 255;
-      BColor = 0;
-      LCText = 9;
-    }
-    
-    Coalitions = [0, 1, 2];
-  }
-  
-
-  MCU_TR_MissionEnd
-  {
-    Index = 5383;
-    Name = "Translator Mission End";
-    Desc = "";
-    Targets = [];
-    Objects = [];
-    XPos = 99610.255;
-    YPos = 116.768;
-    ZPos = 127295.473;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 1;
-    Succeeded = 1;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 3784;
-    Name = "Russians win";
-    Desc = "";
-    Targets = [5390,5358,5391,5392];
-    Objects = [];
-    XPos = 92184.611;
-    YPos = 136.728;
-    ZPos = 127810.659;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 0;
-    Random = 100;
-  }
-  
-
-  MCU_TR_Subtitle
-  {
-    Index = 5390;
-    Name = "Translator Subtitle";
-    Desc = "";
-    Targets = [];
-    Objects = [];
-    XPos = 92170.426;
-    YPos = 115.411;
-    ZPos = 128945.463;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 1;
-    SubtitleInfo
-    {
-      Duration = 60;
-      FontSize = 20;
-      HAlign = 1;
-      VAlign = 0;
-      RColor = 255;
-      GColor = 0;
-      BColor = 0;
-      LCText = 10;
-    }
-    
-    Coalitions = [0, 1, 2];
-  }
-  
-
-  MCU_Deactivate
-  {
-    Index = 5359;
-    Name = "Trigger Deactivate";
-    Desc = "";
-    Targets = [3784];
-    Objects = [];
-    XPos = 92508.605;
-    YPos = 103.120;
-    ZPos = 125744.357;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-  }
-  
-
-  MCU_Deactivate
-  {
-    Index = 5391;
-    Name = "Trigger Deactivate";
-    Desc = "";
-    Targets = [3679];
-    Objects = [];
-    XPos = 91600.762;
-    YPos = 103.120;
-    ZPos = 125730.172;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-  }
-  
-
-  MCU_TR_MissionObjective
-  {
-    Index = 5360;
-    Targets = [];
-    Objects = [];
-    XPos = 91707.724;
-    YPos = 91.988;
-    ZPos = 123942.704;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 1;
-    LCName = 425;
-    LCDesc = 426;
-    TaskType = 0;
-    Coalition = 2;
-    Success = 1;
-    IconType = 0;
-  }
-  
-
-  MCU_TR_MissionObjective
-  {
-    Index = 5392;
-    Targets = [];
-    Objects = [];
-    XPos = 91654.279;
-    YPos = 91.988;
-    ZPos = 127823.162;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 1;
-    LCName = 427;
-    LCDesc = 428;
-    TaskType = 0;
-    Coalition = 1;
-    Success = 1;
-    IconType = 0;
-  }
-  
-
-}
-
-
-
 MCU_CMD_Damage
 {
   Index = 4569;
@@ -103788,406 +103429,6 @@ MCU_Timer
 
 
 
-Group
-{
-  Name = "Secondary victory";
-  Index = 5990;
-  Desc = "";
-  MCU_Counter
-  {
-    Index = 5991;
-    Name = "German score";
-    Desc = "";
-    Targets = [5992,5993,5994];
-    Objects = [];
-    XPos = 86862.933;
-    YPos = 93.602;
-    ZPos = 124053.054;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Counter = 20;
-    Dropcount = 0;
-  }
-  
-
-  MCU_Counter
-  {
-    Index = 5995;
-    Name = "Russian score";
-    Desc = "";
-    Targets = [5992,5996,5997];
-    Objects = [];
-    XPos = 86790.713;
-    YPos = 94.459;
-    ZPos = 124051.085;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Counter = 20;
-    Dropcount = 0;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 3284;
-    Name = "Rus+1";
-    Desc = "";
-    Targets = [5995];
-    Objects = [];
-    XPos = 86769.469;
-    YPos = 92.544;
-    ZPos = 124031.568;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 0;
-    Random = 100;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 3604;
-    Name = "Rus+2";
-    Desc = "";
-    Targets = [3284,5995];
-    Objects = [];
-    XPos = 86769.378;
-    YPos = 92.544;
-    ZPos = 124050.246;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 0.05;
-    Random = 100;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 3564;
-    Name = "Rus+3";
-    Desc = "";
-    Targets = [3604,5995];
-    Objects = [];
-    XPos = 86769.404;
-    YPos = 92.544;
-    ZPos = 124070.177;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 0.05;
-    Random = 100;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 6001;
-    Name = "ResultGermans";
-    Desc = "";
-    Targets = [];
-    Objects = [];
-    XPos = 86846.085;
-    YPos = 93.157;
-    ZPos = 124090.166;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 0;
-    Random = 100;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 6002;
-    Name = "ResultRussians";
-    Desc = "";
-    Targets = [];
-    Objects = [];
-    XPos = 86801.859;
-    YPos = 93.157;
-    ZPos = 124089.032;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 0;
-    Random = 100;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 6003;
-    Name = "100ms";
-    Desc = "";
-    Targets = [6004];
-    Objects = [];
-    XPos = 86831.385;
-    YPos = 92.843;
-    ZPos = 124039.629;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 0.1;
-    Random = 100;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 6004;
-    Name = "";
-    Desc = "";
-    Targets = [6003,5991,5995];
-    Objects = [];
-    XPos = 86827.189;
-    YPos = 92.863;
-    ZPos = 124044.811;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 0;
-    Random = 100;
-  }
-  
-
-  MCU_Deactivate
-  {
-    Index = 5992;
-    Name = "";
-    Desc = "";
-    Targets = [6004];
-    Objects = [];
-    XPos = 86827.209;
-    YPos = 93.059;
-    ZPos = 124050.852;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 6007;
-    Name = "StartCompare";
-    Desc = "";
-    Targets = [6004];
-    Objects = [];
-    XPos = 86822.265;
-    YPos = 93.058;
-    ZPos = 124039.402;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 0;
-    Random = 100;
-  }
-  
-
-  MCU_Counter
-  {
-    Index = 5993;
-    Name = "2x";
-    Desc = "";
-    Targets = [6009,6010];
-    Objects = [];
-    XPos = 86829.303;
-    YPos = 92.877;
-    ZPos = 124064.161;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Counter = 2;
-    Dropcount = 0;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 5996;
-    Name = "Trigger Timer";
-    Desc = "";
-    Targets = [5993];
-    Objects = [];
-    XPos = 86824.610;
-    YPos = 92.886;
-    ZPos = 124063.841;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 0.05;
-    Random = 100;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 6009;
-    Name = "ResultTie";
-    Desc = "";
-    Targets = [];
-    Objects = [];
-    XPos = 86823.293;
-    YPos = 93.292;
-    ZPos = 124087.740;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 0;
-    Random = 100;
-  }
-  
-
-  MCU_Deactivate
-  {
-    Index = 6010;
-    Name = "";
-    Desc = "";
-    Targets = [6001,6002];
-    Objects = [];
-    XPos = 86829.450;
-    YPos = 92.942;
-    ZPos = 124072.149;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 5997;
-    Name = "1s";
-    Desc = "";
-    Targets = [6002];
-    Objects = [];
-    XPos = 86796.662;
-    YPos = 93.137;
-    ZPos = 124068.321;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 1;
-    Random = 100;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 5994;
-    Name = "1s";
-    Desc = "";
-    Targets = [6001];
-    Objects = [];
-    XPos = 86853.518;
-    YPos = 93.137;
-    ZPos = 124070.348;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 1;
-    Random = 100;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 1613;
-    Name = "Ger+1";
-    Desc = "";
-    Targets = [5991];
-    Objects = [];
-    XPos = 86879.193;
-    YPos = 92.544;
-    ZPos = 124035.271;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 0;
-    Random = 100;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 3413;
-    Name = "Ger+2";
-    Desc = "";
-    Targets = [1613,5991];
-    Objects = [];
-    XPos = 86879.102;
-    YPos = 92.544;
-    ZPos = 124053.949;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 0.05;
-    Random = 100;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 3268;
-    Name = "Ger+3";
-    Desc = "";
-    Targets = [3413,5991];
-    Objects = [];
-    XPos = 86879.128;
-    YPos = 92.544;
-    ZPos = 124073.880;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 0.05;
-    Random = 100;
-  }
-  
-
-  MCU_Timer
-  {
-    Index = 6019;
-    Name = "2h";
-    Desc = "";
-    Targets = [6007];
-    Objects = [];
-    XPos = 86822.146;
-    YPos = 93.239;
-    ZPos = 124032.664;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Time = 7200;
-    Random = 100;
-  }
-  
-
-  MCU_TR_MissionBegin
-  {
-    Index = 6020;
-    Name = "";
-    Desc = "";
-    Targets = [6019];
-    Objects = [];
-    XPos = 86821.979;
-    YPos = 93.377;
-    ZPos = 124025.825;
-    XOri = 0.00;
-    YOri = 0.00;
-    ZOri = 0.00;
-    Enabled = 1;
-  }
-  
-
-}
-
-
-
 MCU_TR_Subtitle
 {
   Index = 5962;
@@ -107080,7 +106321,7 @@ MCU_Icon
   RColor = 255;
   GColor = 255;
   BColor = 255;
-  LineType = 1;
+  LineType = 2;
   Coalitions = [1, 2, 0];
 }
 
@@ -107104,7 +106345,7 @@ MCU_Icon
   RColor = 255;
   GColor = 255;
   BColor = 255;
-  LineType = 1;
+  LineType = 2;
   Coalitions = [1, 2, 0];
 }
 
@@ -107128,7 +106369,7 @@ MCU_Icon
   RColor = 255;
   GColor = 255;
   BColor = 255;
-  LineType = 1;
+  LineType = 2;
   Coalitions = [1, 2, 0];
 }
 
@@ -107152,7 +106393,7 @@ MCU_Icon
   RColor = 255;
   GColor = 255;
   BColor = 255;
-  LineType = 1;
+  LineType = 2;
   Coalitions = [1, 2, 0];
 }
 
@@ -107202,6 +106443,1773 @@ MCU_Icon
   BColor = 255;
   LineType = 13;
   Coalitions = [1, 2, 0];
+}
+
+
+
+MCU_CMD_Formation
+{
+  Index = 6251;
+  Name = "OnRoad";
+  Desc = "";
+  Targets = [];
+  Objects = [3855];
+  XPos = 106764.870;
+  YPos = 50.973;
+  ZPos = 154106.788;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+FormationType = 4;
+FormationDensity = 1;
+}
+
+
+
+MCU_Waypoint
+{
+  Index = 6252;
+  Name = "Trigger Waypoint";
+  Desc = "";
+  Targets = [];
+  Objects = [3855];
+  XPos = 107540.906;
+  YPos = 46.285;
+  ZPos = 153988.332;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Area = 20;
+  Speed = 10;
+  Priority = 0;
+}
+
+
+
+MCU_CMD_Formation
+{
+  Index = 6253;
+  Name = "OnRoad";
+  Desc = "";
+  Targets = [];
+  Objects = [4236];
+  XPos = 106504.180;
+  YPos = 50.973;
+  ZPos = 153535.805;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+FormationType = 4;
+FormationDensity = 1;
+}
+
+
+
+MCU_Waypoint
+{
+  Index = 6255;
+  Name = "Trigger Waypoint";
+  Desc = "";
+  Targets = [];
+  Objects = [4236];
+  XPos = 107547.356;
+  YPos = 45.168;
+  ZPos = 153989.907;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Area = 20;
+  Speed = 10;
+  Priority = 0;
+}
+
+
+
+MCU_CMD_Formation
+{
+  Index = 6256;
+  Name = "Column";
+  Desc = "";
+  Targets = [];
+  Objects = [3875];
+  XPos = 107840.453;
+  YPos = 50.973;
+  ZPos = 152608.398;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+FormationType = 5;
+FormationDensity = 1;
+}
+
+
+
+MCU_Waypoint
+{
+  Index = 6257;
+  Name = "Trigger Waypoint";
+  Desc = "";
+  Targets = [6258];
+  Objects = [3875];
+  XPos = 107959.842;
+  YPos = 48.890;
+  ZPos = 152814.212;
+  XOri = 0.00;
+  YOri = 108.52;
+  ZOri = 0.00;
+  Area = 5;
+  Speed = 10;
+  Priority = 0;
+}
+
+
+
+MCU_Waypoint
+{
+  Index = 6258;
+  Name = "Trigger Waypoint";
+  Desc = "";
+  Targets = [6259];
+  Objects = [3875];
+  XPos = 107713.872;
+  YPos = 48.890;
+  ZPos = 153528.016;
+  XOri = 0.00;
+  YOri = 108.52;
+  ZOri = 0.00;
+  Area = 5;
+  Speed = 10;
+  Priority = 0;
+}
+
+
+
+MCU_Waypoint
+{
+  Index = 6259;
+  Name = "Trigger Waypoint";
+  Desc = "";
+  Targets = [];
+  Objects = [3875];
+  XPos = 107586.267;
+  YPos = 48.890;
+  ZPos = 153967.589;
+  XOri = 0.00;
+  YOri = 108.52;
+  ZOri = 0.00;
+  Area = 5;
+  Speed = 10;
+  Priority = 0;
+}
+
+
+
+MCU_TR_Subtitle
+{
+  Index = 6260;
+  Name = "All";
+  Desc = "";
+  Targets = [];
+  Objects = [];
+  XPos = 106867.237;
+  YPos = 50.973;
+  ZPos = 154092.051;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  SubtitleInfo
+  {
+    Duration = 15;
+    FontSize = 20;
+    HAlign = 1;
+    VAlign = 0;
+    RColor = 0;
+    GColor = 0;
+    BColor = 255;
+    LCText = 516;
+  }
+  
+  Coalitions = [0, 1, 2];
+}
+
+
+
+MCU_TR_Subtitle
+{
+  Index = 6261;
+  Name = "All";
+  Desc = "";
+  Targets = [];
+  Objects = [];
+  XPos = 106614.606;
+  YPos = 50.973;
+  ZPos = 153631.882;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  SubtitleInfo
+  {
+    Duration = 15;
+    FontSize = 20;
+    HAlign = 1;
+    VAlign = 0;
+    RColor = 0;
+    GColor = 0;
+    BColor = 255;
+    LCText = 517;
+  }
+  
+  Coalitions = [0, 1, 2];
+}
+
+
+
+MCU_TR_Subtitle
+{
+  Index = 6262;
+  Name = "All";
+  Desc = "";
+  Targets = [];
+  Objects = [];
+  XPos = 107968.908;
+  YPos = 50.973;
+  ZPos = 152662.108;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  SubtitleInfo
+  {
+    Duration = 15;
+    FontSize = 20;
+    HAlign = 1;
+    VAlign = 0;
+    RColor = 0;
+    GColor = 0;
+    BColor = 255;
+    LCText = 518;
+  }
+  
+  Coalitions = [0, 1, 2];
+}
+
+
+
+MCU_Waypoint
+{
+  Index = 6263;
+  Name = "Trigger Waypoint";
+  Desc = "";
+  Targets = [];
+  Objects = [4267];
+  XPos = 107531.867;
+  YPos = 50.973;
+  ZPos = 153985.749;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Area = 20;
+  Speed = 50;
+  Priority = 0;
+}
+
+
+
+MCU_TR_Subtitle
+{
+  Index = 6264;
+  Name = "All";
+  Desc = "";
+  Targets = [];
+  Objects = [];
+  XPos = 106802.549;
+  YPos = 50.973;
+  ZPos = 153826.790;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  SubtitleInfo
+  {
+    Duration = 15;
+    FontSize = 20;
+    HAlign = 1;
+    VAlign = 0;
+    RColor = 0;
+    GColor = 0;
+    BColor = 255;
+    LCText = 519;
+  }
+  
+  Coalitions = [0, 1, 2];
+}
+
+
+
+MCU_Counter
+{
+  Index = 6265;
+  Name = "1x";
+  Desc = "";
+  Targets = [6270];
+  Objects = [];
+  XPos = 99240.147;
+  YPos = 46.905;
+  ZPos = 151403.232;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Counter = 1;
+  Dropcount = 0;
+}
+
+
+
+MCU_Counter
+{
+  Index = 6266;
+  Name = "1x";
+  Desc = "";
+  Targets = [6270];
+  Objects = [];
+  XPos = 99234.508;
+  YPos = 46.905;
+  ZPos = 151414.064;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Counter = 1;
+  Dropcount = 0;
+}
+
+
+
+MCU_Counter
+{
+  Index = 6267;
+  Name = "1x";
+  Desc = "";
+  Targets = [6270];
+  Objects = [];
+  XPos = 99225.159;
+  YPos = 46.905;
+  ZPos = 151424.006;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Counter = 1;
+  Dropcount = 0;
+}
+
+
+
+MCU_Counter
+{
+  Index = 6268;
+  Name = "1x";
+  Desc = "";
+  Targets = [6270];
+  Objects = [];
+  XPos = 99215.366;
+  YPos = 46.905;
+  ZPos = 151432.909;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Counter = 1;
+  Dropcount = 0;
+}
+
+
+
+MCU_Counter
+{
+  Index = 6269;
+  Name = "1x";
+  Desc = "";
+  Targets = [6270];
+  Objects = [];
+  XPos = 99202.753;
+  YPos = 46.905;
+  ZPos = 151443.000;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Counter = 1;
+  Dropcount = 0;
+}
+
+
+
+MCU_Counter
+{
+  Index = 6270;
+  Name = "All damaged";
+  Desc = "";
+  Targets = [6272];
+  Objects = [];
+  XPos = 99241.226;
+  YPos = 46.045;
+  ZPos = 151442.255;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Counter = 1;
+  Dropcount = 0;
+}
+
+
+
+MCU_TR_Subtitle
+{
+  Index = 6272;
+  Name = "All";
+  Desc = "";
+  Targets = [];
+  Objects = [];
+  XPos = 99253.596;
+  YPos = 45.924;
+  ZPos = 151442.065;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  SubtitleInfo
+  {
+    Duration = 15;
+    FontSize = 20;
+    HAlign = 1;
+    VAlign = 0;
+    RColor = 255;
+    GColor = 0;
+    BColor = 0;
+    LCText = 521;
+  }
+  
+  Coalitions = [0, 1, 2];
+}
+
+
+
+MCU_Counter
+{
+  Index = 6273;
+  Name = "1x";
+  Desc = "";
+  Targets = [6274];
+  Objects = [];
+  XPos = 99830.904;
+  YPos = 46.905;
+  ZPos = 150897.401;
+  XOri = 0.00;
+  YOri = 176.09;
+  ZOri = 0.00;
+  Counter = 1;
+  Dropcount = 0;
+}
+
+
+
+MCU_Counter
+{
+  Index = 6275;
+  Name = "1x";
+  Desc = "";
+  Targets = [6274];
+  Objects = [];
+  XPos = 99835.792;
+  YPos = 46.905;
+  ZPos = 150886.210;
+  XOri = 0.00;
+  YOri = 176.09;
+  ZOri = 0.00;
+  Counter = 1;
+  Dropcount = 0;
+}
+
+
+
+MCU_Counter
+{
+  Index = 6274;
+  Name = "All damaged";
+  Desc = "";
+  Targets = [6281];
+  Objects = [];
+  XPos = 99827.169;
+  YPos = 46.045;
+  ZPos = 150858.542;
+  XOri = 0.00;
+  YOri = 176.09;
+  ZOri = 0.00;
+  Counter = 1;
+  Dropcount = 0;
+}
+
+
+
+MCU_Counter
+{
+  Index = 6278;
+  Name = "1x";
+  Desc = "";
+  Targets = [6274];
+  Objects = [];
+  XPos = 99844.442;
+  YPos = 46.905;
+  ZPos = 150875.654;
+  XOri = 0.00;
+  YOri = 176.09;
+  ZOri = 0.00;
+  Counter = 1;
+  Dropcount = 0;
+}
+
+
+
+MCU_Counter
+{
+  Index = 6279;
+  Name = "1x";
+  Desc = "";
+  Targets = [6274];
+  Objects = [];
+  XPos = 99853.605;
+  YPos = 46.905;
+  ZPos = 150866.104;
+  XOri = 0.00;
+  YOri = 176.09;
+  ZOri = 0.00;
+  Counter = 1;
+  Dropcount = 0;
+}
+
+
+
+MCU_Counter
+{
+  Index = 6280;
+  Name = "1x";
+  Desc = "";
+  Targets = [6274];
+  Objects = [];
+  XPos = 99865.501;
+  YPos = 46.905;
+  ZPos = 150855.177;
+  XOri = 0.00;
+  YOri = 176.09;
+  ZOri = 0.00;
+  Counter = 1;
+  Dropcount = 0;
+}
+
+
+
+MCU_TR_Subtitle
+{
+  Index = 6281;
+  Name = "All";
+  Desc = "";
+  Targets = [];
+  Objects = [];
+  XPos = 99815.944;
+  YPos = 45.924;
+  ZPos = 150858.771;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  SubtitleInfo
+  {
+    Duration = 15;
+    FontSize = 20;
+    HAlign = 1;
+    VAlign = 0;
+    RColor = 255;
+    GColor = 0;
+    BColor = 0;
+    LCText = 522;
+  }
+  
+  Coalitions = [0, 1, 2];
+}
+
+
+
+MCU_Counter
+{
+  Index = 6283;
+  Name = "1x";
+  Desc = "";
+  Targets = [6284];
+  Objects = [];
+  XPos = 100675.650;
+  YPos = 46.905;
+  ZPos = 149455.920;
+  XOri = 0.00;
+  YOri = 176.09;
+  ZOri = 0.00;
+  Counter = 1;
+  Dropcount = 0;
+}
+
+
+
+MCU_Counter
+{
+  Index = 6285;
+  Name = "1x";
+  Desc = "";
+  Targets = [6284];
+  Objects = [];
+  XPos = 100663.754;
+  YPos = 46.905;
+  ZPos = 149466.847;
+  XOri = 0.00;
+  YOri = 176.09;
+  ZOri = 0.00;
+  Counter = 1;
+  Dropcount = 0;
+}
+
+
+
+MCU_Counter
+{
+  Index = 6286;
+  Name = "1x";
+  Desc = "";
+  Targets = [6284];
+  Objects = [];
+  XPos = 100654.591;
+  YPos = 46.905;
+  ZPos = 149476.397;
+  XOri = 0.00;
+  YOri = 176.09;
+  ZOri = 0.00;
+  Counter = 1;
+  Dropcount = 0;
+}
+
+
+
+MCU_Counter
+{
+  Index = 6287;
+  Name = "1x";
+  Desc = "";
+  Targets = [6284];
+  Objects = [];
+  XPos = 100645.941;
+  YPos = 46.905;
+  ZPos = 149486.953;
+  XOri = 0.00;
+  YOri = 176.09;
+  ZOri = 0.00;
+  Counter = 1;
+  Dropcount = 0;
+}
+
+
+
+MCU_Counter
+{
+  Index = 6288;
+  Name = "1x";
+  Desc = "";
+  Targets = [6284];
+  Objects = [];
+  XPos = 100641.053;
+  YPos = 46.905;
+  ZPos = 149498.144;
+  XOri = 0.00;
+  YOri = 176.09;
+  ZOri = 0.00;
+  Counter = 1;
+  Dropcount = 0;
+}
+
+
+
+MCU_Counter
+{
+  Index = 6284;
+  Name = "All damaged";
+  Desc = "";
+  Targets = [6292];
+  Objects = [];
+  XPos = 100637.318;
+  YPos = 46.045;
+  ZPos = 149459.285;
+  XOri = 0.00;
+  YOri = 176.09;
+  ZOri = 0.00;
+  Counter = 1;
+  Dropcount = 0;
+}
+
+
+
+MCU_TR_Subtitle
+{
+  Index = 6292;
+  Name = "All";
+  Desc = "";
+  Targets = [];
+  Objects = [];
+  XPos = 100618.796;
+  YPos = 45.924;
+  ZPos = 149458.867;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  SubtitleInfo
+  {
+    Duration = 15;
+    FontSize = 20;
+    HAlign = 1;
+    VAlign = 0;
+    RColor = 255;
+    GColor = 0;
+    BColor = 0;
+    LCText = 525;
+  }
+  
+  Coalitions = [0, 1, 2];
+}
+
+
+
+MCU_Counter
+{
+  Index = 6293;
+  Name = "1x";
+  Desc = "";
+  Targets = [6294];
+  Objects = [];
+  XPos = 100754.555;
+  YPos = 46.905;
+  ZPos = 148303.527;
+  XOri = 0.00;
+  YOri = 190.91;
+  ZOri = 0.00;
+  Counter = 1;
+  Dropcount = 0;
+}
+
+
+
+MCU_Counter
+{
+  Index = 6295;
+  Name = "1x";
+  Desc = "";
+  Targets = [6294];
+  Objects = [];
+  XPos = 100728.958;
+  YPos = 46.905;
+  ZPos = 148317.935;
+  XOri = 0.00;
+  YOri = 190.91;
+  ZOri = 0.00;
+  Counter = 1;
+  Dropcount = 0;
+}
+
+
+
+MCU_Counter
+{
+  Index = 6296;
+  Name = "1x";
+  Desc = "";
+  Targets = [6294];
+  Objects = [];
+  XPos = 100710.306;
+  YPos = 46.905;
+  ZPos = 148335.494;
+  XOri = 0.00;
+  YOri = 190.91;
+  ZOri = 0.00;
+  Counter = 1;
+  Dropcount = 0;
+}
+
+
+
+MCU_Counter
+{
+  Index = 6294;
+  Name = "All damaged";
+  Desc = "";
+  Targets = [6299];
+  Objects = [];
+  XPos = 100716.638;
+  YPos = 46.045;
+  ZPos = 148296.973;
+  XOri = 0.00;
+  YOri = 190.91;
+  ZOri = 0.00;
+  Counter = 1;
+  Dropcount = 0;
+}
+
+
+
+MCU_TR_Subtitle
+{
+  Index = 6299;
+  Name = "All";
+  Desc = "";
+  Targets = [];
+  Objects = [];
+  XPos = 100703.149;
+  YPos = 45.924;
+  ZPos = 148272.586;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  SubtitleInfo
+  {
+    Duration = 15;
+    FontSize = 20;
+    HAlign = 1;
+    VAlign = 0;
+    RColor = 255;
+    GColor = 0;
+    BColor = 0;
+    LCText = 526;
+  }
+  
+  Coalitions = [0, 1, 2];
+}
+
+
+
+Group
+{
+  Name = "Victory conditions";
+  Index = 6301;
+  Desc = "";
+  MCU_Counter
+  {
+    Index = 5991;
+    Name = "German score";
+    Desc = "";
+    Targets = [5992,5993,5994];
+    Objects = [];
+    XPos = 89649.624;
+    YPos = 93.602;
+    ZPos = 125945.748;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Counter = 20;
+    Dropcount = 0;
+  }
+  
+
+  MCU_Counter
+  {
+    Index = 5995;
+    Name = "Russian score";
+    Desc = "";
+    Targets = [5992,5996,5997];
+    Objects = [];
+    XPos = 89577.404;
+    YPos = 94.459;
+    ZPos = 125943.779;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Counter = 20;
+    Dropcount = 0;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 3284;
+    Name = "Rus+1";
+    Desc = "";
+    Targets = [5995];
+    Objects = [];
+    XPos = 89556.160;
+    YPos = 92.544;
+    ZPos = 125924.262;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 3604;
+    Name = "Rus+2";
+    Desc = "";
+    Targets = [3284,5995];
+    Objects = [];
+    XPos = 89556.069;
+    YPos = 92.544;
+    ZPos = 125942.941;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0.05;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 3564;
+    Name = "Rus+3";
+    Desc = "";
+    Targets = [3604,5995];
+    Objects = [];
+    XPos = 89556.095;
+    YPos = 92.544;
+    ZPos = 125962.871;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0.05;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 6001;
+    Name = "ResultGermans";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 89632.776;
+    YPos = 93.157;
+    ZPos = 125982.860;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 6002;
+    Name = "ResultRussians";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 89588.549;
+    YPos = 93.157;
+    ZPos = 125981.726;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 6003;
+    Name = "100ms";
+    Desc = "";
+    Targets = [6004];
+    Objects = [];
+    XPos = 89618.075;
+    YPos = 92.843;
+    ZPos = 125932.323;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0.1;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 6004;
+    Name = "";
+    Desc = "";
+    Targets = [6003,5991,5995];
+    Objects = [];
+    XPos = 89613.880;
+    YPos = 92.863;
+    ZPos = 125937.505;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0;
+    Random = 100;
+  }
+  
+
+  MCU_Deactivate
+  {
+    Index = 5992;
+    Name = "";
+    Desc = "";
+    Targets = [6004];
+    Objects = [];
+    XPos = 89613.900;
+    YPos = 93.059;
+    ZPos = 125943.546;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 6007;
+    Name = "StartCompare";
+    Desc = "";
+    Targets = [6004];
+    Objects = [];
+    XPos = 89608.955;
+    YPos = 93.058;
+    ZPos = 125932.097;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0;
+    Random = 100;
+  }
+  
+
+  MCU_Counter
+  {
+    Index = 5993;
+    Name = "2x";
+    Desc = "";
+    Targets = [6009,6010];
+    Objects = [];
+    XPos = 89615.994;
+    YPos = 92.877;
+    ZPos = 125956.855;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Counter = 2;
+    Dropcount = 0;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 5996;
+    Name = "Trigger Timer";
+    Desc = "";
+    Targets = [5993];
+    Objects = [];
+    XPos = 89611.300;
+    YPos = 92.886;
+    ZPos = 125956.535;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0.05;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 6009;
+    Name = "ResultTie";
+    Desc = "";
+    Targets = [6300,5358];
+    Objects = [];
+    XPos = 89609.984;
+    YPos = 93.292;
+    ZPos = 125980.434;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0;
+    Random = 100;
+  }
+  
+
+  MCU_Deactivate
+  {
+    Index = 6010;
+    Name = "";
+    Desc = "";
+    Targets = [6001,6002];
+    Objects = [];
+    XPos = 89616.141;
+    YPos = 92.942;
+    ZPos = 125964.843;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 5997;
+    Name = "1s";
+    Desc = "";
+    Targets = [6002];
+    Objects = [];
+    XPos = 89583.352;
+    YPos = 93.137;
+    ZPos = 125961.015;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 1;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 5994;
+    Name = "1s";
+    Desc = "";
+    Targets = [6001];
+    Objects = [];
+    XPos = 89640.208;
+    YPos = 93.137;
+    ZPos = 125963.042;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 1;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 1613;
+    Name = "Ger+1";
+    Desc = "";
+    Targets = [5991];
+    Objects = [];
+    XPos = 89665.884;
+    YPos = 92.544;
+    ZPos = 125927.965;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 3413;
+    Name = "Ger+2";
+    Desc = "";
+    Targets = [1613,5991];
+    Objects = [];
+    XPos = 89665.793;
+    YPos = 92.544;
+    ZPos = 125946.643;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0.05;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 3268;
+    Name = "Ger+3";
+    Desc = "";
+    Targets = [3413,5991];
+    Objects = [];
+    XPos = 89665.819;
+    YPos = 92.544;
+    ZPos = 125966.574;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0.05;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 6019;
+    Name = "2h";
+    Desc = "";
+    Targets = [6007];
+    Objects = [];
+    XPos = 89608.837;
+    YPos = 93.239;
+    ZPos = 125925.359;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 7200;
+    Random = 100;
+  }
+  
+
+  MCU_TR_MissionBegin
+  {
+    Index = 6020;
+    Name = "";
+    Desc = "";
+    Targets = [6019];
+    Objects = [];
+    XPos = 89608.670;
+    YPos = 93.377;
+    ZPos = 125918.519;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+  }
+  
+
+  MCU_TR_Subtitle
+  {
+    Index = 6300;
+    Name = "Draw";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 89609.947;
+    YPos = 115.411;
+    ZPos = 126003.340;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    SubtitleInfo
+    {
+      Duration = 60;
+      FontSize = 20;
+      HAlign = 1;
+      VAlign = 0;
+      RColor = 255;
+      GColor = 255;
+      BColor = 0;
+      LCText = 527;
+    }
+    
+    Coalitions = [0, 1, 2];
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 3679;
+    Name = "Germans win";
+    Desc = "";
+    Targets = [5357,5358,5359,5360];
+    Objects = [];
+    XPos = 92105.077;
+    YPos = 136.728;
+    ZPos = 123926.901;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0;
+    Random = 100;
+  }
+  
+
+  MCU_TR_Subtitle
+  {
+    Index = 5357;
+    Name = "Translator Subtitle";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 92113.820;
+    YPos = 115.411;
+    ZPos = 122878.301;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    SubtitleInfo
+    {
+      Duration = 60;
+      FontSize = 20;
+      HAlign = 1;
+      VAlign = 0;
+      RColor = 0;
+      GColor = 200;
+      BColor = 200;
+      LCText = 3;
+    }
+    
+    Coalitions = [0, 1, 2];
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 5358;
+    Name = "1m";
+    Desc = "";
+    Targets = [5363,5364];
+    Objects = [];
+    XPos = 93901.497;
+    YPos = 92.324;
+    ZPos = 126007.484;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 60;
+    Random = 100;
+  }
+  
+
+  MCU_TR_Subtitle
+  {
+    Index = 5363;
+    Name = "Translator Subtitle";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 93713.517;
+    YPos = 115.411;
+    ZPos = 127341.505;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    SubtitleInfo
+    {
+      Duration = 60;
+      FontSize = 20;
+      HAlign = 1;
+      VAlign = 0;
+      RColor = 255;
+      GColor = 255;
+      BColor = 0;
+      LCText = 4;
+    }
+    
+    Coalitions = [0, 1, 2];
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 5364;
+    Name = "5m";
+    Desc = "";
+    Targets = [5367,5368];
+    Objects = [];
+    XPos = 95014.296;
+    YPos = 92.324;
+    ZPos = 126004.633;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 300;
+    Random = 100;
+  }
+  
+
+  MCU_TR_Subtitle
+  {
+    Index = 5367;
+    Name = "Translator Subtitle";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 94943.370;
+    YPos = 115.411;
+    ZPos = 127210.363;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    SubtitleInfo
+    {
+      Duration = 60;
+      FontSize = 20;
+      HAlign = 1;
+      VAlign = 0;
+      RColor = 255;
+      GColor = 255;
+      BColor = 0;
+      LCText = 5;
+    }
+    
+    Coalitions = [0, 1, 2];
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 5368;
+    Name = "1m";
+    Desc = "";
+    Targets = [5371,5372];
+    Objects = [];
+    XPos = 95964.694;
+    YPos = 92.324;
+    ZPos = 126018.818;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 60;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 5371;
+    Name = "1m";
+    Desc = "";
+    Targets = [5374,5375];
+    Objects = [];
+    XPos = 96929.278;
+    YPos = 92.324;
+    ZPos = 126018.818;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 60;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 5374;
+    Name = "1m";
+    Desc = "";
+    Targets = [5377,5378];
+    Objects = [];
+    XPos = 97851.307;
+    YPos = 92.324;
+    ZPos = 126004.633;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 60;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 5377;
+    Name = "1m";
+    Desc = "";
+    Targets = [5380,5381];
+    Objects = [];
+    XPos = 98730.781;
+    YPos = 92.324;
+    ZPos = 126047.188;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 60;
+    Random = 100;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 5380;
+    Name = "1m";
+    Desc = "";
+    Targets = [5383];
+    Objects = [];
+    XPos = 99596.070;
+    YPos = 92.324;
+    ZPos = 126061.373;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 60;
+    Random = 100;
+  }
+  
+
+  MCU_TR_Subtitle
+  {
+    Index = 5372;
+    Name = "Translator Subtitle";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 95964.694;
+    YPos = 115.411;
+    ZPos = 127224.548;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    SubtitleInfo
+    {
+      Duration = 60;
+      FontSize = 20;
+      HAlign = 1;
+      VAlign = 0;
+      RColor = 255;
+      GColor = 255;
+      BColor = 0;
+      LCText = 6;
+    }
+    
+    Coalitions = [0, 1, 2];
+  }
+  
+
+  MCU_TR_Subtitle
+  {
+    Index = 5375;
+    Name = "Translator Subtitle";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 96872.538;
+    YPos = 115.411;
+    ZPos = 127210.363;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    SubtitleInfo
+    {
+      Duration = 60;
+      FontSize = 20;
+      HAlign = 1;
+      VAlign = 0;
+      RColor = 255;
+      GColor = 255;
+      BColor = 0;
+      LCText = 7;
+    }
+    
+    Coalitions = [0, 1, 2];
+  }
+  
+
+  MCU_TR_Subtitle
+  {
+    Index = 5378;
+    Name = "Translator Subtitle";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 97780.382;
+    YPos = 115.411;
+    ZPos = 127210.363;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    SubtitleInfo
+    {
+      Duration = 60;
+      FontSize = 20;
+      HAlign = 1;
+      VAlign = 0;
+      RColor = 255;
+      GColor = 255;
+      BColor = 0;
+      LCText = 8;
+    }
+    
+    Coalitions = [0, 1, 2];
+  }
+  
+
+  MCU_TR_Subtitle
+  {
+    Index = 5381;
+    Name = "Translator Subtitle";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 98659.856;
+    YPos = 115.411;
+    ZPos = 127252.918;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    SubtitleInfo
+    {
+      Duration = 60;
+      FontSize = 20;
+      HAlign = 1;
+      VAlign = 0;
+      RColor = 255;
+      GColor = 255;
+      BColor = 0;
+      LCText = 9;
+    }
+    
+    Coalitions = [0, 1, 2];
+  }
+  
+
+  MCU_TR_MissionEnd
+  {
+    Index = 5383;
+    Name = "Translator Mission End";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 99610.255;
+    YPos = 116.768;
+    ZPos = 127295.473;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    Succeeded = 1;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 3784;
+    Name = "Russians win";
+    Desc = "";
+    Targets = [5390,5358,5391,5392];
+    Objects = [];
+    XPos = 92184.611;
+    YPos = 136.728;
+    ZPos = 127810.659;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 0;
+    Random = 100;
+  }
+  
+
+  MCU_TR_Subtitle
+  {
+    Index = 5390;
+    Name = "Translator Subtitle";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 92170.426;
+    YPos = 115.411;
+    ZPos = 128945.463;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    SubtitleInfo
+    {
+      Duration = 60;
+      FontSize = 20;
+      HAlign = 1;
+      VAlign = 0;
+      RColor = 255;
+      GColor = 0;
+      BColor = 0;
+      LCText = 10;
+    }
+    
+    Coalitions = [0, 1, 2];
+  }
+  
+
+  MCU_Deactivate
+  {
+    Index = 5359;
+    Name = "Trigger Deactivate";
+    Desc = "";
+    Targets = [3784,6007];
+    Objects = [];
+    XPos = 92508.605;
+    YPos = 103.120;
+    ZPos = 125744.357;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+  }
+  
+
+  MCU_Deactivate
+  {
+    Index = 5391;
+    Name = "Trigger Deactivate";
+    Desc = "";
+    Targets = [3679,6007];
+    Objects = [];
+    XPos = 91600.762;
+    YPos = 103.120;
+    ZPos = 125730.172;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+  }
+  
+
+  MCU_TR_MissionObjective
+  {
+    Index = 5360;
+    Targets = [];
+    Objects = [];
+    XPos = 91707.724;
+    YPos = 91.988;
+    ZPos = 123942.704;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    LCName = 425;
+    LCDesc = 426;
+    TaskType = 0;
+    Coalition = 2;
+    Success = 1;
+    IconType = 0;
+  }
+  
+
+  MCU_TR_MissionObjective
+  {
+    Index = 5392;
+    Targets = [];
+    Objects = [];
+    XPos = 91654.279;
+    YPos = 91.988;
+    ZPos = 127823.162;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    LCName = 427;
+    LCDesc = 428;
+    TaskType = 0;
+    Coalition = 1;
+    Success = 1;
+    IconType = 0;
+  }
+  
+
 }
 
 
