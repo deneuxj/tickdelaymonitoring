@@ -11,6 +11,8 @@ open InjectPrio.Build
 // Names of MCUs that control starting and stopping vehicle groups
 let instances =
     [
+        for i in 1..4 do
+            yield UnitPrioApi.Create(sprintf "KillAA-%d" i, setMedPrio = sprintf "MedPrioAA-%d" i, setLowPrio = sprintf "LoPrioAA-%d" i)
         let i = 1 in
             yield UnitPrioApi.Create(sprintf "KillBf109-%d" i, setHighPrio = sprintf "StartBf109-%d" i, setLowPrio = sprintf "LowPrioBf109-%d" i)
         for i in 1..2 do
