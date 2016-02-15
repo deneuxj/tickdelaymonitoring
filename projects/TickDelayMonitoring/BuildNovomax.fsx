@@ -11,7 +11,7 @@ open InjectPrio.Build
 // Names of MCUs that control starting and stopping vehicle groups
 let instances =
     [
-        for i in 1..4 do
+        for i in 1..6 do
             yield UnitPrioApi.Create(sprintf "KillAA-%d" i, setMedPrio = sprintf "MedPrioAA-%d" i, setLowPrio = sprintf "LoPrioAA-%d" i)
         let i = 1 in
             yield UnitPrioApi.Create(sprintf "KillBf109-%d" i, setHighPrio = sprintf "StartBf109-%d" i, setLowPrio = sprintf "LowPrioBf109-%d" i)
@@ -33,4 +33,4 @@ let instances =
 
 let filename = __SOURCE_DIRECTORY__ + "/../../Novomax/Novomax-in.Mission"
 let outputFilename = __SOURCE_DIRECTORY__ + "/../../Novomax-out.Mission"
-build(filename, outputFilename, "eng", [], instances, "ReqKill")
+build(filename, outputFilename, "eng", ["fra"], instances, "ReqKill")
