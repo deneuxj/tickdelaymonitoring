@@ -107245,9 +107245,9 @@ Group
   MCU_Timer
   {
     Index = 6265;
-    Name = "2h";
+    Name = "1h45";
     Desc = "";
-    Targets = [6251];
+    Targets = [6494];
     Objects = [];
     XPos = 89608.837;
     YPos = 93.239;
@@ -107255,7 +107255,7 @@ Group
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
-    Time = 7200;
+    Time = 6300;
     Random = 100;
   }
   
@@ -107798,6 +107798,54 @@ Group
     Coalition = 1;
     Success = 1;
     IconType = 0;
+  }
+  
+
+  MCU_Timer
+  {
+    Index = 6494;
+    Name = "15min";
+    Desc = "";
+    Targets = [6251,6496];
+    Objects = [];
+    XPos = 89608.570;
+    YPos = 93.239;
+    ZPos = 125928.779;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Time = 900;
+    Random = 100;
+  }
+  
+
+  MCU_TR_Subtitle
+  {
+    Index = 6496;
+    Name = "All";
+    Desc = "";
+    Targets = [];
+    Objects = [];
+    XPos = 89605.398;
+    YPos = 94.529;
+    ZPos = 125928.824;
+    XOri = 0.00;
+    YOri = 0.00;
+    ZOri = 0.00;
+    Enabled = 1;
+    SubtitleInfo
+    {
+      Duration = 15;
+      FontSize = 20;
+      HAlign = 1;
+      VAlign = 0;
+      RColor = 255;
+      GColor = 255;
+      BColor = 0;
+      LCText = 548;
+    }
+    
+    Coalitions = [0, 1, 2];
   }
   
 
