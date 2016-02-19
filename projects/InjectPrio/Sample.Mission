@@ -171,14 +171,14 @@ MCU_TR_Entity
     OnReport
     {
       Type = 3;
-      CmdId = 11;
-      TarId = 10;
+      CmdId = 10;
+      TarId = 11;
     }
     OnReport
     {
       Type = 4;
       CmdId = 8;
-      TarId = 11;
+      TarId = 10;
     }
   }
 }
@@ -187,7 +187,7 @@ MCU_TR_Entity
 
 MCU_CMD_AttackTarget
 {
-  Index = 10;
+  Index = 11;
   Name = "command Attack";
   Desc = "";
   Targets = [];
@@ -385,7 +385,7 @@ MCU_CMD_Land
 
 MCU_CMD_TakeOff
 {
-  Index = 11;
+  Index = 10;
   Name = "command Take off";
   Desc = "";
   Targets = [];
@@ -1491,6 +1491,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\he111h6.txt";
       Name = "dfgdfg";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 7;
       Callnum = 4;
     }
@@ -1515,6 +1518,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\he111h6.txt";
       Name = "dfgdfg";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 7;
       Callnum = 4;
     }
@@ -1539,6 +1545,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\he111h6.txt";
       Name = "dfgdfg";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 7;
       Callnum = 4;
     }
@@ -1644,7 +1653,7 @@ MCU_TR_Entity
     OnEvent
     {
       Type = 13;
-      TarId = 11;
+      TarId = 10;
     }
   }
 }
@@ -2111,6 +2120,9 @@ Airfield
       Name = "asddew";
       BeaconChannel = 0;
       Spotter = -1;
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
     }
   }
   ReturnPlanes = 0;
@@ -2218,8 +2230,8 @@ MCU_TR_Entity
 Ship
 {
   Name = "Ship";
-  Index = 110;
-  LinkTrId = 111;
+  Index = 111;
+  LinkTrId = 112;
   XPos = 26776.377;
   YPos = 19.165;
   ZPos = 13201.887;
@@ -2246,7 +2258,7 @@ Ship
 
 MCU_TR_Entity
 {
-  Index = 111;
+  Index = 112;
   Name = "Ship entity";
   Desc = "";
   Targets = [109];
@@ -2258,7 +2270,7 @@ MCU_TR_Entity
   YOri = 0.00;
   ZOri = 0.00;
   Enabled = 1;
-  MisObjID = 110;
+  MisObjID = 111;
 }
 
 
