@@ -32357,7 +32357,7 @@ Group
       Index = 1605;
       Name = "OnKilled";
       Desc = "";
-      Targets = [1610,1612,1613];
+      Targets = [1610,1613];
       Objects = [];
       XPos = 118536.640;
       YPos = 45.237;
@@ -32366,37 +32366,7 @@ Group
       YOri = 193.41;
       ZOri = 0.00;
       Counter = 10;
-      Dropcount = 0;
-    }
-    
-
-    MCU_TR_Subtitle
-    {
-      Index = 1612;
-      Name = "All";
-      Desc = "";
-      Targets = [];
-      Objects = [];
-      XPos = 118477.978;
-      YPos = 45.237;
-      ZPos = 182362.837;
-      XOri = 0.00;
-      YOri = 193.41;
-      ZOri = 0.00;
-      Enabled = 1;
-      SubtitleInfo
-      {
-        Duration = 15;
-        FontSize = 20;
-        HAlign = 1;
-        VAlign = 0;
-        RColor = 0;
-        GColor = 0;
-        BColor = 255;
-        LCText = 439;
-      }
-      
-      Coalitions = [0, 1, 2];
+      Dropcount = 1;
     }
     
 
@@ -32994,7 +32964,7 @@ Group
       Index = 1648;
       LinkTrId = 0;
       XPos = 109769.382;
-      YPos = 46.192;
+      YPos = 46.335;
       ZPos = 179632.355;
       XOri = 0.00;
       YOri = 292.93;
@@ -33016,7 +32986,7 @@ Group
       Index = 1649;
       LinkTrId = 0;
       XPos = 109523.682;
-      YPos = 46.192;
+      YPos = 46.335;
       ZPos = 179569.712;
       XOri = 0.00;
       YOri = 279.32;
@@ -33038,7 +33008,7 @@ Group
       Index = 1650;
       LinkTrId = 0;
       XPos = 109314.126;
-      YPos = 46.192;
+      YPos = 46.335;
       ZPos = 179532.270;
       XOri = 0.00;
       YOri = 281.14;
@@ -33065,7 +33035,7 @@ Group
         Index = 1652;
         LinkTrId = 0;
         XPos = 110067.205;
-        YPos = 46.192;
+        YPos = 46.335;
         ZPos = 180262.637;
         XOri = 0.00;
         YOri = 123.38;
@@ -33087,7 +33057,7 @@ Group
         Index = 1653;
         LinkTrId = 0;
         XPos = 110224.724;
-        YPos = 46.192;
+        YPos = 46.335;
         ZPos = 179989.822;
         XOri = 0.00;
         YOri = 301.25;
@@ -33109,7 +33079,7 @@ Group
         Index = 1654;
         LinkTrId = 0;
         XPos = 110329.028;
-        YPos = 46.192;
+        YPos = 46.335;
         ZPos = 180291.697;
         XOri = 0.00;
         YOri = 301.57;
@@ -33131,7 +33101,7 @@ Group
         Index = 1655;
         LinkTrId = 0;
         XPos = 110641.542;
-        YPos = 46.192;
+        YPos = 46.335;
         ZPos = 180265.813;
         XOri = 0.00;
         YOri = 299.96;
@@ -33153,7 +33123,7 @@ Group
         Index = 1656;
         LinkTrId = 0;
         XPos = 110437.635;
-        YPos = 46.192;
+        YPos = 46.335;
         ZPos = 180133.765;
         XOri = 0.00;
         YOri = 122.23;
@@ -33183,7 +33153,7 @@ Group
         Index = 1658;
         LinkTrId = 0;
         XPos = 109551.806;
-        YPos = 46.192;
+        YPos = 46.335;
         ZPos = 180000.012;
         XOri = 0.00;
         YOri = 303.57;
@@ -33205,7 +33175,7 @@ Group
         Index = 1659;
         LinkTrId = 0;
         XPos = 109623.161;
-        YPos = 46.192;
+        YPos = 46.335;
         ZPos = 179893.205;
         XOri = 0.00;
         YOri = 125.52;
@@ -33227,7 +33197,7 @@ Group
         Index = 1660;
         LinkTrId = 0;
         XPos = 109858.856;
-        YPos = 46.192;
+        YPos = 46.335;
         ZPos = 179852.718;
         XOri = 0.00;
         YOri = 214.74;
@@ -33249,7 +33219,7 @@ Group
         Index = 1661;
         LinkTrId = 0;
         XPos = 109813.572;
-        YPos = 46.192;
+        YPos = 46.335;
         ZPos = 180020.408;
         XOri = 0.00;
         YOri = 125.31;
@@ -33271,7 +33241,7 @@ Group
         Index = 1662;
         LinkTrId = 0;
         XPos = 109735.000;
-        YPos = 46.192;
+        YPos = 46.335;
         ZPos = 180129.337;
         XOri = 0.00;
         YOri = 305.76;
@@ -33293,7 +33263,7 @@ Group
         Index = 1663;
         LinkTrId = 0;
         XPos = 109742.024;
-        YPos = 46.192;
+        YPos = 46.335;
         ZPos = 179799.509;
         XOri = 0.00;
         YOri = 214.41;
@@ -33315,7 +33285,7 @@ Group
         Index = 1664;
         LinkTrId = 0;
         XPos = 109608.572;
-        YPos = 46.192;
+        YPos = 46.335;
         ZPos = 180225.204;
         XOri = 0.00;
         YOri = 213.39;
@@ -33337,7 +33307,7 @@ Group
         Index = 1665;
         LinkTrId = 0;
         XPos = 109515.131;
-        YPos = 46.192;
+        YPos = 46.335;
         ZPos = 180136.624;
         XOri = 0.00;
         YOri = 214.59;
@@ -33359,7 +33329,7 @@ Group
         Index = 1666;
         LinkTrId = 0;
         XPos = 109932.185;
-        YPos = 46.192;
+        YPos = 46.335;
         ZPos = 180109.645;
         XOri = 0.00;
         YOri = 215.73;
@@ -33381,7 +33351,7 @@ Group
         Index = 1667;
         LinkTrId = 0;
         XPos = 109430.636;
-        YPos = 46.192;
+        YPos = 46.335;
         ZPos = 179927.541;
         XOri = 0.00;
         YOri = 213.81;
@@ -33403,7 +33373,7 @@ Group
         Index = 1668;
         LinkTrId = 0;
         XPos = 109856.717;
-        YPos = 46.192;
+        YPos = 46.335;
         ZPos = 180208.161;
         XOri = 0.00;
         YOri = 214.77;
@@ -33425,7 +33395,7 @@ Group
         Index = 1669;
         LinkTrId = 0;
         XPos = 109512.046;
-        YPos = 46.192;
+        YPos = 46.335;
         ZPos = 179822.576;
         XOri = 0.00;
         YOri = 34.44;
@@ -63670,7 +63640,7 @@ Group
     Index = 3183;
     Name = "OnKilled";
     Desc = "";
-    Targets = [3265,3267,3268];
+    Targets = [3265,1613];
     Objects = [];
     XPos = 125206.322;
     YPos = 45.237;
@@ -63678,38 +63648,8 @@ Group
     XOri = 0.00;
     YOri = 193.41;
     ZOri = 0.00;
-    Counter = 60;
-    Dropcount = 0;
-  }
-  
-
-  MCU_TR_Subtitle
-  {
-    Index = 3267;
-    Name = "All";
-    Desc = "";
-    Targets = [];
-    Objects = [];
-    XPos = 125147.660;
-    YPos = 45.237;
-    ZPos = 194978.648;
-    XOri = 0.00;
-    YOri = 193.41;
-    ZOri = 0.00;
-    Enabled = 1;
-    SubtitleInfo
-    {
-      Duration = 15;
-      FontSize = 20;
-      HAlign = 1;
-      VAlign = 0;
-      RColor = 0;
-      GColor = 0;
-      BColor = 255;
-      LCText = 446;
-    }
-    
-    Coalitions = [0, 1, 2];
+    Counter = 10;
+    Dropcount = 1;
   }
   
 
@@ -63922,7 +63862,7 @@ Group
     Index = 3177;
     Name = "OnKilled";
     Desc = "";
-    Targets = [3281,3283,3284];
+    Targets = [3281,3284];
     Objects = [];
     XPos = 96714.312;
     YPos = 45.237;
@@ -63930,38 +63870,8 @@ Group
     XOri = 0.00;
     YOri = 193.41;
     ZOri = 0.00;
-    Counter = 20;
-    Dropcount = 0;
-  }
-  
-
-  MCU_TR_Subtitle
-  {
-    Index = 3283;
-    Name = "All";
-    Desc = "";
-    Targets = [];
-    Objects = [];
-    XPos = 96655.650;
-    YPos = 45.237;
-    ZPos = 149415.289;
-    XOri = 0.00;
-    YOri = 193.41;
-    ZOri = 0.00;
-    Enabled = 1;
-    SubtitleInfo
-    {
-      Duration = 15;
-      FontSize = 20;
-      HAlign = 1;
-      VAlign = 0;
-      RColor = 255;
-      GColor = 0;
-      BColor = 0;
-      LCText = 452;
-    }
-    
-    Coalitions = [0, 1, 2];
+    Counter = 10;
+    Dropcount = 1;
   }
   
 
@@ -66188,7 +66098,7 @@ Group
     Index = 3375;
     Name = "OnKilled";
     Desc = "";
-    Targets = [3410,3412,3413];
+    Targets = [3410,1613];
     Objects = [];
     XPos = 129452.831;
     YPos = 45.237;
@@ -66196,38 +66106,8 @@ Group
     XOri = 0.00;
     YOri = 193.41;
     ZOri = 0.00;
-    Counter = 40;
-    Dropcount = 0;
-  }
-  
-
-  MCU_TR_Subtitle
-  {
-    Index = 3412;
-    Name = "All";
-    Desc = "";
-    Targets = [];
-    Objects = [];
-    XPos = 129394.169;
-    YPos = 45.237;
-    ZPos = 182424.087;
-    XOri = 0.00;
-    YOri = 193.41;
-    ZOri = 0.00;
-    Enabled = 1;
-    SubtitleInfo
-    {
-      Duration = 15;
-      FontSize = 20;
-      HAlign = 1;
-      VAlign = 0;
-      RColor = 0;
-      GColor = 0;
-      BColor = 255;
-      LCText = 458;
-    }
-    
-    Coalitions = [0, 1, 2];
+    Counter = 10;
+    Dropcount = 1;
   }
   
 
@@ -66414,7 +66294,7 @@ Group
     Index = 3387;
     Name = "OnKilled";
     Desc = "";
-    Targets = [3425,3427,3268];
+    Targets = [3425,1613];
     Objects = [];
     XPos = 132234.264;
     YPos = 45.237;
@@ -66422,38 +66302,8 @@ Group
     XOri = 0.00;
     YOri = 105.14;
     ZOri = 0.00;
-    Counter = 60;
-    Dropcount = 0;
-  }
-  
-
-  MCU_TR_Subtitle
-  {
-    Index = 3427;
-    Name = "All";
-    Desc = "";
-    Targets = [];
-    Objects = [];
-    XPos = 132228.211;
-    YPos = 45.237;
-    ZPos = 179407.144;
-    XOri = 0.00;
-    YOri = 105.14;
-    ZOri = 0.00;
-    Enabled = 1;
-    SubtitleInfo
-    {
-      Duration = 15;
-      FontSize = 20;
-      HAlign = 1;
-      VAlign = 0;
-      RColor = 0;
-      GColor = 0;
-      BColor = 255;
-      LCText = 465;
-    }
-    
-    Coalitions = [0, 1, 2];
+    Counter = 10;
+    Dropcount = 1;
   }
   
 
@@ -68970,7 +68820,7 @@ Group
     Index = 3538;
     Name = "OnKilled";
     Desc = "";
-    Targets = [3561,3563,3564];
+    Targets = [3561,3284];
     Objects = [];
     XPos = 116182.132;
     YPos = 45.237;
@@ -68978,38 +68828,8 @@ Group
     XOri = 0.00;
     YOri = 193.41;
     ZOri = 0.00;
-    Counter = 60;
-    Dropcount = 0;
-  }
-  
-
-  MCU_TR_Subtitle
-  {
-    Index = 3563;
-    Name = "All";
-    Desc = "";
-    Targets = [];
-    Objects = [];
-    XPos = 116123.470;
-    YPos = 45.237;
-    ZPos = 120154.681;
-    XOri = 0.00;
-    YOri = 193.41;
-    ZOri = 0.00;
-    Enabled = 1;
-    SubtitleInfo
-    {
-      Duration = 15;
-      FontSize = 20;
-      HAlign = 1;
-      VAlign = 0;
-      RColor = 255;
-      GColor = 0;
-      BColor = 0;
-      LCText = 471;
-    }
-    
-    Coalitions = [0, 1, 2];
+    Counter = 10;
+    Dropcount = 1;
   }
   
 
@@ -69629,7 +69449,7 @@ Group
     Index = 3581;
     Name = "OnKilled";
     Desc = "";
-    Targets = [3601,3603,3604];
+    Targets = [3601,3284];
     Objects = [];
     XPos = 124942.137;
     YPos = 45.237;
@@ -69637,38 +69457,8 @@ Group
     XOri = 0.00;
     YOri = 193.41;
     ZOri = 0.00;
-    Counter = 40;
-    Dropcount = 0;
-  }
-  
-
-  MCU_TR_Subtitle
-  {
-    Index = 3603;
-    Name = "All";
-    Desc = "";
-    Targets = [];
-    Objects = [];
-    XPos = 124883.475;
-    YPos = 45.237;
-    ZPos = 126237.752;
-    XOri = 0.00;
-    YOri = 193.41;
-    ZOri = 0.00;
-    Enabled = 1;
-    SubtitleInfo
-    {
-      Duration = 15;
-      FontSize = 20;
-      HAlign = 1;
-      VAlign = 0;
-      RColor = 255;
-      GColor = 0;
-      BColor = 0;
-      LCText = 477;
-    }
-    
-    Coalitions = [0, 1, 2];
+    Counter = 10;
+    Dropcount = 1;
   }
   
 
@@ -71967,6 +71757,9 @@ Airfield
       Name = "";
       BeaconChannel = 0;
       Spotter = -1;
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
     }
     Vehicle
     {
@@ -71983,6 +71776,9 @@ Airfield
       Name = "";
       BeaconChannel = 0;
       Spotter = -1;
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
     }
     Vehicle
     {
@@ -71999,6 +71795,9 @@ Airfield
       Name = "Captured T34";
       BeaconChannel = 0;
       Spotter = -1;
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
     }
   }
   ReturnPlanes = 0;
@@ -72071,6 +71870,9 @@ Airfield
       Name = "";
       BeaconChannel = 0;
       Spotter = -1;
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
     }
   }
   ReturnPlanes = 0;
@@ -72143,6 +71945,9 @@ Airfield
       Name = "";
       BeaconChannel = 0;
       Spotter = -1;
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
     }
   }
   ReturnPlanes = 0;
@@ -74548,6 +74353,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\ju87d3.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -74572,6 +74380,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\bf110e2.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -74652,6 +74463,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\il2m42.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -74676,6 +74490,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\pe2s87.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -76375,6 +76192,9 @@ Airfield
       Name = "";
       BeaconChannel = 0;
       Spotter = -1;
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
     }
     Vehicle
     {
@@ -76391,6 +76211,9 @@ Airfield
       Name = "";
       BeaconChannel = 0;
       Spotter = -1;
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
     }
   }
   ReturnPlanes = 0;
@@ -76463,6 +76286,9 @@ Airfield
       Name = "";
       BeaconChannel = 0;
       Spotter = -1;
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
     }
     Vehicle
     {
@@ -76479,6 +76305,9 @@ Airfield
       Name = "";
       BeaconChannel = 0;
       Spotter = -1;
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
     }
   }
   ReturnPlanes = 0;
@@ -77367,6 +77196,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\ju87d3.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -77391,6 +77223,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\bf110e2.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -77415,6 +77250,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\bf109f4.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -77439,6 +77277,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\bf109g2.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -77463,6 +77304,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\fw190a3.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -77487,6 +77331,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\he111h6.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -77511,6 +77358,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\mc202s8.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -77535,6 +77385,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\bf109e7.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -77559,6 +77412,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\bf109f2.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -79079,6 +78935,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\yak1s69.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -79103,6 +78962,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\lagg3s29.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -79127,6 +78989,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\la5s8.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -79151,6 +79016,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\il2m42.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -79175,6 +79043,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\pe2s87.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -79199,6 +79070,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\i16t24.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -79223,6 +79097,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\p40e1.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -79247,6 +79124,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\mig3s24.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -79271,6 +79151,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\pe2s35.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -79295,6 +79178,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\il2m41.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -80045,6 +79931,9 @@ Airfield
       Name = "";
       BeaconChannel = 0;
       Spotter = -1;
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
     }
     Vehicle
     {
@@ -80061,6 +79950,9 @@ Airfield
       Name = "";
       BeaconChannel = 0;
       Spotter = -1;
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
     }
   }
   ReturnPlanes = 0;
@@ -83194,7 +83086,7 @@ Group
     Index = 4479;
     LinkTrId = 4480;
     XPos = 104283.916;
-    YPos = 85.066;
+    YPos = 66.693;
     ZPos = 83841.786;
     XOri = 0.00;
     YOri = 99.80;
@@ -83239,7 +83131,7 @@ Group
     Targets = [];
     Objects = [];
     XPos = 104283.916;
-    YPos = 85.266;
+    YPos = 66.893;
     ZPos = 83841.786;
     XOri = 0.00;
     YOri = 0.00;
@@ -84703,6 +84595,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\ju87d3.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -84727,6 +84622,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\bf110e2.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -84751,6 +84649,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\bf109f4.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -84775,6 +84676,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\bf109g2.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -84799,6 +84703,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\fw190a3.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -84823,6 +84730,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\he111h6.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -84847,6 +84757,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\mc202s8.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -84871,6 +84784,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\bf109e7.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -84895,6 +84811,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\bf109f2.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -86071,6 +85990,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\yak1s69.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -86095,6 +86017,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\lagg3s29.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -86119,6 +86044,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\la5s8.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -86143,6 +86071,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\il2m42.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -86167,6 +86098,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\pe2s87.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -86191,6 +86125,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\i16t24.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -86215,6 +86152,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\p40e1.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -86239,6 +86179,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\mig3s24.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -86263,6 +86206,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\pe2s35.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -86287,6 +86233,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\il2m41.txt";
       Name = "";
       Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
       Callsign = 0;
       Callnum = 0;
     }
@@ -92857,6 +92806,9 @@ Group
         Script = "LuaScripts\WorldObjects\Planes\il2m42.txt";
         Name = "";
         Skin = "";
+        AvMods = "";
+        AvSkins = "";
+        AvPayloads = "";
         Callsign = 0;
         Callnum = 0;
       }
@@ -92881,6 +92833,9 @@ Group
         Script = "LuaScripts\WorldObjects\Planes\yak1s69.txt";
         Name = "";
         Skin = "";
+        AvMods = "";
+        AvSkins = "";
+        AvPayloads = "";
         Callsign = 0;
         Callnum = 0;
       }
@@ -92905,6 +92860,9 @@ Group
         Script = "LuaScripts\WorldObjects\Planes\p40e1.txt";
         Name = "";
         Skin = "";
+        AvMods = "";
+        AvSkins = "";
+        AvPayloads = "";
         Callsign = 0;
         Callnum = 0;
       }
@@ -93797,6 +93755,9 @@ Group
         Script = "LuaScripts\WorldObjects\Planes\bf110e2.txt";
         Name = "";
         Skin = "";
+        AvMods = "";
+        AvSkins = "";
+        AvPayloads = "";
         Callsign = 0;
         Callnum = 0;
       }
@@ -93821,6 +93782,9 @@ Group
         Script = "LuaScripts\WorldObjects\Planes\bf109e7.txt";
         Name = "";
         Skin = "";
+        AvMods = "";
+        AvSkins = "";
+        AvPayloads = "";
         Callsign = 0;
         Callnum = 0;
       }
@@ -93845,6 +93809,9 @@ Group
         Script = "LuaScripts\WorldObjects\Planes\bf109f4.txt";
         Name = "";
         Skin = "";
+        AvMods = "";
+        AvSkins = "";
+        AvPayloads = "";
         Callsign = 0;
         Callnum = 0;
       }
@@ -107247,7 +107214,7 @@ Group
     Index = 6265;
     Name = "1h45";
     Desc = "";
-    Targets = [6266];
+    Targets = [6266,6311];
     Objects = [];
     XPos = 89608.837;
     YPos = 93.239;
@@ -107806,7 +107773,7 @@ Group
     Index = 6266;
     Name = "15min";
     Desc = "";
-    Targets = [6251,6311];
+    Targets = [6251];
     Objects = [];
     XPos = 89608.570;
     YPos = 93.239;
@@ -107826,9 +107793,9 @@ Group
     Desc = "";
     Targets = [];
     Objects = [];
-    XPos = 89605.398;
+    XPos = 89605.494;
     YPos = 94.529;
-    ZPos = 125928.824;
+    ZPos = 125925.154;
     XOri = 0.00;
     YOri = 0.00;
     ZOri = 0.00;
