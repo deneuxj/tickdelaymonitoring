@@ -27,6 +27,11 @@ type StepPerSecData =
       Average : float32
     }
 
+type MyStatus =
+    { Status : int
+      Authed : bool
+    }
+
 exception ConnectionException of unit
 
 /// <summary>
@@ -91,12 +96,52 @@ type Client(address : IPAddress, port, login, password) as this =
     let parseFloat s =
         System.Single.Parse(s, System.Globalization.CultureInfo.InvariantCulture)
 
+    let parseInt s =
+        System.Int32.Parse(s, System.Globalization.CultureInfo.InvariantCulture)
+
     member this.Auth() =
         async {
             let buff = encode <| sprintf "auth %s %s" login password
             do! send(buff, 0, buff.Length)
             let! response = getResponse stream
             return response
+        }
+
+    member this.ServerStatus() =
+        async {
+            let buff = encode "serverstatus"
+            do! send(buff, 0, buff.Length)
+            let! response = getResponse stream
+            let decoded = decodeResponse response |> dict
+            return parseInt decoded.["STATUS"]
+        }
+
+    member this.MyStatus() =
+        async {
+            let buff = encode "mystatus"
+            do! send(buff, 0, buff.Length)
+            let! response = getResponse stream
+            let decoded = decodeResponse response |> dict
+            return {
+                Status = parseInt decoded.["STATUS"]
+                Authed = decoded.["authed"] = "1"
+            }
+        }
+
+    member this.OpenSds(filename) =
+        async {
+            let buff =
+                sprintf "opensds %s" filename
+                |> encode
+            do! send(buff, 0, buff.Length)
+            return! getResponse stream
+        }
+
+    member this.CloseSds() =
+        async {
+            let buff = encode "closesds"
+            do! send(buff, 0, buff.Length)
+            return! getResponse stream
         }
 
     member this.ServerInput(name) =
@@ -148,6 +193,14 @@ type Client(address : IPAddress, port, login, password) as this =
     member this.ResetSPS() =
         async {
             let buff = encode "spsreset"
+            do! send(buff, 0, buff.Length)
+            let! response = getResponse stream
+            return response
+        }
+
+    member this.Shutdown() =
+        async {
+            let buff = encode "shutdown"
             do! send(buff, 0, buff.Length)
             let! response = getResponse stream
             return response
