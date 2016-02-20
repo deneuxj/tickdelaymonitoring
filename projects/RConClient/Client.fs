@@ -46,7 +46,19 @@ type Client(address : IPAddress, port, login, password) as this =
     let stream = this.GetStream()
 
     let send(buff, idx, len) = Async.FromBeginEnd((fun (cb, par) -> stream.BeginWrite(buff, idx, len, cb, par)), stream.EndWrite)
-    let receive(buff, idx, len) = Async.FromBeginEnd((fun (cb, par) -> stream.BeginRead(buff, idx, len, cb, par)), stream.EndRead)
+    let receive(buff, idx, len) =
+        let f(buff, idx, len) = Async.FromBeginEnd((fun (cb, par) -> stream.BeginRead(buff, idx, len, cb, par)), stream.EndRead)
+        // Repeatedly read until we have received all requested bytes.
+        // Note: Reading from a socket returns a number of bytes up to the requested number, as opposed to waiting until the requested number is available and then returning.
+        let rec work readSoFar leftToRead =
+            async {
+                let! readThisTime = f(buff, readSoFar, leftToRead)
+                if readThisTime < leftToRead then
+                    return! work (readSoFar + readThisTime) (leftToRead - readThisTime)
+                else
+                    ()
+            }
+        work idx len
 
     let encode (cmd : string) =
         let asAscii = Encoding.ASCII.GetBytes(cmd)
