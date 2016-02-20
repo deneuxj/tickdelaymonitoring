@@ -19,6 +19,7 @@ open System.Net
 open System.Text
 open System.Web
 open System
+open System.Diagnostics
 
 type StepPerSecData =
     { Current : float32
@@ -38,12 +39,12 @@ exception ConnectionException of unit
 /// Interaction between the web server and DServer.
 /// Provides authentication, triggering server inputs...
 /// </summary>
-type Client(address : IPAddress, port, login, password) as this =
+type Client(hostname : string, port, login, password) as this =
     inherit Sockets.TcpClient()
 
     do
         try
-            base.Connect(address, port)
+            base.Connect(hostname, port)
         with
         | exc ->
             printfn "Failed to connect to game server: %s" exc.Message
@@ -58,6 +59,7 @@ type Client(address : IPAddress, port, login, password) as this =
         let rec work readSoFar leftToRead =
             async {
                 let! readThisTime = f(buff, readSoFar, leftToRead)
+                //Debug.Write(sprintf "receive: %d (%d, %d)" readThisTime readSoFar leftToRead)
                 if readThisTime < leftToRead then
                     return! work (readSoFar + readThisTime) (leftToRead - readThisTime)
                 else
@@ -205,3 +207,80 @@ type Client(address : IPAddress, port, login, password) as this =
             let! response = getResponse stream
             return response
         }
+
+/// <summary>
+/// Provides asynchronous sequential access to a client.
+/// Allows to use the same client from multiple threads.
+/// </summary>
+type ClientMessageQueue(hostname, port, login, password) =
+    let mutable client = None
+    let clientLock = obj()
+
+    // Mailbox that receives untyped asyncs, executes them and return the result (if any) as an untyped object in a reply channel.
+    let rec handleMessage (mb : MailboxProcessor<Async<obj> * AsyncReplyChannel<obj> option>) =
+        async {
+            let! msg = mb.Receive()
+            match msg with
+            | f, None ->
+                let! dummy = f
+                ignore dummy
+            | f, Some r ->
+                let! untyped = f
+                r.Reply(untyped)
+            return! handleMessage mb
+        }
+
+    let mb =
+        MailboxProcessor.Start(handleMessage)
+
+    /// <summary>
+    /// Get the RConClient, or create one if it hasn't been created yet.
+    /// </summary>
+    member this.Client =
+        lock clientLock (fun () ->
+            match client with
+            | Some client -> client
+            | None ->
+                let x = new Client(hostname, port, login, password)
+                async {
+                    let! response = x.Auth()
+                    Debug.WriteLine(sprintf "Auth response %s" response)
+                } |> Async.RunSynchronously
+                client <- Some x
+                x)
+
+    /// <summary>
+    /// Build an async that simply posts a return-less action and continues.
+    /// </summary>
+    member this.Start(f: Async<unit>) =
+        async {
+            let untypedF =
+                async {
+                    do! f
+                    return box()
+                }
+            mb.Post(untypedF, None)
+        }
+
+    /// <summary>
+    /// Build an async that posts a function and waits for the result.
+    /// </summary>
+    member this.Run(f: Async<'T>) =
+        let untypedF =
+            async {
+                let! x = f
+                return box x
+            }
+        async {            
+            let! untyped = mb.PostAndAsyncReply(fun reply -> untypedF, Some reply)
+            return unbox<'T>(untyped)
+        }
+    
+    member this.Dispose() =
+        let client = client
+        match client with
+        | Some client -> client.Close()
+        | None -> ()
+
+    interface System.IDisposable with
+        member this.Dispose() = this.Dispose()
