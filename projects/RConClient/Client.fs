@@ -217,16 +217,25 @@ type ClientMessageQueue(hostname, port, login, password) =
     let clientLock = obj()
 
     // Mailbox that receives untyped asyncs, executes them and return the result (if any) as an untyped object in a reply channel.
-    let rec handleMessage (mb : MailboxProcessor<Async<obj> * AsyncReplyChannel<obj> option>) =
+    let rec handleMessage (mb : MailboxProcessor<Async<obj> * AsyncReplyChannel<obj option> option>) =
         async {
             let! msg = mb.Receive()
             match msg with
             | f, None ->
-                let! dummy = f
-                ignore dummy
+                try
+                    let! dummy = f
+                    ignore dummy
+                with
+                | e ->
+                    Debug.WriteLine(sprintf "Exception thrown by action in ClientMessageQueue.handleMessage: %s" e.Message)
             | f, Some r ->
-                let! untyped = f
-                r.Reply(untyped)
+                try
+                    let! untyped = f
+                    r.Reply(Some untyped)
+                with
+                | e ->
+                    Debug.WriteLine(sprintf "Exception thrown by function in ClientMessageQueue.handleMessage: %s" e.Message)
+                    r.Reply(None)
             return! handleMessage mb
         }
 
@@ -252,29 +261,52 @@ type ClientMessageQueue(hostname, port, login, password) =
     /// <summary>
     /// Build an async that simply posts a return-less action and continues.
     /// </summary>
-    member this.Start(f: Async<unit>) =
-        async {
-            let untypedF =
+    member this.Start(f: Lazy<Async<unit>>) =
+        let untypedF =
+            try
                 async {
-                    do! f
+                    do! f.Value
                     return box()
-                }
-            mb.Post(untypedF, None)
-        }
+                } |> Some
+            with
+            | e -> None
+        match untypedF with
+        | Some untypedF ->
+            async {
+                mb.Post(untypedF, None)
+            }
+        | None ->
+            async {
+                do()
+            }
 
     /// <summary>
     /// Build an async that posts a function and waits for the result.
     /// </summary>
-    member this.Run(f: Async<'T>) =
+    member this.Run(f: Lazy<Async<'T>>) =
         let untypedF =
-            async {
-                let! x = f
-                return box x
+            try
+                async {
+                    let! x = f.Value
+                    return box x
+                }
+                |> Some
+            with
+            | e -> None
+        match untypedF with
+        | Some untypedF ->
+            async {            
+                let! untyped = mb.PostAndAsyncReply(fun reply -> untypedF, Some reply)
+                match untyped with
+                | Some untyped ->
+                    return unbox<'T>(untyped) |> Some
+                | None ->
+                    return None
             }
-        async {            
-            let! untyped = mb.PostAndAsyncReply(fun reply -> untypedF, Some reply)
-            return unbox<'T>(untyped)
-        }
+        | None ->
+            async {
+                return None
+            }
     
     member this.Dispose() =
         let client = client
