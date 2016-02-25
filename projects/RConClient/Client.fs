@@ -242,6 +242,9 @@ type ClientMessageQueue(hostname, port, login, password) =
     let mb =
         MailboxProcessor.Start(handleMessage)
 
+    let resetClient() =
+        lock clientLock (fun () -> client <- None)
+
     /// <summary>
     /// Get the RConClient, or create one if it hasn't been created yet.
     /// </summary>
@@ -276,6 +279,7 @@ type ClientMessageQueue(hostname, port, login, password) =
                 mb.Post(untypedF, None)
             }
         | None ->
+            resetClient()
             async {
                 do()
             }
@@ -301,9 +305,11 @@ type ClientMessageQueue(hostname, port, login, password) =
                 | Some untyped ->
                     return unbox<'T>(untyped) |> Some
                 | None ->
+                    resetClient()
                     return None
             }
         | None ->
+            resetClient()
             async {
                 return None
             }
