@@ -176,6 +176,16 @@ type Client(hostname : string, port, login, password) as this =
             return response
         }
 
+    member this.MessageAll(msg) =
+        async {
+            let buff =
+                sprintf "chatmsg 0 -1 %s" msg
+                |> encode
+            do! send(buff, 0, buff.Length)
+            let! response = getResponse stream
+            return response
+        }
+
     member this.GetSPS() =
         async {
             let buff = encode "spsget"
