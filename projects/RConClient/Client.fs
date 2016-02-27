@@ -33,6 +33,15 @@ type MyStatus =
       Authed : bool
     }
 
+type PlayerData =
+    { ClientId : int
+      Status : int
+      Ping : int
+      Name : string
+      PlayerId : string
+      ProfileId : string
+    }
+
 exception ConnectionException of unit
 
 /// <summary>
@@ -210,6 +219,40 @@ type Client(hostname : string, port, login, password) as this =
             return response
         }
 
+    member this.GetPlayerList() =
+        async {
+            let buff = encode "getplayerlist"
+            do! send(buff, 0, buff.Length)
+            let! response = getResponse stream
+            let pairs = response.Split('&')
+            let result =
+                pairs
+                |> Array.map (fun kvp ->
+                    match kvp.Split('=') with
+                    | [| key; value |] -> (key, HttpUtility.UrlDecode(value))
+                    | _ -> failwithf "Ill-formatted key-value pair %s" kvp)
+                |> Array.tryPick (function
+                    | "playerList", values ->
+                        HttpUtility.UrlDecode(values).Split('|')
+                        |> Array.map (fun player -> player.Split(','))
+                        |> Some
+                    | _ ->
+                        None)
+                |> Option.map (fun rows ->
+                    rows.[1..]
+                    |> Array.map(fun row ->
+                        { ClientId = Int32.Parse(row.[0])
+                          Status = Int32.Parse(row.[1])
+                          Ping = Int32.Parse(row.[2])
+                          Name = row.[3]
+                          PlayerId = row.[4]
+                          ProfileId = row.[5]
+                        })
+                    |> Array.filter(fun data -> data.ClientId <> 0)
+                )
+            return result
+        }
+        
     member this.Shutdown() =
         async {
             let buff = encode "shutdown"
