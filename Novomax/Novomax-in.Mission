@@ -75552,7 +75552,7 @@ MCU_CMD_Behaviour
 MCU_CMD_Behaviour
 {
   Index = 3984;
-  Name = "normal";
+  Name = "high";
   Desc = "";
   Targets = [];
   Objects = [3706];
@@ -79919,7 +79919,7 @@ Airfield
     Vehicle
     {
       SetIndex = 0;
-      Number = -1;
+      Number = 3;
       AILevel = 2;
       Engageable = 1;
       Vulnerable = 1;
@@ -79928,25 +79928,6 @@ Airfield
       RenewTime = 1800;
       Model = "graphics\vehicles\_t34-76stz\_t34-76stz.mgm";
       Script = "LuaScripts\WorldObjects\Vehicles\_t34-76stz.txt";
-      Name = "";
-      BeaconChannel = 0;
-      Spotter = -1;
-      AvMods = "";
-      AvSkins = "";
-      AvPayloads = "";
-    }
-    Vehicle
-    {
-      SetIndex = 1;
-      Number = -1;
-      AILevel = 2;
-      Engageable = 1;
-      Vulnerable = 1;
-      LimitAmmo = 1;
-      Renewable = 1;
-      RenewTime = 1800;
-      Model = "graphics\vehicles\_pziii-l\_pziii-l.mgm";
-      Script = "LuaScripts\WorldObjects\Vehicles\_pziii-l.txt";
       Name = "";
       BeaconChannel = 0;
       Spotter = -1;
