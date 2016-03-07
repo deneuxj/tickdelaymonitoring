@@ -26,7 +26,7 @@ type Options =
       Password : string
       Period : int
       ReqKill : string
-      Address : IPAddress
+      Address : string
       Port : int
     }
 with
@@ -35,7 +35,7 @@ with
           Password = "com123"
           Period = 5000
           ReqKill = "ReqKill"
-          Address = IPAddress.Loopback
+          Address = "127.0.0.1"
           Port = 8991
         }
 
@@ -55,14 +55,11 @@ let rec tryParse args opts =
             None
     | "-q" :: reqKill :: rest ->
         tryParse rest { opts with ReqKill = reqKill }
-    | "-a" :: ipaddr :: port :: rest ->
-        match IPAddress.TryParse(ipaddr), System.Int32.TryParse(port) with
-        | (true, ipaddr), (true, port)  ->
-            tryParse rest { opts with Address = ipaddr; Port = port }
-        | (false, _), _ ->
-            printfn "Not a valid ip address '%s'" ipaddr
-            None
-        | _, (false, _) ->
+    | "-a" :: addr :: port :: rest ->
+        match System.Int32.TryParse(port) with
+        | (true, port)  ->
+            tryParse rest { opts with Address = addr; Port = port }
+        | (false, _) ->
             printfn "Not a valid port number '%s'" port
             None
     | other :: _ ->
