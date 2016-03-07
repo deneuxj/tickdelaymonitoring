@@ -36,6 +36,11 @@ projects/InjectPrio/Sample.pol
 projects/InjectPrio/Sample.rus
 projects/InjectPrio/Sample.spa
 instances.txt
+Krasnoarmeysk/Krasnoarmeysk.ger
+Krasnoarmeysk/Krasnoarmeysk.msnbin
+Krasnoarmeysk/Krasnoarmeysk.pol
+Krasnoarmeysk/Krasnoarmeysk.rus
+Krasnoarmeysk/Krasnoarmeysk.spa
 syntax: regexp
 /bin/
 /obj/
