@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="Main.fs" />
+    <None Include="BuildKrasno.fsx" />
     <None Include="BuildNovomax.fsx" />
     <None Include="Script.fsx" />
     <None Include="BuildEarlyInvasion.fsx" />
