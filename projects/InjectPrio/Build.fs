@@ -29,20 +29,37 @@ open System.IO
 
 type T = Provider<"Sample.Mission", "ResourceDespawn.Group">
 
+type McuRef =
+    { Name : string
+      Path : string list
+    }
+with
+    static member Create(name) = { Name = name; Path = [] }
+    static member CreateWithPath(path, name) = { Name = name; Path = path }
+
 type UnitPrioApi =
-    { SetHighPrio : string option
-      SetLowPrio : string option
-      SetMedPrio : string option
-      SetNoPrio : string option
-      Kill : string
+    { SetHighPrio : McuRef option
+      SetLowPrio : McuRef option
+      SetMedPrio : McuRef option
+      SetNoPrio : McuRef option
+      Kill : McuRef
     }
 with
     static member Create(kill, ?setHighPrio, ?setLowPrio, ?setMedPrio, ?setNoPrio) =
-        { SetHighPrio = setHighPrio
-          SetLowPrio = setLowPrio
-          SetMedPrio = setMedPrio
-          SetNoPrio = setNoPrio
-          Kill = kill
+        { SetHighPrio = setHighPrio |> Option.map McuRef.Create
+          SetLowPrio = setLowPrio |> Option.map McuRef.Create
+          SetMedPrio = setMedPrio |> Option.map McuRef.Create
+          SetNoPrio = setNoPrio |> Option.map McuRef.Create
+          Kill = kill |> McuRef.Create
+        }
+
+    static member CreateWithPath(path, kill, ?setHighPrio, ?setLowPrio, ?setMedPrio, ?setNoPrio) =
+        let mk x = McuRef.CreateWithPath(path, x)
+        { SetHighPrio = setHighPrio |> Option.map mk
+          SetLowPrio = setLowPrio |> Option.map mk
+          SetMedPrio = setMedPrio |> Option.map mk
+          SetNoPrio = setNoPrio |> Option.map mk
+          Kill = kill |> mk
         }
 
 let allLanguages = [ "eng"; "ger"; "pol"; "rus" ; "spa" ; "fra" ]
@@ -87,23 +104,21 @@ let build(filename, outputFilename, primaryLanguage, additionalLanguages, instan
     let blocks =
         [
             for api in instances do
-                let exists =
-                    try
-                        getCommandByName api.Kill mission |> ignore
-                        true
-                    with
-                    | _ -> false
-                if exists then
-                    let mcuKill = getCommandByName api.Kill mission
+                match tryGetByPathAndName api.Kill.Name api.Kill.Path mission with
+                | Some mcuKill ->
+                    let findByMcuRef mcuRef =
+                        match tryGetByPathAndName mcuRef.Name mcuRef.Path mission with
+                        | Some mcu -> mcu
+                        | None -> failwithf "Could not find %A" mcuRef
                     let mcuLowPrio =
                         api.SetLowPrio
-                        |> Option.map (fun name -> getCommandByName name mission)
+                        |> Option.map findByMcuRef
                     let mcuMedPrio =
                         api.SetMedPrio
-                        |> Option.map (fun name -> getCommandByName name mission)
+                        |> Option.map findByMcuRef
                     let mcuHighPrio =
                         api.SetHighPrio
-                        |> Option.map (fun name -> getCommandByName name mission)
+                        |> Option.map findByMcuRef
                     let block = T.ResourceDespawn.CreateMcuList()
                     subst block |> ignore
                     let onKilled = getCommandByName "OnKilled" block
@@ -111,12 +126,18 @@ let build(filename, outputFilename, primaryLanguage, additionalLanguages, instan
                     let setMedPrio = getCommandByName "SetMedPrio" block
                     let setLowPrio = getCommandByName "SetLowPrio" block
                     addTargetLink onKilled mcuKill.Index
-                    mcuLowPrio |> Option.iter (fun mcu -> addTargetLink mcu setLowPrio.Index)
-                    mcuMedPrio |> Option.iter (fun mcu -> addTargetLink mcu setMedPrio.Index)
-                    mcuHighPrio |> Option.iter (fun mcu -> addTargetLink mcu setHighPrio.Index)
+                    mcuLowPrio |> Option.iter (function
+                                               | :? McuCommand as mcu -> addTargetLink mcu setLowPrio.Index
+                                               | _ -> failwithf "%s is not a command" api.SetLowPrio.Value.Name)
+                    mcuMedPrio |> Option.iter (function
+                                               | :? McuCommand as mcu -> addTargetLink mcu setMedPrio.Index
+                                               | _ -> failwithf "%s is not a command" api.SetMedPrio.Value.Name)
+                    mcuHighPrio |> Option.iter (function
+                                                | :? McuCommand as mcu -> addTargetLink mcu setHighPrio.Index
+                                                | _ -> failwithf "%s is not a command" api.SetHighPrio.Value.Name)
                     yield block
-                else
-                    printfn "%s does not exist" api.Kill
+                | None ->
+                    printfn "%s does not exist under %s" api.Kill.Name (String.concat "/" api.Kill.Path)
         ]
     // Connect blocks to form a queue
     for curr, next in Seq.pairwise blocks do
@@ -141,7 +162,11 @@ let build(filename, outputFilename, primaryLanguage, additionalLanguages, instan
     f "Low"
     f "Med"
     // Server input -> ReqKillLow of first
-    let serverInput = getCommandByName reqKillName mission
+    let serverInput =
+        try
+            getCommandByName reqKillName mission
+        with
+        | e -> failwithf "Failed to get %s: %s" reqKillName e.Message
     let reqKill = getCommandByName "ReqKillLow" first
     addTargetLink serverInput reqKill.Index
 

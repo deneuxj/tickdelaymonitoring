@@ -112,11 +112,15 @@ let rec tryParseInstances linenum (lines : string list) instances =
             tryParseInstances
                 (linenum + 1)
                 rest
-                ({ Kill = kill; SetHighPrio = hiPrio; SetLowPrio = lowPrio; SetMedPrio = medPrio; SetNoPrio = noPrio } :: instances)
+                ({ Kill = McuRef.Create kill
+                   SetHighPrio = hiPrio |> Option.map McuRef.Create
+                   SetLowPrio = lowPrio |> Option.map McuRef.Create
+                   SetMedPrio = medPrio |> Option.map McuRef.Create
+                   SetNoPrio = noPrio |> Option.map McuRef.Create } :: instances)
 
 
 [<EntryPoint>]
-let main argv =        
+let main argv =
     let defaultOpts =
         { InputFilename = ""
           OutputFilename = ""
