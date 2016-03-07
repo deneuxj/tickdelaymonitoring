@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Sturmovik.RConClient</id>
+        <version>1.2.0.0</version>
+        <title>Remote console for IL-2 Sturmovik</title>
+        <authors>Johann Deneux</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Client for remote console of IL-2 Sturmovik's dedicated server.</description>
+        <summary>GPL v3</summary>
+        <tags>fsharp</tags>
+    </metadata>
+    <files>
+        <file src="lib\net45\FSharp.Core.dll" target="lib\net45\FSharp.Core.dll" />
+        <file src="lib\net45\FSharp.Core.xml" target="lib\net45\FSharp.Core.xml" />
+        <file src="bin\Release\RConClient.dll" target="lib\net45\RConClient.dll" />
+        <file src="bin\Release\RConClient.pdb" target="lib\net45\RConClient.pdb" />
+        <file src="bin\Release\RConClient.XML" target="lib\net45\RConClient.XML" />
+        <file src="AssemblyInfo.fs" target="src\AssemblyInfo.fs" />
+        <file src="Client.fs" target="src\Client.fs" />
+        <file src="RConClient.fsproj" target="src\RConClient.fsproj" />
+        <file src="Script.fsx" target="src\Script.fsx" />
+        <file src="gpl.txt" target="gpl.txt" />
+        <file src="Licensing.txt" target="Licensing.txt" />
+    </files>
+</package>
