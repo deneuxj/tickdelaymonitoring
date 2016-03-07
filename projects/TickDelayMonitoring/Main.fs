@@ -88,27 +88,27 @@ where <login> is the login to DServer's Remote Console control
 let main argv =
     match tryParse (List.ofArray argv) Options.Default with
     | Some opts ->
-        use client =
-            let rec f() =
-                try
-                    new Client(opts.Address, opts.Port, opts.Login, opts.Password)
-                with
-                | :? ConnectionException ->
-                    printfn "Failed to connect to DServer. Retry in 10s."
-                    System.Threading.Thread.Sleep(10000)
-                    f()
-            f()
         async {
-            let! response = client.Auth()
-            printfn "Auth response: %s" response
+            use queue = new ClientMessageQueue(opts.Address, opts.Port, opts.Login, opts.Password)
+            // Run for ever. This is a console tool, and to close it the user should simply close the window.
             while true do
-                let! response = client.ResetSPS()
-                do! Async.Sleep(opts.Period)
-                let! stepPerSec = client.GetSPS()
-                if stepPerSec.Average < 49.0f && stepPerSec.Minimum > 0.0f then
-                    let! response = client.ServerInput(opts.ReqKill)
-                    printfn "Overload detected, %s sent, reponse: %s" opts.ReqKill response
-                printfn "SPS: %4.1f" stepPerSec.Average
+                let! response = queue.Run(lazy queue.Client.ResetSPS())
+                match response with
+                | Some _ ->
+                    do! Async.Sleep(opts.Period)
+                    let! stepPerSec = queue.Run(lazy queue.Client.GetSPS())
+                    match stepPerSec with
+                    | Some stepPerSec ->
+                        if stepPerSec.Average < 49.0f && stepPerSec.Minimum > 0.0f then
+                            let! response = queue.Run(lazy queue.Client.ServerInput(opts.ReqKill))
+                            printfn "Overload detected, %s sent, reponse: %A" opts.ReqKill response
+                        printfn "SPS: %4.1f" stepPerSec.Average
+                    | None ->
+                        ()
+                | None ->
+                    // Error when reseting SPS count, sleeping for a minute.
+                    // Happens e.g. when the server is shut down.
+                    do! Async.Sleep(60000)
         }
         |> Async.RunSynchronously
         0
