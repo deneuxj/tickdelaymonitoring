@@ -37,11 +37,11 @@ Options
   SeasonPrefix = "su";
   MissionType = 2;
   AqmId = 0;
-  CloudLevel = 600;
+  CloudLevel = 800;
   CloudHeight = 900;
   PrecLevel = 0;
   PrecType = 0;
-  CloudConfig = "summer\02_Medium_09\sky.ini";
+  CloudConfig = "summer\03_Heavy_00\sky.ini";
   SeaState = 0;
   Turbulence = 0.25;
   TempPressLevel = 0;
