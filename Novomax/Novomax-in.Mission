@@ -17,6 +17,7 @@ Options
   MultiplayerPlaneConfig = "LuaScripts\WorldObjects\Planes\il2m41.txt";
   MultiplayerPlaneConfig = "LuaScripts\WorldObjects\Planes\il2m42.txt";
   MultiplayerPlaneConfig = "LuaScripts\WorldObjects\Planes\ju87d3.txt";
+  MultiplayerPlaneConfig = "LuaScripts\WorldObjects\Planes\ju88a4.txt";
   MultiplayerPlaneConfig = "LuaScripts\WorldObjects\Planes\la5s8.txt";
   MultiplayerPlaneConfig = "LuaScripts\WorldObjects\Planes\lagg3s29.txt";
   MultiplayerPlaneConfig = "LuaScripts\WorldObjects\Planes\mc202s8.txt";
@@ -74278,8 +74279,8 @@ MCU_TR_Entity
     OnReport
     {
       Type = 0;
-      CmdId = 3908;
-      TarId = 3907;
+      CmdId = 3907;
+      TarId = 3908;
     }
   }
 }
@@ -74288,7 +74289,7 @@ MCU_TR_Entity
 
 MCU_CMD_AttackArea
 {
-  Index = 3907;
+  Index = 3908;
   Name = "command AttackArea";
   Desc = "";
   Targets = [];
@@ -77410,6 +77411,33 @@ Airfield
       Altitude = 500;
       Model = "graphics\planes\bf109f2\bf109f2.mgm";
       Script = "LuaScripts\WorldObjects\Planes\bf109f2.txt";
+      Name = "";
+      Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
+      Callsign = 0;
+      Callnum = 0;
+    }
+    Plane
+    {
+      SetIndex = 0;
+      Number = -1;
+      AILevel = 2;
+      StartInAir = 2;
+      Engageable = 1;
+      Vulnerable = 1;
+      LimitAmmo = 1;
+      AIRTBDecision = 1;
+      Renewable = 0;
+      PayloadId = 1;
+      WMMask = 1;
+      Fuel = 1;
+      RouteTime = 0;
+      RenewTime = 1800;
+      Altitude = 500;
+      Model = "graphics\planes\ju88a4\ju88a4.mgm";
+      Script = "LuaScripts\WorldObjects\Planes\ju88a4.txt";
       Name = "";
       Skin = "";
       AvMods = "";
@@ -82477,8 +82505,8 @@ Group
       OnReport
       {
         Type = 0;
-        CmdId = 4409;
-        TarId = 4408;
+        CmdId = 4408;
+        TarId = 4409;
       }
     }
   }
@@ -82486,7 +82514,7 @@ Group
 
   MCU_Spawner
   {
-    Index = 4409;
+    Index = 4408;
     Name = "Trigger Spawner";
     Desc = "";
     Targets = [];
@@ -82503,7 +82531,7 @@ Group
 
   MCU_CMD_AttackArea
   {
-    Index = 4408;
+    Index = 4409;
     Name = "command AttackArea";
     Desc = "";
     Targets = [];
@@ -82578,7 +82606,7 @@ Group
     Index = 4419;
     Name = "Start";
     Desc = "";
-    Targets = [4409,4420];
+    Targets = [4408,4420];
     Objects = [];
     XPos = 104375.659;
     YPos = 25.626;
@@ -82797,8 +82825,8 @@ Group
       OnReport
       {
         Type = 0;
-        CmdId = 4437;
-        TarId = 4436;
+        CmdId = 4436;
+        TarId = 4437;
       }
     }
   }
@@ -82806,7 +82834,7 @@ Group
 
   MCU_Spawner
   {
-    Index = 4437;
+    Index = 4436;
     Name = "Trigger Spawner";
     Desc = "";
     Targets = [];
@@ -82823,7 +82851,7 @@ Group
 
   MCU_CMD_AttackArea
   {
-    Index = 4436;
+    Index = 4437;
     Name = "command AttackArea";
     Desc = "";
     Targets = [];
@@ -82898,7 +82926,7 @@ Group
     Index = 4447;
     Name = "Start";
     Desc = "";
-    Targets = [4437,4448];
+    Targets = [4436,4448];
     Objects = [];
     XPos = 116564.100;
     YPos = 25.626;
@@ -83152,13 +83180,13 @@ Group
       OnReport
       {
         Type = 0;
-        CmdId = 4470;
-        TarId = 4469;
+        CmdId = 4469;
+        TarId = 4470;
       }
       OnReport
       {
         Type = 0;
-        CmdId = 4470;
+        CmdId = 4469;
         TarId = 4471;
       }
     }
@@ -83183,7 +83211,7 @@ Group
 
   MCU_Spawner
   {
-    Index = 4470;
+    Index = 4469;
     Name = "Trigger Spawner";
     Desc = "";
     Targets = [];
@@ -83221,7 +83249,7 @@ Group
     Index = 4475;
     Name = "15s";
     Desc = "";
-    Targets = [4470,4478];
+    Targets = [4469,4478];
     Objects = [];
     XPos = 104236.638;
     YPos = 85.066;
@@ -83253,7 +83281,7 @@ Group
 
   MCU_Waypoint
   {
-    Index = 4469;
+    Index = 4470;
     Name = "Trigger Waypoint";
     Desc = "";
     Targets = [4481];
@@ -83640,13 +83668,13 @@ Group
       OnReport
       {
         Type = 0;
-        CmdId = 4509;
-        TarId = 4508;
+        CmdId = 4508;
+        TarId = 4509;
       }
       OnReport
       {
         Type = 0;
-        CmdId = 4509;
+        CmdId = 4508;
         TarId = 4510;
       }
     }
@@ -83655,7 +83683,7 @@ Group
 
   MCU_Waypoint
   {
-    Index = 4508;
+    Index = 4509;
     Name = "Trigger Waypoint";
     Desc = "";
     Targets = [4512];
@@ -84095,7 +84123,7 @@ Group
 
   MCU_Spawner
   {
-    Index = 4509;
+    Index = 4508;
     Name = "Trigger Spawner";
     Desc = "";
     Targets = [];
@@ -84149,7 +84177,7 @@ Group
     Index = 4559;
     Name = "15s";
     Desc = "";
-    Targets = [4509,4562];
+    Targets = [4508,4562];
     Objects = [];
     XPos = 122039.720;
     YPos = 38.004;
@@ -84790,6 +84818,33 @@ Airfield
       Altitude = 500;
       Model = "graphics\planes\bf109f2\bf109f2.mgm";
       Script = "LuaScripts\WorldObjects\Planes\bf109f2.txt";
+      Name = "";
+      Skin = "";
+      AvMods = "";
+      AvSkins = "";
+      AvPayloads = "";
+      Callsign = 0;
+      Callnum = 0;
+    }
+    Plane
+    {
+      SetIndex = 0;
+      Number = -1;
+      AILevel = 2;
+      StartInAir = 2;
+      Engageable = 1;
+      Vulnerable = 1;
+      LimitAmmo = 1;
+      AIRTBDecision = 1;
+      Renewable = 0;
+      PayloadId = 1;
+      WMMask = 1;
+      Fuel = 1;
+      RouteTime = 0;
+      RenewTime = 1800;
+      Altitude = 500;
+      Model = "graphics\planes\ju88a4\ju88a4.mgm";
+      Script = "LuaScripts\WorldObjects\Planes\ju88a4.txt";
       Name = "";
       Skin = "";
       AvMods = "";
@@ -85668,8 +85723,8 @@ Group
       OnReport
       {
         Type = 0;
-        CmdId = 4643;
-        TarId = 4642;
+        CmdId = 4642;
+        TarId = 4643;
       }
     }
   }
@@ -85677,7 +85732,7 @@ Group
 
   MCU_Spawner
   {
-    Index = 4643;
+    Index = 4642;
     Name = "Trigger Spawner";
     Desc = "";
     Targets = [];
@@ -85694,7 +85749,7 @@ Group
 
   MCU_CMD_AttackArea
   {
-    Index = 4642;
+    Index = 4643;
     Name = "command AttackArea";
     Desc = "";
     Targets = [];
@@ -85769,7 +85824,7 @@ Group
     Index = 4653;
     Name = "Start";
     Desc = "";
-    Targets = [4643,4654];
+    Targets = [4642,4654];
     Objects = [];
     XPos = 93722.751;
     YPos = 25.626;
@@ -87044,8 +87099,8 @@ Group
       OnReport
       {
         Type = 0;
-        CmdId = 4722;
-        TarId = 4721;
+        CmdId = 4721;
+        TarId = 4722;
       }
     }
   }
@@ -87053,7 +87108,7 @@ Group
 
   MCU_Spawner
   {
-    Index = 4722;
+    Index = 4721;
     Name = "Trigger Spawner";
     Desc = "";
     Targets = [];
@@ -87070,7 +87125,7 @@ Group
 
   MCU_CMD_AttackArea
   {
-    Index = 4721;
+    Index = 4722;
     Name = "command AttackArea";
     Desc = "";
     Targets = [];
@@ -87145,7 +87200,7 @@ Group
     Index = 4732;
     Name = "Start";
     Desc = "";
-    Targets = [4722,4733];
+    Targets = [4721,4733];
     Objects = [];
     XPos = 151590.742;
     YPos = 25.626;
@@ -93113,8 +93168,8 @@ Group
       OnReport
       {
         Type = 3;
-        CmdId = 5197;
-        TarId = 5196;
+        CmdId = 5196;
+        TarId = 5197;
       }
     }
   }
@@ -93156,7 +93211,7 @@ Group
 
   MCU_Timer
   {
-    Index = 5196;
+    Index = 5197;
     Name = "Start attackers";
     Desc = "";
     Targets = [5201,5199];
@@ -93377,7 +93432,7 @@ Group
 
   MCU_CMD_TakeOff
   {
-    Index = 5197;
+    Index = 5196;
     Name = "command Take off";
     Desc = "";
     Targets = [];
@@ -93414,7 +93469,7 @@ Group
     Index = 5225;
     Name = "Delay";
     Desc = "";
-    Targets = [5197];
+    Targets = [5196];
     Objects = [];
     XPos = 134097.334;
     YPos = 52.796;
@@ -94118,8 +94173,8 @@ Group
       OnReport
       {
         Type = 3;
-        CmdId = 5262;
-        TarId = 5261;
+        CmdId = 5261;
+        TarId = 5262;
       }
     }
   }
@@ -94161,7 +94216,7 @@ Group
 
   MCU_Timer
   {
-    Index = 5261;
+    Index = 5262;
     Name = "Start attackers";
     Desc = "";
     Targets = [5266,5264];
@@ -94382,7 +94437,7 @@ Group
 
   MCU_CMD_TakeOff
   {
-    Index = 5262;
+    Index = 5261;
     Name = "command Take off";
     Desc = "";
     Targets = [];
@@ -94419,7 +94474,7 @@ Group
     Index = 5291;
     Name = "Delay";
     Desc = "";
-    Targets = [5262];
+    Targets = [5261];
     Objects = [];
     XPos = 105148.364;
     YPos = 52.796;
@@ -94676,7 +94731,7 @@ Group
 
 MCU_Spawner
 {
-  Index = 3908;
+  Index = 3907;
   Name = "Trigger Spawner";
   Desc = "";
   Targets = [];
@@ -94697,7 +94752,7 @@ MCU_Timer
   Index = 5310;
   Name = "StartBf109-1";
   Desc = "";
-  Targets = [3908,5311];
+  Targets = [3907,5311];
   Objects = [];
   XPos = 117508.826;
   YPos = 42.386;
@@ -95508,13 +95563,13 @@ Group
       OnReport
       {
         Type = 0;
-        CmdId = 5361;
-        TarId = 5360;
+        CmdId = 5360;
+        TarId = 5361;
       }
       OnReport
       {
         Type = 0;
-        CmdId = 5361;
+        CmdId = 5360;
         TarId = 5362;
       }
     }
@@ -95523,7 +95578,7 @@ Group
 
   MCU_Spawner
   {
-    Index = 5361;
+    Index = 5360;
     Name = "Trigger Spawner";
     Desc = "";
     Targets = [];
@@ -95596,7 +95651,7 @@ Group
     Index = 5370;
     Name = "StartStuka-1";
     Desc = "";
-    Targets = [5361];
+    Targets = [5360];
     Objects = [];
     XPos = 90177.810;
     YPos = 44.611;
@@ -96056,7 +96111,7 @@ Group
 
   MCU_Timer
   {
-    Index = 5360;
+    Index = 5361;
     Name = "Start attack";
     Desc = "";
     Targets = [5402];
@@ -96177,13 +96232,13 @@ Group
       OnReport
       {
         Type = 0;
-        CmdId = 5411;
-        TarId = 5410;
+        CmdId = 5410;
+        TarId = 5411;
       }
       OnReport
       {
         Type = 0;
-        CmdId = 5411;
+        CmdId = 5410;
         TarId = 5412;
       }
     }
@@ -96192,7 +96247,7 @@ Group
 
   MCU_Spawner
   {
-    Index = 5411;
+    Index = 5410;
     Name = "Trigger Spawner";
     Desc = "";
     Targets = [];
@@ -96265,7 +96320,7 @@ Group
     Index = 5420;
     Name = "StartStuka-2";
     Desc = "";
-    Targets = [5411];
+    Targets = [5410];
     Objects = [];
     XPos = 95682.507;
     YPos = 44.611;
@@ -96725,7 +96780,7 @@ Group
 
   MCU_Timer
   {
-    Index = 5410;
+    Index = 5411;
     Name = "Start attack";
     Desc = "";
     Targets = [5452];
@@ -103539,8 +103594,8 @@ Group
       OnReport
       {
         Type = 0;
-        CmdId = 5967;
-        TarId = 5966;
+        CmdId = 5966;
+        TarId = 5967;
       }
     }
   }
@@ -103551,7 +103606,7 @@ Group
     Index = 5968;
     Name = "MedPrioAA-1";
     Desc = "";
-    Targets = [5967,5969];
+    Targets = [5966,5969];
     Objects = [];
     XPos = 96645.243;
     YPos = 45.237;
@@ -103566,7 +103621,7 @@ Group
 
   MCU_CMD_ForceComplete
   {
-    Index = 5966;
+    Index = 5967;
     Name = "Free fire";
     Desc = "";
     Targets = [];
@@ -103618,7 +103673,7 @@ Group
 
   MCU_Spawner
   {
-    Index = 5967;
+    Index = 5966;
     Name = "";
     Desc = "";
     Targets = [];
@@ -103793,7 +103848,7 @@ Group
     Index = 5965;
     Name = "";
     Desc = "";
-    Targets = [5967];
+    Targets = [5966];
     Objects = [];
     XPos = 96512.323;
     YPos = 43.953;
@@ -103927,8 +103982,8 @@ Group
       OnReport
       {
         Type = 0;
-        CmdId = 5999;
-        TarId = 5998;
+        CmdId = 5998;
+        TarId = 5999;
       }
     }
   }
@@ -103939,7 +103994,7 @@ Group
     Index = 6000;
     Name = "MedPrioAA-2";
     Desc = "";
-    Targets = [5999,6001];
+    Targets = [5998,6001];
     Objects = [];
     XPos = 100862.934;
     YPos = 45.237;
@@ -103954,7 +104009,7 @@ Group
 
   MCU_CMD_ForceComplete
   {
-    Index = 5998;
+    Index = 5999;
     Name = "Free fire";
     Desc = "";
     Targets = [];
@@ -104006,7 +104061,7 @@ Group
 
   MCU_Spawner
   {
-    Index = 5999;
+    Index = 5998;
     Name = "";
     Desc = "";
     Targets = [];
@@ -104181,7 +104236,7 @@ Group
     Index = 5997;
     Name = "";
     Desc = "";
-    Targets = [5999];
+    Targets = [5998];
     Objects = [];
     XPos = 100146.029;
     YPos = 43.953;
@@ -104315,8 +104370,8 @@ Group
       OnReport
       {
         Type = 0;
-        CmdId = 6031;
-        TarId = 6030;
+        CmdId = 6030;
+        TarId = 6031;
       }
     }
   }
@@ -104327,7 +104382,7 @@ Group
     Index = 6032;
     Name = "MedPrioAA-3";
     Desc = "";
-    Targets = [6031,6033];
+    Targets = [6030,6033];
     Objects = [];
     XPos = 111268.009;
     YPos = 45.237;
@@ -104342,7 +104397,7 @@ Group
 
   MCU_CMD_ForceComplete
   {
-    Index = 6030;
+    Index = 6031;
     Name = "Free fire";
     Desc = "";
     Targets = [];
@@ -104394,7 +104449,7 @@ Group
 
   MCU_Spawner
   {
-    Index = 6031;
+    Index = 6030;
     Name = "";
     Desc = "";
     Targets = [];
@@ -104569,7 +104624,7 @@ Group
     Index = 6029;
     Name = "";
     Desc = "";
-    Targets = [6031];
+    Targets = [6030];
     Objects = [];
     XPos = 111245.981;
     YPos = 43.953;
@@ -104703,8 +104758,8 @@ Group
       OnReport
       {
         Type = 0;
-        CmdId = 6063;
-        TarId = 6062;
+        CmdId = 6062;
+        TarId = 6063;
       }
     }
   }
@@ -104715,7 +104770,7 @@ Group
     Index = 6064;
     Name = "MedPrioAA-4";
     Desc = "";
-    Targets = [6063,6065];
+    Targets = [6062,6065];
     Objects = [];
     XPos = 124875.829;
     YPos = 45.237;
@@ -104730,7 +104785,7 @@ Group
 
   MCU_CMD_ForceComplete
   {
-    Index = 6062;
+    Index = 6063;
     Name = "Free fire";
     Desc = "";
     Targets = [];
@@ -104782,7 +104837,7 @@ Group
 
   MCU_Spawner
   {
-    Index = 6063;
+    Index = 6062;
     Name = "";
     Desc = "";
     Targets = [];
@@ -104957,7 +105012,7 @@ Group
     Index = 6061;
     Name = "";
     Desc = "";
-    Targets = [6063];
+    Targets = [6062];
     Objects = [];
     XPos = 124853.801;
     YPos = 43.953;
@@ -108914,8 +108969,8 @@ Group
       OnReport
       {
         Type = 0;
-        CmdId = 6386;
-        TarId = 6385;
+        CmdId = 6385;
+        TarId = 6386;
       }
     }
   }
@@ -108926,7 +108981,7 @@ Group
     Index = 6387;
     Name = "MedPrioAA-5";
     Desc = "";
-    Targets = [6386,6388];
+    Targets = [6385,6388];
     Objects = [];
     XPos = 107556.431;
     YPos = 45.237;
@@ -108941,7 +108996,7 @@ Group
 
   MCU_CMD_ForceComplete
   {
-    Index = 6385;
+    Index = 6386;
     Name = "Free fire";
     Desc = "";
     Targets = [];
@@ -108993,7 +109048,7 @@ Group
 
   MCU_Spawner
   {
-    Index = 6386;
+    Index = 6385;
     Name = "";
     Desc = "";
     Targets = [];
@@ -109168,7 +109223,7 @@ Group
     Index = 6384;
     Name = "";
     Desc = "";
-    Targets = [6386];
+    Targets = [6385];
     Objects = [];
     XPos = 107565.013;
     YPos = 43.953;
@@ -109302,8 +109357,8 @@ Group
       OnReport
       {
         Type = 0;
-        CmdId = 6418;
-        TarId = 6417;
+        CmdId = 6417;
+        TarId = 6418;
       }
     }
   }
@@ -109314,7 +109369,7 @@ Group
     Index = 6419;
     Name = "MedPrioAA-6";
     Desc = "";
-    Targets = [6418,6420];
+    Targets = [6417,6420];
     Objects = [];
     XPos = 108451.008;
     YPos = 45.237;
@@ -109329,7 +109384,7 @@ Group
 
   MCU_CMD_ForceComplete
   {
-    Index = 6417;
+    Index = 6418;
     Name = "Free fire";
     Desc = "";
     Targets = [];
@@ -109381,7 +109436,7 @@ Group
 
   MCU_Spawner
   {
-    Index = 6418;
+    Index = 6417;
     Name = "";
     Desc = "";
     Targets = [];
@@ -109556,7 +109611,7 @@ Group
     Index = 6416;
     Name = "";
     Desc = "";
-    Targets = [6418];
+    Targets = [6417];
     Objects = [];
     XPos = 108399.217;
     YPos = 43.953;
