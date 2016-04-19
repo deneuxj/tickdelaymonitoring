@@ -16,6 +16,9 @@ let instances =
             yield UnitPrioApi.CreateWithPath([sprintf "IL2-%d" i], "Kill", setMedPrio = "MedPrio", setLowPrio = "LoPrio")
         for i in 1..3 do
             yield UnitPrioApi.CreateWithPath([sprintf "RiverPatrol-%d" i], "Kill", setMedPrio = "MedPrio", setLowPrio = "LoPrio")
+        for i in 1..3 do
+            yield UnitPrioApi.CreateWithPath([sprintf "PatrolGer%d" i], "Despawn", setLowPrio = "Spawn")
+            yield UnitPrioApi.CreateWithPath([sprintf "PatrolRus%d" i], "Despawn", setLowPrio = "Spawn")
     ]
 
 let filename = __SOURCE_DIRECTORY__ + "/../../Krasnoarmeysk/Krasnoarmeysk.Mission"

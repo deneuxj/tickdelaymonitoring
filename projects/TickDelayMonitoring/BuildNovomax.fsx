@@ -29,6 +29,9 @@ let instances =
             yield UnitPrioApi.Create(sprintf "KillBf110-%d" i, setHighPrio = sprintf "StartBf110-%d" i, setLowPrio = sprintf "LowPrioBf110-%d" i)
         let i = 1 in
             yield UnitPrioApi.Create(sprintf "KillIL2-%d" i, setHighPrio = sprintf "StartIL2-%d" i, setLowPrio = sprintf "LowPrioIL2-%d" i)
+        for i in 1..3 do
+            yield UnitPrioApi.CreateWithPath([sprintf "PatrolGer%d" i], "Despawn", setLowPrio = "Spawn")
+            yield UnitPrioApi.CreateWithPath([sprintf "PatrolRus%d" i], "Despawn", setLowPrio = "Spawn")
     ]
 
 let filename = __SOURCE_DIRECTORY__ + "/../../Novomax/Novomax-in.Mission"
