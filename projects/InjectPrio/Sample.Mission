@@ -171,14 +171,14 @@ MCU_TR_Entity
     OnReport
     {
       Type = 3;
-      CmdId = 10;
-      TarId = 11;
+      CmdId = 11;
+      TarId = 10;
     }
     OnReport
     {
       Type = 4;
       CmdId = 8;
-      TarId = 10;
+      TarId = 11;
     }
   }
 }
@@ -187,7 +187,7 @@ MCU_TR_Entity
 
 MCU_CMD_AttackTarget
 {
-  Index = 11;
+  Index = 10;
   Name = "command Attack";
   Desc = "";
   Targets = [];
@@ -385,7 +385,7 @@ MCU_CMD_Land
 
 MCU_CMD_TakeOff
 {
-  Index = 10;
+  Index = 11;
   Name = "command Take off";
   Desc = "";
   Targets = [];
@@ -1653,7 +1653,7 @@ MCU_TR_Entity
     OnEvent
     {
       Type = 13;
-      TarId = 10;
+      TarId = 11;
     }
   }
 }
@@ -2271,6 +2271,86 @@ MCU_TR_Entity
   ZOri = 0.00;
   Enabled = 1;
   MisObjID = 111;
+}
+
+
+
+MCU_TR_Media
+{
+  Index = 114;
+  Name = "Translator Media";
+  Desc = "";
+  Targets = [];
+  Objects = [];
+  XPos = 25236.137;
+  YPos = 149.828;
+  ZPos = 27452.363;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  Config = "multiplayer\coconut\aieverywhere\geranthem.mp3";
+  TotalTime = 10;
+  ExpandTime = 1;
+  FadeTime = 1;
+  Opacity = 25;
+  RColor = 255;
+  GColor = 255;
+  BColor = 255;
+  MediaType = 5;
+  OnEvents
+  {
+    OnEvent
+    {
+      Type = 18;
+      TarId = 13;
+    }
+  }
+}
+
+
+
+Flag
+{
+  Name = "Flag";
+  Index = 115;
+  LinkTrId = 116;
+  XPos = 25177.980;
+  YPos = 143.733;
+  ZPos = 25704.917;
+  XOri = 359.03;
+  YOri = 1.00;
+  ZOri = 359.72;
+  Model = "graphics\flag\windsock.mgm";
+  Desc = "";
+  Script = "LuaScripts\WorldObjects\Flags\windsock.txt";
+  Country = 201;
+  StartHeight = 0.5;
+  SpeedFactor = 0.5;
+  BlockThreshold = 0.5;
+  Radius = 1000;
+  Type = 2;
+  CountPlanes = 1;
+  CountVehicles = 1;
+}
+
+
+
+MCU_TR_Entity
+{
+  Index = 116;
+  Name = "Flag entity";
+  Desc = "";
+  Targets = [];
+  Objects = [];
+  XPos = 25177.980;
+  YPos = 143.933;
+  ZPos = 25704.917;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Enabled = 1;
+  MisObjID = 115;
 }
 
 
