@@ -71725,9 +71725,9 @@ Airfield
   Name = "Advanced";
   Index = 3730;
   LinkTrId = 3731;
-  XPos = 103243.930;
-  YPos = 44.146;
-  ZPos = 153333.013;
+  XPos = 103363.243;
+  YPos = 39.933;
+  ZPos = 153184.173;
   XOri = 0.00;
   YOri = 279.68;
   ZOri = 0.00;
@@ -71821,9 +71821,9 @@ MCU_TR_Entity
   Desc = "";
   Targets = [];
   Objects = [];
-  XPos = 103243.930;
-  YPos = 44.346;
-  ZPos = 153333.013;
+  XPos = 103363.243;
+  YPos = 40.133;
+  ZPos = 153184.173;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -71838,11 +71838,11 @@ Airfield
   Name = "Rear";
   Index = 3733;
   LinkTrId = 3734;
-  XPos = 101540.104;
-  YPos = 46.380;
-  ZPos = 150853.477;
+  XPos = 101566.360;
+  YPos = 45.857;
+  ZPos = 150749.089;
   XOri = 0.00;
-  YOri = 63.91;
+  YOri = 140.70;
   ZOri = 0.00;
   Model = "graphics\airfields\fakevehiclefield.mgm";
   Script = "LuaScripts\WorldObjects\Airfields\fakevehiclefield.txt";
@@ -71896,9 +71896,9 @@ MCU_TR_Entity
   Desc = "";
   Targets = [];
   Objects = [];
-  XPos = 101540.104;
-  YPos = 46.580;
-  ZPos = 150853.477;
+  XPos = 101566.360;
+  YPos = 46.057;
+  ZPos = 150749.089;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -71913,9 +71913,9 @@ Airfield
   Name = "Rear";
   Index = 3736;
   LinkTrId = 3737;
-  XPos = 100255.050;
-  YPos = 47.139;
-  ZPos = 153228.308;
+  XPos = 100163.695;
+  YPos = 46.993;
+  ZPos = 153344.902;
   XOri = 0.00;
   YOri = 358.88;
   ZOri = 0.00;
@@ -71971,9 +71971,9 @@ MCU_TR_Entity
   Desc = "";
   Targets = [];
   Objects = [];
-  XPos = 100255.050;
-  YPos = 47.339;
-  ZPos = 153228.308;
+  XPos = 100163.695;
+  YPos = 47.193;
+  ZPos = 153344.902;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -71988,19 +71988,19 @@ Flag
   Name = "Flag";
   Index = 3739;
   LinkTrId = 3740;
-  XPos = 103229.095;
-  YPos = 44.374;
-  ZPos = 153342.338;
-  XOri = 359.44;
+  XPos = 103242.086;
+  YPos = 42.927;
+  ZPos = 153410.902;
+  XOri = 359.26;
   YOri = 0.00;
-  ZOri = 359.47;
+  ZOri = 4.61;
   Model = "graphics\flag\flag.mgm";
   Desc = "";
   Script = "LuaScripts\WorldObjects\Flags\flag.txt";
   Country = 101;
   StartHeight = 1;
   SpeedFactor = 2;
-  BlockThreshold = 0.5;
+  BlockThreshold = 1;
   Radius = 200;
   Type = 0;
   CountPlanes = 0;
@@ -72016,9 +72016,9 @@ MCU_TR_Entity
   Desc = "";
   Targets = [];
   Objects = [];
-  XPos = 103229.095;
-  YPos = 44.574;
-  ZPos = 153342.338;
+  XPos = 103242.086;
+  YPos = 43.127;
+  ZPos = 153410.902;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -72036,6 +72036,11 @@ MCU_TR_Entity
       Type = 27;
       TarId = 3743;
     }
+    OnEvent
+    {
+      Type = 23;
+      TarId = 7062;
+    }
   }
 }
 
@@ -72046,12 +72051,12 @@ Flag
   Name = "Flag";
   Index = 3744;
   LinkTrId = 3745;
-  XPos = 101540.874;
-  YPos = 46.440;
-  ZPos = 150849.510;
-  XOri = 0.64;
+  XPos = 101621.007;
+  YPos = 45.496;
+  ZPos = 150929.643;
+  XOri = 357.66;
   YOri = 0.00;
-  ZOri = 358.21;
+  ZOri = 3.42;
   Model = "graphics\flag\flag.mgm";
   Desc = "";
   Script = "LuaScripts\WorldObjects\Flags\flag.txt";
@@ -72059,7 +72064,7 @@ Flag
   StartHeight = 1;
   SpeedFactor = 0.5;
   BlockThreshold = 0.9;
-  Radius = 200;
+  Radius = 150;
   Type = 0;
   CountPlanes = 0;
   CountVehicles = 1;
@@ -72074,9 +72079,9 @@ MCU_TR_Entity
   Desc = "";
   Targets = [];
   Objects = [];
-  XPos = 101540.874;
-  YPos = 46.640;
-  ZPos = 150849.510;
+  XPos = 101621.007;
+  YPos = 45.696;
+  ZPos = 150929.643;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -72099,6 +72104,11 @@ MCU_TR_Entity
       Type = 23;
       TarId = 3749;
     }
+    OnEvent
+    {
+      Type = 23;
+      TarId = 7067;
+    }
   }
 }
 
@@ -72109,12 +72119,12 @@ Flag
   Name = "Flag";
   Index = 3750;
   LinkTrId = 3751;
-  XPos = 100254.392;
-  YPos = 47.120;
-  ZPos = 153229.791;
-  XOri = 0.74;
+  XPos = 100339.682;
+  YPos = 47.985;
+  ZPos = 153091.309;
+  XOri = 0.53;
   YOri = 0.00;
-  ZOri = 0.04;
+  ZOri = 0.53;
   Model = "graphics\flag\flag.mgm";
   Desc = "";
   Script = "LuaScripts\WorldObjects\Flags\flag.txt";
@@ -72122,7 +72132,7 @@ Flag
   StartHeight = 1;
   SpeedFactor = 0.5;
   BlockThreshold = 0.9;
-  Radius = 200;
+  Radius = 150;
   Type = 0;
   CountPlanes = 0;
   CountVehicles = 1;
@@ -72137,9 +72147,9 @@ MCU_TR_Entity
   Desc = "";
   Targets = [];
   Objects = [];
-  XPos = 100254.392;
-  YPos = 47.320;
-  ZPos = 153229.791;
+  XPos = 100339.682;
+  YPos = 48.185;
+  ZPos = 153091.309;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -72161,6 +72171,11 @@ MCU_TR_Entity
     {
       Type = 23;
       TarId = 3755;
+    }
+    OnEvent
+    {
+      Type = 23;
+      TarId = 7069;
     }
   }
 }
@@ -72393,9 +72408,9 @@ MCU_CMD_Behaviour
   Desc = "";
   Targets = [];
   Objects = [3734];
-  XPos = 101534.052;
+  XPos = 101614.185;
   YPos = 46.401;
-  ZPos = 150860.380;
+  ZPos = 150940.513;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -72420,9 +72435,9 @@ MCU_CMD_Behaviour
   Desc = "";
   Targets = [];
   Objects = [3734];
-  XPos = 101528.553;
+  XPos = 101608.686;
   YPos = 46.401;
-  ZPos = 150860.380;
+  ZPos = 150940.513;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -72446,10 +72461,10 @@ MCU_CMD_Behaviour
   Name = "SwitchRus";
   Desc = "";
   Targets = [];
-  Objects = [3751];
-  XPos = 100260.782;
+  Objects = [3737];
+  XPos = 100346.072;
   YPos = 46.401;
-  ZPos = 153235.770;
+  ZPos = 153097.288;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -72473,10 +72488,10 @@ MCU_CMD_Behaviour
   Name = "SwitchGer";
   Desc = "";
   Targets = [];
-  Objects = [3751];
-  XPos = 100255.283;
+  Objects = [3737];
+  XPos = 100340.967;
   YPos = 46.401;
-  ZPos = 153235.770;
+  ZPos = 153097.288;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -74354,9 +74369,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\ju87d3.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1/3..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -74381,9 +74396,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\bf110e2.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..4";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -74464,9 +74479,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\il2m42.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -74491,9 +74506,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\pe2s87.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -74643,56 +74658,6 @@ MCU_CMD_Formation
   ZOri = 0.00;
 FormationType = 4;
 FormationDensity = 1;
-}
-
-
-
-Vehicle
-{
-  Name = "Player";
-  Index = 3925;
-  LinkTrId = 3926;
-  XPos = 100255.241;
-  YPos = 45.678;
-  ZPos = 153290.421;
-  XOri = 1.57;
-  YOri = 0.00;
-  ZOri = 359.23;
-  Script = "LuaScripts\WorldObjects\vehicles\_pziii-l.txt";
-  Model = "graphics\vehicles\_pziii-l\_pziii-l.mgm";
-  Desc = "";
-  Country = 201;
-  NumberInFormation = 0;
-  Vulnerable = 1;
-  Engageable = 1;
-  LimitAmmo = 1;
-  AILevel = 0;
-  DamageReport = 50;
-  DamageThreshold = 1;
-  DeleteAfterDeath = 1;
-  CoopStart = 0;
-  Spotter = -1;
-  BeaconChannel = 0;
-  Callsign = 0;
-}
-
-
-
-MCU_TR_Entity
-{
-  Index = 3926;
-  Name = "Player entity";
-  Desc = "";
-  Targets = [];
-  Objects = [];
-  XPos = 100255.241;
-  YPos = 45.878;
-  ZPos = 153290.421;
-  XOri = 0.00;
-  YOri = 0.00;
-  ZOri = 0.00;
-  Enabled = 1;
-  MisObjID = 3925;
 }
 
 
@@ -75926,9 +75891,9 @@ MCU_CMD_Behaviour
   Desc = "";
   Targets = [];
   Objects = [3731];
-  XPos = 103280.895;
+  XPos = 103293.886;
   YPos = 44.166;
-  ZPos = 153319.612;
+  ZPos = 153388.176;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -75953,9 +75918,9 @@ MCU_CMD_Behaviour
   Desc = "";
   Targets = [];
   Objects = [3731];
-  XPos = 103272.515;
+  XPos = 103285.506;
   YPos = 44.166;
-  ZPos = 153363.686;
+  ZPos = 153432.250;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -75980,9 +75945,9 @@ MCU_Timer
   Desc = "";
   Targets = [4008];
   Objects = [];
-  XPos = 103229.372;
+  XPos = 103242.363;
   YPos = 43.398;
-  ZPos = 153282.056;
+  ZPos = 153350.620;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -75999,9 +75964,9 @@ MCU_Timer
   Desc = "";
   Targets = [4009];
   Objects = [];
-  XPos = 103226.579;
+  XPos = 103239.570;
   YPos = 43.398;
-  ZPos = 153390.999;
+  ZPos = 153459.563;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -76160,9 +76125,9 @@ Airfield
   Name = "Rear";
   Index = 4024;
   LinkTrId = 4025;
-  XPos = 104739.654;
-  YPos = 48.873;
-  ZPos = 156207.211;
+  XPos = 104714.207;
+  YPos = 48.872;
+  ZPos = 156332.854;
   XOri = 0.00;
   YOri = 249.32;
   ZOri = 0.00;
@@ -76237,9 +76202,9 @@ MCU_TR_Entity
   Desc = "";
   Targets = [];
   Objects = [];
-  XPos = 104739.654;
-  YPos = 49.073;
-  ZPos = 156207.211;
+  XPos = 104714.207;
+  YPos = 49.072;
+  ZPos = 156332.854;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -76254,9 +76219,9 @@ Airfield
   Name = "Rear";
   Index = 4027;
   LinkTrId = 4028;
-  XPos = 105440.298;
-  YPos = 48.873;
-  ZPos = 152858.105;
+  XPos = 105648.939;
+  YPos = 46.099;
+  ZPos = 152871.443;
   XOri = 0.00;
   YOri = 176.32;
   ZOri = 0.00;
@@ -76331,9 +76296,9 @@ MCU_TR_Entity
   Desc = "";
   Targets = [];
   Objects = [];
-  XPos = 105440.298;
-  YPos = 49.073;
-  ZPos = 152858.105;
+  XPos = 105648.939;
+  YPos = 46.299;
+  ZPos = 152871.443;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -76348,19 +76313,19 @@ Flag
   Name = "Flag";
   Index = 4030;
   LinkTrId = 4031;
-  XPos = 105429.553;
-  YPos = 46.359;
-  ZPos = 152858.913;
-  XOri = 356.80;
+  XPos = 105271.405;
+  YPos = 45.631;
+  ZPos = 152841.764;
+  XOri = 0.98;
   YOri = 0.00;
-  ZOri = 0.46;
+  ZOri = 358.95;
   Model = "graphics\flag\flag.mgm";
   Desc = "";
   Script = "LuaScripts\WorldObjects\Flags\flag.txt";
   Country = 101;
   StartHeight = 1;
   SpeedFactor = 2;
-  BlockThreshold = 0.5;
+  BlockThreshold = 1;
   Radius = 200;
   Type = 0;
   CountPlanes = 0;
@@ -76376,9 +76341,9 @@ MCU_TR_Entity
   Desc = "";
   Targets = [];
   Objects = [];
-  XPos = 105429.553;
-  YPos = 46.559;
-  ZPos = 152858.913;
+  XPos = 105271.405;
+  YPos = 45.831;
+  ZPos = 152841.764;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -76396,6 +76361,11 @@ MCU_TR_Entity
       Type = 27;
       TarId = 4034;
     }
+    OnEvent
+    {
+      Type = 23;
+      TarId = 7065;
+    }
   }
 }
 
@@ -76408,9 +76378,9 @@ MCU_Timer
   Desc = "";
   Targets = [4036];
   Objects = [];
-  XPos = 105429.830;
+  XPos = 105271.682;
   YPos = 43.398;
-  ZPos = 152798.631;
+  ZPos = 152781.482;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -76427,9 +76397,9 @@ MCU_Timer
   Desc = "";
   Targets = [4038];
   Objects = [];
-  XPos = 105427.037;
+  XPos = 105268.889;
   YPos = 43.398;
-  ZPos = 152907.574;
+  ZPos = 152890.425;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -76446,9 +76416,9 @@ MCU_CMD_Behaviour
   Desc = "";
   Targets = [];
   Objects = [4028];
-  XPos = 105472.973;
+  XPos = 105314.825;
   YPos = 44.166;
-  ZPos = 152880.261;
+  ZPos = 152863.112;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -76473,9 +76443,9 @@ MCU_CMD_Behaviour
   Desc = "";
   Targets = [];
   Objects = [4028];
-  XPos = 105481.353;
+  XPos = 105323.205;
   YPos = 44.166;
-  ZPos = 152836.187;
+  ZPos = 152819.038;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -76498,19 +76468,19 @@ Flag
   Name = "Flag";
   Index = 4041;
   LinkTrId = 4042;
-  XPos = 104730.403;
-  YPos = 48.898;
-  ZPos = 156206.824;
-  XOri = 0.08;
+  XPos = 104674.081;
+  YPos = 49.089;
+  ZPos = 155941.933;
+  XOri = 0.07;
   YOri = 0.00;
-  ZOri = 359.85;
+  ZOri = 359.92;
   Model = "graphics\flag\flag.mgm";
   Desc = "";
   Script = "LuaScripts\WorldObjects\Flags\flag.txt";
   Country = 101;
   StartHeight = 1;
   SpeedFactor = 2;
-  BlockThreshold = 0.5;
+  BlockThreshold = 1;
   Radius = 200;
   Type = 0;
   CountPlanes = 0;
@@ -76526,9 +76496,9 @@ MCU_TR_Entity
   Desc = "";
   Targets = [];
   Objects = [];
-  XPos = 104730.403;
-  YPos = 49.098;
-  ZPos = 156206.824;
+  XPos = 104674.081;
+  YPos = 49.289;
+  ZPos = 155941.933;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -76546,6 +76516,11 @@ MCU_TR_Entity
       Type = 27;
       TarId = 4045;
     }
+    OnEvent
+    {
+      Type = 23;
+      TarId = 7063;
+    }
   }
 }
 
@@ -76558,9 +76533,9 @@ MCU_Timer
   Desc = "";
   Targets = [4047];
   Objects = [];
-  XPos = 104730.680;
+  XPos = 104674.358;
   YPos = 43.398;
-  ZPos = 156146.542;
+  ZPos = 155881.651;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -76577,9 +76552,9 @@ MCU_Timer
   Desc = "";
   Targets = [4049];
   Objects = [];
-  XPos = 104727.887;
+  XPos = 104671.565;
   YPos = 43.398;
-  ZPos = 156255.485;
+  ZPos = 155990.594;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -76596,9 +76571,9 @@ MCU_CMD_Behaviour
   Desc = "";
   Targets = [];
   Objects = [4025];
-  XPos = 104773.823;
+  XPos = 104717.501;
   YPos = 44.166;
-  ZPos = 156228.172;
+  ZPos = 155963.281;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -76623,9 +76598,9 @@ MCU_CMD_Behaviour
   Desc = "";
   Targets = [];
   Objects = [4025];
-  XPos = 104782.203;
+  XPos = 104725.881;
   YPos = 44.166;
-  ZPos = 156184.098;
+  ZPos = 155919.207;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -77197,9 +77172,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\ju87d3.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1/3..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -77224,9 +77199,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\bf110e2.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -77251,9 +77226,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\bf109f4.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -77278,9 +77253,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\bf109g2.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -77305,9 +77280,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\fw190a3.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -77332,9 +77307,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\he111h6.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..4";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -77359,9 +77334,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\mc202s8.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -77386,9 +77361,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\bf109e7.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -77413,9 +77388,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\bf109f2.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -77440,9 +77415,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\ju88a4.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..4";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -78963,9 +78938,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\yak1s69.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -78990,9 +78965,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\lagg3s29.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -79017,9 +78992,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\la5s8.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -79044,9 +79019,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\il2m42.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -79071,9 +79046,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\pe2s87.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -79098,9 +79073,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\i16t24.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -79125,9 +79100,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\p40e1.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -79152,9 +79127,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\mig3s24.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -79179,9 +79154,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\pe2s35.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -79206,9 +79181,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\il2m41.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -86026,9 +86001,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\yak1s69.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -86053,9 +86028,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\lagg3s29.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -86080,9 +86055,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\la5s8.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -86107,9 +86082,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\il2m42.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -86134,9 +86109,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\pe2s87.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -86161,9 +86136,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\i16t24.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -86188,9 +86163,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\p40e1.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -86215,9 +86190,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\mig3s24.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -86242,9 +86217,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\pe2s35.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -86269,9 +86244,9 @@ Airfield
       Script = "LuaScripts\WorldObjects\Planes\il2m41.txt";
       Name = "";
       Skin = "";
-      AvMods = "";
+      AvMods = "1..5";
       AvSkins = "";
-      AvPayloads = "";
+      AvPayloads = "0..99";
       Callsign = 0;
       Callnum = 0;
     }
@@ -92804,7 +92779,7 @@ Group
     Index = 5184;
     LinkTrId = 5182;
     XPos = 133955.788;
-    YPos = 51.193;
+    YPos = 82.420;
     ZPos = 185602.952;
     XOri = 0.00;
     YOri = 208.08;
@@ -92842,9 +92817,9 @@ Group
         Script = "LuaScripts\WorldObjects\Planes\il2m42.txt";
         Name = "";
         Skin = "";
-        AvMods = "";
+        AvMods = "1..5";
         AvSkins = "";
-        AvPayloads = "";
+        AvPayloads = "0..99";
         Callsign = 0;
         Callnum = 0;
       }
@@ -92869,9 +92844,9 @@ Group
         Script = "LuaScripts\WorldObjects\Planes\yak1s69.txt";
         Name = "";
         Skin = "";
-        AvMods = "";
+        AvMods = "1..5";
         AvSkins = "";
-        AvPayloads = "";
+        AvPayloads = "0..99";
         Callsign = 0;
         Callnum = 0;
       }
@@ -92896,9 +92871,9 @@ Group
         Script = "LuaScripts\WorldObjects\Planes\p40e1.txt";
         Name = "";
         Skin = "";
-        AvMods = "";
+        AvMods = "1..5";
         AvSkins = "";
-        AvPayloads = "";
+        AvPayloads = "0..99";
         Callsign = 0;
         Callnum = 0;
       }
@@ -92986,7 +92961,7 @@ Group
     Targets = [];
     Objects = [];
     XPos = 133955.788;
-    YPos = 51.393;
+    YPos = 82.620;
     ZPos = 185602.952;
     XOri = 0.00;
     YOri = 0.00;
@@ -93626,7 +93601,7 @@ Group
     Index = 5239;
     LinkTrId = 0;
     XPos = 133826.980;
-    YPos = 51.193;
+    YPos = 72.530;
     ZPos = 185765.562;
     XOri = 0.00;
     YOri = 295.18;
@@ -93648,7 +93623,7 @@ Group
     Index = 5240;
     LinkTrId = 0;
     XPos = 133860.196;
-    YPos = 51.193;
+    YPos = 72.530;
     ZPos = 185368.138;
     XOri = 0.00;
     YOri = 331.52;
@@ -93670,7 +93645,7 @@ Group
     Index = 5241;
     LinkTrId = 0;
     XPos = 133817.610;
-    YPos = 51.193;
+    YPos = 72.530;
     ZPos = 185236.354;
     XOri = 0.00;
     YOri = 331.06;
@@ -93753,7 +93728,7 @@ Group
     Index = 5246;
     LinkTrId = 5247;
     XPos = 105055.558;
-    YPos = 128.211;
+    YPos = 110.623;
     ZPos = 85823.950;
     XOri = 0.00;
     YOri = 55.90;
@@ -93791,9 +93766,9 @@ Group
         Script = "LuaScripts\WorldObjects\Planes\bf110e2.txt";
         Name = "";
         Skin = "";
-        AvMods = "";
+        AvMods = "1..3";
         AvSkins = "";
-        AvPayloads = "";
+        AvPayloads = "0..99";
         Callsign = 0;
         Callnum = 0;
       }
@@ -93818,9 +93793,9 @@ Group
         Script = "LuaScripts\WorldObjects\Planes\bf109e7.txt";
         Name = "";
         Skin = "";
-        AvMods = "";
+        AvMods = "1..5";
         AvSkins = "";
-        AvPayloads = "";
+        AvPayloads = "0..99";
         Callsign = 0;
         Callnum = 0;
       }
@@ -93845,9 +93820,9 @@ Group
         Script = "LuaScripts\WorldObjects\Planes\bf109f4.txt";
         Name = "";
         Skin = "";
-        AvMods = "";
+        AvMods = "1..5";
         AvSkins = "";
-        AvPayloads = "";
+        AvPayloads = "0..99";
         Callsign = 0;
         Callnum = 0;
       }
@@ -93947,7 +93922,7 @@ Group
     Targets = [];
     Objects = [];
     XPos = 105055.558;
-    YPos = 128.411;
+    YPos = 110.823;
     ZPos = 85823.950;
     XOri = 0.00;
     YOri = 0.00;
@@ -94123,7 +94098,7 @@ Group
     Index = 5258;
     LinkTrId = 5259;
     XPos = 105031.614;
-    YPos = 128.211;
+    YPos = 128.765;
     ZPos = 85847.239;
     XOri = 0.00;
     YOri = 60.38;
@@ -94161,7 +94136,7 @@ Group
     Targets = [];
     Objects = [];
     XPos = 105031.614;
-    YPos = 128.411;
+    YPos = 128.965;
     ZPos = 85847.239;
     XOri = 0.00;
     YOri = 0.00;
@@ -94631,7 +94606,7 @@ Group
     Index = 5304;
     LinkTrId = 0;
     XPos = 105031.292;
-    YPos = 128.211;
+    YPos = 128.765;
     ZPos = 85901.373;
     XOri = 0.00;
     YOri = 323.59;
@@ -94653,7 +94628,7 @@ Group
     Index = 5305;
     LinkTrId = 0;
     XPos = 105352.833;
-    YPos = 128.211;
+    YPos = 128.765;
     ZPos = 85747.897;
     XOri = 0.00;
     YOri = 270.71;
@@ -94675,7 +94650,7 @@ Group
     Index = 5306;
     LinkTrId = 0;
     XPos = 105486.615;
-    YPos = 128.211;
+    YPos = 128.765;
     ZPos = 85749.757;
     XOri = 0.00;
     YOri = 270.71;
@@ -97509,9 +97484,9 @@ MCU_TR_Subtitle
   Desc = "";
   Targets = [];
   Objects = [];
-  XPos = 101544.046;
+  XPos = 101624.179;
   YPos = 46.248;
-  ZPos = 150853.841;
+  ZPos = 150933.974;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -97540,9 +97515,9 @@ MCU_TR_Subtitle
   Desc = "";
   Targets = [];
   Objects = [];
-  XPos = 100250.595;
+  XPos = 100335.885;
   YPos = 46.248;
-  ZPos = 153229.950;
+  ZPos = 153091.468;
   XOri = 0.00;
   YOri = 0.00;
   ZOri = 0.00;
@@ -110404,8 +110379,8 @@ Group
       OnReport
       {
         Type = 0;
-        CmdId = 6485;
-        TarId = 6486;
+        CmdId = 6486;
+        TarId = 6485;
       }
     }
   }
@@ -110413,7 +110388,7 @@ Group
 
   MCU_Spawner
   {
-    Index = 6485;
+    Index = 6486;
     Name = "";
     Desc = "";
     Targets = [];
@@ -110449,7 +110424,7 @@ Group
     Index = 6490;
     Name = "Spawn";
     Desc = "";
-    Targets = [6485,6491,6492,6493];
+    Targets = [6486,6491,6492,6493];
     Objects = [];
     XPos = 117757.017;
     YPos = 173.554;
@@ -110745,7 +110720,7 @@ Group
     Index = 6518;
     Name = "Close spawn";
     Desc = "";
-    Targets = [6485];
+    Targets = [6486];
     Objects = [];
     XPos = 117401.849;
     YPos = 151.079;
@@ -110779,7 +110754,7 @@ Group
     Index = 6522;
     Name = "Open spawn";
     Desc = "";
-    Targets = [6485];
+    Targets = [6486];
     Objects = [];
     XPos = 117467.094;
     YPos = 141.270;
@@ -110854,8 +110829,8 @@ Group
       OnReport
       {
         Type = 0;
-        CmdId = 6527;
-        TarId = 6528;
+        CmdId = 6528;
+        TarId = 6527;
       }
     }
   }
@@ -110863,7 +110838,7 @@ Group
 
   MCU_Spawner
   {
-    Index = 6527;
+    Index = 6528;
     Name = "";
     Desc = "";
     Targets = [];
@@ -110898,7 +110873,7 @@ Group
 
   MCU_Timer
   {
-    Index = 6528;
+    Index = 6527;
     Name = "Trigger Timer";
     Desc = "";
     Targets = [6530];
@@ -111030,7 +111005,7 @@ Group
     Index = 6539;
     Name = "Close spawn";
     Desc = "";
-    Targets = [6527];
+    Targets = [6528];
     Objects = [];
     XPos = 117200.744;
     YPos = 151.079;
@@ -111064,7 +111039,7 @@ Group
     Index = 6543;
     Name = "Open spawn";
     Desc = "";
-    Targets = [6527];
+    Targets = [6528];
     Objects = [];
     XPos = 117240.894;
     YPos = 141.270;
@@ -111413,10 +111388,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6486;
+    Index = 6485;
     Name = "OnSpawn";
     Desc = "";
-    Targets = [6527,6537,6570,6571];
+    Targets = [6528,6537,6570,6571];
     Objects = [];
     XPos = 117209.799;
     YPos = 129.202;
@@ -111572,8 +111547,8 @@ Group
       OnReport
       {
         Type = 0;
-        CmdId = 6582;
-        TarId = 6583;
+        CmdId = 6583;
+        TarId = 6582;
       }
     }
   }
@@ -111581,7 +111556,7 @@ Group
 
   MCU_Spawner
   {
-    Index = 6582;
+    Index = 6583;
     Name = "";
     Desc = "";
     Targets = [];
@@ -111617,7 +111592,7 @@ Group
     Index = 6587;
     Name = "Spawn";
     Desc = "";
-    Targets = [6582,6588,6589,6590];
+    Targets = [6583,6588,6589,6590];
     Objects = [];
     XPos = 125729.360;
     YPos = 173.554;
@@ -111913,7 +111888,7 @@ Group
     Index = 6615;
     Name = "Close spawn";
     Desc = "";
-    Targets = [6582];
+    Targets = [6583];
     Objects = [];
     XPos = 125398.289;
     YPos = 151.079;
@@ -111947,7 +111922,7 @@ Group
     Index = 6619;
     Name = "Open spawn";
     Desc = "";
-    Targets = [6582];
+    Targets = [6583];
     Objects = [];
     XPos = 125463.184;
     YPos = 141.270;
@@ -112022,8 +111997,8 @@ Group
       OnReport
       {
         Type = 0;
-        CmdId = 6624;
-        TarId = 6625;
+        CmdId = 6625;
+        TarId = 6624;
       }
     }
   }
@@ -112031,7 +112006,7 @@ Group
 
   MCU_Spawner
   {
-    Index = 6624;
+    Index = 6625;
     Name = "";
     Desc = "";
     Targets = [];
@@ -112066,7 +112041,7 @@ Group
 
   MCU_Timer
   {
-    Index = 6625;
+    Index = 6624;
     Name = "Trigger Timer";
     Desc = "";
     Targets = [6627];
@@ -112198,7 +112173,7 @@ Group
     Index = 6636;
     Name = "Close spawn";
     Desc = "";
-    Targets = [6624];
+    Targets = [6625];
     Objects = [];
     XPos = 125304.328;
     YPos = 151.079;
@@ -112232,7 +112207,7 @@ Group
     Index = 6640;
     Name = "Open spawn";
     Desc = "";
-    Targets = [6624];
+    Targets = [6625];
     Objects = [];
     XPos = 125314.625;
     YPos = 141.270;
@@ -112581,10 +112556,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6583;
+    Index = 6582;
     Name = "OnSpawn";
     Desc = "";
-    Targets = [6624,6634,6667,6668];
+    Targets = [6625,6634,6667,6668];
     Objects = [];
     XPos = 125108.022;
     YPos = 129.202;
@@ -112740,8 +112715,8 @@ Group
       OnReport
       {
         Type = 0;
-        CmdId = 6679;
-        TarId = 6680;
+        CmdId = 6680;
+        TarId = 6679;
       }
     }
   }
@@ -112749,7 +112724,7 @@ Group
 
   MCU_Spawner
   {
-    Index = 6679;
+    Index = 6680;
     Name = "";
     Desc = "";
     Targets = [];
@@ -112785,7 +112760,7 @@ Group
     Index = 6684;
     Name = "Spawn";
     Desc = "";
-    Targets = [6679,6685,6686,6687];
+    Targets = [6680,6685,6686,6687];
     Objects = [];
     XPos = 96579.331;
     YPos = 173.554;
@@ -113081,7 +113056,7 @@ Group
     Index = 6712;
     Name = "Close spawn";
     Desc = "";
-    Targets = [6679];
+    Targets = [6680];
     Objects = [];
     XPos = 96248.260;
     YPos = 151.079;
@@ -113115,7 +113090,7 @@ Group
     Index = 6716;
     Name = "Open spawn";
     Desc = "";
-    Targets = [6679];
+    Targets = [6680];
     Objects = [];
     XPos = 96313.155;
     YPos = 141.270;
@@ -113190,8 +113165,8 @@ Group
       OnReport
       {
         Type = 0;
-        CmdId = 6721;
-        TarId = 6722;
+        CmdId = 6722;
+        TarId = 6721;
       }
     }
   }
@@ -113199,7 +113174,7 @@ Group
 
   MCU_Spawner
   {
-    Index = 6721;
+    Index = 6722;
     Name = "";
     Desc = "";
     Targets = [];
@@ -113234,7 +113209,7 @@ Group
 
   MCU_Timer
   {
-    Index = 6722;
+    Index = 6721;
     Name = "Trigger Timer";
     Desc = "";
     Targets = [6724];
@@ -113366,7 +113341,7 @@ Group
     Index = 6733;
     Name = "Close spawn";
     Desc = "";
-    Targets = [6721];
+    Targets = [6722];
     Objects = [];
     XPos = 96154.299;
     YPos = 151.079;
@@ -113400,7 +113375,7 @@ Group
     Index = 6737;
     Name = "Open spawn";
     Desc = "";
-    Targets = [6721];
+    Targets = [6722];
     Objects = [];
     XPos = 96164.596;
     YPos = 141.270;
@@ -113749,10 +113724,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6680;
+    Index = 6679;
     Name = "OnSpawn";
     Desc = "";
-    Targets = [6721,6731,6764,6765];
+    Targets = [6722,6731,6764,6765];
     Objects = [];
     XPos = 95957.993;
     YPos = 129.202;
@@ -113908,8 +113883,8 @@ Group
       OnReport
       {
         Type = 0;
-        CmdId = 6776;
-        TarId = 6777;
+        CmdId = 6777;
+        TarId = 6776;
       }
     }
   }
@@ -113917,7 +113892,7 @@ Group
 
   MCU_Spawner
   {
-    Index = 6776;
+    Index = 6777;
     Name = "";
     Desc = "";
     Targets = [];
@@ -113953,7 +113928,7 @@ Group
     Index = 6781;
     Name = "Spawn";
     Desc = "";
-    Targets = [6776,6782,6783,6784];
+    Targets = [6777,6782,6783,6784];
     Objects = [];
     XPos = 121488.779;
     YPos = 173.554;
@@ -114249,7 +114224,7 @@ Group
     Index = 6809;
     Name = "Close spawn";
     Desc = "";
-    Targets = [6776];
+    Targets = [6777];
     Objects = [];
     XPos = 121158.267;
     YPos = 151.079;
@@ -114283,7 +114258,7 @@ Group
     Index = 6813;
     Name = "Open spawn";
     Desc = "";
-    Targets = [6776];
+    Targets = [6777];
     Objects = [];
     XPos = 121223.091;
     YPos = 141.270;
@@ -114358,8 +114333,8 @@ Group
       OnReport
       {
         Type = 0;
-        CmdId = 6818;
-        TarId = 6819;
+        CmdId = 6819;
+        TarId = 6818;
       }
     }
   }
@@ -114367,7 +114342,7 @@ Group
 
   MCU_Spawner
   {
-    Index = 6818;
+    Index = 6819;
     Name = "";
     Desc = "";
     Targets = [];
@@ -114402,7 +114377,7 @@ Group
 
   MCU_Timer
   {
-    Index = 6819;
+    Index = 6818;
     Name = "Trigger Timer";
     Desc = "";
     Targets = [6821];
@@ -114534,7 +114509,7 @@ Group
     Index = 6830;
     Name = "Close spawn";
     Desc = "";
-    Targets = [6818];
+    Targets = [6819];
     Objects = [];
     XPos = 121065.352;
     YPos = 151.079;
@@ -114568,7 +114543,7 @@ Group
     Index = 6834;
     Name = "Open spawn";
     Desc = "";
-    Targets = [6818];
+    Targets = [6819];
     Objects = [];
     XPos = 121075.374;
     YPos = 141.270;
@@ -114917,10 +114892,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6777;
+    Index = 6776;
     Name = "OnSpawn";
     Desc = "";
-    Targets = [6818,6828,6861,6862];
+    Targets = [6819,6828,6861,6862];
     Objects = [];
     XPos = 120867.432;
     YPos = 129.202;
@@ -115076,8 +115051,8 @@ Group
       OnReport
       {
         Type = 0;
-        CmdId = 6873;
-        TarId = 6874;
+        CmdId = 6874;
+        TarId = 6873;
       }
     }
   }
@@ -115085,7 +115060,7 @@ Group
 
   MCU_Spawner
   {
-    Index = 6873;
+    Index = 6874;
     Name = "";
     Desc = "";
     Targets = [];
@@ -115121,7 +115096,7 @@ Group
     Index = 6878;
     Name = "Spawn";
     Desc = "";
-    Targets = [6873,6879,6880,6881];
+    Targets = [6874,6879,6880,6881];
     Objects = [];
     XPos = 117342.266;
     YPos = 173.554;
@@ -115417,7 +115392,7 @@ Group
     Index = 6906;
     Name = "Close spawn";
     Desc = "";
-    Targets = [6873];
+    Targets = [6874];
     Objects = [];
     XPos = 117011.754;
     YPos = 151.079;
@@ -115451,7 +115426,7 @@ Group
     Index = 6910;
     Name = "Open spawn";
     Desc = "";
-    Targets = [6873];
+    Targets = [6874];
     Objects = [];
     XPos = 117076.578;
     YPos = 141.270;
@@ -115526,8 +115501,8 @@ Group
       OnReport
       {
         Type = 0;
-        CmdId = 6915;
-        TarId = 6916;
+        CmdId = 6916;
+        TarId = 6915;
       }
     }
   }
@@ -115535,7 +115510,7 @@ Group
 
   MCU_Spawner
   {
-    Index = 6915;
+    Index = 6916;
     Name = "";
     Desc = "";
     Targets = [];
@@ -115570,7 +115545,7 @@ Group
 
   MCU_Timer
   {
-    Index = 6916;
+    Index = 6915;
     Name = "Trigger Timer";
     Desc = "";
     Targets = [6918];
@@ -115702,7 +115677,7 @@ Group
     Index = 6927;
     Name = "Close spawn";
     Desc = "";
-    Targets = [6915];
+    Targets = [6916];
     Objects = [];
     XPos = 116918.839;
     YPos = 151.079;
@@ -115736,7 +115711,7 @@ Group
     Index = 6931;
     Name = "Open spawn";
     Desc = "";
-    Targets = [6915];
+    Targets = [6916];
     Objects = [];
     XPos = 116928.861;
     YPos = 141.270;
@@ -116085,10 +116060,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6874;
+    Index = 6873;
     Name = "OnSpawn";
     Desc = "";
-    Targets = [6915,6925,6958,6959];
+    Targets = [6916,6925,6958,6959];
     Objects = [];
     XPos = 116720.919;
     YPos = 129.202;
@@ -116244,8 +116219,8 @@ Group
       OnReport
       {
         Type = 0;
-        CmdId = 6970;
-        TarId = 6971;
+        CmdId = 6971;
+        TarId = 6970;
       }
     }
   }
@@ -116253,7 +116228,7 @@ Group
 
   MCU_Spawner
   {
-    Index = 6970;
+    Index = 6971;
     Name = "";
     Desc = "";
     Targets = [];
@@ -116289,7 +116264,7 @@ Group
     Index = 6975;
     Name = "Spawn";
     Desc = "";
-    Targets = [6970,6976,6977,6978];
+    Targets = [6971,6976,6977,6978];
     Objects = [];
     XPos = 107894.443;
     YPos = 173.554;
@@ -116585,7 +116560,7 @@ Group
     Index = 7003;
     Name = "Close spawn";
     Desc = "";
-    Targets = [6970];
+    Targets = [6971];
     Objects = [];
     XPos = 107563.931;
     YPos = 151.079;
@@ -116619,7 +116594,7 @@ Group
     Index = 7007;
     Name = "Open spawn";
     Desc = "";
-    Targets = [6970];
+    Targets = [6971];
     Objects = [];
     XPos = 107628.755;
     YPos = 141.270;
@@ -116694,8 +116669,8 @@ Group
       OnReport
       {
         Type = 0;
-        CmdId = 7012;
-        TarId = 7013;
+        CmdId = 7013;
+        TarId = 7012;
       }
     }
   }
@@ -116703,7 +116678,7 @@ Group
 
   MCU_Spawner
   {
-    Index = 7012;
+    Index = 7013;
     Name = "";
     Desc = "";
     Targets = [];
@@ -116738,7 +116713,7 @@ Group
 
   MCU_Timer
   {
-    Index = 7013;
+    Index = 7012;
     Name = "Trigger Timer";
     Desc = "";
     Targets = [7015];
@@ -116870,7 +116845,7 @@ Group
     Index = 7024;
     Name = "Close spawn";
     Desc = "";
-    Targets = [7012];
+    Targets = [7013];
     Objects = [];
     XPos = 107471.016;
     YPos = 151.079;
@@ -116904,7 +116879,7 @@ Group
     Index = 7028;
     Name = "Open spawn";
     Desc = "";
-    Targets = [7012];
+    Targets = [7013];
     Objects = [];
     XPos = 107481.038;
     YPos = 141.270;
@@ -117253,10 +117228,10 @@ Group
 
   MCU_Timer
   {
-    Index = 6971;
+    Index = 6970;
     Name = "OnSpawn";
     Desc = "";
-    Targets = [7012,7022,7055,7056];
+    Targets = [7013,7022,7055,7056];
     Objects = [];
     XPos = 107273.096;
     YPos = 129.202;
@@ -117339,6 +117314,141 @@ Group
   }
   
 
+}
+
+
+
+MCU_CMD_Behaviour
+{
+  Index = 7062;
+  Name = "Block";
+  Desc = "";
+  Targets = [];
+  Objects = [3731];
+  XPos = 103271.871;
+  YPos = 44.355;
+  ZPos = 153411.961;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Filter = 16;
+  Vulnerable = 1;
+  Engageable = 1;
+  LimitAmmo = 1;
+  RepairFriendlies = 0;
+  RearmFriendlies = 0;
+  RefuelFriendlies = 0;
+  AILevel = 2;
+  Country = 0;
+  FloatParam = 0;
+}
+
+
+
+MCU_CMD_Behaviour
+{
+  Index = 7063;
+  Name = "Block";
+  Desc = "";
+  Targets = [];
+  Objects = [4025];
+  XPos = 104702.661;
+  YPos = 44.355;
+  ZPos = 155943.371;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Filter = 16;
+  Vulnerable = 1;
+  Engageable = 1;
+  LimitAmmo = 1;
+  RepairFriendlies = 0;
+  RearmFriendlies = 0;
+  RefuelFriendlies = 0;
+  AILevel = 2;
+  Country = 0;
+  FloatParam = 0;
+}
+
+
+
+MCU_CMD_Behaviour
+{
+  Index = 7065;
+  Name = "Block";
+  Desc = "";
+  Targets = [];
+  Objects = [4028];
+  XPos = 105307.035;
+  YPos = 44.355;
+  ZPos = 152840.107;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Filter = 16;
+  Vulnerable = 1;
+  Engageable = 1;
+  LimitAmmo = 1;
+  RepairFriendlies = 0;
+  RearmFriendlies = 0;
+  RefuelFriendlies = 0;
+  AILevel = 2;
+  Country = 0;
+  FloatParam = 0;
+}
+
+
+
+MCU_CMD_Behaviour
+{
+  Index = 7067;
+  Name = "Block";
+  Desc = "";
+  Targets = [];
+  Objects = [3734];
+  XPos = 101603.415;
+  YPos = 44.355;
+  ZPos = 150939.967;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Filter = 16;
+  Vulnerable = 1;
+  Engageable = 1;
+  LimitAmmo = 1;
+  RepairFriendlies = 0;
+  RearmFriendlies = 0;
+  RefuelFriendlies = 0;
+  AILevel = 2;
+  Country = 0;
+  FloatParam = 0;
+}
+
+
+
+MCU_CMD_Behaviour
+{
+  Index = 7069;
+  Name = "Block";
+  Desc = "";
+  Targets = [];
+  Objects = [3737];
+  XPos = 100336.160;
+  YPos = 44.355;
+  ZPos = 153097.294;
+  XOri = 0.00;
+  YOri = 0.00;
+  ZOri = 0.00;
+  Filter = 16;
+  Vulnerable = 1;
+  Engageable = 1;
+  LimitAmmo = 1;
+  RepairFriendlies = 0;
+  RearmFriendlies = 0;
+  RefuelFriendlies = 0;
+  AILevel = 2;
+  Country = 0;
+  FloatParam = 0;
 }
 
 
