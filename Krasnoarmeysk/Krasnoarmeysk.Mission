@@ -24772,7 +24772,7 @@ Group
       YOri = 0.00;
       ZOri = 0.00;
       Enabled = 1;
-      Config = "multiplayer\coconut\aieverywhere\geranthem.mp3";
+      Config = "multiplayer\coconut\geranthem.mp3";
       TotalTime = 10;
       ExpandTime = 1;
       FadeTime = 1;
@@ -24798,7 +24798,7 @@ Group
       YOri = 0.00;
       ZOri = 0.00;
       Enabled = 1;
-      Config = "multiplayer\coconut\aieverywhere\rusanthem.mp3";
+      Config = "multiplayer\coconut\rusanthemshort.mp3";
       TotalTime = 10;
       ExpandTime = 1;
       FadeTime = 1;
