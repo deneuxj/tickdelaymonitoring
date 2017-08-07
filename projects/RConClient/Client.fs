@@ -269,6 +269,9 @@ type ClientMessageQueue(hostname, port, login, password) =
     let mutable client = None
     let clientLock = obj()
 
+    let resetClient() =
+        lock clientLock (fun () -> client <- None)
+
     // Mailbox that receives untyped asyncs, executes them and return the result (if any) as an untyped object in a reply channel.
     let rec handleMessage (mb : MailboxProcessor<Async<obj> * AsyncReplyChannel<obj option> option>) =
         async {
@@ -280,6 +283,7 @@ type ClientMessageQueue(hostname, port, login, password) =
                     ignore dummy
                 with
                 | e ->
+                    resetClient()
                     Debug.WriteLine(sprintf "Exception thrown by action in ClientMessageQueue.handleMessage: %s" e.Message)
             | f, Some r ->
                 try
@@ -287,6 +291,7 @@ type ClientMessageQueue(hostname, port, login, password) =
                     r.Reply(Some untyped)
                 with
                 | e ->
+                    resetClient()
                     Debug.WriteLine(sprintf "Exception thrown by function in ClientMessageQueue.handleMessage: %s" e.Message)
                     r.Reply(None)
             return! handleMessage mb
@@ -294,9 +299,6 @@ type ClientMessageQueue(hostname, port, login, password) =
 
     let mb =
         MailboxProcessor.Start(handleMessage)
-
-    let resetClient() =
-        lock clientLock (fun () -> client <- None)
 
     /// <summary>
     /// Get the RConClient, or create one if it hasn't been created yet.
@@ -319,54 +321,32 @@ type ClientMessageQueue(hostname, port, login, password) =
     /// </summary>
     member this.Start(f: Lazy<Async<unit>>) =
         let untypedF =
-            try
-                async {
-                    do! f.Value
-                    return box()
-                } |> Some
-            with
-            | e -> None
-        match untypedF with
-        | Some untypedF ->
             async {
-                mb.Post(untypedF, None)
+                do! f.Value
+                return box()
             }
-        | None ->
-            resetClient()
-            async {
-                do()
-            }
+        async {
+            mb.Post(untypedF, None)
+        }
 
     /// <summary>
     /// Build an async that posts a function and waits for the result.
     /// </summary>
     member this.Run(f: Lazy<Async<'T>>) =
         let untypedF =
-            try
-                async {
-                    let! x = f.Value
-                    return box x
-                }
-                |> Some
-            with
-            | e -> None
-        match untypedF with
-        | Some untypedF ->
-            async {            
-                let! untyped = mb.PostAndAsyncReply(fun reply -> untypedF, Some reply)
-                match untyped with
-                | Some untyped ->
-                    return unbox<'T>(untyped) |> Some
-                | None ->
-                    resetClient()
-                    return None
-            }
-        | None ->
-            resetClient()
             async {
-                return None
+                let! x = f.Value
+                return box x
             }
-    
+        async {
+            let! untyped = mb.PostAndAsyncReply(fun reply -> untypedF, Some reply)
+            match untyped with
+            | Some untyped ->
+                return unbox<'T>(untyped) |> Some
+            | None ->
+                return None
+        }
+
     member this.Dispose() =
         let client = client
         match client with
