@@ -252,7 +252,23 @@ type Client(hostname : string, port, login, password) as this =
                 )
             return result
         }
-        
+
+    member this.KickPlayer(playerId) =
+        async {
+            let buff = encode (sprintf "kick cid %d" playerId)
+            do! send(buff, 0, buff.Length)
+            let! response = getResponse stream
+            return response
+        }
+
+    member this.BanPlayer(playerId) =
+        async {
+            let buff = encode (sprintf "ban cid %d" playerId)
+            do! send(buff, 0, buff.Length)
+            let! response = getResponse stream
+            return response
+        }
+
     member this.Shutdown() =
         async {
             let buff = encode "shutdown"
