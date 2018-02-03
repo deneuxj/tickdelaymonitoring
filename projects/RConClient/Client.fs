@@ -51,12 +51,14 @@ exception ConnectionException of unit
 type Client(hostname : string, port, login, password) as this =
     inherit Sockets.TcpClient()
 
+    let logger = NLog.LogManager.GetCurrentClassLogger()
+
     do
         try
             base.Connect(hostname, port)
         with
         | exc ->
-            printfn "Failed to connect to game server: %s" exc.Message
+            logger.Error(sprintf "Failed to connect to game server: %s" exc.Message)
             raise(ConnectionException())
     let stream = this.GetStream()
 
@@ -282,6 +284,7 @@ type Client(hostname : string, port, login, password) as this =
 /// Allows to use the same client from multiple threads.
 /// </summary>
 type ClientMessageQueue(hostname, port, login, password) =
+    let logger = NLog.LogManager.GetCurrentClassLogger()
     let mutable client = None
     let clientLock = obj()
 
@@ -300,7 +303,7 @@ type ClientMessageQueue(hostname, port, login, password) =
                 with
                 | e ->
                     resetClient()
-                    Debug.WriteLine(sprintf "Exception thrown by action in ClientMessageQueue.handleMessage: %s" e.Message)
+                    logger.Debug(sprintf "Exception thrown by action in ClientMessageQueue.handleMessage: %s" e.Message)
             | f, Some r ->
                 try
                     let! untyped = f
@@ -308,7 +311,7 @@ type ClientMessageQueue(hostname, port, login, password) =
                 with
                 | e ->
                     resetClient()
-                    Debug.WriteLine(sprintf "Exception thrown by function in ClientMessageQueue.handleMessage: %s" e.Message)
+                    logger.Debug(sprintf "Exception thrown by function in ClientMessageQueue.handleMessage: %s" e.Message)
                     r.Reply(None)
             return! handleMessage mb
         }
@@ -327,7 +330,7 @@ type ClientMessageQueue(hostname, port, login, password) =
                 let x = new Client(hostname, port, login, password)
                 async {
                     let! response = x.Auth()
-                    Debug.WriteLine(sprintf "Auth response %s" response)
+                    logger.Debug(sprintf "Auth response %s" response)
                 } |> Async.RunSynchronously
                 client <- Some x
                 x)
