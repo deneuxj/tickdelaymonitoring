@@ -279,6 +279,22 @@ type Client(hostname : string, port, login, password) as this =
             return response
         }
 
+    member this.CutChatLog() =
+        async {
+            let buff = encode "cutchatlog"
+            do! send(buff, 0, buff.Length)
+            let! response = getResponse stream
+            return response
+        }
+
+    member this.SendStatNow() =
+        async {
+            let buff = encode "sendstatnow"
+            do! send(buff, 0, buff.Length)
+            let! response = getResponse stream
+            return response
+        }
+
 /// <summary>
 /// Provides asynchronous sequential access to a client.
 /// Allows to use the same client from multiple threads.
